@@ -34,6 +34,10 @@
 
 # Combine options
 # python3 test_deepseek.py "Explain Docker" --max-tokens 300 --temperature 0.5
+
+# python3 test_deepseek.py "Напиши стихотворение о Мексике из 4х четверостишей" --temperature 0.0
+# python3 test_deepseek.py "Напиши стихотворение о Мексике из 4х четверостишей" --temperature 0.7
+# python3 test_deepseek.py "Напиши стихотворение о Мексике из 4х четверостишей" --temperature 1.2
 #######################################
 
 import requests
