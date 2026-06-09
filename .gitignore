@@ -1,2 +1,8 @@
 deepseek-env/
 hf-env/
+
+# Игнорируем все папки кэша Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
