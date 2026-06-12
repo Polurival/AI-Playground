@@ -1,6 +1,16 @@
 from agent import DeepSeekAgent
 
 
+def print_metrics(metrics: dict) -> None:
+    """Выводит аккуратную статистику использования токенов."""
+    print("\n[Аналитика токенов]")
+    print(f"  - Текущий запрос пользователя: {metrics['current_query_tokens']} токенов")
+    print(f"  - Всего в истории (контекст отправки): {metrics['history_tokens_before_response']} токенов")
+    print(f"  - Ответ модели: {metrics['completion_tokens_used']} токенов")
+    print(f"  - Итого за этот шаг (Вход + Выход): {metrics['total_this_step']} токенов")
+    print()
+
+
 def main():
     """
     Главная функция, запускающая интерактивный чат с агентом.
@@ -29,11 +39,10 @@ def main():
                 continue
 
             # Получаем ответ от агента
-            response = agent.send_message(user_input)
-            print(f"Агент: {response}\n")
+            response, metrics = agent.send_message(user_input)
+            print(f"Агент: {response}")
+            print_metrics(metrics)
 
-    except ValueError as e:
-        print(f"Ошибка: {e}")
     except KeyboardInterrupt:
         print("\nПрограмма прервана пользователем.")
     except Exception as e:

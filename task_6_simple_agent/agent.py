@@ -1,6 +1,7 @@
 import os
 import json
 from openai import OpenAI
+import tiktoken
 
 
 class DeepSeekAgent:
@@ -29,7 +30,7 @@ class DeepSeekAgent:
             )
 
         self.client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
-        self.model = "deepseek-chat"
+        self.model = "deepseek-v4-flash"
         self.history_file = history_file
         self.history_loaded = False
         self.default_system_prompt = (
@@ -40,6 +41,9 @@ class DeepSeekAgent:
         # Инициализируем историю
         self.history = []
         self._load_history()
+
+        # Энкодер для подсчета токенов
+        self.encoding = tiktoken.get_encoding("cl100k_base")
 
     def _load_history(self) -> None:
         """Загружает историю диалога из файла, если он существует."""
@@ -73,7 +77,16 @@ class DeepSeekAgent:
         except IOError as e:
             print(f"Ошибка: Не удалось сохранить историю ({e}). Данные могут быть потеряны.")
 
-    def send_message(self, user_text: str) -> str:
+    def _count_tokens(self, messages: list) -> int:
+        """Подсчитывает токены в списке сообщений."""
+        total_tokens = 0
+        for msg in messages:
+            content = msg.get("content", "")
+            tokens = len(self.encoding.encode(content))
+            total_tokens += tokens
+        return total_tokens
+
+    def send_message(self, user_text: str) -> tuple:
         """
         Отправляет сообщение пользователя в DeepSeek API.
 
@@ -81,13 +94,19 @@ class DeepSeekAgent:
             user_text: Текст сообщения от пользователя
 
         Returns:
-            Текст ответа от ассистента
+            Tuple: (текст ответа, dict с метриками токенов)
         """
+        # Подсчитываем токены текущего запроса (до добавления в историю)
+        current_query_tokens = len(self.encoding.encode(user_text))
+
         # Добавляем сообщение пользователя в историю
         self.history.append({
             "role": "user",
             "content": user_text
         })
+
+        # Подсчитываем токены всей истории
+        history_tokens = self._count_tokens(self.history)
 
         # Отправляем всю историю в API
         response = self.client.chat.completions.create(
@@ -95,8 +114,10 @@ class DeepSeekAgent:
             messages=self.history
         )
 
-        # Извлекаем текст ответа
+        # Извлекаем текст ответа и реальное использование токенов из API
         assistant_response = response.choices[0].message.content
+        prompt_tokens = response.usage.prompt_tokens
+        completion_tokens = response.usage.completion_tokens
 
         # Добавляем ответ ассистента в историю
         self.history.append({
@@ -107,4 +128,13 @@ class DeepSeekAgent:
         # Сохраняем историю на диск
         self._save_history()
 
-        return assistant_response
+        # Возвращаем ответ и метрики использования токенов
+        metrics = {
+            "current_query_tokens": current_query_tokens,
+            "history_tokens_before_response": history_tokens,
+            "prompt_tokens_used": prompt_tokens,
+            "completion_tokens_used": completion_tokens,
+            "total_this_step": prompt_tokens + completion_tokens
+        }
+
+        return assistant_response, metrics
