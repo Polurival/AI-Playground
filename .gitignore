@@ -8,3 +8,4 @@ __pycache__/
 *.pyd
 
 chat_history.json
+.memory_demo/

@@ -1,0 +1,58 @@
+# Prompt for Code Generation: Multi-Layer Memory AI Agent with Branching & Dynamic Context Assembly
+
+## Context
+We are developing the architecture of our Python-based AI Agent (`DeepSeekAgent`). We need to implement an explicit **three-layer memory model** (Short-term, Working, Long-term) capable of dynamic context assembly. Additionally, we need to introduce **branching/versioning strategies** optimized specifically for each memory type's unique nature.
+
+## Core Objective
+Refactor the agent to isolate storage for each memory layer, allow dynamic toggling of these layers, and implement a **Branching (Git-like) Tree Strategy** for Short-term memory, combined with an isolated **Namespace (Multi-Profile) Strategy** for Long-term memory. 
+
+---
+
+## Technical Specifications & Requirements
+
+### 1. The Core Memory Layers
+- **Short-term Memory (Buffer):** A sliding window of the last `N` messages to maintain conversation flow. **Must support a tree-like branching structure.**
+- **Working Memory (Task):** Data related to the active task being worked on *right now* (requirements, active error logs). Linear per session.
+- **Long-term Memory (Core):** User profile, development stack, permanent constraints. **Must support isolated structural profiling.**
+
+### 2. Layer-Specific Branching Architecture
+
+#### A. Dialogue Tree Branching (For Short-term Memory)
+* **Concept:** Conversation flows are rarely linear. The agent must be able to create a checkpoint at any point in the active chat and spawn independent dialogue paths.
+* **Logic:** When switching from `Branch_A` to `Branch_B`, the agent swaps out the active message array.
+* **Token/Quality Impact:** Errors, dead-ends, or alternative code paths generated in `Branch_A` must be physically excluded from the API payload when `Branch_B` is active, preventing "hallucination contamination" and saving tokens during experimentation.
+
+#### B. Namespace Profiling (For Long-term Memory)
+* **Concept:** Direct Git-like branching for a user's personality or global traits causes identity confusion. Instead, Long-term memory must branch via **Namespaces / Profiles** (e.g., `Personal_Profile`, `Work_Project_Alpha`, `Learning_Stack`).
+* **Logic:** Switching the Long-term profile replaces global variables (e.g., changing the preferred language from Kotlin to Python 3.12 globally), ensuring a monolithic but switchable single source of truth.
+
+### 3. Dynamic Generation Modes (Payload Assembly)
+The agent must structure the final JSON payload for the DeepSeek API based on the currently selected active branch and active profile:
+* **`[Short-only]` Mode:** `System Prompt` + `Active Short-term Branch`. (Working and Long-term are completely ignored).
+* **`[Short + Working]` Mode:** `Active Short-term Branch` + `Active Task Context`.
+* **`[Short + Long]` Mode:** `Active Short-term Branch` + `Active Long-term Namespace Profile`.
+* **`[Full-Memory]` Mode:** Merges `Active Short-term Branch` + `Active Task Context` + `Active Long-term Namespace Profile` simultaneously.
+
+### 4. Interface and CLI Requirements
+Implement slash commands to test the branching features seamlessly:
+- **Short-term Tree Commands:**
+  * `/checkpoint <name>` — Create a save point of the current dialogue history.
+  * `/branch <name>` — Spawn a new chat path from the last checkpoint.
+  * `/switch-branch <name>` — Instantly hop to an alternate conversation timeline.
+- **Long-term Profile Commands:**
+  * `/remember <text>` — Ingest a permanent fact into the *active* Long-term profile.
+  * `/switch-profile <name>` — Swap out global user traits (e.g., switching workspace context).
+- **Task Management:**
+  * `/task <text>` — Set or overwrite the active target in Working memory.
+- **Mode Toggle:**
+  * `/mode <mode_name>` — Toggle the payload assembly strategy (e.g., `short_only`, `full_memory`).
+
+### 5. Experimental Validation Scenario
+The code must natively support running the following live experiment in the console:
+1. Create a Long-term profile `[MobileDev]` and save: "My favorite language is Kotlin".
+2. Create a Working task: "Write an authentication module".
+3. Chat in `[Branch_A]` using `Full-Memory` mode -> Discuss implementing it using Ktor Auth.
+4. Create a checkpoint, switch to a new `[Branch_B]`, and switch the mode to `[Short + Working]` (disabling Long-term memory) -> Ask the agent to rewrite the module "in my favorite language". Verify that `Branch_B` fails to know the language (since Long-term is disabled), while `Branch_A` remains intact and unaffected by the query.
+
+## Expected Output
+Generate the complete Python codebase featuring the `DeepSeekAgent` class with multi-layer persistent disk storage (JSON/SQLite), Git-like dialogue arrays, and an interactive CLI. Include a text-based Markdown architecture map explaining how the storage engine maps active branches to active profiles.
