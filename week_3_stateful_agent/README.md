@@ -22,6 +22,12 @@ source ../deepseek-env/bin/activate
 python demo_validation.py
 ```
 
+### Run Profiles Demo
+```bash
+source ../deepseek-env/bin/activate
+python demo_profiles.py
+```
+
 ---
 
 ## Architecture Overview

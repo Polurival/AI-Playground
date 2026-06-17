@@ -180,15 +180,25 @@ class WorkingMemory(MemoryLayer):
 class LongTermMemory(MemoryLayer):
     """User profiles with namespace isolation - permanent constraints & preferences."""
 
+    DEFAULT_META_SETTINGS = {
+        "tone": "Neutral and helpful",
+        "format_preference": "Clear and well-structured",
+        "verbosity": "Medium"
+    }
+
     def __init__(self):
         self.profiles = {}
         self.current_profile = "default"
-        self.profiles["default"] = {}
+        self.profiles["default"] = {
+            "_meta_settings": self.DEFAULT_META_SETTINGS.copy()
+        }
 
     def switch_profile(self, profile_name: str) -> bool:
         """Switch to profile (create if not exists)."""
         if profile_name not in self.profiles:
-            self.profiles[profile_name] = {}
+            self.profiles[profile_name] = {
+                "_meta_settings": self.DEFAULT_META_SETTINGS.copy()
+            }
             print(f"[LONG-TERM] Created new profile: '{profile_name}'")
         self.current_profile = profile_name
         print(f"[LONG-TERM] Switched to profile: '{profile_name}'")
@@ -206,14 +216,39 @@ class LongTermMemory(MemoryLayer):
         self.profiles[self.current_profile][key] = text
         print(f"[LONG-TERM] Profile '{self.current_profile}' recorded: {text[:50]}...")
 
-    def get_profile_text(self) -> str:
-        """Get formatted profile for API."""
+    def set_meta_setting(self, key: str, value: str) -> None:
+        """Set behavioral meta-setting for active profile."""
+        if "_meta_settings" not in self.profiles[self.current_profile]:
+            self.profiles[self.current_profile]["_meta_settings"] = self.DEFAULT_META_SETTINGS.copy()
+
+        self.profiles[self.current_profile]["_meta_settings"][key] = value
+        print(f"[LONG-TERM] Profile '{self.current_profile}' meta-setting updated: {key} = {value}")
+
+    def get_meta_settings(self) -> Dict[str, str]:
+        """Get meta-settings for active profile."""
         profile = self.profiles[self.current_profile]
-        if not profile:
+        if "_meta_settings" not in profile:
+            profile["_meta_settings"] = self.DEFAULT_META_SETTINGS.copy()
+        return profile["_meta_settings"].copy()
+
+    def get_profile_text(self) -> str:
+        """Get formatted profile for API (excludes meta-settings)."""
+        profile = self.profiles[self.current_profile]
+        facts = {k: v for k, v in profile.items() if k != "_meta_settings"}
+
+        if not facts:
             return ""
 
         lines = [f"User Profile ({self.current_profile}):"]
-        for key, value in profile.items():
+        for key, value in facts.items():
+            lines.append(f"  - {key}: {value}")
+        return "\n".join(lines)
+
+    def get_meta_settings_text(self) -> str:
+        """Get formatted meta-settings for system prompt injection."""
+        meta = self.get_meta_settings()
+        lines = ["[BEHAVIORAL CONSTRAINTS FROM PROFILE]"]
+        for key, value in meta.items():
             lines.append(f"  - {key}: {value}")
         return "\n".join(lines)
 
@@ -239,7 +274,11 @@ class LongTermMemory(MemoryLayer):
                     data = json.load(f)
                     if data.get("layer") == "long_term":
                         self.current_profile = data.get("current_profile", "default")
-                        self.profiles = data.get("profiles", {"default": {}})
+                        self.profiles = data.get("profiles", {"default": {"_meta_settings": self.DEFAULT_META_SETTINGS.copy()}})
+                        # Ensure all profiles have meta_settings
+                        for profile_name in self.profiles:
+                            if "_meta_settings" not in self.profiles[profile_name]:
+                                self.profiles[profile_name]["_meta_settings"] = self.DEFAULT_META_SETTINGS.copy()
                         return True
         except (json.JSONDecodeError, IOError) as e:
             print(f"Warning: Could not load long-term memory: {e}")
@@ -249,7 +288,7 @@ class LongTermMemory(MemoryLayer):
         return {
             "current_profile": self.current_profile,
             "profiles_count": len(self.profiles),
-            "facts_in_current": len(self.profiles[self.current_profile]),
+            "facts_in_current": len([k for k in self.profiles[self.current_profile].keys() if k != "_meta_settings"]),
         }
 
 
@@ -279,8 +318,10 @@ class MemoryEngine:
         return True
 
     def get_system_messages(self, base_system_prompt: str) -> List[Dict[str, str]]:
-        """Build system message list based on assembly mode."""
-        messages = [{"role": "system", "content": base_system_prompt}]
+        """Build system message list with dynamic prompt infiltration."""
+        # Dynamic system prompt infiltration based on profile meta-settings
+        injected_prompt = self._infiltrate_system_prompt(base_system_prompt)
+        messages = [{"role": "system", "content": injected_prompt}]
 
         if self.assembly_mode == "short_only":
             pass
@@ -292,6 +333,9 @@ class MemoryEngine:
             long_text = self.long_term.get_profile_text()
             if long_text:
                 messages.append({"role": "system", "content": long_text})
+            meta_text = self.long_term.get_meta_settings_text()
+            if meta_text:
+                messages.append({"role": "system", "content": meta_text})
         elif self.assembly_mode == "full_memory":
             working_text = self.working.get_context_text()
             if working_text:
@@ -299,8 +343,26 @@ class MemoryEngine:
             long_text = self.long_term.get_profile_text()
             if long_text:
                 messages.append({"role": "system", "content": long_text})
+            meta_text = self.long_term.get_meta_settings_text()
+            if meta_text:
+                messages.append({"role": "system", "content": meta_text})
 
         return messages
+
+    def _infiltrate_system_prompt(self, base_prompt: str) -> str:
+        """Inject profile meta-settings into base system prompt."""
+        meta = self.long_term.get_meta_settings()
+        if not meta:
+            return base_prompt
+
+        injected = (
+            f"{base_prompt}\n"
+            f"\n[CRITICAL BEHAVIORAL CONSTRAINTS FROM PROFILE]\n"
+            f"- Tone: {meta.get('tone', 'Neutral and helpful')}\n"
+            f"- Format Preference: {meta.get('format_preference', 'Clear and well-structured')}\n"
+            f"- Verbosity Level: {meta.get('verbosity', 'Medium')}"
+        )
+        return injected
 
     def get_messages_for_api(self, base_system_prompt: str) -> List[Dict[str, str]]:
         """Assemble final message payload based on mode."""

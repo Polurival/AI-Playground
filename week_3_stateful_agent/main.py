@@ -20,6 +20,11 @@ def print_help():
 [LONG-TERM PROFILE COMMANDS]
   /remember <text>           Add permanent fact to active profile
   /switch-profile <name>     Switch global user traits (create if new)
+  /meta <key> <value>        Set profile behavioral meta-setting:
+                               - tone (e.g., "Strict and concise")
+                               - format_preference (e.g., "Code-only")
+                               - verbosity (e.g., "Low", "Medium", "High")
+  /meta-show                 Display current profile's meta-settings
 
 [WORKING MEMORY COMMANDS]
   /task <text>               Set or overwrite active target task
@@ -98,6 +103,11 @@ def main():
                         print(f"\n[LONG-TERM]")
                         print(f"  Current profile: {status['current_profile']}")
                         print(f"  Available profiles: {', '.join(status['long_term_profiles'])}")
+                        meta = status['profile_meta_settings']
+                        print(f"\n[PROFILE META-SETTINGS]")
+                        print(f"  Tone: {meta.get('tone')}")
+                        print(f"  Format Preference: {meta.get('format_preference')}")
+                        print(f"  Verbosity: {meta.get('verbosity')}")
                         print(f"\n[ASSEMBLY]")
                         print(f"  Mode: {status['assembly_mode']}")
                         print(f"  Modes available: {', '.join(MemoryEngine.ASSEMBLY_MODES.keys())}\n")
@@ -161,6 +171,26 @@ def main():
                     elif cmd == "/profiles":
                         profiles = agent.memory.long_term.list_profiles()
                         print(f"Available profiles: {', '.join(profiles)}\n")
+
+                    elif cmd == "/meta":
+                        if not arg:
+                            print("Usage: /meta <key> <value>")
+                            print("Keys: tone, format_preference, verbosity")
+                        else:
+                            parts = arg.split(None, 1)
+                            if len(parts) < 2:
+                                print("Usage: /meta <key> <value>")
+                            else:
+                                key, value = parts[0], parts[1]
+                                agent.set_meta_setting(key, value)
+                                print(f"✓ Meta-setting '{key}' updated")
+
+                    elif cmd == "/meta-show":
+                        meta = agent.get_meta_settings()
+                        print(f"\n[Profile: {agent.memory.long_term.current_profile}]")
+                        print(f"  Tone: {meta.get('tone')}")
+                        print(f"  Format Preference: {meta.get('format_preference')}")
+                        print(f"  Verbosity: {meta.get('verbosity')}\n")
 
                     else:
                         print(f"Unknown command: {cmd}. Type '/help' for list.")

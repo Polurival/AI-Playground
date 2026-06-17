@@ -123,6 +123,15 @@ class DeepSeekAgent:
             self._save_memory()
         return result
 
+    def set_meta_setting(self, key: str, value: str) -> None:
+        """Set profile behavioral meta-setting (tone, format_preference, verbosity)."""
+        self.memory.long_term.set_meta_setting(key, value)
+        self._save_memory()
+
+    def get_meta_settings(self) -> Dict[str, str]:
+        """Get current profile's meta-settings."""
+        return self.memory.long_term.get_meta_settings()
+
     def status(self) -> Dict[str, Any]:
         """Get full agent status."""
         return {
@@ -130,6 +139,7 @@ class DeepSeekAgent:
             "current_branch": self.memory.short_term.current_branch,
             "long_term_profiles": self.memory.long_term.list_profiles(),
             "current_profile": self.memory.long_term.current_profile,
+            "profile_meta_settings": self.memory.long_term.get_meta_settings(),
             "assembly_mode": self.memory.assembly_mode,
             "debug_info": self.memory.get_debug_info(),
         }

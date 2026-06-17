@@ -1,0 +1,28 @@
+# Extension Feature: Dynamic System Prompt Infiltration based on Profile Meta-Settings
+
+## Objective
+Enhance the existing `Namespace Profiling` (Long-term memory) feature. The agent must now analyze the active profile's configuration and **dynamically inject behavioral meta-settings** into the core `System Prompt` before hitting the DeepSeek API.
+
+## Technical Specifications
+
+1. **Profile Metadata Structure:**
+   Extend the Long-term profile object (in JSON/SQLite) to include a structured `meta_settings` dictionary containing:
+   - `tone`: (e.g., "Strict and concise senior engineer" vs "Patient and detailed academic mentor")
+   - `format_preference`: (e.g., "Code-only with minimal text" vs "Step-by-step text explanations with inline comments")
+   - `verbosity`: (e.g., "Low", "Medium", "High")
+
+2. **Dynamic Infiltration Logic:**
+   Inside the agent's payload assembly method, before appending the chat history, rewrite the base `System Prompt` on the fly. 
+   
+   *Example Engine Logic:*
+   ```python
+   base_system = "You are a helpful AI Assistant."
+   profile_meta = self.long_term_memory.get_active_profile_meta()
+   
+   injected_instructions = (
+       f"\n[CRITICAL BEHAVIORAL CONSTRAINTS]\n"
+       f"- Your tone must be: {profile_meta['tone']}.\n"
+       f"- Your response format preference: {profile_meta['format_preference']}.\n"
+       f"- Verbosity level: {profile_meta['verbosity']}."
+   )
+   final_system_prompt = base_system + injected_instructions
