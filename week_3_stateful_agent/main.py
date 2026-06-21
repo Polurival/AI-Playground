@@ -1,5 +1,6 @@
 from agent import DeepSeekAgent
 from memory import MemoryEngine
+from pipeline import TaskPipeline
 
 
 def print_banner():
@@ -28,6 +29,17 @@ def print_help():
 
 [WORKING MEMORY COMMANDS]
   /task <text>               Set or overwrite active target task
+
+[TASK PIPELINE — separate agent per stage, no shared dialogue]
+  /start-task <description>  Start pipeline. Spawns a fresh PLANNING agent.
+  /ready                     Finalize plan, discard planning agent, spawn fresh EXECUTION agent.
+  /validate                  Spawn fresh VALIDATION agent (sees only plan+structure, not dialogue).
+                              Auto-advances to a fresh DONE agent if valid & invariants OK.
+  /fix                       Spawn a fresh EXECUTION agent fed last validation's issue list.
+  /reopen [revision text]    From DONE only: back to a fresh PLANNING agent fed the prior
+                              plan/structure/validation as context (revise a finished task).
+  /pipeline-status           Show current pipeline stage & handoff state.
+                              (Plain chat during the planning stage talks to the planning agent.)
 
 [MODE TOGGLE]
   /mode <mode_name>          Select assembly strategy:
@@ -72,6 +84,7 @@ def main():
 
     try:
         agent = DeepSeekAgent()
+        pipeline: TaskPipeline | None = None
         print("✓ Agent initialized with multi-layer memory")
         print("✓ Type '/help' for commands\n")
 
@@ -192,14 +205,85 @@ def main():
                         print(f"  Format Preference: {meta.get('format_preference')}")
                         print(f"  Verbosity: {meta.get('verbosity')}\n")
 
+                    elif cmd == "/start-task":
+                        if not arg:
+                            print("Usage: /start-task <description>")
+                        else:
+                            pipeline = TaskPipeline(arg)
+                            response, metrics = pipeline.start_planning()
+                            print(f"\n[PLANNING — agent #1] {response}")
+                            print_metrics(metrics)
+
+                    elif cmd == "/ready":
+                        if pipeline is None or pipeline.stage != "planning":
+                            print("✗ No task in PLANNING stage. Use /start-task first.")
+                        else:
+                            pipeline.finalize_planning()
+                            print("✓ Plan captured. Planning agent discarded.")
+                            response, metrics = pipeline.run_execution()
+                            print(f"\n[EXECUTION — agent #2, fresh memory] {response}")
+                            print_metrics(metrics)
+
+                    elif cmd == "/validate":
+                        if pipeline is None or pipeline.structure_text is None:
+                            print("✗ No structure to validate yet. Use /ready first.")
+                        else:
+                            response, metrics, is_valid = pipeline.run_validation()
+                            print(f"\n[VALIDATION — agent #3, fresh memory] {response}")
+                            print_metrics(metrics)
+                            if is_valid:
+                                print("\n✓ Valid & invariants OK. Spawning DONE agent...")
+                                response, metrics = pipeline.run_done()
+                                print(f"\n[DONE — agent #4, fresh memory] {response}")
+                                print_metrics(metrics)
+                            else:
+                                print("\n✗ Issues found (or invariants violated). Use /fix to spawn a correction agent.")
+
+                    elif cmd == "/fix":
+                        if pipeline is None or pipeline.validation_text is None:
+                            print("✗ Nothing to fix. Run /validate first.")
+                        else:
+                            response, metrics = pipeline.run_execution(corrections=pipeline.validation_text)
+                            print(f"\n[EXECUTION: corrections — fresh agent, round {pipeline.validation_round}] {response}")
+                            print_metrics(metrics)
+
+                    elif cmd == "/reopen":
+                        if pipeline is None or pipeline.stage != "done":
+                            print(f"✗ 'reopen' only applies to a finished task "
+                                  f"(current stage: '{pipeline.stage if pipeline else 'none'}').")
+                        else:
+                            response, metrics = pipeline.reopen_planning(arg or None)
+                            print(f"\n[PLANNING — agent #1 (reopened), fresh memory] {response}")
+                            print_metrics(metrics)
+
+                    elif cmd == "/pipeline-status":
+                        if pipeline is None:
+                            print("✗ No active pipeline. Use /start-task to begin.")
+                        else:
+                            status = pipeline.status()
+                            print(f"\n[PIPELINE STATUS]")
+                            print(f"  Task: {status['task_description']}")
+                            print(f"  Stage: {status['stage']}")
+                            print(f"  Validation round: {status['validation_round']}")
+                            print(f"  Invariants: {status['invariants']}")
+                            print(f"  Invariants satisfied: {status['invariants_satisfied']}")
+                            print(f"  Has plan / structure / validation: "
+                                  f"{status['has_plan']} / {status['has_structure']} / {status['has_validation']}\n")
+
                     else:
                         print(f"Unknown command: {cmd}. Type '/help' for list.")
 
                 else:
-                    # Send user message
-                    response, metrics = agent.send_message(user_input)
-                    print(f"\nAgent: {response}")
-                    print_metrics(metrics)
+                    if pipeline is not None and pipeline.stage == "planning":
+                        # Plain chat during planning goes to the planning-stage agent only.
+                        response, metrics = pipeline.chat_planning(user_input)
+                        print(f"\n[PLANNING — agent #1] {response}")
+                        print_metrics(metrics)
+                    else:
+                        # No active pipeline (or pipeline past planning) -> general chat agent.
+                        response, metrics = agent.send_message(user_input)
+                        print(f"\nAgent: {response}")
+                        print_metrics(metrics)
 
             except KeyboardInterrupt:
                 print("\nInterrupted. Type '/exit' to quit.")

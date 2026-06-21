@@ -124,6 +124,22 @@ Current Structure: {task_structure}
 """
 
 
+# Explicit transition table — the single source of truth for which state can move to which.
+# Forward path:  idle -> planning -> execution -> validation -> done
+# Allowed back:  planning -> idle, execution -> planning, validation -> execution, done -> validation
+# Loop:          validation -> execution (correction loop)
+# Reopen:        done -> planning (user-initiated revision of an already-finished task)
+# Anything not listed here is an illegal jump and is refused in code, regardless of what the
+# model says (e.g. [STATE: done]) or what the user types (e.g. "mark valid").
+ALLOWED_TRANSITIONS: Dict[str, set] = {
+    "idle": {"planning"},
+    "planning": {"execution", "idle"},
+    "execution": {"validation", "planning"},
+    "validation": {"execution", "done"},
+    "done": {"validation", "planning"},
+}
+
+
 class DeepSeekAgent:
     """Multi-layer memory agent with dynamic context assembly."""
 
@@ -211,11 +227,22 @@ class DeepSeekAgent:
         self._save_memory()
         return self.send_message(f"[TASK START]\n{description}")
 
-    def set_task_state(self, state: str) -> bool:
-        """Validate & transition state. DONE is hard-blocked while invariants are unresolved/violated,
-        even on an explicit user override (e.g. 'mark valid') — code-enforced, not just prompt-enforced."""
+    def set_task_state(self, state: str, force: bool = False) -> bool:
+        """Validate & transition state against ALLOWED_TRANSITIONS. DONE is additionally
+        hard-blocked while invariants are unresolved/violated, even on an explicit user
+        override (e.g. 'mark valid') — code-enforced, not just prompt-enforced.
+
+        force=True bypasses the transition table (used for legitimate resets like idle/start_task)
+        but never bypasses the invariants gate on done."""
         valid_states = ["planning", "execution", "validation", "done", "idle"]
         if state not in valid_states:
+            return False
+
+        if not force and state not in ALLOWED_TRANSITIONS.get(self.task_state, set()):
+            print(
+                f"⛔ Blocked: illegal transition {self.task_state} → {state}. "
+                f"Allowed from '{self.task_state}': {sorted(ALLOWED_TRANSITIONS.get(self.task_state, set()))}"
+            )
             return False
 
         if state == "done" and self.invariants_satisfied is not True:
@@ -315,6 +342,16 @@ class DeepSeekAgent:
         parsed_state = state_match.group(1).lower()
         valid_states = {"planning", "execution", "validation", "done", "idle"}
         if parsed_state not in valid_states:
+            return
+
+        if parsed_state == self.task_state:
+            return  # no-op, model just restated current state
+
+        if parsed_state not in ALLOWED_TRANSITIONS.get(self.task_state, set()):
+            print(
+                f"⛔ Model declared illegal jump {self.task_state} → {parsed_state} "
+                f"— ignored, state stays at '{self.task_state}'."
+            )
             return
 
         if parsed_state == "done" and self.invariants_satisfied is not True:

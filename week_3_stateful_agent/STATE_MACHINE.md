@@ -145,6 +145,35 @@ Automatic on state transitions.
 
 ---
 
+## Code-Enforced Transition Table
+
+`ALLOWED_TRANSITIONS` in `agent.py` is the single source of truth for legal moves — checked in
+both `set_task_state()` (programmatic/CLI) and `_sync_state_from_response()` (model's own
+`[STATE: x]` marker). Anything not listed is refused, no matter who asks for it (user command,
+"mark valid", or the model itself):
+
+```
+idle       -> planning
+planning   -> execution, idle
+execution  -> validation, planning
+validation -> done, execution
+done       -> validation
+```
+
+This is what makes "no implementation before an approved plan" and "no done without validation"
+actual code guarantees rather than just prompt instructions:
+- `execution` is unreachable from `idle` — must pass through `planning` first.
+- `done` is unreachable from anywhere except `validation` — and even from `validation`, the
+  invariants gate (above) still applies on top of the transition check.
+- If the model emits a marker for an illegal jump (e.g. `[STATE: done]` while in `planning`),
+  `_sync_state_from_response()` ignores it and logs `⛔ Model declared illegal jump ...` —
+  state stays where it was.
+
+Run `python demo_transition_guard.py` for an offline (no API key/network) proof of all of the
+above, including the pause → resume continuity check.
+
+---
+
 ## Invariants (hard constraints)
 
 Invariants are non-negotiable rules — chosen architecture, accepted tech decisions, stack limits,

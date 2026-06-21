@@ -28,6 +28,13 @@ source ../deepseek-env/bin/activate
 python demo_profiles.py
 ```
 
+### Run Multi Agent Pipeline Demo
+```bash
+source ../deepseek-env/bin/activate
+python demo_multi_agent_pipeline.py
+# Commands: ready | validate | fix | reopen | status | exit
+```
+
 ---
 
 ## Architecture Overview
