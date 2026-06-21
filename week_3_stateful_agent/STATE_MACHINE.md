@@ -145,6 +145,55 @@ Automatic on state transitions.
 
 ---
 
+## Invariants (hard constraints)
+
+Invariants are non-negotiable rules — chosen architecture, accepted tech decisions, stack limits,
+business rules — that the agent must never violate, even on explicit user request.
+
+**Storage:** separate from dialogue. `InvariantsMemory` (`memory.py`) persists to its own
+`invariants.json` file, distinct from `short_term.json` / `working.json` / `long_term.json`.
+It's injected into every API call as its own system message (`MemoryEngine.get_system_messages`),
+regardless of assembly mode, so it's never trimmed by the dialogue window.
+
+**Setting them programmatically:**
+```python
+agent.set_invariants(["Backend must be FastAPI", "No third-party paid APIs", "SQLite only"])
+agent.add_invariant("All endpoints must be stateless")
+agent.get_invariants()
+```
+
+**Setting them through chat (the normal path):** in `PLANNING`, if no invariants exist yet, the agent
+asks the user for them. Whatever the user types in chat is NOT persisted automatically — chat is just
+the dialogue layer. To actually persist, the model is required to end that turn with a machine-readable
+block:
+```
+[INVARIANTS_SET]
+Must be an Android app
+Must use MVVM architecture
+[/INVARIANTS_SET]
+```
+`_sync_state_from_response()` regexes this block out of the model's reply and calls `set_invariants()`
+with the full parsed list (always the complete current set, not a diff). The same block is required any
+time the user explicitly amends an invariant later — the model must flag the conflict, get explicit
+confirmation, then re-emit the updated full list. Without this marker, invariants stay empty even if
+the conversation "talks about" them — this was a real bug found in testing (model discussed invariants
+in chat but `invariants.json` stayed `{"invariants": []}` and the architecture was later swapped from
+MVVM to MVI with zero pushback, since there was nothing in the hard-constraint store to violate).
+
+**Enforcement at VALIDATION (code-level, not just prompt-level):**
+- The agent's validation response must end with `[INVARIANTS: OK]` or `[INVARIANTS: VIOLATED]`.
+- `_sync_state_from_response()` parses that marker and sets `agent.invariants_satisfied`.
+- `set_task_state("done")` and the auto-transition path in `send_message` both refuse to enter
+  `done` while `invariants_satisfied is not True` — forcing the state back to `execution` instead.
+- This holds even if the user types `mark valid` or explicitly asks to skip ahead: the check is a
+  Python `if`, not something the model can be talked out of.
+
+**Conflict handling:** when a request would violate an invariant, the agent must name the exact
+invariant, explain why the request conflicts with it, and propose a compliant alternative instead
+of silently complying or silently refusing.
+
+---
+
 ## Run Demo
 
 ```bash

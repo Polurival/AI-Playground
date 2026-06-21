@@ -292,6 +292,70 @@ class LongTermMemory(MemoryLayer):
         }
 
 
+class InvariantsMemory(MemoryLayer):
+    """Hard constraints (architecture, tech stack, business rules) - separate from dialogue, always enforced, never trimmed."""
+
+    def __init__(self):
+        self.invariants: List[str] = []
+
+    def add(self, text: str) -> None:
+        self.invariants.append(text)
+        print(f"[INVARIANTS] Added: {text[:60]}...")
+
+    def set_all(self, items: List[str]) -> None:
+        self.invariants = list(items)
+        print(f"[INVARIANTS] Set {len(items)} invariant(s)")
+
+    def remove(self, index: int) -> bool:
+        if 0 <= index < len(self.invariants):
+            del self.invariants[index]
+            return True
+        return False
+
+    def list_all(self) -> List[str]:
+        return list(self.invariants)
+
+    def clear(self) -> None:
+        self.invariants = []
+
+    def get_text(self) -> str:
+        """Formatted block for injection as a standalone system message."""
+        if not self.invariants:
+            return ""
+        lines = ["[HARD INVARIANTS — MUST NEVER BE VIOLATED, IN ANY STATE]"]
+        for i, inv in enumerate(self.invariants, 1):
+            lines.append(f"  {i}. {inv}")
+        lines.append(
+            "Any plan, proposal, or implementation that conflicts with an invariant above "
+            "MUST be refused or revised — even if the user explicitly asks for it. "
+            "When refusing, name the exact invariant violated and explain why."
+        )
+        return "\n".join(lines)
+
+    def save(self, filepath: str) -> None:
+        try:
+            data = {"layer": "invariants", "invariants": self.invariants}
+            with open(filepath, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except IOError as e:
+            print(f"Error saving invariants: {e}")
+
+    def load(self, filepath: str) -> bool:
+        try:
+            if os.path.exists(filepath):
+                with open(filepath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    if data.get("layer") == "invariants":
+                        self.invariants = data.get("invariants", [])
+                        return True
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Could not load invariants: {e}")
+        return False
+
+    def get_debug_info(self) -> Dict[str, Any]:
+        return {"invariants_count": len(self.invariants)}
+
+
 class MemoryEngine:
     """Three-layer memory management with dynamic context assembly."""
 
@@ -306,6 +370,7 @@ class MemoryEngine:
         self.short_term = ShortTermMemory(window_size=window_size)
         self.working = WorkingMemory()
         self.long_term = LongTermMemory()
+        self.invariants = InvariantsMemory()
         self.assembly_mode = "full_memory"
 
     def set_mode(self, mode_name: str) -> bool:
@@ -322,6 +387,12 @@ class MemoryEngine:
         # Dynamic system prompt infiltration based on profile meta-settings
         injected_prompt = self._infiltrate_system_prompt(base_system_prompt)
         messages = [{"role": "system", "content": injected_prompt}]
+
+        # Invariants are hard constraints - always injected regardless of assembly mode,
+        # kept as a separate system message so they never get trimmed with the dialogue window.
+        invariants_text = self.invariants.get_text()
+        if invariants_text:
+            messages.append({"role": "system", "content": invariants_text})
 
         if self.assembly_mode == "short_only":
             pass
@@ -379,12 +450,14 @@ class MemoryEngine:
         self.short_term.save(f"{prefix}short_term.json")
         self.working.save(f"{prefix}working.json")
         self.long_term.save(f"{prefix}long_term.json")
+        self.invariants.save(f"{prefix}invariants.json")
 
     def load(self, prefix: str = "") -> None:
         """Load all layers from disk."""
         self.short_term.load(f"{prefix}short_term.json")
         self.working.load(f"{prefix}working.json")
         self.long_term.load(f"{prefix}long_term.json")
+        self.invariants.load(f"{prefix}invariants.json")
 
     def get_debug_info(self) -> Dict[str, Any]:
         return {
@@ -392,4 +465,5 @@ class MemoryEngine:
             "short_term": self.short_term.get_debug_info(),
             "working": self.working.get_debug_info(),
             "long_term": self.long_term.get_debug_info(),
+            "invariants": self.invariants.get_debug_info(),
         }

@@ -1,4 +1,5 @@
 import os
+import re
 from openai import OpenAI
 import tiktoken
 from typing import Tuple, Dict, Any, Optional
@@ -13,6 +14,25 @@ planning → execution → validation ⟷ execution (loop until valid) → done
 
 ### PLANNING
 Role: Architect the solution
+Step 0 — Invariants: If the [HARD INVARIANTS] system block is EMPTY or absent, before proposing anything
+ask the user explicitly: "What invariants/constraints must never be violated? (architecture decisions,
+tech stack limits, business rules)". Wait for their answer before finalizing the plan. If invariants
+already exist, restate them briefly and design the plan to respect every one of them.
+
+CRITICAL — persisting invariants: the [HARD INVARIANTS] system block is the ONLY thing that actually
+gets enforced by the surrounding program. Anything you merely say in chat about invariants is NOT
+saved anywhere unless you also emit the machine-readable block below. So every time the user gives you
+invariants for the first time, or explicitly changes/adds/removes one later in ANY state, you MUST end
+that same response with the full, current, complete list (not a diff) wrapped exactly like this:
+[INVARIANTS_SET]
+first invariant
+second invariant
+[/INVARIANTS_SET]
+If the user says "none", emit an empty block: [INVARIANTS_SET][/INVARIANTS_SET]
+Never silently comply with a request that contradicts an existing invariant (e.g. "change architecture
+to X" when X conflicts with an accepted invariant) — point out the conflict, ask the user to explicitly
+confirm the amendment, and only then re-emit the updated [INVARIANTS_SET] block.
+
 Output structure:
 1. Processes/Features
 2. Design & UI/UX
@@ -25,40 +45,52 @@ Auto-transition: Move to EXECUTION state.
 
 ### EXECUTION
 Role: Propose implementation structure
+Before proposing anything, check every item against the [HARD INVARIANTS] block. If a natural solution
+would violate one, do NOT propose it — refuse that part explicitly, name the invariant, explain why,
+and propose a compliant alternative instead.
+
 Output structure:
 - Directory tree
 - File list with brief descriptions
 - Key files with pseudo-code/structure outline
 - Dependencies & imports
 
-When called from VALIDATION (loop mode):
+When called from VALIDATION (loop mode, including invariant violations):
 - Show [EXECUTION: corrections] header
-- List detected issues from validation
-- Provide corrected structure addressing each issue
-- Map corrections back to plan
+- List detected issues from validation, INCLUDING any invariant violations, each tagged "(invariant violation)"
+- Provide corrected structure addressing each issue, explicitly re-checked against [HARD INVARIANTS]
+- Map corrections back to plan and to the specific invariant they fix
 
 Completion criteria: User says "validate this" OR you ask "Ready to validate structure?" and user confirms.
 Auto-transition: Move to VALIDATION state.
 
 ### VALIDATION
-Role: Cross-check implementation against plan
+Role: Cross-check implementation against plan AND against [HARD INVARIANTS]
 Check:
 1. Does each plan point map to implementation?
 2. Are all features covered?
 3. Is architecture followed?
 4. Any conflicts or gaps?
+5. Does ANY part of the structure conflict with ANY item in [HARD INVARIANTS]? Check each invariant one by one.
 
-Output: Validation checklist + issues
+Output: Validation checklist + issues, with a dedicated "Invariants check" section listing each invariant
+and a ✓/✗ verdict against it.
 
-If NO ISSUES found:
-- Confirm: "✓ Structure valid and aligns with plan"
+You MUST end your validation response with exactly one of these machine-readable markers on its own line:
+`[INVARIANTS: OK]`  — no invariant is violated
+`[INVARIANTS: VIOLATED]` — at least one invariant is violated (list which ones above this line)
+
+If NO ISSUES and NO invariant violations:
+- Confirm: "✓ Structure valid and aligns with plan and invariants"
 - Ask: "Proceed to summary?"
 - Auto-transition: DONE state
 
-If ISSUES FOUND:
-- List all discrepancies with references to plan
+If ISSUES FOUND or ANY invariant is violated (even just one):
+- List all discrepancies with references to plan, and all violated invariants by name
 - State: [VALIDATION: issues found → returning to EXECUTION]
 - Auto-transition: EXECUTION state (correction loop)
+- This is non-negotiable: DONE is unreachable while any invariant is violated, even if the user explicitly
+  asks to skip ahead, mark it valid, or finish anyway. Explain this refusal plainly, citing the invariant.
 
 ### DONE
 Role: Summarize & suggest improvements
@@ -72,13 +104,16 @@ Output:
 - "pause" → Pause at current state. Ask user to resume when ready.
 - "resume" → Continue from paused state without re-explaining.
 - "back to [STATE]" → Jump to previous state.
-- "mark valid" → Override validation, force DONE transition.
+- "mark valid" → Attempts to force DONE. This is ALSO enforced in code: if invariants are unresolved,
+  the system will refuse the transition regardless of what you or the user say.
 
 ## RULES
 - Always show current state at start of response: `[STATE: {{name}}]`
 - Only transition after explicit user confirmation OR clear completion criteria met
 - On pause/resume: Don't repeat explanations, just continue work
-- Validation loop: Continue until all issues resolved
+- Validation loop: Continue until all issues resolved AND all invariants pass
+- Invariants are a hard ceiling on the whole task, not just validation — keep them in mind during
+  PLANNING and EXECUTION too, not only when explicitly validating
 - Be concise, structured, actionable
 
 ## CONTEXT
@@ -116,6 +151,8 @@ class DeepSeekAgent:
         self.task_structure = None
         self.paused = False
         self.paused_state = None
+        # None = not yet validated this cycle, True/False = last validation verdict
+        self.invariants_satisfied: Optional[bool] = None
 
         # Set system prompt
         if use_state_machine:
@@ -169,19 +206,32 @@ class DeepSeekAgent:
         self.task_state = "planning"
         self.task_plan = None
         self.task_structure = None
+        self.invariants_satisfied = None
         self._update_state_machine_prompt()
         self._save_memory()
         return self.send_message(f"[TASK START]\n{description}")
 
     def set_task_state(self, state: str) -> bool:
-        """Validate & transition state."""
+        """Validate & transition state. DONE is hard-blocked while invariants are unresolved/violated,
+        even on an explicit user override (e.g. 'mark valid') — code-enforced, not just prompt-enforced."""
         valid_states = ["planning", "execution", "validation", "done", "idle"]
-        if state in valid_states:
-            self.task_state = state
+        if state not in valid_states:
+            return False
+
+        if state == "done" and self.invariants_satisfied is not True:
+            print(
+                "⛔ Blocked: cannot enter DONE while invariants are unresolved or violated. "
+                "Returning to EXECUTION to fix the discrepancy first."
+            )
+            self.task_state = "execution"
             self._update_state_machine_prompt()
             self._save_memory()
-            return True
-        return False
+            return False
+
+        self.task_state = state
+        self._update_state_machine_prompt()
+        self._save_memory()
+        return True
 
     def set_task_plan(self, plan: str) -> None:
         """Store task plan."""
@@ -219,7 +269,61 @@ class DeepSeekAgent:
             "paused_state": self.paused_state,
             "task_plan": self.task_plan,
             "task_structure": self.task_structure,
+            "invariants_satisfied": self.invariants_satisfied,
+            "invariants": self.memory.invariants.list_all(),
         }
+
+    def set_invariants(self, items: list) -> None:
+        """Replace the invariant set (stored separately from dialogue)."""
+        self.memory.invariants.set_all(items)
+        self.invariants_satisfied = None
+        self._save_memory()
+
+    def add_invariant(self, text: str) -> None:
+        """Add a single invariant."""
+        self.memory.invariants.add(text)
+        self.invariants_satisfied = None
+        self._save_memory()
+
+    def get_invariants(self) -> list:
+        """List current invariants."""
+        return self.memory.invariants.list_all()
+
+    def _sync_state_from_response(self, assistant_response: str) -> None:
+        """Parse [STATE: x] / [INVARIANTS: OK|VIOLATED] markers from the model's own reply and
+        sync code-side state. DONE is hard-blocked here too, so the model can't self-report its
+        way past unresolved invariants regardless of what the user asked it to say."""
+        if not self.use_state_machine:
+            return
+
+        set_match = re.search(
+            r"\[INVARIANTS_SET\](.*?)\[/INVARIANTS_SET\]", assistant_response, re.IGNORECASE | re.DOTALL
+        )
+        if set_match:
+            raw_items = set_match.group(1).strip().splitlines()
+            items = [re.sub(r"^[\-\*\d\.\)\s]+", "", line).strip() for line in raw_items]
+            items = [item for item in items if item]
+            self.set_invariants(items)
+
+        inv_match = re.search(r"\[INVARIANTS:\s*(OK|VIOLATED)\]", assistant_response, re.IGNORECASE)
+        if inv_match:
+            self.invariants_satisfied = inv_match.group(1).upper() == "OK"
+
+        state_match = re.search(r"\[STATE:\s*(\w+)\]", assistant_response, re.IGNORECASE)
+        if not state_match:
+            return
+        parsed_state = state_match.group(1).lower()
+        valid_states = {"planning", "execution", "validation", "done", "idle"}
+        if parsed_state not in valid_states:
+            return
+
+        if parsed_state == "done" and self.invariants_satisfied is not True:
+            print(
+                "⛔ Model attempted DONE while invariants unresolved/violated — overridden to EXECUTION."
+            )
+            self.task_state = "execution"
+        else:
+            self.task_state = parsed_state
 
     def _count_tokens(self, messages: list) -> int:
         """Count tokens in message list."""
@@ -249,6 +353,7 @@ class DeepSeekAgent:
 
             assistant_response = response.choices[0].message.content
             self.memory.add_message("assistant", assistant_response)
+            self._sync_state_from_response(assistant_response)
             self._save_memory()
 
             metrics = {

@@ -18,6 +18,7 @@ def run_state_machine_demo():
     print_header("Task State Machine Agent Demo")
     print("Modes: planning → execution → validation ⟷ execution → done")
     print("Commands: pause | resume | status | back | mark valid | exit")
+    print("Invariants: invariants | add-invariant <text> | clear-invariants")
     print()
 
     # Initialize agent with state machine enabled
@@ -35,7 +36,8 @@ def run_state_machine_demo():
 
     # Interactive loop
     while True:
-        user_input = input("\n> ").strip().lower()
+        raw_input_text = input("\n> ").strip()
+        user_input = raw_input_text.lower()
 
         if not user_input:
             continue
@@ -44,6 +46,30 @@ def run_state_machine_demo():
         if user_input == "exit" or user_input == "quit":
             print("\n👋 Goodbye!")
             break
+
+        elif user_input == "invariants":
+            invariants = agent.get_invariants()
+            if not invariants:
+                print("📜 No invariants defined yet.")
+            else:
+                print("📜 Current invariants:")
+                for i, inv in enumerate(invariants, 1):
+                    print(f"  {i}. {inv}")
+            continue
+
+        elif user_input.startswith("add-invariant "):
+            text = raw_input_text[len("add-invariant "):].strip()
+            if text:
+                agent.add_invariant(text)
+                print(f"✅ Invariant added: {text}")
+            continue
+
+        elif user_input == "clear-invariants":
+            agent.memory.invariants.clear()
+            agent.invariants_satisfied = None
+            agent._save_memory()
+            print("🗑️  Invariants cleared.")
+            continue
 
         elif user_input == "pause":
             agent.pause_task()
@@ -65,6 +91,8 @@ def run_state_machine_demo():
             print(f"  Description: {status['task_description']}")
             print(f"  State: {status['current_state']}")
             print(f"  Paused: {status['paused']}")
+            print(f"  Invariants satisfied: {status['invariants_satisfied']}")
+            print(f"  Invariants count: {len(status['invariants'])}")
             if status['task_plan']:
                 print(f"  Plan: {status['task_plan'][:100]}...")
             if status['task_structure']:
@@ -85,7 +113,7 @@ def run_state_machine_demo():
             continue
 
         # Regular chat message
-        response, metrics = agent.send_message(user_input)
+        response, metrics = agent.send_message(raw_input_text)
         print(f"\n[{agent.task_state.upper()}]\n{response}")
         print(f"\nTokens: prompt={metrics['prompt_tokens']}, completion={metrics['completion_tokens']}, total={metrics['total_tokens']}")
 
