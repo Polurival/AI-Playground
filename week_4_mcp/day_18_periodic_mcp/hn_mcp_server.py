@@ -2,7 +2,7 @@
 """
 HackerNews Digest MCP-сервер.
 
-Инструменты:
+Инструменты (оригинальные):
   collect_now          — немедленный сбор данных из HN
   start_scheduler      — запуск фонового демона-сборщика по расписанию
   stop_scheduler       — остановка демона
@@ -10,6 +10,11 @@ HackerNews Digest MCP-сервер.
   get_digest           — дайджест топ-историй за период (фильтры: часы, рейтинг, ключевое слово)
   get_stories          — сырые данные историй в JSON
   clear_old_data       — удаление устаревших записей
+
+Инструменты (пайплайн — Task 19):
+  search_hn            — шаг 1: получить данные из HN API (без сохранения), вернуть JSON
+  summarize_stories    — шаг 2: принять JSON историй, вернуть отформатированный текст-сводку
+  save_to_file         — шаг 3: сохранить текст в файл (data/digests/)
 
 Данные хранятся в data/hn_digest.db (SQLite).
 Демон-планировщик — hn_collector.py, запускается как отдельный процесс.
@@ -35,6 +40,7 @@ mcp = FastMCP("hn-digest-mcp")
 DATA_DIR = Path(__file__).parent / "data"
 DB_PATH = DATA_DIR / "hn_digest.db"
 PID_FILE = DATA_DIR / "collector.pid"
+DIGESTS_DIR = DATA_DIR / "digests"
 COLLECTOR_SCRIPT = str(Path(__file__).parent / "hn_collector.py")
 HN_BASE = "https://hacker-news.firebaseio.com/v0"
 
@@ -330,6 +336,132 @@ def clear_old_data(older_than_days: int = 7) -> str:
         ).rowcount
 
     return f"Удалено: {deleted_s} историй и {deleted_l} лог-записей старше {older_than_days} дн."
+
+
+# ── Пайплайн-инструменты (Task 19: MCP tool composition) ─────────────────────
+
+
+@mcp.tool()
+def search_hn(limit: int = 20, keyword: str = "", min_score: int = 0) -> str:
+    """Шаг 1 пайплайна: получает топ-истории HN из API и возвращает JSON без сохранения в БД.
+
+    Args:
+        limit: сколько историй получить (по умолчанию 20, максимум 100).
+        keyword: фильтр по ключевому слову в заголовке (необязательно).
+        min_score: минимальный рейтинг (по умолчанию 0 — все).
+    """
+    limit = min(max(1, limit), 100)
+    fetch_limit = min(limit * 4, 200)  # берём с запасом для фильтрации
+
+    try:
+        with httpx.Client(timeout=15) as client:
+            resp = client.get(f"{HN_BASE}/topstories.json")
+            resp.raise_for_status()
+            ids = resp.json()[:fetch_limit]
+
+            stories: list[dict] = []
+            for story_id in ids:
+                if len(stories) >= limit:
+                    break
+                try:
+                    r = client.get(f"{HN_BASE}/item/{story_id}.json")
+                    r.raise_for_status()
+                    item = r.json()
+                    if not item or item.get("type") != "story":
+                        continue
+                    title = item.get("title", "")
+                    score = item.get("score", 0)
+                    if keyword and keyword.lower() not in title.lower():
+                        continue
+                    if score < min_score:
+                        continue
+                    stories.append(
+                        {
+                            "hn_id": item["id"],
+                            "title": title,
+                            "url": item.get("url", ""),
+                            "score": score,
+                            "comments": item.get("descendants", 0),
+                            "author": item.get("by", ""),
+                            "hn_url": f"https://news.ycombinator.com/item?id={item['id']}",
+                        }
+                    )
+                except Exception:
+                    continue
+
+        return json.dumps(stories, ensure_ascii=False, indent=2)
+
+    except Exception as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
+
+
+@mcp.tool()
+def summarize_stories(stories_json: str, top_n: int = 10, style: str = "digest") -> str:
+    """Шаг 2 пайплайна: принимает JSON историй из search_hn и возвращает текстовую сводку.
+
+    Args:
+        stories_json: JSON-строка из инструмента search_hn.
+        top_n: сколько лучших историй включить в сводку (по умолчанию 10).
+        style: формат вывода — "digest" (рейтинг + заголовок + ссылка),
+               "brief" (только заголовки), "full" (все детали).
+    """
+    try:
+        data = json.loads(stories_json)
+    except Exception as e:
+        return f"Ошибка парсинга JSON: {e}"
+
+    if isinstance(data, dict) and "error" in data:
+        return f"Ошибка в данных: {data['error']}"
+
+    if not isinstance(data, list) or not data:
+        return "Нет данных для формирования сводки."
+
+    stories = sorted(data, key=lambda x: x.get("score", 0), reverse=True)[:top_n]
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    lines = [f"HackerNews Top-{len(stories)} | {now}", "=" * 50, ""]
+
+    for i, s in enumerate(stories, 1):
+        if style == "brief":
+            lines.append(f"{i}. {s['title']}")
+        elif style == "full":
+            lines.append(f"{i}. {s['title']}")
+            lines.append(f"   ⬆ {s['score']}  💬 {s['comments']}  by {s.get('author', '?')}")
+            if s.get("url"):
+                lines.append(f"   {s['url'][:100]}")
+            lines.append(f"   HN: {s.get('hn_url', '')}")
+            lines.append("")
+        else:
+            url_part = f"\n   {s['url'][:80]}" if s.get("url") else ""
+            lines.append(
+                f"{i}. ⬆{s['score']} 💬{s['comments']}  {s['title']}{url_part}"
+            )
+
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def save_to_file(content: str, filename: str = "") -> str:
+    """Шаг 3 пайплайна: сохраняет текст в файл в папку data/digests/.
+
+    Args:
+        content: текст для сохранения (обычно результат summarize_stories).
+        filename: имя файла (необязательно; если пусто — генерируется по timestamp).
+    """
+    DIGESTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not filename:
+        filename = f"digest_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+
+    safe_name = "".join(
+        c for c in filename if c.isalnum() or c in "._- "
+    ).strip()
+    if not safe_name:
+        safe_name = f"digest_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+
+    filepath = DIGESTS_DIR / safe_name
+    filepath.write_text(content, encoding="utf-8")
+
+    return f"Сохранено: {filepath} ({len(content)} символов, {len(content.splitlines())} строк)"
 
 
 if __name__ == "__main__":

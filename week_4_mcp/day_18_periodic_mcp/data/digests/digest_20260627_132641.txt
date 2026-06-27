@@ -1,0 +1,32 @@
+HackerNews Top-10 | 2026-06-27 13:26
+==================================================
+
+1. ⬆673 💬267  DSpark: Speculative decoding accelerates LLM inference [pdf]
+   https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf
+
+2. ⬆423 💬159  Zuckerberg's Increasingly Bizarre War on Whistleblowers
+   https://pluralistic.net/2026/06/27/zuckerstreisand-2/
+
+3. ⬆419 💬76  OpenRA
+   https://www.openra.net/
+
+4. ⬆403 💬167  Anonymous GitHub account mass-dropping undisclosed 0-days
+   https://github.com/bikini/exploitarium
+
+5. ⬆370 💬118  Fintech Engineering Handbook
+   https://w.pitula.me/fintech-engineering-handbook/
+
+6. ⬆267 💬175  If you can't hold it, you don't own it
+   https://dervis.de/physical/
+
+7. ⬆168 💬99  Linux on Older Hardware: The Complete Revival Guide
+   https://www.fosslinux.com/158206/linux-on-older-hardware-revival-guide.htm
+
+8. ⬆142 💬40  Suspicious Discontinuities (2020)
+   https://danluu.com/discontinuities/
+
+9. ⬆138 💬132  Long Wave radio era set to end with switch-off
+   https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service
+
+10. ⬆109 💬60  The US Army Issued Ocarinas to Soldiers in World War II
+   https://www.flutetunes.com/articles/my-flute-goes-to-war/

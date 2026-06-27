@@ -50,7 +50,6 @@ python3 -m venv .venv
 ### Вариант 1: Агент (рекомендуется)
 
 ```bash
-source deepseek-env/bin/activate
 export DEEPSEEK_API_KEY='your-key'
 ../../deepseek-env/bin/python3 agent_with_mcp.py
 ```

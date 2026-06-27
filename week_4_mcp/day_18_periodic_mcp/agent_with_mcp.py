@@ -78,11 +78,14 @@ def _format_tool_result(result) -> str:
     return "\n".join(parts) if parts else str(result)
 
 
+MAX_TOOL_ROUNDS = 10
+
+
 def ask_agent(question: str) -> str:
     """Запрос к DeepSeek с доступом к HN MCP-инструментам.
 
-    LLM сам решает, вызывать ли collect_now / get_digest / start_scheduler
-    и с какими параметрами.
+    Agentic loop: LLM вызывает инструменты столько раз, сколько нужно,
+    пока не вернёт финальный текстовый ответ (без tool_calls).
     """
     messages = [
         {
@@ -92,6 +95,8 @@ def ask_agent(question: str) -> str:
                 "and analyzing HackerNews top stories. "
                 "When the user asks to collect data, show digest, start/stop scheduler, or "
                 "filter stories by topic — call the appropriate tool. "
+                "For pipeline tasks (fetch → summarize → save), call all required tools "
+                "in sequence before giving a final answer. "
                 "Respond in the same language the user uses. "
                 "When showing a digest, format it clearly with scores and titles."
             ),
@@ -99,47 +104,42 @@ def ask_agent(question: str) -> str:
         {"role": "user", "content": question},
     ]
 
-    response = client.chat.completions.create(
-        model="deepseek-chat",
-        messages=messages,
-        tools=HN_TOOLS_SCHEMA,
-        tool_choice="auto",
-        max_tokens=2000,
-        temperature=0.3,
-    )
-    message = response.choices[0].message
-
-    if not message.tool_calls:
-        return message.content
-
-    messages.append(message.model_dump(exclude_none=True))
-
-    for tool_call in message.tool_calls:
-        arguments = json.loads(tool_call.function.arguments or "{}")
-        tool_name = tool_call.function.name
-        print(f"  [tool call] {tool_name}({arguments})")
-
-        try:
-            tool_result = asyncio.run(call_hn_tool(tool_name, arguments))
-            result_text = _format_tool_result(tool_result)
-        except Exception as exc:
-            result_text = f"Ошибка вызова {tool_name}: {exc}"
-
-        messages.append(
-            {
-                "role": "tool",
-                "tool_call_id": tool_call.id,
-                "content": result_text,
-            }
+    for round_num in range(MAX_TOOL_ROUNDS):
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=messages,
+            tools=HN_TOOLS_SCHEMA,
+            tool_choice="auto",
+            max_tokens=4000,
+            temperature=0.3,
         )
+        message = response.choices[0].message
 
-    final = client.chat.completions.create(
-        model="deepseek-chat",
-        messages=messages,
-        max_tokens=2000,
-        temperature=0.3,
-    )
-    return final.choices[0].message.content
+        if not message.tool_calls:
+            return message.content or ""
+
+        messages.append(message.model_dump(exclude_none=True))
+
+        for tool_call in message.tool_calls:
+            arguments = json.loads(tool_call.function.arguments or "{}")
+            tool_name = tool_call.function.name
+            print(f"  [tool call {round_num + 1}] {tool_name}({arguments})")
+
+            try:
+                tool_result = asyncio.run(call_hn_tool(tool_name, arguments))
+                result_text = _format_tool_result(tool_result)
+            except Exception as exc:
+                result_text = f"Ошибка вызова {tool_name}: {exc}"
+
+            messages.append(
+                {
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "content": result_text,
+                }
+            )
+
+    return "Превышен лимит итераций инструментов."
 
 
 def main() -> None:
