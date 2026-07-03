@@ -33,14 +33,23 @@ RAG_SYSTEM_PROMPT = (
 )
 
 
-def generate_answer(question: str, context: str | None = None) -> str:
-    """Call DeepSeek chat. If context is given, uses the strict RAG system prompt."""
+def generate_answer(question: str, context: str | None = None, language: str | None = None) -> str:
+    """Call DeepSeek chat. If context is given, uses the strict RAG system prompt.
+
+    `language`, if given, appends an explicit instruction to answer in that language
+    (e.g. "English") regardless of what language the question/context is in. Default
+    (None) leaves the model's natural language choice untouched — existing callers are
+    unaffected.
+    """
     if context is not None:
         system_prompt = RAG_SYSTEM_PROMPT
         user_content = f"Контекст:\n{context}\n\nВопрос: {question}"
     else:
         system_prompt = PLAIN_SYSTEM_PROMPT
         user_content = question
+
+    if language:
+        system_prompt = f"{system_prompt} Always answer in {language}, regardless of the language of the question or context."
 
     response = client.chat.completions.create(
         model=MODEL,
