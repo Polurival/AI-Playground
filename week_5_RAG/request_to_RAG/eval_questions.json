@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What was written on the paper label on the little bottle Alice found at the beginning of her adventures, and how was it printed?",
+    "ground_truth": [
+      "The label said 'DRINK ME'",
+      "It was beautifully printed in large letters"
+    ],
+    "sources": ["CHAPTER I. Down the Rabbit-Hole"]
+  },
+  {
+    "id": 2,
+    "question": "What words were marked on the little cake Alice found in the glass box under the table, and what were the words made of?",
+    "ground_truth": [
+      "The words said 'EAT ME'",
+      "They were beautifully marked in currants"
+    ],
+    "sources": ["CHAPTER I. Down the Rabbit-Hole"]
+  },
+  {
+    "id": 3,
+    "question": "According to the accusation read out by the White Rabbit at the trial, what exactly did the Knave of Hearts steal?",
+    "ground_truth": [
+      "The Knave of Hearts stole the tarts made by the Queen of Hearts",
+      "The verse: 'The Queen of Hearts, she made some tarts... The Knave of Hearts, he stole those tarts, And took them quite away!'"
+    ],
+    "sources": ["CHAPTER XI. Who Stole the Tarts?"]
+  },
+  {
+    "id": 4,
+    "question": "What color was the caterpillar Alice met sitting on a mushroom smoking a hookah?",
+    "ground_truth": [
+      "It was a large blue caterpillar"
+    ],
+    "sources": ["CHAPTER IV. The Rabbit Sends in a Little Bill", "CHAPTER V. Advice from a Caterpillar"]
+  },
+  {
+    "id": 5,
+    "question": "What did the Caterpillar advise Alice to eat to control her size, and which two sides were involved?",
+    "ground_truth": [
+      "She should eat from the mushroom the Caterpillar was sitting on",
+      "One side makes her grow taller, the other side makes her grow shorter"
+    ],
+    "sources": ["CHAPTER V. Advice from a Caterpillar"]
+  },
+  {
+    "id": 6,
+    "question": "What was the name of the lizard the Rabbit tried to send down the chimney, and what happened right after?",
+    "ground_truth": [
+      "The lizard's name was Bill",
+      "Right after he was sent down, there was a crash (a loose slate/roof tile came down) and Bill was thrown back out"
+    ],
+    "sources": ["CHAPTER IV. The Rabbit Sends in a Little Bill"]
+  },
+  {
+    "id": 7,
+    "question": "What happened to one juror's slate-pencil during the trial, and how did it affect his writing for the rest of the day?",
+    "ground_truth": [
+      "One juror's (the Lizard Bill's) pencil squeaked, and Alice pulled it out of his hand/reach",
+      "He was forced to write with one finger for the rest of the day, which left no mark on the slate"
+    ],
+    "sources": ["CHAPTER XI. Who Stole the Tarts?", "CHAPTER XII. Alice's Evidence"]
+  },
+  {
+    "id": 8,
+    "question": "What unusual subjects did the Mock Turtle study at his school in the sea, instead of ordinary Reading/Writing and Addition/Subtraction?",
+    "ground_truth": [
+      "Instead of Reading and Writing: 'Reeling and Writhing'",
+      "Instead of arithmetic (addition, subtraction, multiplication, division): 'Ambition, Distraction, Uglification, and Derision'",
+      "Also mentioned: Mystery (ancient and modern), Seaography, Drawling, Stretching, Fainting in Coils, Laughing and Grief"
+    ],
+    "sources": ["CHAPTER IX. The Mock Turtle's Story"]
+  },
+  {
+    "id": 9,
+    "question": "What is unusual about how the Cheshire Cat disappears, and what remains visible the longest?",
+    "ground_truth": [
+      "The Cat can appear and vanish gradually, part by part",
+      "Its grin remains visible the longest, staying for some time after the rest of the cat is gone ('a grin without a cat')"
+    ],
+    "sources": ["CHAPTER VI. Pig and Pepper", "CHAPTER VIII. The Queen's Croquet-Ground"]
+  },
+  {
+    "id": 10,
+    "question": "What is the name of the dance the Gryphon and the Mock Turtle describe and partly perform for Alice, and who serves as the dance partner?",
+    "ground_truth": [
+      "The dance is called the Lobster Quadrille",
+      "A lobster serves as the dance partner — dancers advance with a lobster, then throw the lobsters out to sea and swim after them"
+    ],
+    "sources": ["CHAPTER X. The Lobster Quadrille"]
+  }
+]
