@@ -15,6 +15,7 @@ logger = logging.getLogger(__name__)
 TOP_K_INITIAL = 10
 TOP_K_FINAL = 3
 RERANKER_MODEL_NAME = "BAAI/bge-reranker-base"
+SIMILARITY_THRESHOLD = 0.60  # hard cutoff: below this, no candidate is considered relevant enough to answer from
 
 _reranker = None  # lazy singleton — loaded once, reused across calls
 
@@ -77,8 +78,45 @@ def retrieve_chunks_advanced(
     strategy: str = "structural",
     top_k_initial: int = TOP_K_INITIAL,
     top_k_final: int = TOP_K_FINAL,
+    similarity_threshold: float = SIMILARITY_THRESHOLD,
 ) -> dict:
-    """Stage 1 (broad cosine recall, top_k_initial) + Stage 2 (cross-encoder rerank to top_k_final)."""
+    """Stage 1 (broad cosine recall, top_k_initial) + hard relevance threshold + Stage 2
+    (cross-encoder rerank to top_k_final).
+
+    Hard threshold: if the BEST cosine similarity among the top_k_initial candidates is still
+    below `similarity_threshold`, retrieval is aborted right here — reranking is skipped and
+    "kept" comes back empty with threshold_passed=False, so the caller must refuse to answer
+    (and must NOT call the LLM at all) instead of risking a hallucinated answer.
+
+    Returns {"kept", "initial_count", "final_count", "dropped_count", "max_score", "threshold_passed"}.
+    """
     logger.info("[RETRIEVE] broad search top_k=%d (strategy=%s)", top_k_initial, strategy)
     candidates = retrieve_chunks(query_text, strategy=strategy, top_k=top_k_initial)
-    return rerank_with_cross_encoder(query_text, candidates, top_k_final=top_k_final)
+
+    max_score = max((c["score"] for c in candidates), default=0.0)
+    threshold_passed = bool(candidates) and max_score >= similarity_threshold
+
+    logger.info(
+        "[THRESHOLD] best cosine similarity among %d candidates = %.4f (threshold = %.2f) -> %s",
+        len(candidates), max_score, similarity_threshold, "PASSED" if threshold_passed else "FAILED",
+    )
+
+    if not threshold_passed:
+        logger.warning(
+            "[THRESHOLD] all %d candidates scored below %.2f cosine similarity — "
+            "aborting BEFORE rerank and BEFORE any LLM call",
+            len(candidates), similarity_threshold,
+        )
+        return {
+            "kept": [],
+            "initial_count": len(candidates),
+            "final_count": 0,
+            "dropped_count": len(candidates),
+            "max_score": max_score,
+            "threshold_passed": False,
+        }
+
+    result = rerank_with_cross_encoder(query_text, candidates, top_k_final=top_k_final)
+    result["max_score"] = max_score
+    result["threshold_passed"] = True
+    return result

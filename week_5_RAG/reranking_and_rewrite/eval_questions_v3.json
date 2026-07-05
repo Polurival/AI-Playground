@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What was written on the paper label on the little bottle Alice found at the beginning of her adventures, and how was it printed?",
+    "in_book": true,
+    "sources": ["CHAPTER I. Down the Rabbit-Hole"]
+  },
+  {
+    "id": 2,
+    "question": "What words were marked on the little cake Alice found in the glass box under the table, and what were the words made of?",
+    "in_book": true,
+    "sources": ["CHAPTER I. Down the Rabbit-Hole"]
+  },
+  {
+    "id": 3,
+    "question": "According to the accusation read out by the White Rabbit at the trial, what exactly did the Knave of Hearts steal?",
+    "in_book": true,
+    "sources": ["CHAPTER XI. Who Stole the Tarts?"]
+  },
+  {
+    "id": 4,
+    "question": "What did the Caterpillar advise Alice to eat to control her size, and which two sides were involved?",
+    "in_book": true,
+    "sources": ["CHAPTER V. Advice from a Caterpillar"]
+  },
+  {
+    "id": 5,
+    "question": "What was the name of the lizard the Rabbit tried to send down the chimney, and what happened right after?",
+    "in_book": true,
+    "sources": ["CHAPTER IV. The Rabbit Sends in a Little Bill"]
+  },
+  {
+    "id": 6,
+    "question": "What happened to one juror's slate-pencil during the trial, and how did it affect his writing for the rest of the day?",
+    "in_book": true,
+    "sources": ["CHAPTER XI. Who Stole the Tarts?", "CHAPTER XII. Alice's Evidence"]
+  },
+  {
+    "id": 7,
+    "question": "What unusual subjects did the Mock Turtle study at his school in the sea, instead of ordinary Reading/Writing and Addition/Subtraction?",
+    "in_book": true,
+    "sources": ["CHAPTER IX. The Mock Turtle's Story"]
+  },
+  {
+    "id": 8,
+    "question": "What is unusual about how the Cheshire Cat disappears, and what remains visible the longest?",
+    "in_book": true,
+    "sources": ["CHAPTER VI. Pig and Pepper", "CHAPTER VIII. The Queen's Croquet-Ground"]
+  },
+  {
+    "id": 9,
+    "question": "What year did Harry Potter meet Alice?",
+    "in_book": false,
+    "sources": []
+  },
+  {
+    "id": 10,
+    "question": "What make of car did the March Hare drive?",
+    "in_book": false,
+    "sources": []
+  }
+]
