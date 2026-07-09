@@ -5,14 +5,13 @@ blocks. Reuses the structured RAG system prompt and context builder from `genera
 import logging
 
 from rag_imports import (
-    client,
-    MODEL,
     build_context_v3,
     STRUCTURED_RAG_SYSTEM_PROMPT,
     ANSWER_HEADING,
     QUOTES_HEADING,
     SOURCES_HEADING,
 )
+from llm_provider import timed_chat_completion, current_label
 from task_state import TaskState
 
 logger = logging.getLogger(__name__)
@@ -88,10 +87,11 @@ def generate_chat_answer(
     question: str,
     chunks: list[dict],
     language: str | None = None,
-) -> str:
+) -> tuple[str, float]:
     """Assemble [system(structured+state)] + [trimmed history] + [context+question] and call
-    DeepSeek. `prior_messages` is the history BEFORE this turn's user message. Returns the
-    structured Markdown answer (## Answer / ## Quotes Used / ## Sources)."""
+    whichever LLM provider (local or DeepSeek) is currently active (see `llm_provider.py`).
+    `prior_messages` is the history BEFORE this turn's user message. Returns
+    (structured Markdown answer, wall-clock seconds spent in the generation call)."""
     system_prompt = build_chat_system_prompt(task_state, language)
     context = build_context_v3(chunks)
 
@@ -103,24 +103,18 @@ def generate_chat_answer(
     api_messages.append({"role": "user", "content": final_user})
 
     logger.info(
-        "[CHAT] generating answer -> %d context chunk(s), %d history msg(s) in window, language=%s",
-        len(chunks), len(history), language or "auto",
+        "[CHAT] generating answer via %s -> %d context chunk(s), %d history msg(s) in window, language=%s",
+        current_label(), len(chunks), len(history), language or "auto",
     )
 
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=api_messages,
-        max_tokens=1000,
-        temperature=0.2,
-    )
-    answer = response.choices[0].message.content or ""
+    answer, elapsed = timed_chat_completion(api_messages, max_tokens=1000, temperature=0.2)
 
     has_quotes = QUOTES_HEADING in answer
     has_sources = SOURCES_HEADING in answer
     logger.info(
-        "[CHAT] answer received (%d chars) — blocks present: Answer=%s, Quotes=%s, Sources=%s",
-        len(answer), ANSWER_HEADING in answer, has_quotes, has_sources,
+        "[CHAT] answer received in %.2fs (%d chars) — blocks present: Answer=%s, Quotes=%s, Sources=%s",
+        elapsed, len(answer), ANSWER_HEADING in answer, has_quotes, has_sources,
     )
     if not (has_quotes and has_sources):
         logger.warning("[CHAT] answer is MISSING a required block (quotes=%s, sources=%s)", has_quotes, has_sources)
-    return answer
+    return answer, elapsed

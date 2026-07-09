@@ -9,6 +9,9 @@
 из `week_5_RAG/reranking_and_rewrite` (который сам переиспользует `week_5_RAG/request_to_RAG`).
 Концепт «история сообщений + отдельный State-объект, переживающий обрезку окна» взят из
 `week_3_stateful_agent` (там это `MemoryEngine` со слоями short-term / working / invariants).
+Генерация умеет переключаться между DeepSeek (cloud) и локальной `qwen2.5:3b` из
+`week_6_local_LLM` (команда `/model`, см. «Шаг 5» ниже) — вплоть до полностью офлайн-запуска
+без единого облачного вызова.
 
 ---
 
@@ -17,11 +20,12 @@
 ```
 chat_with_RAG/
 ├── rag_imports.py       # единый хаб переиспользования: sys.path + ре-экспорт функций RAG-движка
+├── llm_provider.py      # переключаемый бэкенд генерации: local (Ollama) vs deepseek (cloud)
 ├── task_state.py        # Шаг 1 — TaskState (память задачи) + лёгкий LLM-апдейтер состояния
 ├── chat_generation.py   # Шаг 2 — сборка Context+Quotes+Sources+история+TaskState -> структурный ответ
 ├── chat_agent.py        # оркестратор одного диалога: messages[] + TaskState + весь пайплайн на ход
 ├── ui.py                # цветное логирование этапов + рендер ответа и панели TaskState
-├── main_chat.py         # Шаг 3 — интерактивный CLI-чат (while True, команды /state /reset /exit)
+├── main_chat.py         # Шаг 3 — интерактивный CLI-чат (команды /state /model /reset /exit)
 ├── run_scenarios.py     # Шаг 4 — 2 длинных сценария (по 13 сообщений) + автовалидация -> scenario_report.md
 ├── scenario_report.md   # сгенерированный отчёт по сценариям
 └── README.md
@@ -31,11 +35,11 @@ chat_with_RAG/
 
 | Импорт | Откуда | Роль |
 |---|---|---|
-| `rewrite_query` | `reranking_and_rewrite/query_rewrite.py` | Query Rewrite |
-| `retrieve_chunks_advanced`, `SIMILARITY_THRESHOLD` | `reranking_and_rewrite/retrieval_v2.py` | broad search + порог + cross-encoder rerank |
+| `rewrite_query`, `REWRITE_SYSTEM_PROMPT` | `reranking_and_rewrite/query_rewrite.py` | Query Rewrite (текст промпта; сам вызов теперь идёт через `llm_provider.py`, см. ниже) |
+| `retrieve_chunks_advanced`, `SIMILARITY_THRESHOLD` | `reranking_and_rewrite/retrieval_v2.py` | broad search + порог + cross-encoder rerank (эмбеддинги — `nomic-embed-text` через Ollama, уже локально) |
 | `build_context_v3`, `STRUCTURED_RAG_SYSTEM_PROMPT`, заголовки `## Answer/## Quotes Used/## Sources` | `reranking_and_rewrite/generation_v3.py` | структурный ответ |
 | `HARD_REFUSAL_ANSWER` | `reranking_and_rewrite/agent_v2.py` | канонический отказ «не знаю» |
-| `client`, `MODEL` | `request_to_RAG/generation.py` | DeepSeek-клиент (OpenAI-совместимый) |
+| `client`, `MODEL`, `DEEPSEEK_KEY_PRESENT` | `request_to_RAG/generation.py` | DeepSeek-клиент (OpenAI-совместимый) — один из двух бэкендов `llm_provider.py` |
 
 ---
 
@@ -115,7 +119,8 @@ python3 main_chat.py
 маджента, `[CHAT]` зелёный, `[REFUSAL]` красный) → затем структурный ответ (заголовки
 подсвечены), метаданные источников для проверки и панель **TASK STATE (sticky memory)**.
 
-Команды: `/state` — показать память задачи, `/reset` — начать заново, `/exit` — выйти.
+Команды: `/state` — показать память задачи, `/model [local|deepseek]` — показать/переключить
+LLM-бэкенд генерации (см. «Шаг 5»), `/reset` — начать заново, `/exit` — выйти.
 
 ---
 
@@ -162,26 +167,167 @@ python3 run_scenarios.py      # пишет scenario_report.md
 
 ---
 
+## Шаг 5 — Локальная LLM (`/model`) и полностью локальный запуск
+
+**Retrieval и так уже был локальным** ещё до этого шага: эмбеддинг запроса — `nomic-embed-text`
+через Ollama, косинусный поиск — по SQLite, cross-encoder rerank (`BAAI/bge-reranker-base`) —
+локальный `sentence-transformers`. Единственное, что до сих пор всегда уходило в облако — сама
+**генерация**: три LLM-вызова за ход (апдейт `TaskState`, query rewrite, финальный структурный
+ответ), все на DeepSeek.
+
+Этот шаг добавляет переключаемый бэкенд генерации — `llm_provider.py` — и подключает к нему
+локальную модель из `week_6_local_LLM` (**`qwen2.5:3b` через Ollama**, тот же OpenAI-совместимый
+`/v1`-эндпоинт, что и в `local_llm_chat.py`, без ключа и без сети). Все три LLM-вызова
+(`task_state.py`, `chat_agent.py`'s rewrite, `chat_generation.py`) теперь идут через
+`llm_provider.chat_completion(...)`, а не через захардкоженный `client`/`MODEL` — переключение
+происходит централизованно, в одном месте.
+
+**Команда `/model` в `main_chat.py`:**
+
+```
+/model              — показать активный бэкенд
+/model local         — переключиться на локальную qwen2.5:3b (Ollama, офлайн)
+/model deepseek      — переключиться обратно на облачный DeepSeek
+```
+
+Переключение мгновенное и посреди диалога — `TaskState` и история сообщений не сбрасываются,
+меняется только то, ЧЕМ генерируется следующий ход. Каждый ответ в CLI подписан, каким бэкендом
+и за сколько секунд он сгенерирован (`model: local (qwen2.5:3b, Ollama...) | generation time: …s`).
+
+**Полностью локальный запуск, без ключа и без интернета вообще:** если `DEEPSEEK_API_KEY` не
+задан, `rag_imports.py` подставляет безвредную заглушку только чтобы не упасть на импорте
+переиспользуемых DeepSeek-модулей (`generation.py` иначе завершает процесс на старте) — но
+`llm_provider.py` видит, что реального ключа нет, помечает провайдер `"deepseek"` недоступным
+(`/model deepseek` вернёт понятную ошибку вместо попытки достучаться до API с фейковым ключом), и
+чат стартует сразу в режиме `"local"`. Итог — результат задания буквально выполняется: RAG,
+который работает полностью локально, без единого обращения в облако.
+
+```bash
+# venv (openai + sentence-transformers)
+cd week_5_RAG/chat_with_RAG
+source ../../deepseek-env/bin/activate
+
+# запуск без DEEPSEEK_API_KEY вообще — стартует в режиме local, офлайн
+unset DEEPSEEK_API_KEY
+python3 main_chat.py
+```
+
+### Сравнение: локальная модель vs облачная
+
+Итоговые оценки по трём осям из задания — на реальных прогонах одних и тех же вопросов через
+`/model local` и `/model deepseek` в этом чате (не изолированные one-off вызовы — те же
+`TaskState`/rewrite/rerank/структурный промпт для обеих моделей, различается только бэкенд
+генерации), на этом железе (AMD Ryzen 5 3550H, без GPU, CPU-инференс):
+
+| Ось | `qwen2.5:3b` (local, Ollama, CPU) | `deepseek-chat` (cloud) |
+|---|---|---|
+| **Скорость** | На вопросе ниже: генерация 291.8 с, весь ход (state-update + rewrite + retrieve + rerank + генерация) — 489.7 с (~8.2 мин). Три из четырёх шагов хода — это отдельные CPU-инференсы одной и той же 3B-модели, а не быстрые сетевые запросы. | Тот же ход: генерация 3.6 с, весь ход — 16.9 с. **~29× быстрее end-to-end** (генерация отдельно — ~82×), несмотря на сетевые round-trip'ы — облачный инференс на несопоставимо большем железе перевешивает задержку сети. |
+| **Качество** | На простых точечных фактах — на уровне DeepSeek. На вопросе, требующем честного отказа + частичного ответа (ниже), сорвал структурный формат: `## Answer` = «—» (как для полного отказа), но `## Quotes Used`/`## Sources` при этом заполнены нерелевантными цитатами — по промпту при «—» в Answer оба остальных блока тоже должны быть «—». DeepSeek на этом же вопросе выдал связный частичный ответ («в контексте нет описания встречи с Чеширским Котом, есть только с Белым Кроликом») с цитатами, которые реально это подтверждают. | Надёжно держит структуру и логику соответствия Answer/Quotes/Sources друг другу; честно разделяет «есть материал — но не совсем на тот вопрос» и «материала нет вообще», не путая эти два случая, как локальная модель. |
+| **Стабильность** | Работает предсказуемо на простых вопросах; контекстное окно `qwen2.5:3b` в Ollama по умолчанию всего 2048 токенов — здесь оно принудительно поднято до 8192 (`LOCAL_LLM_NUM_CTX`, см. `llm_provider.py`), иначе большой структурный промпт + история + `TaskState` обрезались бы незаметно. Полностью офлайн: не зависит от сети/квот/аптайма провайдера. | Крайне стабильный формат и удержание ограничений на длинных сценариях (см. `run_scenarios.py`), но зависит от сети, ключа и квоты API — при сбое ход падает с ошибкой (перехватывается в `main_chat.py`, сессия не завершается целиком). |
+
+**Реальный прогон** (один и тот же вопрос, `/model local` затем `/model deepseek`, свежий диалог
+на каждый — воспроизведение: `llm_provider.set_provider(...)` + `ChatAgent(...).ask(...)`):
+
+> **Вопрос:** *«Compare how the Cheshire Cat and the White Rabbit each first behave when Alice
+> meets them — what's different about their reactions to her?»*
+
+<details><summary><b>local (qwen2.5:3b)</b> — gen 291.8s, весь ход 489.7s</summary>
+
+```
+## Answer
+—
+
+## Quotes Used
+- "'I'm glad I've seen that done,' thought Alice. ..." (сцена суда, глава XI)
+- "'Oh dear! Oh dear! I shall be late!' ..." (глава I, встреча с Кроликом)
+
+## Sources
+- struct_ch11_002 — CHAPTER XI. Who Stole the Tarts?
+- struct_ch01_001 — CHAPTER I. Down the Rabbit-Hole
+```
+
+Ретрив не нашёл сцену первого появления Чеширского Кота (глава VI) в топ-3 — сам по себе минус
+retrieval'а на этот конкретный вопрос, общий для обеих моделей. Но реакция на нехватку данных
+разная: модель поставила «—» в Answer (как при полном отказе), при этом НЕ обнулила Quotes/Sources
+как требует промпт — оставила две цитаты, не относящиеся к вопросу о сравнении. Формат сломан.
+
+</details>
+
+<details><summary><b>deepseek (deepseek-chat)</b> — gen 3.6s, весь ход 16.9s</summary>
+
+```
+## Answer
+The provided context does not contain any description of Alice meeting the
+Cheshire Cat. It only describes her first encounter with the White Rabbit, who
+runs past her, takes a watch from his waistcoat-pocket, and hurries on, causing
+Alice to follow him. Therefore, a comparison between the two characters' first
+reactions to Alice cannot be made based solely on the given context.
+
+## Quotes Used
+- "when suddenly a White Rabbit with pink eyes ran close by her."
+- "when the Rabbit actually took a watch out of its waistcoat-pocket, ... she
+  ran across the field after it"
+
+## Sources
+- struct_ch01_000 — CHAPTER I. Down the Rabbit-Hole
+```
+
+Тот же retrieval-пробел (нет чанка про Кота), но модель честно объяснила, ЧТО именно есть в
+контексте и почему сравнение невозможно, и процитировала только то, что реально относится к
+Кролику — логика Answer/Quotes/Sources осталась согласованной.
+
+</details>
+
+### Что спросить, чтобы заметить разницу
+
+Вопросы, которые специально бьют по слабым местам маленькой локальной модели относительно
+облачной — задавайте один и тот же вопрос под `/model local` и `/model deepseek` подряд, не
+сбрасывая диалог, и сравнивайте ответы и `generation time`:
+
+1. **Строгий формат / дословность цитат** — «What exactly did the Caterpillar say when he first
+   spoke to Alice? Quote it precisely.» — маленькая модель чаще слегка перефразирует «дословную»
+   цитату или сминает три блока в один, DeepSeek держит формат надёжнее.
+2. **Многошаговое сопоставление нескольких сцен** — «Compare how the Cheshire Cat and the White
+   Rabbit each first behave when Alice meets them — what's different about their reactions to
+   her?» — требует свести 2+ разных чанка в связный вывод, а не пересказать один абзац.
+3. **Погранично-нерелевантный вопрос (проверка честного отказа)** — «What model of car did the
+   March Hare drive to the tea party?» — верный ответ у обеих моделей: «в тексте этого нет»; но
+   маленькие модели чаще пытаются что-то придумать вместо честного отказа.
+4. **Удержание ограничения на длинном диалоге** — задайте «From now on, do not mention the Queen
+   of Hearts at all», а через 4–5 ходов после этого спросите про сцену, где Королева участвует
+   («Who argued about beheading something with no body?») — проверяет, не «забыла» ли модель
+   системное ограничение к этому моменту диалога.
+5. **Скорость на затяжном контексте** — после 8+ ходов диалога (окно истории + `TaskState` уже
+   большие) сравните `generation time` у обеих моделей на одном и том же вопросе — разрыв в
+   скорости на CPU растёт вместе с длиной промпта заметнее, чем у облачного инференса.
+6. **Русский язык** — задайте тот же вопрос по-русски (обе модели мультиязычны, но естественность
+   и грамотность формулировок на русском обычно заметнее различаются, чем на английском).
+
+---
+
 ## Запуск: окружение
 
 ```bash
-# 1) Ollama (эмбеддинги запроса) — модель nomic-embed-text
-ollama serve &
-ollama list                       # nomic-embed-text должен быть в списке
+# 1) Ollama — nomic-embed-text (эмбеддинги retrieval) и/или qwen2.5:3b (локальная генерация)
+sudo snap start ollama             # или: ollama serve
+ollama list                        # nomic-embed-text и qwen2.5:3b должны быть в списке
+ollama pull nomic-embed-text       # если ещё не скачаны
+ollama pull qwen2.5:3b
 
-# 2) DeepSeek API-ключ
+# 2) DeepSeek API-ключ — ОПЦИОНАЛЬНО. Без него провайдер "deepseek" просто недоступен
+#    (/model deepseek вернёт ошибку), а чат стартует сразу в режиме "local".
 export DEEPSEEK_API_KEY='your-key-here'
 
 # 3) venv с openai + sentence-transformers (тот же, что для прошлого этапа)
 cd week_5_RAG/chat_with_RAG
-../../deepseek-env/bin/python main_chat.py        # интерактив
-../../deepseek-env/bin/python run_scenarios.py    # автотесты
+../../deepseek-env/bin/python main_chat.py        # интерактив, команды /state /model /reset /exit
+../../deepseek-env/bin/python run_scenarios.py    # автотесты (используют активный по умолчанию провайдер)
 ```
 
 Первый прогон подтянет веса cross-encoder'а `BAAI/bge-reranker-base` (~1.1 ГБ, кэш в
 `~/.cache/huggingface`); дальше он грузится один раз на процесс (ленивый singleton в
 `retrieval_v2.py`). На CPU реранк ~9 с на 10 пар — поэтому полный прогон двух сценариев занимает
-несколько минут.
+несколько минут (и заметно дольше в режиме `local`, где ещё и генерация идёт на CPU).
 
 ---
 

@@ -16,8 +16,18 @@ for _d in (_RERANK_DIR, _REQUEST_DIR):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
+# `request_to_RAG/generation.py` hard-exits at import time if DEEPSEEK_API_KEY is unset, and
+# every reused module below (query_rewrite, generation_v3, agent_v2) imports from it. chat_with_RAG
+# must still boot in a fully local run with no key at all — so seed a harmless placeholder before
+# any of those imports run. `llm_provider.py` reads DEEPSEEK_KEY_PRESENT (the REAL value, captured
+# here) to mark the "deepseek" provider unavailable rather than ever using the placeholder to call
+# the real API.
+DEEPSEEK_KEY_PRESENT = bool(os.environ.get("DEEPSEEK_API_KEY"))
+if not DEEPSEEK_KEY_PRESENT:
+    os.environ.setdefault("DEEPSEEK_API_KEY", "local-only-no-key-set")
+
 # --- Step 1 of the pipeline: context-blind query rewrite (we feed it chat context ourselves) ---
-from query_rewrite import rewrite_query  # noqa: E402
+from query_rewrite import rewrite_query, REWRITE_SYSTEM_PROMPT  # noqa: E402
 
 # --- Step 2: broad recall (top-10, cosine) + HARD relevance threshold + cross-encoder rerank ---
 from retrieval_v2 import retrieve_chunks_advanced, SIMILARITY_THRESHOLD  # noqa: E402
@@ -39,6 +49,7 @@ from generation import client, MODEL  # noqa: E402
 
 __all__ = [
     "rewrite_query",
+    "REWRITE_SYSTEM_PROMPT",
     "retrieve_chunks_advanced",
     "SIMILARITY_THRESHOLD",
     "build_context_v3",
@@ -49,4 +60,5 @@ __all__ = [
     "HARD_REFUSAL_ANSWER",
     "client",
     "MODEL",
+    "DEEPSEEK_KEY_PRESENT",
 ]

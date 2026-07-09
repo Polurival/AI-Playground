@@ -2,23 +2,26 @@
 runs the full pipeline:
 
     update TaskState (light LLM call)
-      -> context-aware query rewrite (reuses rewrite_query)
-      -> broad retrieval + hard threshold + rerank (reuses retrieve_chunks_advanced)
-      -> [threshold failed?] canned refusal, NO main DeepSeek call
+      -> context-aware query rewrite (reuses rewrite_query, routed via llm_provider)
+      -> broad retrieval + hard threshold + rerank (reuses retrieve_chunks_advanced, always local)
+      -> [threshold failed?] canned refusal, NO main LLM call
       -> [else] structured chat answer with Context + Quotes + Sources + history + TaskState
 
 The RAG engine itself is untouched — this class only sequences it and layers state on top.
+Every LLM call (rewrite, TaskState update, final answer) goes through `llm_provider.py`, which
+picks local (Ollama) vs DeepSeek (cloud) based on the currently active provider — see `/model`
+in `main_chat.py`.
 """
 
 import logging
 
 from rag_imports import (
-    rewrite_query,
     retrieve_chunks_advanced,
     HARD_REFUSAL_ANSWER,
 )
 from chat_generation import generate_chat_answer
 from task_state import TaskState, update_task_state
+from llm_provider import rewrite_query_active as rewrite_query, current_label
 
 logger = logging.getLogger(__name__)
 
@@ -104,16 +107,17 @@ class ChatAgent:
 
         if not threshold_passed:
             logger.warning(
-                "[REFUSAL] max cosine %.4f < %.2f — refusing, NO main DeepSeek call this turn",
+                "[REFUSAL] max cosine %.4f < %.2f — refusing, NO main LLM call this turn",
                 max_score or 0.0, self.similarity_threshold,
             )
             answer = HARD_REFUSAL_ANSWER
             sources = []
             hard_refusal = True
+            elapsed = None
         else:
             kept = search["kept"]
             # history passed to the model is everything BEFORE this turn's user message
-            answer = generate_chat_answer(
+            answer, elapsed = generate_chat_answer(
                 self.messages, self.task_state, user_text, kept, language=self.language
             )
             sources = [
@@ -142,4 +146,6 @@ class ChatAgent:
             "threshold_passed": threshold_passed,
             "hard_refusal": hard_refusal,
             "task_state": self.task_state.to_dict(),
+            "provider": current_label(),
+            "elapsed_s": elapsed,
         }

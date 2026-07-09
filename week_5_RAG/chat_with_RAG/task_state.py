@@ -17,7 +17,7 @@ import logging
 import re
 from dataclasses import dataclass, field, asdict
 
-from rag_imports import client, MODEL
+from llm_provider import chat_completion
 
 logger = logging.getLogger(__name__)
 
@@ -124,8 +124,7 @@ def update_task_state(state: TaskState, user_message: str) -> TaskState:
         f"NEW USER MESSAGE:\n{user_message}"
     )
     try:
-        response = client.chat.completions.create(
-            model=MODEL,
+        raw = chat_completion(
             messages=[
                 {"role": "system", "content": _STATE_UPDATER_SYSTEM_PROMPT},
                 {"role": "user", "content": payload},
@@ -133,7 +132,6 @@ def update_task_state(state: TaskState, user_message: str) -> TaskState:
             max_tokens=400,
             temperature=0.0,
         )
-        raw = response.choices[0].message.content or ""
         data = _extract_json(raw)
         new_state = TaskState.from_dict(data)
         # Defensive: never let the sticky memory forget an established goal or drop a constraint,
