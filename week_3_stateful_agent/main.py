@@ -1,11 +1,11 @@
-from agent import DeepSeekAgent
+from agent import DeepSeekAgent, MODEL_BACKENDS
 from memory import MemoryEngine
 from pipeline import TaskPipeline
 
 
 def print_banner():
     print("\n" + "=" * 70)
-    print("DeepSeek Agent - Multi-Layer Memory with Dynamic Context Assembly")
+    print("AI Agent - Multi-Layer Memory with Dynamic Context Assembly")
     print("=" * 70)
     print("Layers: Short-term (dialogue tree) | Working (task context) | Long-term (profiles)")
     print()
@@ -40,6 +40,12 @@ def print_help():
                               plan/structure/validation as context (revise a finished task).
   /pipeline-status           Show current pipeline stage & handoff state.
                               (Plain chat during the planning stage talks to the planning agent.)
+
+[MODEL BACKEND]
+  /model                     Show current LLM backend + available ones
+  /model <name>              Switch LLM backend (keeps the conversation):
+                               - deepseek (remote cloud API, needs DEEPSEEK_API_KEY)
+                               - local    (Ollama qwen2.5:3b, fully offline, no key)
 
 [MODE TOGGLE]
   /mode <mode_name>          Select assembly strategy:
@@ -85,8 +91,11 @@ def main():
     try:
         agent = DeepSeekAgent()
         pipeline: TaskPipeline | None = None
+        info = agent.backend_info()
         print("✓ Agent initialized with multi-layer memory")
-        print("✓ Type '/help' for commands\n")
+        print(f"✓ Model backend: {info['backend']} — {info['model']} "
+              f"({'local/offline' if info['local'] else 'remote cloud'})")
+        print("✓ Type '/help' for commands  (switch models with /model)\n")
 
         while True:
             try:
@@ -123,7 +132,12 @@ def main():
                         print(f"  Verbosity: {meta.get('verbosity')}")
                         print(f"\n[ASSEMBLY]")
                         print(f"  Mode: {status['assembly_mode']}")
-                        print(f"  Modes available: {', '.join(MemoryEngine.ASSEMBLY_MODES.keys())}\n")
+                        print(f"  Modes available: {', '.join(MemoryEngine.ASSEMBLY_MODES.keys())}")
+                        info = agent.backend_info()
+                        print(f"\n[MODEL BACKEND]")
+                        print(f"  Active: {info['backend']} — {info['model']} "
+                              f"({'local/offline' if info['local'] else 'remote cloud'})")
+                        print(f"  Endpoint: {info['base_url']}\n")
 
                     elif cmd == "/checkpoint":
                         if not arg:
@@ -171,6 +185,25 @@ def main():
                             agent.set_task(arg)
                             print(f"✓ Task set")
 
+                    elif cmd == "/model":
+                        info = agent.backend_info()
+                        if not arg:
+                            print(f"\n[MODEL BACKEND]")
+                            print(f"  Active: {info['backend']} — {info['label']}")
+                            print(f"  Model: {info['model']}  ({'local/offline' if info['local'] else 'remote cloud'})")
+                            print(f"  Endpoint: {info['base_url']}")
+                            print(f"  Available:")
+                            for name, cfg in MODEL_BACKENDS.items():
+                                mark = "*" if name == info["backend"] else " "
+                                print(f"    [{mark}] {name:<10} {cfg['label']}")
+                            print("  Switch with: /model <name>\n")
+                        else:
+                            name = arg.strip().lower()
+                            if name not in MODEL_BACKENDS:
+                                print(f"✗ Unknown backend '{name}'. Available: {', '.join(MODEL_BACKENDS)}")
+                            else:
+                                agent.switch_backend(name)
+
                     elif cmd == "/mode":
                         if not arg:
                             print(f"Current mode: {agent.memory.assembly_mode}")
@@ -209,7 +242,8 @@ def main():
                         if not arg:
                             print("Usage: /start-task <description>")
                         else:
-                            pipeline = TaskPipeline(arg)
+                            # New pipeline agents inherit whichever backend is active now.
+                            pipeline = TaskPipeline(arg, backend=agent.backend)
                             response, metrics = pipeline.start_planning()
                             print(f"\n[PLANNING — agent #1] {response}")
                             print_metrics(metrics)

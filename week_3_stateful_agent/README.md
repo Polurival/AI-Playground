@@ -16,6 +16,24 @@ source ../deepseek-env/bin/activate
 python main.py
 ```
 
+### Run Offline (Local LLM, No Cloud/API Key)
+```bash
+# 1. Start Ollama (snap build; see week_6_local_LLM/README.md for details)
+snap services ollama  
+sudo snap start ollama          # or, non-snap build: ollama serve
+
+# 2. Pull the model once (~1.9 GB)
+ollama pull qwen2.5:3b
+
+# 3. Launch the CLI defaulting to the local backend
+cd week_3_stateful_agent
+source ../deepseek-env/bin/activate
+AGENT_BACKEND=local python main.py
+
+sudo snap stop ollama
+```
+No `DEEPSEEK_API_KEY` needed in this mode. See [Model Backends](#model-backends-deepseek--local) below for switching mid-session with `/model`.
+
 ### Run Validation Demo
 ```bash
 source ../deepseek-env/bin/activate
@@ -56,6 +74,71 @@ short_only       → System + Short-term only
 short_working    → System + Short-term + Working task
 short_long       → System + Short-term + Long-term profile
 full_memory      → System + Short-term + Working + Long-term
+```
+
+---
+
+## Model Backends (DeepSeek / Local)
+
+The agent talks to whichever LLM backend is active through the same OpenAI-compatible
+client — only `base_url`, `model`, and API-key handling differ. Two backends are
+registered in `agent.py` (`MODEL_BACKENDS`):
+
+| Backend | Model | Where | Needs `DEEPSEEK_API_KEY`? |
+|---------|-------|-------|---------------------------|
+| `deepseek` (default) | `deepseek-v4-flash` | Remote cloud API | Yes |
+| `local` | `qwen2.5:3b` | Local Ollama server (`localhost:11434`) | No |
+
+### Start Ollama for the local backend
+
+```bash
+sudo snap start ollama          # snap build: starts the daemon
+# non-snap build:  ollama serve
+
+ollama pull qwen2.5:3b          # one-time, ~1.9 GB
+ollama list                     # verify it's there
+curl -s http://localhost:11434/api/version   # {"version":"..."} confirms it's up
+```
+
+Stop it later with `sudo snap stop ollama` (see `week_6_local_LLM/README.md` for the
+full setup writeup, including RAM/CPU sizing notes for this model).
+
+### Choose the backend at startup
+
+```bash
+AGENT_BACKEND=local python main.py       # start offline, no key required
+python main.py                           # start on deepseek (needs DEEPSEEK_API_KEY)
+```
+
+### Switch backend mid-session with `/model`
+
+```
+You: /model
+[MODEL BACKEND]
+  Active: deepseek — DeepSeek (remote cloud API)
+  Model: deepseek-v4-flash  (remote cloud)
+  Endpoint: https://api.deepseek.com
+  Available:
+    [*] deepseek   DeepSeek (remote cloud API)
+    [ ] local      Qwen2.5:3b via Ollama (local, offline)
+  Switch with: /model <name>
+
+You: /model local
+✓ Model backend: deepseek → local (qwen2.5:3b @ http://localhost:11434/v1)
+
+You: Hello!
+Agent: Hi there! How can I help?
+```
+
+Switching backends **keeps the current conversation and all memory layers** — only the
+underlying client/model is swapped. `/start-task` pipelines spawn every stage agent
+(planning/execution/validation/done) on whichever backend is active at the time.
+
+Switching to `deepseek` without `DEEPSEEK_API_KEY` set fails cleanly and leaves you on
+the previous backend:
+```
+You: /model deepseek
+✗ Could not switch to 'deepseek': DEEPSEEK_API_KEY environment variable not set (required for backend 'deepseek')
 ```
 
 ---
@@ -178,6 +261,14 @@ Agent: (Different system prompt with different constraints)
 ### Working Memory
 ```
 /task <text>            Set or overwrite active target task
+```
+
+### Model Backend
+```
+/model                   Show active backend + available ones
+/model <name>            Switch backend, keeps conversation & memory:
+                           - deepseek  (remote cloud API, needs DEEPSEEK_API_KEY)
+                           - local     (Ollama qwen2.5:3b, fully offline)
 ```
 
 ### Assembly Mode
@@ -433,11 +524,16 @@ agent = DeepSeekAgent(
     api_key="...",
     system_prompt="You are helpful",
     window_size=6,
-    memory_dir=".memory"
+    memory_dir=".memory",
+    backend="deepseek"          # or "local" — see MODEL_BACKENDS in agent.py
 )
 
 # Send message
 response, metrics = agent.send_message("Hello!")
+
+# Model backend control
+agent.switch_backend("local")   # swap client/model, keeps memory intact
+info = agent.backend_info()     # {"backend", "label", "model", "base_url", "local"}
 
 # Short-term control
 agent.checkpoint("save_point")
@@ -485,6 +581,15 @@ info = engine.get_debug_info()
 ### API Key Not Found
 ```bash
 export DEEPSEEK_API_KEY="sk-xxx"
+```
+Or skip the cloud entirely — run offline with `AGENT_BACKEND=local python main.py`
+(see [Model Backends](#model-backends-deepseek--local)).
+
+### Local Backend: "Is Ollama running?" / Connection Refused
+```bash
+sudo snap start ollama              # or: ollama serve
+ollama pull qwen2.5:3b              # if not already pulled
+curl -s http://localhost:11434/api/version   # should return {"version":"..."}
 ```
 
 ### Memory Files Not Loading

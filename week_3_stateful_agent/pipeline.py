@@ -12,7 +12,7 @@ import re
 import time
 from typing import Optional, Tuple, Dict, Any, List
 
-from agent import DeepSeekAgent, ALLOWED_TRANSITIONS
+from agent import DeepSeekAgent, ALLOWED_TRANSITIONS, DEFAULT_BACKEND
 
 PLANNING_STAGE_PROMPT = """You are the PLANNING-stage agent of a multi-agent task pipeline.
 You only ever operate in this one stage. A separate, freshly-created agent will handle
@@ -106,9 +106,16 @@ class TaskPipeline:
     """Orchestrates a task through planning -> execution -> validation (loop) -> done,
     handing off only structured results between a fresh agent per stage."""
 
-    def __init__(self, task_description: str, memory_root: str = ".memory_pipeline"):
+    def __init__(
+        self,
+        task_description: str,
+        memory_root: str = ".memory_pipeline",
+        backend: str = DEFAULT_BACKEND,
+    ):
         self.task_description = task_description
         self.memory_root = memory_root
+        # Every stage agent this pipeline spawns uses this backend (deepseek/local).
+        self.backend = backend
         self.run_id = str(int(time.time()))
 
         self.planning_agent: Optional[DeepSeekAgent] = None
@@ -151,6 +158,7 @@ class TaskPipeline:
             use_state_machine=False,
             system_prompt=system_prompt,
             memory_dir=self._stage_dir(stage),
+            backend=self.backend,
         )
         if self.invariants:
             agent.set_invariants(self.invariants)

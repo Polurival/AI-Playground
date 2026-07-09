@@ -5,6 +5,37 @@ import tiktoken
 from typing import Tuple, Dict, Any, Optional
 from memory import MemoryEngine
 
+# ---------------------------------------------------------------------------
+# Model backends
+#
+# Both the remote DeepSeek API and a LOCAL Ollama server speak the same
+# OpenAI-compatible chat API, so a single OpenAI() client works for either —
+# only base_url / model / api-key handling differ. The registry below is the
+# single source of truth; `/model <name>` in the CLI flips between them at
+# runtime without dropping the conversation or memory.
+#
+# "local" points at Ollama (see ../week_6_local_LLM/README.md): no cloud, no
+# API key, no network — everything runs on this machine.
+# ---------------------------------------------------------------------------
+MODEL_BACKENDS: Dict[str, Dict[str, Any]] = {
+    "deepseek": {
+        "label": "DeepSeek (remote cloud API)",
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-flash",
+        "api_key_env": "DEEPSEEK_API_KEY",  # required
+        "local": False,
+    },
+    "local": {
+        "label": "Qwen2.5:3b via Ollama (local, offline)",
+        "base_url": "http://localhost:11434/v1",
+        "model": "qwen2.5:3b",
+        "api_key_env": None,  # Ollama ignores the key
+        "local": True,
+    },
+}
+
+DEFAULT_BACKEND = os.environ.get("AGENT_BACKEND", "deepseek")
+
 TASK_STATE_MACHINE_PROMPT = """You are a Task State Machine Agent. Manage task execution through defined states.
 
 ## STATE FLOW
@@ -149,14 +180,15 @@ class DeepSeekAgent:
         system_prompt: Optional[str] = None,
         window_size: int = 6,
         memory_dir: str = ".memory",
-        use_state_machine: bool = True
+        use_state_machine: bool = True,
+        backend: str = DEFAULT_BACKEND,
+        model: Optional[str] = None,
+        base_url: Optional[str] = None,
     ):
-        api_key = api_key or os.environ.get("DEEPSEEK_API_KEY")
-        if not api_key:
-            raise ValueError("DEEPSEEK_API_KEY environment variable not set")
-
-        self.client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
-        self.model = "deepseek-v4-flash"
+        # Build self.client / self.model / self.backend from the registry.
+        # Raises ValueError only if a *remote* backend is missing its API key —
+        # the local (Ollama) backend needs none, so it works with no cloud creds.
+        self._configure_backend(backend, api_key=api_key, model=model, base_url=base_url)
         self.encoding = tiktoken.get_encoding("cl100k_base")
 
         # Task state machine
@@ -188,6 +220,68 @@ class DeepSeekAgent:
         # Initialize multi-layer memory
         self.memory = MemoryEngine(window_size=window_size)
         self._load_memory()
+
+    def _configure_backend(
+        self,
+        backend: str,
+        api_key: Optional[str] = None,
+        model: Optional[str] = None,
+        base_url: Optional[str] = None,
+    ) -> None:
+        """(Re)build the OpenAI client for the given backend. Called at init and
+        by switch_backend() — it only swaps client/model/base_url, never touches
+        memory, so the conversation survives a mid-session model switch."""
+        if backend not in MODEL_BACKENDS:
+            raise ValueError(
+                f"Unknown backend '{backend}'. Available: {', '.join(MODEL_BACKENDS)}"
+            )
+        cfg = MODEL_BACKENDS[backend]
+        resolved_base_url = base_url or cfg["base_url"]
+        resolved_model = model or cfg["model"]
+
+        key_env = cfg["api_key_env"]
+        if key_env:
+            resolved_key = api_key or os.environ.get(key_env)
+            if not resolved_key:
+                raise ValueError(
+                    f"{key_env} environment variable not set (required for backend '{backend}')"
+                )
+        else:
+            # Local backends (Ollama) ignore the key, but the OpenAI SDK still
+            # requires a non-empty string.
+            resolved_key = api_key or "local"
+
+        self.backend = backend
+        self.model = resolved_model
+        self.base_url = resolved_base_url
+        self.client = OpenAI(api_key=resolved_key, base_url=resolved_base_url)
+
+    def switch_backend(self, backend: str) -> bool:
+        """Flip the active model backend at runtime (used by the /model command).
+        Returns True on success; on failure (unknown backend or missing API key)
+        it prints why and keeps the current backend untouched."""
+        previous = getattr(self, "backend", None)
+        if backend == previous:
+            print(f"Already using backend '{backend}'.")
+            return True
+        try:
+            self._configure_backend(backend)
+        except ValueError as e:
+            print(f"✗ Could not switch to '{backend}': {e}")
+            return False
+        print(f"✓ Model backend: {previous} → {backend} ({self.model} @ {self.base_url})")
+        return True
+
+    def backend_info(self) -> Dict[str, Any]:
+        """Describe the currently active backend (for /status and /model)."""
+        cfg = MODEL_BACKENDS.get(self.backend, {})
+        return {
+            "backend": self.backend,
+            "label": cfg.get("label", self.backend),
+            "model": self.model,
+            "base_url": self.base_url,
+            "local": cfg.get("local", False),
+        }
 
     def _load_memory(self) -> None:
         """Load persistent memory from disk."""
@@ -393,19 +487,27 @@ class DeepSeekAgent:
             self._sync_state_from_response(assistant_response)
             self._save_memory()
 
+            # Ollama's OpenAI-compatible endpoint usually returns usage, but guard
+            # against a backend that omits it so local mode never crashes here.
+            usage = getattr(response, "usage", None)
             metrics = {
                 "user_input_tokens": user_tokens,
                 "context_tokens": context_tokens,
-                "prompt_tokens": response.usage.prompt_tokens,
-                "completion_tokens": response.usage.completion_tokens,
-                "total_tokens": response.usage.total_tokens,
+                "prompt_tokens": getattr(usage, "prompt_tokens", 0) or 0,
+                "completion_tokens": getattr(usage, "completion_tokens", 0) or 0,
+                "total_tokens": getattr(usage, "total_tokens", 0) or 0,
                 "memory_debug": self.memory.get_debug_info(),
             }
 
             return assistant_response, metrics
 
         except Exception as e:
-            print(f"API Error: {e}")
+            print(f"API Error ({self.backend} @ {self.base_url}): {e}")
+            if MODEL_BACKENDS.get(self.backend, {}).get("local"):
+                print(
+                    f"Is Ollama running? Start it with `sudo snap start ollama` "
+                    f"(or `ollama serve`) and pull the model with `ollama pull {self.model}`."
+                )
             raise
 
     def checkpoint(self, name: str) -> None:
