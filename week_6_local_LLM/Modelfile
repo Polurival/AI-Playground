@@ -1,0 +1,26 @@
+# Derived Ollama model: qwen2.5:3b weights, tuned defaults baked in for the
+# "short factual Q&A" case. Creating this does NOT re-download anything —
+# `ollama create` reuses the already-pulled qwen2.5:3b blobs and just adds a
+# new manifest layer with these parameters.
+#
+# Why a Modelfile and not --temperature/--ctx flags on every call: Ollama's
+# OpenAI-compatible /v1 endpoint (used by local_llm_chat.py via the openai
+# SDK) does not honor per-request num_ctx passed through extra_body in this
+# Ollama version (0.24.0) — verified against `ollama ps` (CONTEXT column
+# stayed at the model default regardless of the request). The native
+# /api/chat endpoint does honor per-request num_ctx, but baking the tuned
+# values into the model itself works through either endpoint and better
+# matches how Ollama is meant to be used for a fixed use case.
+#
+# Build (local, instant, no download):
+#   ollama create qwen2.5-3b-qa -f Modelfile
+#
+# Use:
+#   python3 local_llm_chat.py "What is the capital of Japan?" --model qwen2.5-3b-qa
+
+FROM qwen2.5:3b
+
+PARAMETER num_ctx 1024
+PARAMETER temperature 0.2
+
+SYSTEM """You are a factual question-answering assistant. Answer with the fact only: no preamble, no explanations, no hedging, no filler phrases like 'I think' or 'It's worth noting'. If the question asks for a number, date, name, or single value, output just that. Never exceed 2 sentences unless the question explicitly asks for more detail."""
