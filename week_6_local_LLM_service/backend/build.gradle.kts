@@ -13,6 +13,7 @@ repositories {
 
 val ktorVersion = "3.0.3"
 val logbackVersion = "1.5.12"
+val coroutinesVersion = "1.9.0"
 
 dependencies {
     implementation("io.ktor:ktor-server-core:$ktorVersion")
@@ -21,6 +22,13 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
     implementation("io.ktor:ktor-server-status-pages:$ktorVersion")
     implementation("io.ktor:ktor-server-call-logging:$ktorVersion")
+
+    // HTTP client for talking to Ollama
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
 
     testImplementation(kotlin("test"))
@@ -37,4 +45,17 @@ application {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+// Manual harness: ./gradlew chatHarness -Pprompt="Say hi"
+// Requires `ollama serve` running with the chat model pulled.
+tasks.register<JavaExec>("chatHarness") {
+    group = "verification"
+    description = "Calls OllamaClient.chat against a running Ollama and prints the completion."
+    mainClass.set("com.witchercookbook.llm.OllamaClientHarnessKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    javaLauncher.set(
+        javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) }
+    )
+    (project.findProperty("prompt") as String?)?.let { args(it) }
 }
