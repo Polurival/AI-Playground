@@ -28,6 +28,10 @@ data class AppConfig(
     val maxContextMessages: Int,
     val maxMessageChars: Int,
     val maxContextTokens: Int,
+
+    // LLM concurrency guard — consumed in Phase B3
+    val llmMaxConcurrent: Int,
+    val llmMaxQueue: Int,
 ) {
     companion object {
         /**
@@ -47,6 +51,8 @@ data class AppConfig(
             maxContextMessages = intEnv(getenv, "MAX_CONTEXT_MESSAGES", 20),
             maxMessageChars = intEnv(getenv, "MAX_MESSAGE_CHARS", 4000),
             maxContextTokens = intEnv(getenv, "MAX_CONTEXT_TOKENS", 4096),
+            llmMaxConcurrent = intEnv(getenv, "LLM_MAX_CONCURRENT", 2),
+            llmMaxQueue = intEnv(getenv, "LLM_MAX_QUEUE", 8),
         )
 
         private fun strEnv(getenv: (String) -> String?, key: String, default: String): String =

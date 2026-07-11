@@ -1,5 +1,6 @@
 package com.witchercookbook.service
 
+import com.witchercookbook.llm.LlmConcurrencyGate
 import com.witchercookbook.llm.OllamaChatMessage
 import com.witchercookbook.llm.OllamaClient
 import com.witchercookbook.model.ChatRequest
@@ -13,9 +14,13 @@ import com.witchercookbook.model.Role
  * Depends only on the domain [model] and the [llm] layer — never on Ktor/HTTP.
  * For now it assembles a minimal prompt inline; in Phase D3 this responsibility
  * moves to `PromptBuilder` and RAG retrieval is added.
+ *
+ * The Ollama call is fenced by [gate] so concurrent load on the local model stays
+ * bounded (Phase B3); excess callers are rejected with [com.witchercookbook.llm.LlmBusyException].
  */
 class ChatService(
     private val ollama: OllamaClient,
+    private val gate: LlmConcurrencyGate,
 ) {
     /**
      * Runs [request] through the LLM and returns the assistant's reply.
@@ -30,7 +35,7 @@ class ChatService(
             request.messages.forEach { add(it.toOllama()) }
         }
 
-        val reply = ollama.chat(messages)
+        val reply = gate.withPermit { ollama.chat(messages) }
         return ChatResponse(reply = reply.trim())
     }
 

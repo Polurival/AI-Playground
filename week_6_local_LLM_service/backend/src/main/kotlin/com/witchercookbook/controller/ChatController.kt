@@ -1,6 +1,7 @@
 package com.witchercookbook.controller
 
 import com.witchercookbook.config.AppConfig
+import com.witchercookbook.llm.LlmBusyException
 import com.witchercookbook.llm.OllamaException
 import com.witchercookbook.model.ChatRequest
 import com.witchercookbook.model.Message
@@ -93,6 +94,10 @@ fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateL
             call.respond(ChatResponseDto(reply = response.reply))
         } catch (e: IllegalArgumentException) {
             call.respond(HttpStatusCode.BadRequest, errorDto("VALIDATION_ERROR", e.message ?: "Invalid request"))
+        } catch (e: LlmBusyException) {
+            // Concurrency gate saturated: shed load cleanly and invite a retry.
+            call.response.header(HttpHeaders.RetryAfter, "1")
+            call.respond(HttpStatusCode.ServiceUnavailable, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM busy"))
         } catch (e: OllamaException) {
             call.respond(HttpStatusCode.BadGateway, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM error"))
         }

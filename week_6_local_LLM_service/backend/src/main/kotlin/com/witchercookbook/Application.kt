@@ -4,6 +4,7 @@ import com.witchercookbook.config.AppConfig
 import com.witchercookbook.controller.RateLimiter
 import com.witchercookbook.controller.chatRoutes
 import com.witchercookbook.controller.healthRoutes
+import com.witchercookbook.llm.LlmConcurrencyGate
 import com.witchercookbook.llm.OllamaClient
 import com.witchercookbook.service.ChatService
 import io.ktor.serialization.kotlinx.json.json
@@ -30,7 +31,11 @@ fun Application.module(config: AppConfig = AppConfig.load()) {
     install(CallLogging)
 
     val ollama = OllamaClient(config)
-    val chatService = ChatService(ollama)
+    val gate = LlmConcurrencyGate(
+        maxConcurrent = config.llmMaxConcurrent,
+        maxQueue = config.llmMaxQueue,
+    )
+    val chatService = ChatService(ollama, gate)
     val rateLimiter = RateLimiter(
         capacity = config.rateLimitCapacity,
         refillPerMinute = config.rateLimitRefillPerMinute,
