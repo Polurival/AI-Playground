@@ -6,8 +6,12 @@ import com.witchercookbook.model.ChatRequest
 import com.witchercookbook.model.Message
 import com.witchercookbook.model.Role
 import com.witchercookbook.service.ChatService
+import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
+import io.ktor.server.application.ApplicationCall
+import io.ktor.server.plugins.origin
 import io.ktor.server.request.receive
+import io.ktor.server.response.header
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.post
@@ -51,8 +55,20 @@ data class ErrorDto(
 
 private fun errorDto(code: String, message: String) = ErrorDto(ErrorBody(code, message))
 
-fun Route.chatRoutes(service: ChatService, config: AppConfig) {
+fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateLimiter) {
     post("/api/chat") {
+        when (val decision = rateLimiter.check(call.clientIp())) {
+            is RateLimiter.Decision.Allowed -> Unit
+            is RateLimiter.Decision.Limited -> {
+                call.response.header(HttpHeaders.RetryAfter, decision.retryAfterSeconds.toString())
+                call.respond(
+                    HttpStatusCode.TooManyRequests,
+                    errorDto("RATE_LIMITED", "Rate limit exceeded; retry after ${decision.retryAfterSeconds}s"),
+                )
+                return@post
+            }
+        }
+
         val dto = call.receive<ChatRequestDto>()
 
         try {
@@ -92,6 +108,21 @@ private fun MessageDto.toDomain(): Message {
     require(content.isNotBlank()) { "message content must not be blank" }
     return Message(role = role.toRole(), content = content)
 }
+
+/**
+ * Resolves the originating client IP for rate limiting.
+ *
+ * Behind Nginx the socket peer is always localhost, so the real client is the
+ * first entry of `X-Forwarded-For` (the closest untrusted hop). Falls back to
+ * the direct socket address for local/direct requests.
+ */
+private fun ApplicationCall.clientIp(): String =
+    request.headers["X-Forwarded-For"]
+        ?.split(',')
+        ?.firstOrNull()
+        ?.trim()
+        ?.takeIf { it.isNotEmpty() }
+        ?: request.origin.remoteHost
 
 private fun String.toRole(): Role = when (lowercase()) {
     "user" -> Role.USER

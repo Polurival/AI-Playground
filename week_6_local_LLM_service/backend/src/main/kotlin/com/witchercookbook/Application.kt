@@ -1,6 +1,7 @@
 package com.witchercookbook
 
 import com.witchercookbook.config.AppConfig
+import com.witchercookbook.controller.RateLimiter
 import com.witchercookbook.controller.chatRoutes
 import com.witchercookbook.controller.healthRoutes
 import com.witchercookbook.llm.OllamaClient
@@ -30,9 +31,13 @@ fun Application.module(config: AppConfig = AppConfig.load()) {
 
     val ollama = OllamaClient(config)
     val chatService = ChatService(ollama)
+    val rateLimiter = RateLimiter(
+        capacity = config.rateLimitCapacity,
+        refillPerMinute = config.rateLimitRefillPerMinute,
+    )
 
     routing {
         healthRoutes()
-        chatRoutes(chatService, config)
+        chatRoutes(chatService, config, rateLimiter)
     }
 }
