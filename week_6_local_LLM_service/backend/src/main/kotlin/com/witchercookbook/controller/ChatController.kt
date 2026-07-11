@@ -1,5 +1,6 @@
 package com.witchercookbook.controller
 
+import com.witchercookbook.config.AppConfig
 import com.witchercookbook.llm.OllamaException
 import com.witchercookbook.model.ChatRequest
 import com.witchercookbook.model.Message
@@ -38,18 +39,36 @@ data class ChatResponseDto(
 )
 
 @Serializable
-data class ErrorDto(
-    val error: String,
+data class ErrorBody(
+    val code: String,
+    val message: String,
 )
 
-fun Route.chatRoutes(service: ChatService) {
+@Serializable
+data class ErrorDto(
+    val error: ErrorBody,
+)
+
+private fun errorDto(code: String, message: String) = ErrorDto(ErrorBody(code, message))
+
+fun Route.chatRoutes(service: ChatService, config: AppConfig) {
     post("/api/chat") {
         val dto = call.receive<ChatRequestDto>()
+
+        try {
+            dto.enforceMaxContext(config)
+        } catch (e: ContextTooLargeException) {
+            call.respond(
+                HttpStatusCode.PayloadTooLarge,
+                errorDto("CONTEXT_TOO_LARGE", e.message ?: "Request exceeds max context"),
+            )
+            return@post
+        }
 
         val domain = try {
             dto.toDomain()
         } catch (e: IllegalArgumentException) {
-            call.respond(HttpStatusCode.BadRequest, ErrorDto(e.message ?: "Invalid request"))
+            call.respond(HttpStatusCode.BadRequest, errorDto("VALIDATION_ERROR", e.message ?: "Invalid request"))
             return@post
         }
 
@@ -57,9 +76,9 @@ fun Route.chatRoutes(service: ChatService) {
             val response = service.chat(domain)
             call.respond(ChatResponseDto(reply = response.reply))
         } catch (e: IllegalArgumentException) {
-            call.respond(HttpStatusCode.BadRequest, ErrorDto(e.message ?: "Invalid request"))
+            call.respond(HttpStatusCode.BadRequest, errorDto("VALIDATION_ERROR", e.message ?: "Invalid request"))
         } catch (e: OllamaException) {
-            call.respond(HttpStatusCode.BadGateway, ErrorDto("LLM error: ${e.message}"))
+            call.respond(HttpStatusCode.BadGateway, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM error"))
         }
     }
 }

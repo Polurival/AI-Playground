@@ -33,6 +33,6 @@ fun Application.module(config: AppConfig = AppConfig.load()) {
 
     routing {
         healthRoutes()
-        chatRoutes(chatService)
+        chatRoutes(chatService, config)
     }
 }
