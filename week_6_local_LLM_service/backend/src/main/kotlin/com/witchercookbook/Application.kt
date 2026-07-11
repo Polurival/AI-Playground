@@ -1,5 +1,6 @@
 package com.witchercookbook
 
+import com.witchercookbook.config.AppConfig
 import com.witchercookbook.controller.healthRoutes
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
@@ -12,7 +13,8 @@ import io.ktor.server.routing.routing
 import kotlinx.serialization.json.Json
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0", module = Application::module).start(wait = true)
+    val config = AppConfig.load()
+    embeddedServer(Netty, port = config.serverPort, host = "0.0.0.0", module = Application::module).start(wait = true)
 }
 
 fun Application.module() {
