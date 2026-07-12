@@ -133,3 +133,21 @@
   opacity: 0.5;
   cursor: default;
 }
+
+.stream-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted, #9a8f80);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* The generic `.chat-form input` styling would stretch this checkbox; keep it small. */
+.stream-toggle input {
+  flex: initial;
+  width: auto;
+  padding: 0;
+  cursor: pointer;
+}

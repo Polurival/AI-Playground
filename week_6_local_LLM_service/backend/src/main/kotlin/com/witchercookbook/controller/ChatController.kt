@@ -7,6 +7,8 @@ import com.witchercookbook.model.ChatRequest
 import com.witchercookbook.model.Message
 import com.witchercookbook.model.Role
 import com.witchercookbook.service.ChatService
+import com.witchercookbook.service.StreamingChat
+import io.ktor.http.ContentType
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.ApplicationCall
@@ -14,9 +16,14 @@ import io.ktor.server.plugins.origin
 import io.ktor.server.request.receive
 import io.ktor.server.response.header
 import io.ktor.server.response.respond
+import io.ktor.server.response.respondTextWriter
 import io.ktor.server.routing.Route
+import io.ktor.server.routing.RoutingContext
 import io.ktor.server.routing.post
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
+import java.io.Writer
 
 /**
  * Wire DTOs and routing for `POST /api/chat`.
@@ -36,6 +43,8 @@ data class MessageDto(
 @Serializable
 data class ChatRequestDto(
     val messages: List<MessageDto>,
+    /** When true, the reply is streamed back as Server-Sent Events instead of one JSON body. */
+    val stream: Boolean = false,
 )
 
 @Serializable
@@ -96,6 +105,11 @@ fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateL
             return@post
         }
 
+        if (dto.stream) {
+            respondChatStream(service, domain)
+            return@post
+        }
+
         try {
             val response = service.chat(domain)
             call.respond(
@@ -114,6 +128,64 @@ fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateL
             call.respond(HttpStatusCode.BadGateway, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM error"))
         }
     }
+}
+
+// Shared Json for SSE payloads; each event's `data:` line is a compact JSON value.
+private val sseJson = Json { encodeDefaults = false }
+
+/**
+ * Streams a chat reply as Server-Sent Events.
+ *
+ * Retrieval runs first so pre-stream failures (empty request, embedding/index
+ * errors, a saturated gate) still map to a normal JSON error status. Once the
+ * event stream has started we are committed to `200 text/event-stream`, so any
+ * failure while generating tokens is delivered as an `error` event instead.
+ *
+ * Event protocol (each frame is `event: <name>` + a single JSON `data:` line):
+ *   - `token`   — a content delta (JSON-encoded string)
+ *   - `sources` — the grounding sources (JSON array), sent once after the tokens
+ *   - `done`    — terminal marker
+ *   - `error`   — `{code,message}` if generation fails mid-stream
+ */
+private suspend fun RoutingContext.respondChatStream(service: ChatService, domain: ChatRequest) {
+    val streaming: StreamingChat = try {
+        service.chatStream(domain)
+    } catch (e: IllegalArgumentException) {
+        call.respond(HttpStatusCode.BadRequest, errorDto("VALIDATION_ERROR", e.message ?: "Invalid request"))
+        return
+    } catch (e: LlmBusyException) {
+        call.response.header(HttpHeaders.RetryAfter, "1")
+        call.respond(HttpStatusCode.ServiceUnavailable, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM busy"))
+        return
+    } catch (e: OllamaException) {
+        call.respond(HttpStatusCode.BadGateway, errorDto("LLM_UNAVAILABLE", e.message ?: "LLM error"))
+        return
+    }
+
+    // Defeat proxy buffering so tokens reach the browser as they are written.
+    call.response.header(HttpHeaders.CacheControl, "no-cache")
+    call.response.header("X-Accel-Buffering", "no")
+    call.respondTextWriter(ContentType.Text.EventStream) {
+        try {
+            streaming.tokens.collect { token ->
+                writeEvent("token", sseJson.encodeToString(token))
+            }
+            val sources = streaming.sources.map { SourceDto(it.title, it.score) }
+            writeEvent("sources", sseJson.encodeToString(sources))
+            writeEvent("done", "{}")
+        } catch (e: LlmBusyException) {
+            writeEvent("error", sseJson.encodeToString(ErrorBody("LLM_UNAVAILABLE", e.message ?: "LLM busy")))
+        } catch (e: OllamaException) {
+            writeEvent("error", sseJson.encodeToString(ErrorBody("LLM_UNAVAILABLE", e.message ?: "LLM error")))
+        }
+    }
+}
+
+/** Writes one SSE frame and flushes so the client receives it immediately. */
+private fun Writer.writeEvent(event: String, data: String) {
+    write("event: $event\n")
+    write("data: $data\n\n")
+    flush()
 }
 
 private fun ChatRequestDto.toDomain(): ChatRequest {

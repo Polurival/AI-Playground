@@ -14,6 +14,8 @@ import com.witchercookbook.prompt.PromptBuilder
 import com.witchercookbook.prompt.PromptMode
 import com.witchercookbook.rag.SimilaritySearch
 import com.witchercookbook.util.LanguageDetector
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
 /**
  * Orchestrates a grounded chat turn — the point where every RAG boundary meets
@@ -41,6 +43,33 @@ class ChatService(
      * @throws IllegalArgumentException if the request carries no messages.
      */
     suspend fun chat(request: ChatRequest): ChatResponse {
+        val prepared = prepare(request)
+        val reply = gate.withPermit { ollama.chat(prepared.prompt.map { it.toOllama() }) }
+        return ChatResponse(reply = reply.trim(), sources = prepared.sources)
+    }
+
+    /**
+     * Streaming counterpart of [chat]. Retrieval runs eagerly (so an embedding or
+     * search failure surfaces before the response starts), and the returned
+     * [StreamingChat.sources] are already final. [StreamingChat.tokens] is a cold
+     * flow: collecting it acquires the [gate] permit, streams Ollama's content
+     * deltas, and releases the permit when the flow completes or the collector is
+     * cancelled (e.g. the client disconnects).
+     *
+     * @throws IllegalArgumentException if the request carries no messages.
+     */
+    suspend fun chatStream(request: ChatRequest): StreamingChat {
+        val prepared = prepare(request)
+        val tokens: Flow<String> = flow {
+            gate.withPermit {
+                ollama.chatStream(prepared.prompt.map { it.toOllama() }).collect { emit(it) }
+            }
+        }
+        return StreamingChat(sources = prepared.sources, tokens = tokens)
+    }
+
+    /** Retrieval + prompt assembly shared by the streaming and non-streaming paths. */
+    private suspend fun prepare(request: ChatRequest): Prepared {
         require(request.messages.isNotEmpty()) { "Chat request must contain at least one message" }
 
         val query = latestUserQuery(request.messages)
@@ -51,10 +80,14 @@ class ChatService(
         val mode = if (isGrounded(results)) PromptMode.GROUNDED else PromptMode.REFUSAL
 
         val prompt = promptBuilder.build(mode, request.messages, results, language)
-        val reply = gate.withPermit { ollama.chat(prompt.map { it.toOllama() }) }
-
-        return ChatResponse(reply = reply.trim(), sources = results.toSources())
+        return Prepared(prompt = prompt, sources = results.toSources())
     }
+
+    /** The assembled prompt plus the (final) sources, ready for either path. */
+    private data class Prepared(
+        val prompt: List<Message>,
+        val sources: List<Source>,
+    )
 
     /** Grounded when at least one retrieved chunk clears the relevance threshold (spec §11). */
     private fun isGrounded(results: List<RetrievalResult>): Boolean =
@@ -78,3 +111,13 @@ class ChatService(
             Role.SYSTEM -> "system"
         }
 }
+
+/**
+ * A streaming chat result: the reply arrives incrementally over [tokens] while
+ * [sources] (known once retrieval completes) can be sent to the client after the
+ * stream finishes.
+ */
+data class StreamingChat(
+    val sources: List<Source>,
+    val tokens: Flow<String>,
+)

@@ -1,16 +1,23 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import './App.css'
-import { sendChat } from './api'
+import { sendChat, sendChatStream } from './api'
 import type { Message, Source } from './api'
 
 /** A chat turn as shown in the UI: the wire message plus any grounding sources. */
 type DisplayMessage = Message & { sources?: Source[] }
 
+/** True while awaiting the reply's first content: a user turn or an empty streaming bubble. */
+function awaitingFirstToken(messages: DisplayMessage[]): boolean {
+  const last = messages[messages.length - 1]
+  return !last || last.role !== 'assistant' || last.content === ''
+}
+
 function App() {
   const [messages, setMessages] = useState<DisplayMessage[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [streaming, setStreaming] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   async function handleSubmit(e: FormEvent) {
@@ -27,13 +34,38 @@ function App() {
     try {
       // Send only the wire fields; sources are display-only and the server is stateless.
       const history: Message[] = nextMessages.map(({ role, content }) => ({ role, content }))
-      const { reply, sources } = await sendChat(history)
-      setMessages([...nextMessages, { role: 'assistant', content: reply, sources }])
+      if (streaming) {
+        await streamReply(nextMessages, history)
+      } else {
+        const { reply, sources } = await sendChat(history)
+        setMessages([...nextMessages, { role: 'assistant', content: reply, sources }])
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
     } finally {
       setLoading(false)
     }
+  }
+
+  /** Appends an assistant bubble and grows it as tokens arrive, then fills in sources. */
+  async function streamReply(base: DisplayMessage[], history: Message[]) {
+    setMessages([...base, { role: 'assistant', content: '' }])
+    await sendChatStream(history, {
+      onToken: (text) =>
+        setMessages((prev) => {
+          const copy = [...prev]
+          const last = copy[copy.length - 1]
+          copy[copy.length - 1] = { ...last, content: last.content + text }
+          return copy
+        }),
+      onSources: (sources) =>
+        setMessages((prev) => {
+          const copy = [...prev]
+          const last = copy[copy.length - 1]
+          copy[copy.length - 1] = { ...last, sources }
+          return copy
+        }),
+    })
   }
 
   return (
@@ -61,7 +93,9 @@ function App() {
             )}
           </div>
         ))}
-        {loading && <div className="message message-assistant message-pending">...brewing...</div>}
+        {loading && awaitingFirstToken(messages) && (
+          <div className="message message-assistant message-pending">...brewing...</div>
+        )}
         {error && <div className="message message-error">{error}</div>}
       </main>
 
@@ -76,6 +110,15 @@ function App() {
         <button type="submit" disabled={loading || !input.trim()}>
           Send
         </button>
+        <label className="stream-toggle">
+          <input
+            type="checkbox"
+            checked={streaming}
+            onChange={(e) => setStreaming(e.target.checked)}
+            disabled={loading}
+          />
+          Stream
+        </label>
       </form>
     </div>
   )
