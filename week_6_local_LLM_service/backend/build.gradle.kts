@@ -72,3 +72,20 @@ tasks.register<JavaExec>("embedHarness") {
     )
     (project.findProperty("text") as String?)?.let { args(it) }
 }
+
+// Offline indexer: ./gradlew indexer [-Pkb=knowledge-base -Pindex=index/index.bin]
+// Builds index.bin from the Markdown KB. Requires `ollama serve` with the embedding
+// model pulled. Never runs inside the server (spec R-7). Working dir is the repo root
+// so default `knowledge-base/` and `index/` paths resolve to the layout in spec §12.
+tasks.register<JavaExec>("indexer") {
+    group = "application"
+    description = "Builds the binary vector index from the Markdown knowledge base."
+    mainClass.set("com.witchercookbook.indexer.IndexerAppKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    workingDir = rootProject.projectDir.parentFile
+    javaLauncher.set(
+        javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) }
+    )
+    (project.findProperty("kb") as String?)?.let { args(it) }
+    (project.findProperty("index") as String?)?.let { args(it) }
+}

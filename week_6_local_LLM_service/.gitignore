@@ -1,0 +1,2 @@
+# Generated vector index (built offline by `./gradlew indexer`, shipped via scp).
+index/*.bin
