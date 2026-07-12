@@ -1,0 +1,53 @@
+[Unit]
+Description=Witcher Cookbook backend (Ktor)
+After=network.target ollama.service
+Wants=ollama.service
+
+[Service]
+Type=simple
+User=witcher
+Group=witcher
+WorkingDirectory=/opt/witcher-cookbook
+ExecStart=/usr/bin/java -jar /opt/witcher-cookbook/witcher-backend.jar
+
+# Server
+Environment=SERVER_PORT=8080
+
+# Ollama / models
+Environment=OLLAMA_URL=http://127.0.0.1:11434
+Environment=CHAT_MODEL=qwen3:4b
+Environment=EMBED_MODEL=nomic-embed-text
+
+# Retrieval — INDEX_PATH is relative to WorkingDirectory
+Environment=TOP_K=5
+Environment=RELEVANCE_MIN_SCORE=0.5
+Environment=INDEX_PATH=index/index.bin
+
+# Rate limiting
+Environment=RATE_LIMIT_CAPACITY=10
+Environment=RATE_LIMIT_REFILL_PER_MINUTE=30
+
+# Max context guards
+Environment=MAX_CONTEXT_MESSAGES=20
+Environment=MAX_MESSAGE_CHARS=4000
+Environment=MAX_CONTEXT_TOKENS=4096
+
+# LLM concurrency guard
+Environment=LLM_MAX_CONCURRENT=2
+Environment=LLM_MAX_QUEUE=8
+
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=witcher-backend
+
+# Hardening — server only needs to read its jar/index and listen on a port
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/witcher-cookbook
+
+[Install]
+WantedBy=multi-user.target

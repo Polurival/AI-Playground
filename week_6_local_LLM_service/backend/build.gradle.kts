@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "2.1.0"
     kotlin("plugin.serialization") version "2.1.0"
     application
+    id("com.gradleup.shadow") version "8.3.5"
 }
 
 group = "com.witchercookbook"
@@ -45,6 +46,16 @@ application {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+// Deployable fat jar: ./gradlew shadowJar -> build/libs/witcher-backend.jar
+// Bundles all dependencies so the VPS only needs a JRE and the systemd unit
+// (deploy/witcher-backend.service). Run with the working directory at the repo
+// root so the default `index/` and knowledge-base paths resolve.
+tasks.shadowJar {
+    archiveBaseName.set("witcher-backend")
+    archiveClassifier.set("")
+    archiveVersion.set("")
 }
 
 // Manual harness: ./gradlew chatHarness -Pprompt="Say hi"
