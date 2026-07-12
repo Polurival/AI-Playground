@@ -16,6 +16,9 @@ import com.witchercookbook.rag.SimilaritySearch
 import com.witchercookbook.util.LanguageDetector
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.onCompletion
+import kotlin.time.measureTimedValue
+import org.slf4j.LoggerFactory
 
 /**
  * Orchestrates a grounded chat turn — the point where every RAG boundary meets
@@ -37,6 +40,8 @@ class ChatService(
     private val topK: Int,
     private val relevanceMinScore: Double,
 ) {
+    private val logger = LoggerFactory.getLogger(ChatService::class.java)
+
     /**
      * Runs [request] through retrieval + the LLM and returns a grounded reply.
      *
@@ -44,7 +49,10 @@ class ChatService(
      */
     suspend fun chat(request: ChatRequest): ChatResponse {
         val prepared = prepare(request)
-        val reply = gate.withPermit { ollama.chat(prepared.prompt.map { it.toOllama() }) }
+        val (reply, elapsed) = measureTimedValue {
+            gate.withPermit { ollama.chat(prepared.prompt.map { it.toOllama() }) }
+        }
+        logger.info("ollama chat done latencyMs={} replyChars={}", elapsed.inWholeMilliseconds, reply.length)
         return ChatResponse(reply = reply.trim(), sources = prepared.sources)
     }
 
@@ -60,9 +68,21 @@ class ChatService(
      */
     suspend fun chatStream(request: ChatRequest): StreamingChat {
         val prepared = prepare(request)
+        val startMs = System.currentTimeMillis()
+        var tokenCount = 0
         val tokens: Flow<String> = flow {
             gate.withPermit {
-                ollama.chatStream(prepared.prompt.map { it.toOllama() }).collect { emit(it) }
+                ollama.chatStream(prepared.prompt.map { it.toOllama() }).collect {
+                    tokenCount++
+                    emit(it)
+                }
+            }
+        }.onCompletion { cause ->
+            val latencyMs = System.currentTimeMillis() - startMs
+            if (cause == null) {
+                logger.info("ollama stream done latencyMs={} tokens={}", latencyMs, tokenCount)
+            } else {
+                logger.warn("ollama stream aborted latencyMs={} tokens={} cause={}", latencyMs, tokenCount, cause.toString())
             }
         }
         return StreamingChat(sources = prepared.sources, tokens = tokens)
@@ -78,6 +98,10 @@ class ChatService(
         val queryVector = embedder.embed(query)
         val results = search.search(queryVector, topK)
         val mode = if (isGrounded(results)) PromptMode.GROUNDED else PromptMode.REFUSAL
+        logger.info(
+            "retrieval language={} mode={} topScore={} results={}",
+            language, mode, results.firstOrNull()?.score, results.size,
+        )
 
         val prompt = promptBuilder.build(mode, request.messages, results, language)
         return Prepared(prompt = prompt, sources = results.toSources())

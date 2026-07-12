@@ -23,7 +23,10 @@ import io.ktor.server.routing.post
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import org.slf4j.LoggerFactory
 import java.io.Writer
+
+private val logger = LoggerFactory.getLogger("com.witchercookbook.controller.ChatController")
 
 /**
  * Wire DTOs and routing for `POST /api/chat`.
@@ -74,9 +77,11 @@ private fun errorDto(code: String, message: String) = ErrorDto(ErrorBody(code, m
 
 fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateLimiter) {
     post("/api/chat") {
-        when (val decision = rateLimiter.check(call.clientIp())) {
+        val clientIp = call.clientIp()
+        when (val decision = rateLimiter.check(clientIp)) {
             is RateLimiter.Decision.Allowed -> Unit
             is RateLimiter.Decision.Limited -> {
+                logger.warn("rate limit hit clientIp={} retryAfterSeconds={}", clientIp, decision.retryAfterSeconds)
                 call.response.header(HttpHeaders.RetryAfter, decision.retryAfterSeconds.toString())
                 call.respond(
                     HttpStatusCode.TooManyRequests,
