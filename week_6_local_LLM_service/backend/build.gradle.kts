@@ -60,6 +60,19 @@ tasks.register<JavaExec>("chatHarness") {
     (project.findProperty("prompt") as String?)?.let { args(it) }
 }
 
+// Manual harness: ./gradlew streamHarness -Pprompt="Say hi"
+// Requires `ollama serve` running with the chat model pulled. Prints tokens live.
+tasks.register<JavaExec>("streamHarness") {
+    group = "verification"
+    description = "Calls OllamaClient.chatStream against a running Ollama and prints tokens as they arrive."
+    mainClass.set("com.witchercookbook.llm.OllamaStreamHarnessKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    javaLauncher.set(
+        javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) }
+    )
+    (project.findProperty("prompt") as String?)?.let { args(it) }
+}
+
 // Manual harness: ./gradlew embedHarness -Ptext="venison stew"
 // Requires `ollama serve` running with the embedding model pulled.
 tasks.register<JavaExec>("embedHarness") {

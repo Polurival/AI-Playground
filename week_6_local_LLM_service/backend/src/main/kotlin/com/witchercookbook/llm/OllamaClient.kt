@@ -6,12 +6,17 @@ import io.ktor.client.engine.cio.CIO
 import io.ktor.client.plugins.HttpRequestRetry
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.request.post
+import io.ktor.client.request.preparePost
 import io.ktor.client.request.setBody
 import io.ktor.client.statement.HttpResponse
+import io.ktor.client.statement.bodyAsChannel
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.http.isSuccess
+import io.ktor.utils.io.readUTF8Line
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.encodeToString
 
@@ -75,6 +80,63 @@ class OllamaClient(
         }
         return body.message?.content
             ?: throw OllamaException("Ollama response contained no message content")
+    }
+
+    /** Convenience overload for a single user turn. */
+    fun chatStream(prompt: String): Flow<String> =
+        chatStream(listOf(OllamaChatMessage(role = "user", content = prompt)))
+
+    /**
+     * Streams the assistant's reply for [messages] as a cold [Flow] of content
+     * deltas, in arrival order. Collect it to drive the tokens somewhere.
+     *
+     * Ollama answers `stream=true` with NDJSON: one [OllamaChatResponse] per line,
+     * each carrying an incremental `message.content`. Reasoning tokens land in the
+     * ignored `thinking` field, so only non-empty content is emitted. The flow
+     * completes when Ollama sends `done=true` (or the stream ends).
+     *
+     * The underlying HTTP response stays open only while the flow is being
+     * collected; cancelling the collector closes it. The non-streaming [chat] path
+     * is unaffected.
+     *
+     * @throws OllamaException if the server errors or a line fails to parse.
+     */
+    fun chatStream(messages: List<OllamaChatMessage>): Flow<String> = flow {
+        val request = OllamaChatRequest(
+            model = model,
+            messages = messages,
+            stream = true,
+            think = true,
+        )
+
+        try {
+            client.preparePost("$baseUrl/api/chat") {
+                contentType(ContentType.Application.Json)
+                setBody(json.encodeToString(request))
+            }.execute { response ->
+                if (!response.status.isSuccess()) {
+                    throw OllamaException(
+                        "Ollama returned ${response.status} for model '$model': ${response.bodyAsText()}"
+                    )
+                }
+                val channel = response.bodyAsChannel()
+                while (true) {
+                    val line = channel.readUTF8Line() ?: break
+                    if (line.isBlank()) continue
+                    val chunk = try {
+                        json.decodeFromString<OllamaChatResponse>(line)
+                    } catch (e: Exception) {
+                        throw OllamaException("Failed to parse Ollama stream line: ${e.message}", e)
+                    }
+                    chunk.message?.content?.takeIf { it.isNotEmpty() }?.let { emit(it) }
+                    if (chunk.done) break
+                }
+            }
+        } catch (e: OllamaException) {
+            throw e
+        } catch (e: Exception) {
+            throw OllamaException("Failed to reach Ollama at $baseUrl: ${e.message}", e)
+        }
     }
 
     /**
