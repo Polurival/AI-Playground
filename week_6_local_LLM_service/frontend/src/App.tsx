@@ -2,10 +2,13 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import './App.css'
 import { sendChat } from './api'
-import type { Message } from './api'
+import type { Message, Source } from './api'
+
+/** A chat turn as shown in the UI: the wire message plus any grounding sources. */
+type DisplayMessage = Message & { sources?: Source[] }
 
 function App() {
-  const [messages, setMessages] = useState<Message[]>([])
+  const [messages, setMessages] = useState<DisplayMessage[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -15,15 +18,17 @@ function App() {
     const content = input.trim()
     if (!content || loading) return
 
-    const nextMessages: Message[] = [...messages, { role: 'user', content }]
+    const nextMessages: DisplayMessage[] = [...messages, { role: 'user', content }]
     setMessages(nextMessages)
     setInput('')
     setError(null)
     setLoading(true)
 
     try {
-      const reply = await sendChat(nextMessages)
-      setMessages([...nextMessages, { role: 'assistant', content: reply }])
+      // Send only the wire fields; sources are display-only and the server is stateless.
+      const history: Message[] = nextMessages.map(({ role, content }) => ({ role, content }))
+      const { reply, sources } = await sendChat(history)
+      setMessages([...nextMessages, { role: 'assistant', content: reply, sources }])
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
     } finally {
@@ -42,6 +47,18 @@ function App() {
           <div key={i} className={`message message-${m.role}`}>
             <span className="message-role">{m.role}</span>
             <p>{m.content}</p>
+            {m.sources && m.sources.length > 0 && (
+              <div className="message-sources">
+                <span className="message-sources-label">Sources</span>
+                <ul>
+                  {m.sources.map((s, j) => (
+                    <li key={j}>
+                      {s.title} <span className="source-score">{s.score.toFixed(2)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         ))}
         {loading && <div className="message message-assistant message-pending">...brewing...</div>}

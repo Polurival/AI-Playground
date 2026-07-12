@@ -5,19 +5,30 @@ export interface Message {
   content: string
 }
 
+export interface Source {
+  title: string
+  score: number
+}
+
+export interface ChatResult {
+  reply: string
+  sources: Source[]
+}
+
 interface ChatRequestDto {
   messages: Message[]
 }
 
 interface ChatResponseDto {
   reply: string
+  sources?: Source[]
 }
 
 interface ErrorDto {
   error: string
 }
 
-export async function sendChat(messages: Message[]): Promise<string> {
+export async function sendChat(messages: Message[]): Promise<ChatResult> {
   const res = await fetch('/api/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -30,5 +41,5 @@ export async function sendChat(messages: Message[]): Promise<string> {
   }
 
   const data = (await res.json()) as ChatResponseDto
-  return data.reply
+  return { reply: data.reply, sources: data.sources ?? [] }
 }
