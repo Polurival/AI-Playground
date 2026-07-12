@@ -14,6 +14,7 @@ import com.witchercookbook.service.ChatService
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
+import io.ktor.server.engine.connector
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 import io.ktor.server.plugins.calllogging.CallLogging
@@ -24,7 +25,17 @@ import java.io.File
 
 fun main() {
     val config = AppConfig.load()
-    embeddedServer(Netty, port = config.serverPort, host = "0.0.0.0") {
+    embeddedServer(Netty, configure = {
+        connector {
+            port = config.serverPort
+            host = "0.0.0.0"
+        }
+        // Ktor's Netty default (10s) closes the connection if nothing is written
+        // for that long. SSE chat replies (Task E2) can go quiet for minutes while
+        // Ollama generates the first token on CPU-only hardware, so this must
+        // exceed the slowest expected time-to-first-token.
+        responseWriteTimeoutSeconds = 600
+    }) {
         module(config)
     }.start(wait = true)
 }

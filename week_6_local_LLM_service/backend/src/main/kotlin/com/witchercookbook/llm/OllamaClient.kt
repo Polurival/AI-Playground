@@ -179,13 +179,16 @@ class OllamaClient(
         // otherwise Ollama defaults to streaming and returns NDJSON.
         private val json = Json { ignoreUnknownKeys = true; encodeDefaults = true }
 
-        /** Builds the default engine: 30s connect, generous request timeout, 2 retries. */
+        /**
+         * Builds the default engine: 30s connect, generous request/socket timeout
+         * (CPU-only inference can take minutes to produce a first token), 2 retries.
+         */
         fun defaultClient(): HttpClient = HttpClient(CIO) {
             expectSuccess = false
             install(HttpTimeout) {
                 connectTimeoutMillis = 30_000
-                requestTimeoutMillis = 300_000
-                socketTimeoutMillis = 300_000
+                requestTimeoutMillis = 600_000
+                socketTimeoutMillis = 600_000
             }
             install(HttpRequestRetry) {
                 retryOnExceptionOrServerErrors(maxRetries = 2)
