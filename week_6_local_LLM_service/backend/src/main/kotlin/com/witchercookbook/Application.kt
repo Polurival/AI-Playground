@@ -6,6 +6,9 @@ import com.witchercookbook.controller.chatRoutes
 import com.witchercookbook.controller.healthRoutes
 import com.witchercookbook.llm.LlmConcurrencyGate
 import com.witchercookbook.llm.OllamaClient
+import com.witchercookbook.llm.OllamaEmbedder
+import com.witchercookbook.prompt.PromptBuilder
+import com.witchercookbook.rag.SimilaritySearch
 import com.witchercookbook.rag.VectorIndex
 import com.witchercookbook.service.ChatService
 import io.ktor.serialization.kotlinx.json.json
@@ -34,11 +37,22 @@ fun Application.module(config: AppConfig = AppConfig.load()) {
 
     val vectorIndex = loadVectorIndex(config)
     val ollama = OllamaClient(config)
+    val embedder = OllamaEmbedder(ollama)
+    val search = SimilaritySearch(vectorIndex)
+    val promptBuilder = PromptBuilder(config.maxContextTokens)
     val gate = LlmConcurrencyGate(
         maxConcurrent = config.llmMaxConcurrent,
         maxQueue = config.llmMaxQueue,
     )
-    val chatService = ChatService(ollama, gate)
+    val chatService = ChatService(
+        embedder = embedder,
+        search = search,
+        promptBuilder = promptBuilder,
+        ollama = ollama,
+        gate = gate,
+        topK = config.topK,
+        relevanceMinScore = config.relevanceMinScore,
+    )
     val rateLimiter = RateLimiter(
         capacity = config.rateLimitCapacity,
         refillPerMinute = config.rateLimitRefillPerMinute,

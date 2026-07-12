@@ -39,8 +39,15 @@ data class ChatRequestDto(
 )
 
 @Serializable
+data class SourceDto(
+    val title: String,
+    val score: Double,
+)
+
+@Serializable
 data class ChatResponseDto(
     val reply: String,
+    val sources: List<SourceDto> = emptyList(),
 )
 
 @Serializable
@@ -91,7 +98,12 @@ fun Route.chatRoutes(service: ChatService, config: AppConfig, rateLimiter: RateL
 
         try {
             val response = service.chat(domain)
-            call.respond(ChatResponseDto(reply = response.reply))
+            call.respond(
+                ChatResponseDto(
+                    reply = response.reply,
+                    sources = response.sources.map { SourceDto(it.title, it.score) },
+                )
+            )
         } catch (e: IllegalArgumentException) {
             call.respond(HttpStatusCode.BadRequest, errorDto("VALIDATION_ERROR", e.message ?: "Invalid request"))
         } catch (e: LlmBusyException) {
