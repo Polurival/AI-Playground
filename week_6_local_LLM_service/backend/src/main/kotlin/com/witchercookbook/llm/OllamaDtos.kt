@@ -43,3 +43,16 @@ data class OllamaChatResponse(
     val done: Boolean = false,
     @SerialName("done_reason") val doneReason: String? = null,
 )
+
+/** Request body for `POST /api/embeddings`. */
+@Serializable
+data class OllamaEmbeddingRequest(
+    val model: String,
+    val prompt: String,
+)
+
+/** Response body for `POST /api/embeddings`. */
+@Serializable
+data class OllamaEmbeddingResponse(
+    val embedding: List<Float> = emptyList(),
+)

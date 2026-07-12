@@ -27,11 +27,12 @@ import kotlinx.serialization.encodeToString
 class OllamaClient(
     private val baseUrl: String,
     private val model: String,
+    private val embedModel: String,
     private val client: HttpClient = defaultClient(),
 ) : AutoCloseable {
 
     constructor(config: AppConfig, client: HttpClient = defaultClient()) :
-        this(baseUrl = config.ollamaUrl, model = config.chatModel, client = client)
+        this(baseUrl = config.ollamaUrl, model = config.chatModel, embedModel = config.embedModel, client = client)
 
     /** Convenience overload for a single user turn. */
     suspend fun chat(prompt: String): String =
@@ -74,6 +75,39 @@ class OllamaClient(
         }
         return body.message?.content
             ?: throw OllamaException("Ollama response contained no message content")
+    }
+
+    /**
+     * Embeds [text] via Ollama's embeddings endpoint using [embedModel].
+     *
+     * @throws OllamaException if the server errors or returns an empty vector.
+     */
+    suspend fun embed(input: String): FloatArray {
+        val request = OllamaEmbeddingRequest(model = embedModel, prompt = input)
+
+        val response: HttpResponse = try {
+            client.post("$baseUrl/api/embeddings") {
+                contentType(ContentType.Application.Json)
+                setBody(json.encodeToString(request))
+            }
+        } catch (e: Exception) {
+            throw OllamaException("Failed to reach Ollama at $baseUrl: ${e.message}", e)
+        }
+
+        val text = response.bodyAsText()
+        if (!response.status.isSuccess()) {
+            throw OllamaException("Ollama returned ${response.status} for model '$embedModel': $text")
+        }
+
+        val body = try {
+            json.decodeFromString<OllamaEmbeddingResponse>(text)
+        } catch (e: Exception) {
+            throw OllamaException("Failed to parse Ollama embedding response: ${e.message}", e)
+        }
+        if (body.embedding.isEmpty()) {
+            throw OllamaException("Ollama embedding response contained no vector")
+        }
+        return body.embedding.toFloatArray()
     }
 
     override fun close() = client.close()

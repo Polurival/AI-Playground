@@ -59,3 +59,16 @@ tasks.register<JavaExec>("chatHarness") {
     )
     (project.findProperty("prompt") as String?)?.let { args(it) }
 }
+
+// Manual harness: ./gradlew embedHarness -Ptext="venison stew"
+// Requires `ollama serve` running with the embedding model pulled.
+tasks.register<JavaExec>("embedHarness") {
+    group = "verification"
+    description = "Calls Embedder.embed against a running Ollama and prints the vector."
+    mainClass.set("com.witchercookbook.llm.EmbedHarnessKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    javaLauncher.set(
+        javaToolchains.launcherFor { languageVersion.set(JavaLanguageVersion.of(21)) }
+    )
+    (project.findProperty("text") as String?)?.let { args(it) }
+}
