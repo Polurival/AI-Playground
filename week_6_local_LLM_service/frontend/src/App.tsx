@@ -104,28 +104,26 @@ function App() {
       </header>
 
       <main className="chat-window">
-        {messages.length === 0 && (
-          <div className="message message-assistant message-greeting">
-            <span className="message-role">{ROLE_LABEL.assistant}</span>
-            <p>
-              Welcome, traveler. Hungry after the road? I can cook from what's written in this
-              cookbook — try asking for one of these:
-            </p>
-            <div className="dish-suggestions">
-              {greetingDishes.map((dish) => (
-                <button
-                  key={dish}
-                  type="button"
-                  className="dish-suggestion"
-                  onClick={() => void sendMessage(dish)}
-                  disabled={loading}
-                >
-                  {dish}
-                </button>
-              ))}
-            </div>
+        <div className="message message-assistant message-greeting">
+          <span className="message-role">{ROLE_LABEL.assistant}</span>
+          <p>
+            Welcome, traveler. Hungry after the road? I can cook from what's written in this
+            cookbook — try asking for one of these:
+          </p>
+          <div className="dish-suggestions">
+            {greetingDishes.map((dish) => (
+              <button
+                key={dish}
+                type="button"
+                className="dish-suggestion"
+                onClick={() => void sendMessage(dish)}
+                disabled={loading}
+              >
+                {dish}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
         {messages.map((m, i) => (
           <div key={i} className={`message message-${m.role}`}>
             <span className="message-role">{ROLE_LABEL[m.role]}</span>
