@@ -93,6 +93,37 @@
   font-style: italic;
 }
 
+.message-greeting {
+  max-width: 100%;
+}
+
+.dish-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dish-suggestion {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dish-suggestion:hover:not(:disabled) {
+  background: var(--accent);
+  color: #1a1206;
+}
+
+.dish-suggestion:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .message-error {
   align-self: center;
   color: #ff8080;

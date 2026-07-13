@@ -7,6 +7,31 @@ import type { Message, Source } from './api'
 /** A chat turn as shown in the UI: the wire message plus any grounding sources. */
 type DisplayMessage = Message & { sources?: Source[] }
 
+/** Display names for the wire roles; `Message.role` itself stays 'user'/'assistant'. */
+const ROLE_LABEL: Record<Message['role'], string> = {
+  user: 'Gerald',
+  assistant: 'Marlene de Trastamara',
+  system: 'system',
+}
+
+/**
+ * Real dish titles from the knowledge base (category "meals"), so asking for any
+ * of these is guaranteed to clear the relevance threshold and return a grounded
+ * recipe rather than a refusal.
+ */
+const DISH_SUGGESTIONS = [
+  'Kaedweni Bigos',
+  'Nilfgaardian Meat Pie',
+  'Redanian Goulash',
+  'Skellige Herring Salad',
+  'Toussaint Duck Breast with Plum Sauce',
+  'Zerrikanian Spiced Eggs',
+]
+
+function pickRandomDishes(count: number): string[] {
+  return [...DISH_SUGGESTIONS].sort(() => Math.random() - 0.5).slice(0, count)
+}
+
 /** True while awaiting the reply's first content: a user turn or an empty streaming bubble. */
 function awaitingFirstToken(messages: DisplayMessage[]): boolean {
   const last = messages[messages.length - 1]
@@ -19,10 +44,9 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [streaming, setStreaming] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [greetingDishes] = useState(() => pickRandomDishes(3))
 
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault()
-    const content = input.trim()
+  async function sendMessage(content: string) {
     if (!content || loading) return
 
     const nextMessages: DisplayMessage[] = [...messages, { role: 'user', content }]
@@ -45,6 +69,11 @@ function App() {
     } finally {
       setLoading(false)
     }
+  }
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+    void sendMessage(input.trim())
   }
 
   /** Appends an assistant bubble and grows it as tokens arrive, then fills in sources. */
@@ -75,9 +104,31 @@ function App() {
       </header>
 
       <main className="chat-window">
+        {messages.length === 0 && (
+          <div className="message message-assistant message-greeting">
+            <span className="message-role">{ROLE_LABEL.assistant}</span>
+            <p>
+              Welcome, traveler. Hungry after the road? I can cook from what's written in this
+              cookbook — try asking for one of these:
+            </p>
+            <div className="dish-suggestions">
+              {greetingDishes.map((dish) => (
+                <button
+                  key={dish}
+                  type="button"
+                  className="dish-suggestion"
+                  onClick={() => void sendMessage(dish)}
+                  disabled={loading}
+                >
+                  {dish}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
         {messages.map((m, i) => (
           <div key={i} className={`message message-${m.role}`}>
-            <span className="message-role">{m.role}</span>
+            <span className="message-role">{ROLE_LABEL[m.role]}</span>
             <p>{m.content}</p>
             {m.sources && m.sources.length > 0 && (
               <div className="message-sources">
