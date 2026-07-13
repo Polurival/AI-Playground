@@ -33,11 +33,26 @@ class OllamaClient(
     private val baseUrl: String,
     private val model: String,
     private val embedModel: String,
+    /** Whether [model] supports Ollama's `think` field (e.g. qwen3, not qwen2.5). */
+    private val think: Boolean = true,
     private val client: HttpClient = defaultClient(),
 ) : AutoCloseable {
 
     constructor(config: AppConfig, client: HttpClient = defaultClient()) :
-        this(baseUrl = config.ollamaUrl, model = config.chatModel, embedModel = config.embedModel, client = client)
+        this(
+            baseUrl = config.ollamaUrl,
+            model = config.chatModel,
+            embedModel = config.embedModel,
+            think = config.chatModelThink,
+            client = client,
+        )
+
+    /**
+     * `true` only when [think] is enabled — some models (e.g. qwen2.5) reject the
+     * `think` field outright rather than ignoring it, so it must be omitted (not
+     * sent as `false`) for those.
+     */
+    private val thinkField: Boolean? get() = if (think) true else null
 
     /** Convenience overload for a single user turn. */
     suspend fun chat(prompt: String): String =
@@ -54,9 +69,10 @@ class OllamaClient(
             messages = messages,
             stream = false,
             // think=true makes Ollama put qwen3's reasoning in a separate `thinking`
-            // field, leaving `message.content` clean. think=false bleeds reasoning
-            // into content, so keep it enabled and simply ignore `thinking`.
-            think = true,
+            // field, leaving `message.content` clean; think=false bleeds reasoning
+            // into content. Models without thinking support reject the field outright,
+            // so it's omitted (null) rather than sent as false — see [thinkField].
+            think = thinkField,
         )
 
         val response: HttpResponse = try {
@@ -106,7 +122,7 @@ class OllamaClient(
             model = model,
             messages = messages,
             stream = true,
-            think = true,
+            think = thinkField,
         )
 
         try {

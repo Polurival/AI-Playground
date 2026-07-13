@@ -13,6 +13,8 @@ data class AppConfig(
     // Ollama / models
     val ollamaUrl: String,
     val chatModel: String,
+    /** Whether [chatModel] supports Ollama's `think` field (e.g. qwen3, not qwen2.5). */
+    val chatModelThink: Boolean,
     val embedModel: String,
 
     // Retrieval
@@ -42,6 +44,7 @@ data class AppConfig(
             serverPort = intEnv(getenv, "SERVER_PORT", 8080),
             ollamaUrl = strEnv(getenv, "OLLAMA_URL", "http://127.0.0.1:11434"),
             chatModel = strEnv(getenv, "CHAT_MODEL", "qwen3:4b"),
+            chatModelThink = boolEnv(getenv, "CHAT_MODEL_THINK", true),
             embedModel = strEnv(getenv, "EMBED_MODEL", "nomic-embed-text"),
             topK = intEnv(getenv, "TOP_K", 5),
             relevanceMinScore = doubleEnv(getenv, "RELEVANCE_MIN_SCORE", 0.5),
@@ -68,6 +71,12 @@ data class AppConfig(
             val raw = getenv(key)?.takeIf { it.isNotBlank() } ?: return default
             return raw.trim().toDoubleOrNull()
                 ?: throw IllegalArgumentException("Invalid Double for env $key: '$raw'")
+        }
+
+        private fun boolEnv(getenv: (String) -> String?, key: String, default: Boolean): Boolean {
+            val raw = getenv(key)?.takeIf { it.isNotBlank() } ?: return default
+            return raw.trim().toBooleanStrictOrNull()
+                ?: throw IllegalArgumentException("Invalid Boolean for env $key: '$raw'")
         }
     }
 }

@@ -29,10 +29,20 @@ talks to it.
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
-ollama pull qwen3:4b
+ollama pull qwen2.5:1.5b
 ollama pull nomic-embed-text
 systemctl status ollama   # confirm it listens on 127.0.0.1:11434 only
 ```
+
+### Model choice
+
+Default is `qwen2.5:1.5b` (`CHAT_MODEL_THINK=false` — it rejects Ollama's
+`think` field outright). On CPU-only VPS hardware this gave a full grounded
+reply in ~45s. `qwen3:4b` (`CHAT_MODEL_THINK=true`) has noticeably better
+prose but took 4+ minutes per reply on a 4-vCPU box with no GPU — measured
+too slow to be usable there. If your host has more compute (more cores, or a
+GPU), pull `qwen3:4b` instead and flip both env vars in
+`deploy/witcher-backend.service`.
 
 ## 3. Ship the artifacts
 

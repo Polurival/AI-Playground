@@ -15,7 +15,12 @@ Environment=SERVER_PORT=8080
 
 # Ollama / models
 Environment=OLLAMA_URL=http://127.0.0.1:11434
-Environment=CHAT_MODEL=qwen3:4b
+# qwen2.5:1.5b: on CPU-only hardware a full grounded reply lands in ~45s vs
+# 4+ minutes for qwen3:4b (see deploy/README.md "Model choice"). qwen3 supports
+# Ollama's `think` field; most other models (e.g. qwen2.5) reject it outright,
+# so CHAT_MODEL_THINK must be set to true only when switching back to qwen3.
+Environment=CHAT_MODEL=qwen2.5:1.5b
+Environment=CHAT_MODEL_THINK=false
 Environment=EMBED_MODEL=nomic-embed-text
 
 # Retrieval — INDEX_PATH is relative to WorkingDirectory
