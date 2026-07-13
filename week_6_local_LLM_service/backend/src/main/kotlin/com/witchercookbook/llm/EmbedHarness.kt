@@ -20,7 +20,7 @@ fun main(args: Array<String>) = runBlocking {
 
     OllamaClient(config).use { client ->
         val embedder: Embedder = OllamaEmbedder(client)
-        val vector = embedder.embed(text)
+        val vector = embedder.embedQuery(text)
         println("← Dim: ${vector.size}")
         println("← First values: ${vector.take(5)}")
     }

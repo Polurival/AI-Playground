@@ -105,7 +105,7 @@ class ChatService(
         // embedding/search changes.
         val searchQuery = if (language == Language.ENGLISH) query else translateToEnglish(query)
 
-        val queryVector = embedder.embed(searchQuery)
+        val queryVector = embedder.embedQuery(searchQuery)
         val results = search.search(queryVector, topK)
         val mode = if (isGrounded(results)) PromptMode.GROUNDED else PromptMode.REFUSAL
         logger.info(

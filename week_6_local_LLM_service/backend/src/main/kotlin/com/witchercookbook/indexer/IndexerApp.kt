@@ -53,7 +53,7 @@ fun main(args: Array<String>) = runBlocking {
     val embedded = OllamaClient(config).use { client ->
         val embedder = OllamaEmbedder(client)
         chunks.mapIndexed { i, chunk ->
-            val vector = embedder.embed(chunk.text)
+            val vector = embedder.embedDocument(chunk.text)
             if ((i + 1) % 10 == 0 || i == chunks.lastIndex) {
                 println("  embedded ${i + 1}/${chunks.size}")
             }
