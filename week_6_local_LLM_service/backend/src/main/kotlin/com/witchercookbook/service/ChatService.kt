@@ -13,6 +13,7 @@ import com.witchercookbook.model.Source
 import com.witchercookbook.prompt.PromptBuilder
 import com.witchercookbook.prompt.PromptMode
 import com.witchercookbook.rag.SimilaritySearch
+import com.witchercookbook.util.Language
 import com.witchercookbook.util.LanguageDetector
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -95,7 +96,16 @@ class ChatService(
         val query = latestUserQuery(request.messages)
         val language = LanguageDetector.detect(query)
 
-        val queryVector = embedder.embed(query)
+        // nomic-embed-text is English-centric: a non-English query embeds
+        // meaningfully further from the (English) KB than its English equivalent
+        // would, so it systematically undershoots relevanceMinScore. Translating
+        // to English before embedding fixes retrieval at the source rather than
+        // loosening the threshold for every language. The original query still
+        // goes to the model as-is via `request.messages` — only the text used for
+        // embedding/search changes.
+        val searchQuery = if (language == Language.ENGLISH) query else translateToEnglish(query)
+
+        val queryVector = embedder.embed(searchQuery)
         val results = search.search(queryVector, topK)
         val mode = if (isGrounded(results)) PromptMode.GROUNDED else PromptMode.REFUSAL
         logger.info(
@@ -105,6 +115,23 @@ class ChatService(
 
         val prompt = promptBuilder.build(mode, request.messages, results, language)
         return Prepared(prompt = prompt, sources = results.toSources())
+    }
+
+    /**
+     * Translates [text] to English for retrieval only, via a dedicated Ollama call
+     * fenced by [gate] like every other model call. Falls back to the original text
+     * if the model returns nothing usable, so a translation hiccup degrades search
+     * quality rather than failing the whole request.
+     */
+    private suspend fun translateToEnglish(text: String): String {
+        val instruction = OllamaChatMessage(
+            role = "user",
+            content = "Translate the following into English. Reply with ONLY the translation, " +
+                "no quotes, no explanation:\n\n$text",
+        )
+        val translated = gate.withPermit { ollama.chat(listOf(instruction)) }.trim()
+        logger.info("translated query for retrieval: \"{}\" -> \"{}\"", text, translated)
+        return translated.ifBlank { text }
     }
 
     /** The assembled prompt plus the (final) sources, ready for either path. */
