@@ -77,6 +77,30 @@ def git_branch_list(repo_path: str = ".") -> str:
 
 
 @mcp.tool()
+def git_current_branch(repo_path: str = ".") -> str:
+    """Возвращает имя текущей ветки (git rev-parse --abbrev-ref HEAD).
+
+    Args:
+        repo_path: путь к git-репозиторию на диске.
+    """
+    return _run_git(repo_path, ["rev-parse", "--abbrev-ref", "HEAD"])
+
+
+@mcp.tool()
+def git_ls_files(repo_path: str = ".", pattern: str = "") -> str:
+    """Список файлов, отслеживаемых git (git ls-files), опционально по glob-паттерну.
+
+    Args:
+        repo_path: путь к git-репозиторию на диске.
+        pattern: необязательный pathspec/glob для фильтрации (например 'docs/*.md').
+    """
+    args = ["ls-files"]
+    if pattern:
+        args.append(pattern)
+    return _run_git(repo_path, args)
+
+
+@mcp.tool()
 def git_show_commit(repo_path: str = ".", commit_hash: str = "HEAD") -> str:
     """Показывает сообщение и diff конкретного коммита (git show).
 

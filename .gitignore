@@ -12,3 +12,6 @@ chat_history.json
 .memory_*
 
 Alice's_Adventures_in_Wonderland_by_Lewis_Carroll.3.epub
+
+# Generated per-project RAG index for the week 7 developer assistant
+week_7_assistant/rag_*.db
