@@ -1,0 +1,3 @@
+# PR auto-reviewer — standalone deps (CPU only, no server required).
+openai>=1.30
+sentence-transformers>=2.7
