@@ -1,0 +1,77 @@
+name: AI PR Auto-Review
+
+# Runs on every pull request against this repo and posts an AI code review as a PR comment.
+# Universal: the same job works for any repo — just copy this file + the week_7_PR_autoreview
+# package, and add a DEEPSEEK_API_KEY (or OPENAI_API_KEY) secret.
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+# Read the code, write PR comments. (GITHUB_TOKEN from forks stays read-only — see README.)
+permissions:
+  contents: read
+  pull-requests: write
+
+# A newer push to the same PR cancels the in-flight review.
+concurrency:
+  group: ai-autoreview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    # Same-repo PRs only: fork PRs get a read-only token and no secrets, so a review would fail.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout (full history so base...head diff works)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: week_7_PR_autoreview/requirements.txt
+
+      - name: Cache Hugging Face models (embedder)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ hashFiles('week_7_PR_autoreview/requirements.txt') }}-all-MiniLM-L6-v2
+
+      - name: Install dependencies
+        run: pip install -r week_7_PR_autoreview/requirements.txt
+
+      - name: Generate AI review
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AUTOREVIEW_LANG: ru
+        run: |
+          python week_7_PR_autoreview/review_pr.py \
+            --repo . \
+            --base "${{ github.event.pull_request.base.sha }}" \
+            --head "${{ github.event.pull_request.head.sha }}" \
+            --out review.md \
+            -v
+
+      - name: Post / update review comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Upsert: update the previous AI-review comment if present, else create a new one,
+          # so repeated pushes don't spam the PR with duplicate reviews.
+          marker='<!-- ai-autoreview -->'
+          existing=$(gh api "repos/$REPO/issues/$PR/comments" --paginate \
+            --jq ".[] | select(.body | startswith(\"$marker\")) | .id" | head -n1)
+          if [ -n "$existing" ]; then
+            gh api -X PATCH "repos/$REPO/issues/comments/$existing" -F body=@review.md
+            echo "Updated comment $existing"
+          else
+            gh pr comment "$PR" --repo "$REPO" --body-file review.md
+            echo "Created new review comment"
+          fi

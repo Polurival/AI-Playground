@@ -15,3 +15,7 @@ Alice's_Adventures_in_Wonderland_by_Lewis_Carroll.3.epub
 
 # Generated per-project RAG index for the week 7 developer assistant
 week_7_assistant/rag_*.db
+
+# PR auto-reviewer index (built fresh each run — never committed)
+week_7_PR_autoreview/index_*.db
+review.md
