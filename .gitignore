@@ -19,3 +19,5 @@ week_7_assistant/rag_*.db
 # PR auto-reviewer index (built fresh each run — never committed)
 week_7_PR_autoreview/index_*.db
 review.md
+
+week_7_users_support_assistant/rag_*.db

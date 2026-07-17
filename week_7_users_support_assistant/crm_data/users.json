@@ -1,0 +1,80 @@
+[
+  {
+    "user_id": "USR-001",
+    "name": "Игорь Соколов",
+    "email": "i.sokolov@northwind-studio.ru",
+    "org": "Northwind Studio",
+    "plan": "business",
+    "role": "owner",
+    "sso_enabled": true,
+    "mfa_enabled": true,
+    "seats_used": 42,
+    "created_at": "2024-09-03",
+    "locale": "ru"
+  },
+  {
+    "user_id": "USR-002",
+    "name": "Пётр Астахов",
+    "email": "p.astakhov@kolibri.digital",
+    "org": "Kolibri Digital",
+    "plan": "pro",
+    "role": "admin",
+    "sso_enabled": false,
+    "mfa_enabled": false,
+    "seats_used": 23,
+    "created_at": "2025-04-17",
+    "locale": "ru"
+  },
+  {
+    "user_id": "USR-003",
+    "name": "Алексей Гринёв",
+    "email": "a.grinev@northwind-studio.ru",
+    "org": "Northwind Studio",
+    "plan": "business",
+    "role": "member",
+    "sso_enabled": true,
+    "mfa_enabled": true,
+    "seats_used": 42,
+    "created_at": "2025-01-22",
+    "locale": "ru"
+  },
+  {
+    "user_id": "USR-004",
+    "name": "Марина Ковалёва",
+    "email": "m.kovaleva@vector-lab.ru",
+    "org": "Vector Lab",
+    "plan": "free",
+    "role": "admin",
+    "sso_enabled": false,
+    "mfa_enabled": true,
+    "seats_used": 5,
+    "created_at": "2026-02-11",
+    "locale": "ru"
+  },
+  {
+    "user_id": "USR-005",
+    "name": "Дарья Юшкевич",
+    "email": "d.yushkevich@kolibri.digital",
+    "org": "Kolibri Digital",
+    "plan": "pro",
+    "role": "member",
+    "sso_enabled": false,
+    "mfa_enabled": true,
+    "seats_used": 23,
+    "created_at": "2025-06-30",
+    "locale": "ru"
+  },
+  {
+    "user_id": "USR-006",
+    "name": "Сергей Лапин",
+    "email": "s.lapin@ferrum-soft.ru",
+    "org": "Ferrum Soft",
+    "plan": "free",
+    "role": "owner",
+    "sso_enabled": false,
+    "mfa_enabled": false,
+    "seats_used": 4,
+    "created_at": "2026-05-19",
+    "locale": "ru"
+  }
+]
