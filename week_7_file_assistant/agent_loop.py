@@ -37,6 +37,13 @@ FINAL_WITHOUT_CHANGE_NUDGE = (
     "reply with your {\"final\": ...} again."
 )
 
+WRAP_UP_NUDGE = (
+    "STEP BUDGET REACHED: this is your LAST step. Do NOT call another tool. Reply NOW with "
+    '{"final": "..."} summarizing what you found from the tools already run (cite file:line for '
+    "each item). Base the report only on observations you already have; do not claim you inspected "
+    "files you have not read."
+)
+
 
 def _extract_json(text: str) -> dict | None:
     """Best-effort parse of a single JSON object out of the model's reply.
@@ -110,6 +117,12 @@ def run(
     nudged = False
 
     for step in range(1, max_steps + 1):
+        # On the last budgeted call, force a wrap-up so the run ends with a useful partial report
+        # (findings so far) instead of the dead "(stopped: reached max steps)" placeholder.
+        last_step = step == max_steps
+        if last_step:
+            messages.append({"role": "user", "content": WRAP_UP_NUDGE})
+
         raw = llm_provider.chat_completion(messages, max_tokens=max_tokens, temperature=0.0)
         parsed = _extract_json(raw)
 
@@ -123,8 +136,9 @@ def run(
 
         if "final" in parsed:
             # Guardrail: if it finalizes having made no change at all, nudge once — this catches
-            # the model "claiming" it updated a file without ever calling a change tool.
-            if change_calls == 0 and not nudged:
+            # the model "claiming" it updated a file without ever calling a change tool. Skip on the
+            # last step: the budget is spent, so accept the (possibly read-only) final as-is.
+            if change_calls == 0 and not nudged and not last_step:
                 nudged = True
                 logger.info("[AGENT] final without any change tool — nudging once")
                 messages.append({"role": "assistant", "content": raw})

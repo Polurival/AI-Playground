@@ -27,6 +27,7 @@ logger = logging.getLogger(__name__)
 _READ_TOOLS = """\
 - list_files(glob="")            -> list project files (optional single glob, e.g. "**/*.py")
 - read_file(path)                -> file content WITH line numbers (cite file:line)
+- read_files(paths)              -> read MANY files at once (list of paths); prefer over many read_file calls
 - search_files(pattern, glob="", ignore_case=false) -> regex grep across files: "path:line: text"
 - analyze_project()              -> file count, per-extension counts, total lines, entry points"""
 
@@ -50,6 +51,8 @@ Available tools:
 
 Rules:
 - Explore before you conclude: list/search/read the relevant files instead of guessing.
+- When you need to inspect several files, call read_files(paths=[...]) ONCE instead of read_file
+  per file — it is far cheaper on your step budget.
 - Cite evidence as file:line (line numbers come from read_file / search_files).
 - Mode is {mode}. {mode_rule}
 - When you write a file, pass its FULL new content (not a patch), preserving unrelated lines.
@@ -103,7 +106,7 @@ def _make_call_tool(cfg: FileAssistantConfig):
     return call_tool
 
 
-def run_goal(cfg: FileAssistantConfig, goal: str, max_steps: int = 8) -> dict:
+def run_goal(cfg: FileAssistantConfig, goal: str, max_steps: int = 12) -> dict:
     """Execute one goal-level task. Returns the agent_loop result dict plus the provider label."""
     system_prompt = build_system_prompt(cfg, max_steps)
     result = agent_loop.run(system_prompt, goal, _make_call_tool(cfg), max_steps=max_steps)

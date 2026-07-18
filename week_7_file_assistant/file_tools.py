@@ -67,6 +67,25 @@ def read_file(root: str, rel_path: str, with_line_numbers: bool = True) -> str:
     return "\n".join(f"{i:>{width}}\t{line}" for i, line in enumerate(lines, 1))
 
 
+def read_files(root: str, rel_paths: list[str], with_line_numbers: bool = True) -> str:
+    """Read many files in one call. Returns each file under a '===== path =====' header.
+
+    Per-file errors (missing/too-large/escaping) are reported inline as that file's body instead of
+    aborting the whole batch, so one bad path never sinks the rest.
+    """
+    if not rel_paths:
+        return "error: read_files needs a non-empty list of paths"
+    blocks: list[str] = []
+    for rel in rel_paths:
+        header = f"===== {rel} ====="
+        try:
+            body = read_file(root, rel, with_line_numbers)
+        except (FileNotFoundError, ValueError) as exc:
+            body = f"error: {exc}"
+        blocks.append(f"{header}\n{body}")
+    return "\n\n".join(blocks)
+
+
 def search_files(root: str, pattern: str, globs: list[str] | None = None,
                  ignore_case: bool = False) -> list[dict]:
     """Regex-search across files; return [{path, line, text}] matches (multi-file grep)."""

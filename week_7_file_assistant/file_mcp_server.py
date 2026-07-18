@@ -55,6 +55,19 @@ def read_file(path: str) -> str:
 
 
 @mcp.tool()
+def read_files(paths: list[str]) -> str:
+    """Read SEVERAL files in ONE call — prefer this over many read_file calls to save steps.
+
+    Each file is returned under a '===== path =====' header, with line numbers (cite file:line).
+    A bad path is reported inline for that file only; the rest still come back.
+
+    Args:
+        paths: list of file paths relative to the project root.
+    """
+    return file_tools.read_files(ROOT, paths)
+
+
+@mcp.tool()
 def search_files(pattern: str, glob: str = "", ignore_case: bool = False) -> str:
     """Regex-search across many files at once. Returns 'path:line: text' matches.
 

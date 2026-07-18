@@ -79,7 +79,7 @@ def _print_tools(cfg: FileAssistantConfig) -> None:
         print(f"- {t.name}: {desc}")
 
 
-def _repl(cfg: FileAssistantConfig) -> None:
+def _repl(cfg: FileAssistantConfig, max_steps: int) -> None:
     print(f"File assistant for '{cfg.name}'  (root: {cfg.root})")
     print(f"Provider: {llm_provider.current_label()}  |  mode: {'apply' if cfg.apply else 'dry-run'}")
     print("Type a goal, or: /apply on|off  /tools  /quit\n")
@@ -104,7 +104,7 @@ def _repl(cfg: FileAssistantConfig) -> None:
         if line == "/tools":
             _print_tools(cfg)
             continue
-        _print_result(run_goal(cfg, line), "apply" if cfg.apply else "dry-run")
+        _print_result(run_goal(cfg, line, max_steps=max_steps), "apply" if cfg.apply else "dry-run")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -134,7 +134,7 @@ def main(argv: list[str] | None = None) -> int:
         res = run_goal(cfg, " ".join(args.goal), max_steps=args.max_steps)
         _print_result(res, "apply" if cfg.apply else "dry-run")
         return 0
-    _repl(cfg)
+    _repl(cfg, args.max_steps)
     return 0
 
 
