@@ -1,0 +1,896 @@
+[
+ {
+  "id": 4,
+  "response": "La capital de Campeche es San Francisco de Campeche.",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "La capital de Coahuila de Zaragoza es:\n\nC) Torreón\n\nTorreón es la ciudad más grande y la capital del estado de Coahuila de Zaragoza, México.",
+  "new_tokens": 43,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "La capital de Guanajuato es Irapuato.",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "La capital de Hidalgo es:\n\nA) Tulancingo\n\nTulancingo es la ciudad capital de la entidad federativa de Hidalgo, México. Es una importante ciudad en el centro de la entidad, conocida por su historia, arquitectura colonial y su importante papel en la cultura mexicana.",
+  "new_tokens": 67,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "La capital de Morelos es C) Cuernavaca.",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "La capital de Nayarit es D) Tepic.",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "La capital de Tabasco es D) Villahermosa.",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "La respuesta correcta es:\n\nA) En el sur de América del Norte\n\nMéxico se encuentra en el sur de América del Norte, específicamente en el continente americano. Su ubicación geográfica es:\n\n- Sur de América del Norte\n- Este de Centroamérica\n- Oeste de Estados Unidos\n- Este de Canadá\n\nMéxico es el tercer país más grande de América del Norte, después de Estados Unidos y Canadá.",
+  "new_tokens": 98,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "La respuesta correcta es:\n\nB) 29 de enero de 2016\n\nLa Ciudad de México (CDMX) cambió su nombre oficial de Distrito Federal a Ciudad de México el 29 de enero de 2016. Esta reforma se llevó a cabo en el marco de la Ley de Ciudad de México, que fue aprobada por el Congreso de la Unión el 28 de diciembre de 2015 y entró en vigor el 29 de enero de 2016.\n\nEsta reforma fue un paso importante",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 42,
+  "response": "La respuesta correcta es:\n\nD) Estado de México\n\nExplicación:\n\nEn 2016, el estado de México cambió su nombre oficialmente a Estado de México. Este cambio se produjo en respuesta a una demanda ciudadana y a una reforma constitucional que permitió la modificación del nombre del estado.\n\nAntes de 2016, el estado de México se llamaba Estado de México. Este cambio fue un paso importante en la democratización de la política estatal mexicana y reflejó la voluntad de los ciudadanos de cambiar el nombre del estado.\n\nLas otras",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 44,
+  "response": "Ciudad más poblada de México es:\n\nA) Ciudad de México\n\nCiudad de México es la capital del país y la ciudad más poblada de México, con una población de aproximadamente 21 millones de habitantes en 2021.",
+  "new_tokens": 54,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "La ciudad que se le llama \"Angelópolis\" es:\n\nA) Tijuana, Baja California\n\nTijuana es conocida por su importante papel como centro comercial y turístico, y se le ha dado el apodo de \"Angelópolis\" debido a su ubicación estratégica y su papel importante en la economía y la cultura de la región.",
+  "new_tokens": 78,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "La respuesta correcta es:\n\nD) Simbolizan la conquista y la victoria sobre los enemigos\n\nExplicación:\n\nEl escudo nacional mexicano, que aparece en la franja blanca de la bandera, tiene un significado histórico y cultural importante para México. Los elementos principales son:\n\n1. Un águila: Representa a la Corona de México, que fue el gobierno colonial español.\n\n2. Una serpiente: Representa a la Corona española, que conquistó México.\n\nEstos elementos simbolizan la conquista y la dominación española sobre México",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 69,
+  "response": "La respuesta correcta es:\n\nA) Compuesta por el poeta potosino Francisco González Bocanegra, música del músico mexicano Manuel M. Ponce\n\nEsta es la letra y música del Himno Nacional de México, conocido como \"La Mariposa\" en español. Francisco González Bocanegra es el poeta que compuso la letra, y Manuel M. Ponce es el músico que compuso la música.",
+  "new_tokens": 97,
+  "truncated": false
+ },
+ {
+  "id": 70,
+  "response": "The correct answer is:\n\nC) Mexicanos al grito de guerra, El acero aprestad y el bridón Y retiemble en sus centros la tierra Al sonoro rugir del cañón\n\nThis is the correct translation of the first line of the Mexican national anthem, which is often referred to as \"La Mariposa\" or \"The Butterfly.\" The full anthem is known as \"La Mariposa\" or \"The Butterfly,\" but the first line is often used as a standalone phrase.\n\nThe other options are incorrect translations of the Mexican national anthem.",
+  "new_tokens": 120,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "El Himno Nacional Mexicano tiene como tema dominante:\n\nB) Una celebración de la independencia\n\nEl Himno Nacional Mexicano, también conocido como \"La Mariposa\" (El Pez Mariposa), es una canción que se ha convertido en un himno nacional de México desde 1910. Su letra es una celebración de la independencia de México de España, que se logró en 1821. La canción es compuesta por José María Morelos y Pavón y fue escrita por Francisco González.\n\nLa letra del himno describe la",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 80,
+  "response": "The correct answer is:\n\nA) Jaguar\n\nThe Jaguar is a large cat native to Central and South America. It is the largest cat species found in the Americas and is known for its distinctive spotted coat. The other options listed are not native to the Americas:\n\nB) Monarch Butterfly (Mariposa monarca) - This is a butterfly species native to North America.\n\nC) Quetzal - This is a bird species native to Central America.\n\nD) Eagle (Águila real) - This is a bird of prey native to Europe, Asia, and Africa.",
+  "new_tokens": 118,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "La respuesta correcta es:\n\nC) Olmeca\n\nExplicación:\n\nLa cultura del preclásico medio, también conocida como cultura del preclásico o cultura del antiguo mundo, se caracteriza por la creación de grandes estructuras y monumentos, lo que incluye las cabezas colosales. Esta cultura se desarrolló en la región de Mesoamérica, específicamente en la actualidad de México y Guatemala.\n\nLas características principales de esta cultura son:\n\n1. Creación de grandes edificios y monumentos, como las pirámides.\n2. El uso de la estela",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 100,
+  "response": "La cultura de Cuicuilco, que se desarrolló en el área actual de Guatemala, es conocida por varios de sus rasgos característicos. Entre ellos, se incluyen:\n\nA) Plataforma Ceremonial de base circular y Tumbas en forma de pozo\n\nB) Plataforma Ceremonial de base rectangular y Tumbas en forma de botellón\n\nC) Plataforma Ceremonial (Altar) de base circular y Tumbas en forma de botellón\n\nD) Plataforma Ceremonial de base cuadrada y Tumbas en forma de",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 104,
+  "response": "La respuesta correcta es:\n\nB) Clásico\n\nExplicación:\n\nLa cultura mesoamericana, también conocida como cultura Maya, se desarrolló principalmente durante el período Clásico, que se extendió desde el siglo 6 hasta el siglo 9 del calendario maya. Este período fue un período de crecimiento y expansión cultural, económico y social en la región mesoamericana.\n\nAlgunos puntos clave sobre el período Clásico:\n\n1. El desarrollo de la escritura maya, que permitió la creación de textos históricos y religiosos",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 108,
+  "response": "La respuesta correcta es:\n\nC) El calendario agrícola\n\nExplicación:\n\nEl calendario agrícola de Mesoamérica, especialmente el calendario trecena, fue uno de los inventos más trascendentes para la historia intelectual de la región. Este sistema de cálculo agrícola se desarrolló en la época prehispánica y se utilizó para planificar las cosechas y las campañas.\n\nAlgunos puntos clave sobre el calendario agrícola:\n\n1. Se basaba en la observación de los ciclos lunares y solares.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 109,
+  "response": "La creación del cero se atribuye a los mayas. Por lo tanto, la respuesta correcta es:\n\nB) A los mayas\n\nLos mayas desarrollaron un sistema de numeración muy avanzado que incluía el cero como un símbolo independiente, lo que es una de las características más notables de su sistema numérico.",
+  "new_tokens": 77,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "La respuesta correcta es:\n\nA) Maya\n\nLa ciudad de Palenque, ubicada en la región de Chiapas, México, fue fundada por los mayas. Es considerada una de las ciudades mayas más importantes y bien conservadas del mundo. La cultura maya se estableció en la región durante el período precolombino, que se extiende desde el siglo 2 al siglo 15 de nuestra era.\n\nLas ciudades mayas eran complejas sociedades que se caracterizaban por su gran riqueza cultural, artística y arquitectónica. Palen",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 114,
+  "response": "La respuesta correcta es:\n\nA) Palenque - Calakmul - Uxmal - Chichen Itza\n\nEsta lista incluye las ciudades mayas más conocidas y importantes de la cultura maya. Aquí están las características de cada una:\n\n1. Palenque: Es una de las ciudades mayas más grandes y bien conservadas. Fue fundada en el siglo 7 y se extendió durante siglos.\n\n2. Calakmul: Es una de las ciudades mayas más grandes y antigas del mundo. Fue fundada en el siglo 7 y se extend",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 123,
+  "response": "La respuesta correcta es:\n\nC) Teotihuacán\n\nExplicación:\n\nTeotihuacán es una antigua ciudad maya que se encuentra en el estado de Estado de México, México. Es considerada una de las ciudades más grandes y importantes del mundo prehispánico, y es conocida por su gran número de pirámides, incluyendo las pirámides del Sol y de la Luna.\n\nLas pirámides del Sol y de la Luna en Teotihuacán son dos de las más grandes y antiguas de México. Se cree que fueron construidas durante el",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 124,
+  "response": "La respuesta correcta es:\n\nA) Entre el año 200 y 500 DC\n\nExplicación:\n\nLas pirámides del Sol y de la Luna, también conocidas como las pirámides de Huitzilopochtli y Quetzalcoatl, fueron construidas en el período prehispánico en México. Estas pirámides fueron parte de las estructuras religiosas y militares importantes en la cultura maya y azteca.\n\nLas pirámides del Sol y de la Luna fueron construidas durante el período prehispánico, específicamente",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 126,
+  "response": "La respuesta correcta es:\n\nD) Del periodo preclásico\n\nTeotihuacán fue un centro ceremonial y ciudad más grande y poderosa durante el periodo preclásico, que se extendió desde aproximadamente el 200 a. C. hasta el 600 d. C. En este período, Teotihuacán fue el centro de una de las civilizaciones más importantes del mundo prehispánico, conocida como la Civilización de los Pueblos del Norte.\n\nAlgunos puntos clave sobre Teotihuacán durante el periodo preclásico:",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 140,
+  "response": "La respuesta correcta es:\n\nC) Tlalocan\n\nExplicación:\n\nTlalocan es el nombre que los mexicas y aztecas dieron a su propio reino, que se extendía desde el norte de México hasta el sur de la actual Ciudad de México. Este reino fue el lugar donde se desarrollaron los primeros pueblos mexicas y aztecas, y donde se establecieron sus primeras ciudades y cultivos.\n\nAlgunos detalles sobre Tlalocan:\n\n1. Se cree que Tlalocan fue fundado por el primer",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 146,
+  "response": "La respuesta correcta es:\n\nD) Preclásica\n\nExplicación:\n\nLa época prehispánica que tuvo más desarrollo en su cultura fue la Preclásica. Esta era la primera etapa de la historia prehispánica, que se extendió desde aproximadamente el 1500 a.C. hasta el 1000 a.C. Durante esta época, se desarrollaron muchas de las características culturales que se consideran fundamentales para la formación de la cultura prehispánica.\n\nAlgunos puntos clave sobre la Preclásica:\n\n1.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 151,
+  "response": "La respuesta correcta es:\n\nD) Tenochtitlán, Texcoco, Tlacopán.\n\nEsta alianza se conocía como \"La Alianza de los Tres Pueblos\" y fue formada entre los tres principales pueblos indígenas del Valle de México: Tenochtitlán (actual Ciudad de México), Texcoco y Tlacopán. Esta alianza se formó en 1427 y se basaba en la necesidad de cooperación económica para enfrentar amenazas comunes, como la influencia de los españoles y",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 158,
+  "response": "D) Templo Mayor",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "La respuesta correcta es:\n\nC) Tula de Allende, estado de Hidalgo\n\nExplicación:\n\nLos Toltecas fueron una cultura maya-nahuatl que se asentaron en la región centro-norte de México, principalmente en la actualidad de la Ciudad de México y el estado de Puebla. Sin embargo, hay una importante ciudad que se asentó específicamente por parte de los Toltecas, y es Tula de Allende.\n\nTula fue una ciudad importante en la cultura tolteca, ubicada en el estado de Hidalgo, México. Fue fundada por",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 168,
+  "response": "Los Tarahumaras son una tribu indígena que habita principalmente en la región de Sonora, en el norte de México. Por lo tanto, la respuesta correcta es:\n\nA) Del norte\n\nSin embargo, es importante notar que la tribu Tarahumara se extiende por varios estados de México, incluyendo Sonora, Chihuahua, Coahuila, Durango, Nuevo León y Zacatecas. Por lo tanto, aunque la tribu es principalmente de norte, su territorio se extiende por varios estados.",
+  "new_tokens": 124,
+  "truncated": false
+ },
+ {
+  "id": 172,
+  "response": "La respuesta correcta es:\n\nB) Nahuas, mayas, zapotecos, mixtecos, otomíes, totonacas, tarahumaras\n\nExplicación:\n\nMéxico es un país con una rica diversidad cultural, y sus tribus indígenas son muy diversas. Aquí te presento una lista de las principales tribus indígenas existentes en México:\n\n1. Nahuas: Originarios de la región de México Central, conocidos por su cultura arquitectónica y su lengua Náhuatl.\n\n2. Mayas: Un grupo",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 183,
+  "response": "La respuesta correcta es:\n\nD) En la zona arqueológica de Monte Albán, Oaxaca\n\nLa pirámide de los Nichos, también conocida como \"El Templo de los Nichos\", se encuentra en Monte Albán, una importante ciudad arqueológica de la cultura Mixteca en la región de Oaxaca, México. Esta pirámide es parte del complejo arqueológico de Monte Albán y es considerada una de las pirámides más grandes y antiguas de México.",
+  "new_tokens": 110,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "La zona arqueológica de Huatabampo se encuentra en la entidad federativa de Sinaloa, México. Por lo tanto, la respuesta correcta es:\n\nC) Sinaloa\n\nHuatabampo es una ciudad ubicada en la costa del Pacífico en la región de Sinaloa, y es conocida por su importante patrimonio arqueológico, especialmente el sitio arqueológico de Huatabampo, que incluye monumentos prehispánicos y otros edificios históricos.",
+  "new_tokens": 107,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "La zona arqueológica de Villa de Reyes se encuentra en el estado de San Luis Potosí, México. Por lo tanto, la respuesta correcta es:\n\nB) San Luis Potosí",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "La zona arqueológica de San Antonio Nogalar se encuentra en la Ciudad de México, específicamente en la Ciudad de México Federal, en la Ciudad de México. No está ubicada en los estados mencionados en las opciones A, B, C, o D.\n\nLa Ciudad de México es la capital federal de México y es donde se encuentra la mayoría de las zonas arqueológicas y sitios históricos del país.",
+  "new_tokens": 90,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "La zona arqueológica o ruinas de Cholula se encuentra en el estado de Puebla, México. Por lo tanto, la respuesta correcta es:\n\nC) Puebla\n\nCholula es una importante ciudad y arqueológico en el estado de Puebla, conocida por su antigua ciudadela y sus ruinas arqueológicas.",
+  "new_tokens": 77,
+  "truncated": false
+ },
+ {
+  "id": 198,
+  "response": "La respuesta correcta es:\n\nD) Se fundó el 13 de agosto de 1521, día de la caída de Tenochtitlan\n\nExplicación:\n\nVilla Rica de Veracruz fue fundada el 13 de agosto de 1521, el mismo día en que la ciudad de Tenochtitlan, la capital de México, fue tomada por los españoles. Esta fecha es considerada históricamente significativa porque marcó el fin de la vida de la ciudad azteca y el inicio de la colonización española en México.\n\nVilla Rica de",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 200,
+  "response": "La respuesta correcta es:\n\nB) El primer ayuntamiento de América Continental. Este nombre le dió Hernán Cortés. Hoy Ciudad de Veracruz\n\nExplicación:\n\nLa Villa Rica de Veracruz es un lugar histórico en México que tiene varias características interesantes:\n\n1. Se originó en el siglo XVI, cuando Hernán Cortés estableció un pequeño asentamiento en la costa del Golfo de México.\n\n2. El nombre \"Villa Rica\" se refiere a la riqueza que el asentamiento tenía, ya que era un centro comercial y de comercio con otras naciones",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 204,
+  "response": "La respuesta correcta es:\n\nC) El 8 de noviembre de 1521\n\nExplicación:\n\nLos conquistadores españoles entraron en Tenochtitlán el 8 de noviembre de 1521, durante la Batalla de Cajeme. Esta batalla fue un enfrentamiento entre los españoles y los mexicas, liderados por Moctezuma II, que se libró en la ciudad de Tenochtitlán.\n\nAlgunos detalles adicionales:\n\n1. El 8 de noviembre de 1521 fue el día en que los españoles",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 205,
+  "response": "La respuesta correcta es:\n\nA) Moctezuma Ilhuicamina\n\nMoctezuma Ilhuicamina fue el último emperador de la Ciudad de México (también conocida como Tenochtitlán) antes de que los españoles llegaran a México. Fue el hijo de Moctezuma Xocoyotzin y el heredero a la corona.\n\nCuando los españoles llegaron a México en 1519, Moctezuma Ilhuicamina estaba en el trono, pero ya estaba envejecido y no tenía la fuerza física",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 207,
+  "response": "La respuesta correcta es:\n\nB) Cuauhtémoc\n\nCuauhtémoc fue el último emperador de la Ciudad de México y lideró a los mexicas en la batalla final contra los españoles durante la conquista de México. Esta batalla se conoce como la Noche Triste o la Batalla de la Noche Triste, que tuvo lugar el 13 de noviembre de 1521.\n\nCuauhtémoc fue un líder prehispánico muy valiente y resistente, que enfrentó a los españoles en varias batallas importantes. Sin",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 213,
+  "response": "La respuesta correcta es:\n\nA) Cuauhtémoc - último emperador del imperio mexica después de la muerte de Cuitláhuac\n\nExplicación:\n\nCuauhtémoc fue el último emperador del Imperio Mexica, también conocido como Azteca, después de la muerte de Cuitláhuac. Cuitláhuac fue el último emperador de la dinastía Aztec, que reinó entre 1502 y 1520. Cuauhtémoc asumió el trono en 1520",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 225,
+  "response": "The correct answer is:\n\nC) Antonio de Mendoza y Pacheco or Don Antonio de Mendoza\n\nAntonio de Mendoza y Pacheco was the first Viceroy of New Spain, serving from 1535 to 1540. He was a Spanish nobleman who was appointed to this position by the Spanish Crown. The title \"Viceroy\" refers to the governor of a colony or province, which was the role Antonio de Mendoza held in New Spain.\n\nThe other options are incorrect:\n\nA) Luis de Velasco was the first Viceroy of New Spain, serving from 1",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 228,
+  "response": "La Real Academia de Bellas Artes de San Fernando, que es una de las más importantes de España, fue fundada en 1743 por el virrey Matías de Gálvez y Gallardo. Por lo tanto, la respuesta correcta es:\n\nC) Matías de Gálvez y Gallardo\n\nMatías de Gálvez fue un importante político y militar español que ejerció el cargo de virrey en Sevilla durante el reinado de Carlos III. Fue un ferviente defensor de la educación y la cultura, y fundó la Real Academia de Bellas Artes de San",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 235,
+  "response": "La respuesta correcta es:\n\nC) Criollos\n\nExplicación:\n\nLos criollos eran los hijos de los españoles nacidos en la Nueva España (actualmente México y sus colonias). Este término se utilizaba para distinguir a los hijos de los españoles de los indígenas o mestizos.\n\nLos criollos eran:\n\n1. Hijos de españoles que habían llegado a la Nueva España y habían establecido una vida familiar allí.\n2. Los hijos de españoles que habían casado con indígenas o mestizas.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 238,
+  "response": "La respuesta correcta es:\n\nA) Esclavos africanos que realizaban trabajos forzados y los asiaticos que realizaban negocios\n\nExplicación:\n\nLa Nueva España, también conocida como México, fue fundada en 1519 por los españoles. Durante el período colonial, la organización social de la Nueva España se basaba en una estructura de dominación y explotación que incluía:\n\n1. Esclavos africanos: Los esclavos africanos eran los principales trabajadores forzados en la Nueva España. Estos",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 244,
+  "response": "The correct answer is:\n\nD) El Tribunal Supremo para indígenas\n\nThis refers to the Supreme Court for Indigenous Peoples, which was established in the New Spain (present-day Mexico) to address the shortcomings of the judicial system for indigenous populations.",
+  "new_tokens": 53,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "La respuesta correcta es:\n\nB) 1539\n\nExplicación:\n\nLa primera imprenta de la Nueva España fue creada en 1539, durante el mandato de Don Antonio de Mendoza, quien fue el primer gobernador de la Nueva España (actual México) y la Nueva Vizcaya (actual Chile).\n\nAlgunos detalles adicionales:\n\n1. La imprenta fue fundada en la ciudad de México, en el año 1539.\n\n2. El primer libro que se imprimió en la Nueva España fue \"El",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 266,
+  "response": "La respuesta correcta es:\n\nA) Josefa Ortiz de Domínguez\n\nJosefa Ortiz de Domínguez fue conocida como \"La Corregidora\" debido a su papel en la política y la educación en México. Fue una mujer de gran influencia política y educativa en la colonia española, especialmente en la ciudad de México. Su nombre se le conoce como \"La Corregidora\" porque fue la primera mujer en ser nombrada corregidora de la ciudad de México, un cargo que representaba la autoridad municipal.",
+  "new_tokens": 120,
+  "truncated": false
+ },
+ {
+  "id": 272,
+  "response": "La respuesta correcta es:\n\nB) Constitución de Apatzingán de 1814\n\nExplicación:\n\nLa Constitución de Apatzingán de 1814 fue una de las primeras constituciones de la Nueva España, que se estableció en el estado de Michoacán, México. Fue una constitución autárquica, lo que significa que se dividió a la Nueva España en 6 provincias, cada una con su propio gobierno y legislación.\n\nAlgunos puntos clave sobre esta constitución:\n\n1. Se estableció en el año 1",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 275,
+  "response": "La respuesta correcta es:\n\nC) El Despertador Americano\n\nExplicación:\n\nEl Despertador Americano es un periódico mexicano que se publica en español. Fue fundado en 1922 por el periodista y escritor mexicano José María Arguedas. Es considerado uno de los periódicos más importantes y influyentes de México, especialmente en el campo de la literatura y la cultura.\n\nAlgunas características del periódico El Despertador Americano:\n\n1. Fue fundado por José María Arguedas, un importante escritor",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 279,
+  "response": "La frase \"¡Morir es nada cuando por la patria se muere!\" fue pronunciada por José María Morelos y Pavón, quien es considerado uno de los fundadores de la independencia de México. Por lo tanto, la respuesta correcta es:\n\nA) José María Morelos y Pavón",
+  "new_tokens": 66,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "La respuesta correcta es:\n\nB) 16 de septiembre de 1821\n\nEl Plan de Iguala fue firmado el 16 de septiembre de 1821, durante la Guerra de Independencia de México. Este tratado fue un acuerdo entre los líderes de la independencia y el gobierno español, que establecía las bases para la formación de un nuevo gobierno mexicano independiente.\n\nEl Plan de Iguala fue un documento histórico importante que marcó el inicio de la independencia de México de España. Fue firmado por el general José María Morelos y Pav",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 285,
+  "response": "El Plan de Iguala fue proclamado por Agustín de Iturbide y Vicente Guerrero. Por lo tanto, la respuesta correcta es:\n\nA) Agustín de Iturbide y Vicente Guerrero",
+  "new_tokens": 47,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "La respuesta correcta es:\n\nB) Fusilado en Oaxaca el 14 de feb. de 1831\n\nVicente Guerrero fue asesinado el 14 de febrero de 1831 en Oaxaca, México. Fue fusilado en la plaza de Oaxaca, en la ciudad de Oaxaca, y su cuerpo fue enterrado en el cementerio de la ciudad.",
+  "new_tokens": 97,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "La respuesta correcta es:\n\nD) 27 de septiembre de 1821\n\nExplicación:\n\nLa Batalla de la Ciudad de México, también conocida como la Batalla de la Independencia, fue un importante evento en la historia de México. Fue el resultado de la invasión de la Ciudad de México por parte de las fuerzas del Ejército Trigarante, liderados por Miguel Hidalgo y Costilla.\n\nLa batalla se libró el 27 de septiembre de 1821, y fue un triunfo decisivo para los insurgentes.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 298,
+  "response": "La respuesta correcta es:\n\nA) Proclamado el 1 de marzo de 1854 por Florencio Villarreal, para dar fin a la dictadura de Antonio López de Santa Anna\n\nExplicación:\n\nEl Plan de Ayutla se refiere a un plan político y militar que fue proclamado el 1 de marzo de 1854 en la ciudad de Ayutla, en el estado de Morelos, México. Este plan fue presentado por el general Florencio Villarreal, quien se había convertido en el líder de la resistencia contra la",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 312,
+  "response": "La respuesta correcta es:\n\nA) Tratado de Guadalupe Hidalgo\n\nExplicación:\n\nEl Tratado de Guadalupe Hidalgo fue un acuerdo firmado el 18 de febrero de 1848 entre México y Estados Unidos. Este tratado puso fin a la Guerra de los Cien Días, que había comenzado en 1846 y 1847.\n\nAlgunos puntos clave sobre este tratado:\n\n1. México perdió territorios importantes en el norte de México, incluyendo el estado de California,",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 323,
+  "response": "La respuesta correcta es:\n\nD) El Benemérito de las Américas\n\nBenito Juárez es conocido como \"El Benemérito de las Américas\" (El Benemérito de las Américas significa \"El Benemérito de América\" en español). Este título lo otorgó el presidente de los Estados Unidos, Abraham Lincoln, en 1867, en reconocimiento a su contribución a la independencia y desarrollo de América Latina.\n\nLas otras opciones son incorrectas:\n\nA) El Liberal oaxaqueño: Este es un título que se le dio",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 327,
+  "response": "La respuesta correcta es:\n\nA) Porque 53 ciudadanos franceses partidarios de la resintauración de la monarquía en México fueron ejecutados\n\nEsta intervención francesa se presentó en respuesta a la revolución mexicana de 1910-1911, que tuvo lugar en México. Durante este período, varios ciudadanos franceses que apoyaban la restauración de la monarquía en México fueron ejecutados por parte de las fuerzas mexicanas.\n\nEsta acción fue un acto de represión contra los",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 332,
+  "response": "El emperador del Segundo Imperio Mexicano fue Agustín de Iturbide.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "La respuesta correcta es:\n\nC) Maximiliano de Habsburgo\n\nExplicación:\n\nEl Cerro de las Campanas es un lugar importante en la historia de México, ya que fue el lugar donde Maximiliano I de Habsburgo, el último emperador de México, fue ejecutado en 1867.\n\nMaximiliano I fue un príncipe de la Casa de Habsburgo, que se convirtió en emperador de México en 1864. Durante su reinado, México se enfrentó a una crisis política y económica",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 343,
+  "response": "La respuesta correcta es:\n\nD) Presidente Sebastián Lerdo de Tejada (1872-1876). Predecesor: Benito Juárez, Sucesor: Porfirio Díaz\n\nExplicación:\n\nEl Paseo de la Reforma es un importante espacio público en la Ciudad de México, conocido por su nombre original de \"Paseo de la Independencia\". Este nombre fue cambiado por el presidente Sebastián Lerdo de Tejada en 1872.\n\nSebastián Lerdo de Tejada fue el presidente",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 345,
+  "response": "La respuesta correcta es:\n\nC) Fue un militar nacido en Oaxaca. Se destacó en la Batalla de Puebla del 5 de mayo. Posteriormente, fue presidente de México en 7 ocasiones\n\nExplicación:\n\nPorfirio Díaz (1830-1915) fue un militar y político mexicano que se destacó en la Batalla de Puebla del 5 de mayo de 1862, que es considerada una de las batallas más importantes en la historia de México. Después de la batalla, D",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 346,
+  "response": "La respuesta correcta es:\n\nC) José de la Cruz Porfirio Díaz Mori\n\nPorfirio Díaz Mori (1830-1915) fue un político mexicano que fue el primer presidente de México desde la independencia en 1821. Su nombre completo completo es José de la Cruz Porfirio Díaz Mori.\n\nEste es el nombre oficial y reconocido por la historia y la ley mexicana. Los otros nombres mencionados no son el nombre completo de Porfirio Díaz.",
+  "new_tokens": 116,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "La respuesta correcta es:\n\nC) Conquista, Independencia y Revolución\n\nExplicación:\n\n1. Conquista: El evento más antiguo en la lista es la conquista española de México en 1519-1521. Esta conquista fue el inicio de la colonización española en México.\n\n2. Independencia: La independencia de México de España ocurrió en 1821, después de una guerra de independencia que duró varios años.\n\n3. Revolución: La Revolución Mexicana, también conocida como la Revolución de 191",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 366,
+  "response": "La respuesta correcta es:\n\nD) Día de muertos\n\nEl Día de Muertos, también conocido como Día de los Muertos o Día de los Inmortales, se celebra el 1 de noviembre en México y en muchos otros países hispanohablantes. Sin embargo, el 20 de noviembre se conoce como Día de los Muertos en algunos lugares, especialmente en la Ciudad de México.\n\nEste día es una celebración tradicional que se realiza para recordar y honrar a los muertos. Se crean calaveras de azúcar, se prepar",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 382,
+  "response": "La respuesta correcta es:\n\nC) En la hacienda Chinameca, Morelos, el 10 de abril de 1919\n\nEmiliano Zapata fue asesinado en la hacienda Chinameca, ubicada en el estado de Morelos, México, el 10 de abril de 1919. Este asesinato tuvo lugar durante la Revolución Mexicana y marcó un punto de inflexión importante en la historia de México.",
+  "new_tokens": 105,
+  "truncated": false
+ },
+ {
+  "id": 391,
+  "response": "La respuesta correcta es:\n\nD) Un tipo de ejecución usada en el Porfiriato (consistía en hacerle cree a un prisionero que podía escapar para asesinarlo por la espalda)\n\nExplicación:\n\nLa Ley de Fuga, también conocida como la Ley de la Fuga, fue una ley promulgada por el presidente Porfirio Díaz en 1876 durante el Porfiriato. Esta ley era conocida por su forma peculiar de castigo, que consistía en hacerle creer a un prisionero que podía escapar",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 394,
+  "response": "La respuesta correcta es:\n\nC) El Corrido, es una narrativa popular en forma de canción sobre temas políticos, históricos, etc\n\nExplicación:\n\nEl Corrido es una de las formas de música popular más importantes en México, especialmente en la región centro-norte del país. Es una forma de narrativa oral que se ha convertido en una forma de expresión musical y cultural importante en la historia de México.\n\nLas características del Corrido incluyen:\n\n1. Narrativa: Los corridos suelen contar historias, narrativas o temas políticos, históricos o personales.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 395,
+  "response": "La respuesta correcta es:\n\nC) La Adelita\n\nLa Adelita es un famoso corrido revolucionario mexicano que fue escrito por el poeta y músico mexicano José Vasconcelos en 1924. Este corrido es conocido por su emotividad y su reflejo de la vida cotidiana en México, especialmente en la época de la Revolución Mexicana.\n\nAlgunas características de La Adelita:\n\n1. Es una canción de amor y desamor.\n2. Incluye temas de lucha contra la opresión y",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 400,
+  "response": "La respuesta correcta es:\n\nC) Francisco I. Madero, Plutarco Elías Calles, Doroteo Arango\n\nExplicación:\n\nEl Maximato fue un período de gobierno militar en México, que se extendió desde 1920 hasta 1934. Durante este período, se implementaron varias reformas importantes para modernizar el país y mejorar la infraestructura.\n\nLos presidentes que conformaron el Maximato fueron:\n\n1. Francisco I. Madero (1920-1924)\n2. Plutarco Elías Calles (1924",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 405,
+  "response": "La respuesta correcta es:\n\nB) Plutarco Elías Calles\n\nPlutarco Elías Calles fue el fundador del Partido Nacional Revolucionario (PRI) en 1929. Este partido político se formó como una organización política que buscaba promover el socialismo y la revolución en México.\n\nAunque el PRI se llama así desde 1946, su fundación se remonta a 1929. Durante este período, Calles fue el líder del partido y se convirtió en el primer presidente del PRI.\n\nLas otras opciones no son correctas:",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 407,
+  "response": "La respuesta correcta es:\n\nC) En la Segunda Guerra Mundial\n\nExplicación:\n\nEl \"Escuadrón 201\" es un grupo de soldados estadounidenses que participó activamente en la Segunda Guerra Mundial. Este grupo fue formado en 1942 y se desempeñó principalmente en la batalla de Normandía en junio de 1944, durante la invasión de Francia por parte de las fuerzas aliadas.\n\nAlgunos detalles adicionales sobre el \"Escuadrón 201\":",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 410,
+  "response": "La respuesta correcta es:\n\nB) 17 de octubre de 1953 durante el mandato de Adolfo Ruiz Cortines\n\nExplicación:\n\nEl derecho al voto femenino en Colombia se declaró el 17 de octubre de 1953, durante el mandato del presidente Adolfo Ruiz Cortines. Este evento histórico marcó un importante paso hacia la igualdad de derechos entre hombres y mujeres en Colombia.\n\nAntes de esta fecha, solo los hombres eran elegibles para votar en las elecciones presidenciales. La declaratoria del derecho al",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 426,
+  "response": "La respuesta correcta es:\n\nB) 17 de diciembre de 1992\n\nEl Tratado de Libre Comercio de América del Norte (NAFTA) fue firmado el 17 de diciembre de 1992 en las instalaciones de la Casa Blanca en Washington, D.C., Estados Unidos. Este acuerdo fue un hito importante en la historia económica de América del Norte, estableciendo un marco de libre comercio entre los Estados Unidos, México y Canadá.",
+  "new_tokens": 110,
+  "truncated": false
+ },
+ {
+  "id": 431,
+  "response": "La respuesta correcta es:\n\nB) 31 de diciembre de 2005\n\nExplicación:\n\nLa fecha de 31 de diciembre de 2005 es cuando se llevó a cabo el apagón analógico en España. Este evento significativo marcó el fin de la televisión analógica en nuestro país y el inicio de la televisión digital terrestre (TDT).\n\nAlgunos puntos importantes sobre este evento:\n\n1. El apagón analógico fue un evento histórico en la historia de la televisión en España.\n\n2. Fue un evento",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 432,
+  "response": "Lo siento, pero no puedo proporcionar la respuesta correcta para esa pregunta. La información sobre terremotos en Puebla es confusa y no puedo asegurar con certeza cuál de las opciones es correcta. \n\nPuedo decir que Puebla es una ciudad en México, pero no tengo datos específicos sobre terremotos en su historia reciente. Los terremotos son eventos geológicos que suelen ser más comunes en áreas más cercanas a la línea de convergencia de las placas tectónicas, como Japón o Norteamérica.\n\nSi tienes",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 434,
+  "response": "La superficie total de México es aproximadamente de 1,964,375 km². Sin embargo, la pregunta parece estar mezclando información sobre diferentes partes del país. La superficie continental de México es de aproximadamente 2,017,398 km², la superficie insular es de aproximadamente 1,345,895 km², y la superficie mar territorial es de aproximadamente 1,345,895 km². Por lo tanto, la respuesta más cercana a la pregunta sería:\n\nC) 1,3",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 437,
+  "response": "La respuesta correcta es:\n\nC) 3: Nororiental, Sur, Norte\n\nMéxico tiene tres regiones geográficas conocidas como \"Sierras Madre\":\n\n1. Nororiental: Esta región se extiende desde el norte de México hasta el centro del país, incluyendo las sierras de Sierra Madre Oriental y Sierra Madre Occidental.\n\n2. Sur: Esta región se encuentra en el sur de México, incluyendo las sierras de Sierra Madre Sur.\n\n3. Norte: Esta región se encuentra en el norte de México, incluyendo las sierras de",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 442,
+  "response": "The correct answer is:\n\nC) Popocatépetl e Iztaccíhuatl\n\nExplanation:\n\nPopocatépetl and Iztaccíhuatl are two of the most famous and active volcanoes in the state of Mexico and the state of Puebla. They are part of the volcanic chain that runs along the western edge of Mexico, known as the Trans-Mexican Volcanic Belt.\n\nPopocatépetl is the larger of the two, with an elevation of 5, 426 meters (17, 802 feet) above sea level. It is",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 448,
+  "response": "La respuesta correcta es:\n\nB) Golfo de México\n\nExplicación:\n\nBallenas jorobadas (o ballenas orcas) y lobos marinos son especies que se encuentran en el Golfo de México. Este océano es conocido por su diversidad de vida marina, incluyendo a estas especies de mamíferos acuáticos.\n\nAquí hay algunos detalles adicionales sobre estas especies:\n\n1. Ballenas jorobadas: Son una especie de ballena que se caracteriza por su forma de cabeza, que se eleva cuando se alimenta",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 451,
+  "response": "La respuesta correcta es:\n\nC) Río Lerma\n\nEl Río Lerma es el río más largo de México, con una longitud de aproximadamente 1,100 km (683 millas). Este río es importante tanto para la agricultura como para la navegación, y es un importante recurso hídrico para la región de la Ciudad de México y el Valle de México.",
+  "new_tokens": 87,
+  "truncated": false
+ },
+ {
+  "id": 454,
+  "response": "The correct answer is:\n\nA) Chihuahua, Coahuila, Tamaulipas, Nuevo León\n\nThe Río Bravo, also known as the Rio Grande, is a major river in the southwestern United States and northern Mexico. It flows through several states in the United States and Mexico, including Texas, New Mexico, and Arizona in the United States, and Texas, Louisiana, and Mexico in Mexico. The states that the Río Bravo passes through are Chihuahua, Coahuila, Tamaulipas, and Nuevo León in Mexico.",
+  "new_tokens": 119,
+  "truncated": false
+ },
+ {
+  "id": 465,
+  "response": "La respuesta correcta es:\n\nC) Jaguar (ocelote), águila real, mariposa monarca, ajolote, tortuga caguama, guacamaya roja, oso negro, vaquita marina\n\nEsta lista incluye animales mexicanos que están en peligro de extinción. Aquí hay una breve explicación de cada uno:\n\n1. Jaguar (ocelote): Es una especie en peligro de extinción debido a la pérdida de hábitat y la caza.\n\n2. Águila real: Esta especie está en",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 468,
+  "response": "The correct answer is:\n\nC) Torre BBVA\n\nThe Torre BBVA, also known as the BBVA Tower, is a 43-story skyscraper located in Madrid, Spain. It has withstood three major earthquakes in its history, including the 1980 Alcoy earthquake, the 1981 Almería earthquake, and the 1985 Pamplona earthquake. This makes it one of the few skyscrapers in the world that has survived such seismic events.",
+  "new_tokens": 107,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "La Plaza de la Constitución (Zócalo) en México recibe su nombre en honor a la Constitución de 1917. Esta Constitución fue adoptada en 1917 y es considerada la Constitución de la República Mexicana, que ha sido la base de la constitución de los Estados Unidos Mexicanos hasta la actualidad.\n\nPor lo tanto, la respuesta correcta es:\n\nD) Constitución de 1917",
+  "new_tokens": 97,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "La respuesta correcta es:\n\nD) Estela de Luz\n\nExplicación:\n\nLa Estela de Luz es un monumento público ubicado en la Ciudad de México, México. Fue construido en 1994 para conmemorar el Bicentenario de la Independencia de México (1810-1821) y el Centenario de la Revolución Mexicana (1910-1911).\n\nCaracterísticas principales de la Estela de Luz:\n\n1. Se encuentra en la Avenida de la Reforma, a unos 100 metros de la",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 479,
+  "response": "The correct answer is C) Enrique Carbajal González, mejor conocido como Sebastián, autor del Caballito de Reforma.\n\nEnrique Carbajal González, también conocido como Sebastián, es un famoso escultor mexicano que es especializado en esculturas monumentales y figuras geométricas de gran tamaño. Su obra más famosa es el \"Caballito de Reforma\", una escultura de 12 metros de altura que se encuentra en la Plaza de la Constitución en la Ciudad de México.",
+  "new_tokens": 119,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "La respuesta correcta es:\n\nD) Manuel Tolsá\n\nManuel Tolsá (1882-1967) fue un escultor español que se especializó en la creación de esculturas de figuras geométricas de gran tamaño. Sus obras destacan por su simetría, equilibrio y la utilización de formas abstractas y geométricas.\n\nAlgunos de sus obras más conocidas incluyen:\n\n1. \"La Torre de la Música\" (1928)\n2. \"La Torre de la Abadía de San Juan",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 485,
+  "response": "En Xochimilco, México, las embarcaciones coloridas con flores que se utilizan para turismo son conocidas como \"Góngolas\". Estas embarcaciones son famosas por su belleza y son muy populares entre los turistas. Por lo tanto, la respuesta correcta es:\n\nB) Góngolas",
+  "new_tokens": 72,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "The correct answer is:\n\nC) Tepoztlán\n\nTepoztlán is a municipality in the state of Puebla, Mexico. It is known for its rich history, beautiful colonial architecture, and the famous Tepozteco volcano, which is the highest volcano in the state of Puebla. The city is also famous for its traditional crafts, including pottery and textiles, and its annual festival, the Festival de la Virgen de la Asunción, which is one of the largest in Mexico.",
+  "new_tokens": 108,
+  "truncated": false
+ },
+ {
+  "id": 503,
+  "response": "La respuesta correcta es:\n\nA) Yucatán\n\nIzamal es un pueblo mágico ubicado en la región del estado de Yucatán, México. Es conocido por su arquitectura colonial, sus ruinas mayas y su cultura única. La ciudad es famosa por su famosa iglesia de San Francisco, que es una de las iglesias más grandes y antiguas de México. Además, Izamal es famosa por su mercado tradicional y su gastronomía típica.",
+  "new_tokens": 113,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "Los tres niveles de gobierno en México son:\n\nA) Federación, estado y municipio\n\nEsta es la respuesta correcta. En México, los niveles de gobierno son:\n\n1. Federación: Esta es la máxima autoridad del país, que se compone de tres entidades: el Presidente de la República, el Congreso de la Unión y el Tribunal Supremo de Justicia.\n\n2. Estado: Los estados son las entidades territoriales más grandes del país, cada uno con su propio gobierno estatal. Estos estados son administrados por gobernadores electos por el voto popular.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 523,
+  "response": "La respuesta correcta es:\n\nC) Luis Enrique Erro\n\nLuis Enrique Erro fue el primer secretario de salud de México, ocupando el cargo de 1946 a 1952. Erro fue un médico y político mexicano que se destacó por su liderazgo en la lucha contra la pobreza y la enfermedad en México.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "La respuesta correcta es:\n\nD) IMSS Bienestar\n\nExplicación:\n\nEl IMSS Bienestar es el seguro de salud creado en 2004 en México que se destina específicamente a personas desempleadas y trabajadores independientes. Este seguro es una alternativa al Seguro Popular de Salud, que se creó en 1997.\n\nAlgunos puntos clave sobre el IMSS Bienestar:\n\n1. Es un seguro privado que cubre a personas que no están cubiertas por el Seguro Popular de Salud.\n\n2. Se destina a trabajadores independientes,",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 539,
+  "response": "La respuesta correcta es:\n\nB) A las entidades federativas\n\nExplicación:\n\nLos senadores en México representan a las entidades federativas, que son las regiones administrativas del país. Estas entidades federativas incluyen:\n\n1. Estados (como el estado de México)\n2. Distrito Federal (la Ciudad de México)\n3. Municipios (poblados pequeños)\n\nLos senadores son elegidos por los ciudadanos de cada entidad federativa, lo que significa que representan a sus respectivos estados, distrito federal o municipios.\n\nLas otras opciones son incorrectas porque:\n\nA",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 541,
+  "response": "La respuesta correcta es:\n\nC) El poder judicial, con división federal y estatal\n\nExplicación:\n\nEn México, la justicia es impartida por el poder judicial, que se divide en dos niveles: federal y estatal. Cada estado tiene su propia Corte Suprema de Justicia, que es la máxima instancia judicial en ese estado.\n\nLa Secretaría de Seguridad Pública, aunque es una entidad importante en la seguridad del país, no imparte justicia. Es una dependencia del Ministerio de Gobernación.\n\nLa Fiscalía, aunque es una entidad importante en la justicia penal,",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 544,
+  "response": "La Constitución de México tiene 250 artículos. Por lo tanto, la respuesta correcta es:\n\nD) 150\n\nEs importante notar que hay una confusión en la pregunta. La Constitución de México tiene 250 artículos, no 150.",
+  "new_tokens": 64,
+  "truncated": false
+ },
+ {
+  "id": 545,
+  "response": "La ley fundamental de México se llama:\n\nD) Carta Federativa de la República Mexicana\n\nEsta ley fue aprobada en 1917 y es considerada la Constitución Política de los Estados Unidos Mexicanos. Es la base de la organización y funcionamiento del gobierno federal en México.",
+  "new_tokens": 63,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "La respuesta correcta es:\n\nB) Artículo 132\n\nExplicación:\n\nLa Constitución de la República Argentina establece en su Artículo 132 el derecho de los pueblos indígenas a la soberanía y a la autodeterminación. Este artículo es fundamental para proteger y garantizar los derechos de los pueblos indígenas en la Argentina.\n\nLos puntos clave del Artículo 132 son:\n\n1. Protege la soberanía y la autodeterminación de los pueblos indígenas.\n\n2. Reconoce que los p",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 557,
+  "response": "La Constitución de la República Argentina no tiene un artículo específico dedicado exclusivamente a los derechos de los ciudadanos. Sin embargo, los derechos fundamentales de los ciudadanos están recogidos en varios artículos de la Constitución, como el Artículo 27, que establece los derechos fundamentales de los ciudadanos.\n\nLa respuesta correcta sería:\n\nD) Artículo 27",
+  "new_tokens": 80,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "La respuesta correcta es:\n\nB) 11 de octubre de 1990\n\nEl Instituto Federal Electoral (IFE) fue fundado el 11 de octubre de 1990. Es importante notar que la fecha de fundación es una fecha histórica significativa en la historia de la democracia en Colombia, ya que el IFE es el organismo encargado de la organización y la supervisión de las elecciones en el país.",
+  "new_tokens": 100,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "La respuesta correcta es:\n\nB) 10 de febrero de 2010\n\nEl Instituto Nacional Electoral (INE) fue fundado el 10 de febrero de 2010. Es importante notar que la fecha de fundación es una fecha histórica significativa en la historia del sistema electoral en México, ya que marcó el inicio de un proceso de modernización y reforma del sistema electoral en el país.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "La fecha correcta para el establecimiento del primer registro civil es:\n\nB) 2 de diciembre de 1910\n\nEste registro civil fue establecido en la ciudad de México, México, en 1910. Es considerado el primer registro civil en el mundo y es un hito importante en la historia de la administración de registros civiles.",
+  "new_tokens": 78,
+  "truncated": false
+ },
+ {
+  "id": 569,
+  "response": "El partido político que gobernó durante 7 décadas en el siglo XX fue el PRI - Partido Revolucionario Institucional. Por lo tanto, la respuesta correcta es:\n\nA) PRI - Partido Revolucionario Institucional",
+  "new_tokens": 53,
+  "truncated": false
+ },
+ {
+  "id": 582,
+  "response": "La respuesta correcta es:\n\nD) El 22 de septiembre de 1910.\n\nLa Universidad Nacional Autónoma de México (UNAM) fue fundada el 22 de septiembre de 1910. Esta fecha se conoce como el Día de la Revolución Mexicana, que se celebra en México cada año.\n\nPara aclarar los otros datos:\n\nA) El 22 de noviembre de 1890: Esta es la fecha de fundación de la Universidad Autónoma de México (UAM), que es una institución diferente a la UN",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 586,
+  "response": "La máxima casa de estudios de México es:\n\nA) Universidad Nacional Autónoma de México (UNAM)\n\nLa UNAM es la universidad más antigua y prestigiosa de México, fundada en 1551. Es considerada una de las universidades más prestigiosas del mundo y cuenta con una extensa red de centros de investigación y desarrollo.",
+  "new_tokens": 80,
+  "truncated": false
+ },
+ {
+  "id": 595,
+  "response": "La respuesta correcta es:\n\nA) Colegio Nacional de Educación Profesional Técnica\n\nExplicación:\n\nCONALEP es el nombre oficial de la institución educativa que se encarga de la formación técnica y profesional en México. Es una institución pública que ofrece programas de educación técnica y profesional en diversas áreas, como ingeniería, medicina, administración, entre otras.\n\nLas otras opciones no son correctas:\n\nB) Consejo Nacional para la Libertad de Expresión y Pensamiento: Es una organización sin fines de lucro que promueve la libertad de expresión y pens",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 597,
+  "response": "La respuesta correcta es:\n\nC) Luis Ernesto Miramontes en 1931\n\nLuis Ernesto Miramontes fue el inventor de la primera televisión a color en América Latina. Fue un ingeniero y empresario mexicano que desarrolló la primera televisión a color en América Latina en 1931. Su invento fue un avance significativo en la tecnología de la televisión y contribuyó a la popularización de la televisión en México y América Latina.",
+  "new_tokens": 109,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "La respuesta correcta es:\n\nB) Sistema Texcoco\n\nExplicación:\n\nEl Sistema Texcoco es el sistema de acueducto más importante de la Ciudad de México (CDMX) y Estado de México. Es una red de tuberías que recorre más de 100 kilómetros y abastece a más de 1.5 millones de habitantes en la región metropolitana.\n\nCaracterísticas del Sistema Texcoco:\n\n1. Ubicación: Está ubicado en la región metropolitana de la Ciudad de México y Estado de México.\n\n2. Capacidad:",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 610,
+  "response": "La respuesta correcta es:\n\nB) Luis Echeverría Álvarez\n\nLuis Echeverría Álvarez fue el presidente de México que inauguró el Metro de la Ciudad de México (Metro de la CDMX) en 1975. Este fue uno de los primeros sistemas de metro en América Latina y uno de los más grandes del mundo.\n\nAlgunos datos adicionales sobre la inauguración del Metro de la CDMX:\n\n1. Se inauguró el 1 de enero de 1975.\n2. Fue inaugurado por el presidente Luis Echeverría",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 615,
+  "response": "D) El Santo, nombre verdadero: Rodolfo Guzman Huerta",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "Para responder a esta pregunta, necesitaría tener información más precisa sobre los nombres mencionados en cada opción. Sin embargo, puedo proporcionar información general sobre los futbolistas mexicanos famosos en España:\n\n1. Irvin Lozano: Es un futbolista mexicano que jugó en la Real Sociedad de España en la temporada 2017-2018.\n\n2. Diego Láinez: Es un exfutbolista mexicano que jugó en el FC Barcelona y el Real Madrid.\n\n3. Hugo Sánchez: Es un exfutbolista mexicano",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 618,
+  "response": "La respuesta correcta es:\n\nB) Hugo Sánchez\n\nHugo Sánchez es considerado uno de los jugadores más destacados del fútbol mexicano en la historia. Fue un jugador de fútbol profesional que jugó en la UEFA en los años 90, destacándose por su habilidad, técnica y liderazgo en el campo. Sánchez jugó en equipos como el Real Madrid, el Barcelona y el Bayern Munich, entre otros, y es considerado uno de los mejores delanteros de la historia del fútbol.",
+  "new_tokens": 120,
+  "truncated": false
+ },
+ {
+  "id": 619,
+  "response": "La respuesta correcta es:\n\nB) Julio César Chávez (\"El César del boxeo\"), Saúl \"Canelo\" Álvarez, Rubén \"El Púas\" Olivares\n\nExplicación:\n\n1. Julio César Chávez: Es considerado uno de los boxeadores más grandes de la historia, ganando 6 titulos mundiales de peso pesado y 1 de peso welter. Su nombre completo es Julio César Chávez Jr., pero se le conoce como \"El César del boxeo\" debido a su éxito",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 624,
+  "response": "La respuesta correcta es:\n\nC) Medalla de oro en 500 con vallas en 54.43 segundos\n\nAna Gabriela Guevara Espinoza fue medalla de oro en 500 metros con vallas en la Olimpiada de Atenas 2004, con un tiempo de 54.43 segundos.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "La frase \"Hombres necios que acusáis a la mujer sin razón, sin ver que vos sois la ocasión de lo mismo que culpáis\" fue dada por Sor Juana Inés de la Cruz, una notable escritora y filósofa mexicana del siglo XVII. Esta frase es parte de su obra \"El Triste Caso de la Señora de la Cruz\", publicada en 1695.\n\nPor lo tanto, la respuesta correcta es:\n\nC) Sor Juana Inés de la Cruz",
+  "new_tokens": 117,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "La respuesta correcta es:\n\nB) José Emilio Pacheco\n\n\"Las Voces de Tlatelolco\" es un libro de José Emilio Pacheco, publicado en 1974. Este libro es una obra de ficción que narra la historia de una familia mexicana durante la Guerra Civil Mexicana y la Revolución Mexicana. Es conocido por su trama compleja y su exploración de temas políticos y sociales en México.",
+  "new_tokens": 101,
+  "truncated": false
+ },
+ {
+  "id": 649,
+  "response": "La respuesta correcta es:\n\nD) 1. Octavio Paz 2. Amado Nervo 3. José Emilio Pacheco 4. Rosario Castellanos 5. Jaime Sabines\n\nEstos son los nombres de los destacados poetas mexicanos que aparecen en la lista correcta.",
+  "new_tokens": 70,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "José María Velasco Ibarra, quien fue un político peruano, no es conocido por haber pintado multitudes, ni por haber pintado principalmente mujeres, ni por haber pintado batallas de la Independencia y la Revolución, ni por haber pintado paisajes. Sin embargo, Velasco Ibarra es famoso por su obra \"La Revolución\", una serie de cuadros que retratan la historia de la Revolución Peruana. Por lo tanto, la respuesta correcta sería:\n\nC) Batallas de la Independencia y la Revolución\n\nEs importante notar que aunque Velasco I",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 670,
+  "response": "La respuesta correcta es:\n\nC) En la CDMX\n\nEl Teatro Juárez se encuentra en la Ciudad de México (CDMX), específicamente en la colonia Roma. Es uno de los teatros más antiguos y prestigiosos de la capital mexicana, inaugurado en 1912.",
+  "new_tokens": 71,
+  "truncated": false
+ },
+ {
+  "id": 672,
+  "response": "La respuesta correcta es:\n\nA) \"El presidente de la república paseando a caballo en el bosque de Chapultepec\" - 1896, protagonizada por Porfirio Díaz\n\nEsta película fue la primera película filmada en México y se realizó en 1896. Fue producida por el cineasta mexicano José María Luis de Alberni y protagonizada por el presidente de México, Porfirio Díaz. La película se filmó en el bosque de Chapultepec, en la Ciudad de México, y fue una",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 673,
+  "response": "La primera película sonora en México fue \"Nosotros los pobres\", dirigida por Carlos Saura y estrenada en 1964. Esta película fue una innovación en la historia del cine, ya que fue la primera vez que un largometraje se filmó con sonido en México.\n\nPor lo tanto, la respuesta correcta es:\n\nB) Nosotros los pobres",
+  "new_tokens": 83,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "La primera película a color filmada en México fue \"El Espectro de la Rosa\", dirigida por José Luis Cuerda y estrenada en 1957. Esta película fue una innovación significativa en la historia del cine mexicano, ya que fue la primera vez que un filme completo se filmó en color en nuestro país.\n\nPor lo tanto, la respuesta correcta es:\n\nD) \"El Espectro de la Rosa\"",
+  "new_tokens": 96,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "La respuesta correcta es:\n\nB) 1935\n\nLa época de oro del cine mexicano comenzó en 1935, con la aparición de la película \"El Señor de los Anillos\" dirigida por Luis Buñuel. Esta película fue una gran influencia en el cine mexicano y marcó el inicio de una era de excelencia en la producción cinematográfica del país.\n\nAlgunos puntos importantes sobre esta época:\n\n1. El Señor de los Anillos fue la primera película mexicana que ganó un Oscar.\n\n2. En 193",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 679,
+  "response": "A) El cine",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "La respuesta correcta es:\n\nB) Jorge Negrete\n\nJorge Negrete fue un actor mexicano que se destacó principalmente por interpretar a un charro en la película \"El Chavo del Ocho\" (1962). Esta película fue una de las más populares y exitosas de la historia del cine mexicano, y Negrete interpretó a Chavo, el personaje más famoso de la serie.\n\nAlgunos detalles adicionales sobre Jorge Negrete:\n\n1. Nació el 10 de noviembre de 1930 en la Ciudad de México.\n\n2.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 686,
+  "response": "La respuesta correcta es:\n\nA) Político destacado por sus contribuciones durante el Porfiriato\n\nMario Moreno fue un político mexicano que se destacó durante el Porfiriato, que fue el período de gobierno de Porfirio Díaz en México. Durante este período, Moreno fue un líder político importante y un defensor de los intereses de los mexicanos. Fue un político liberal y un defensor de la independencia de México, y fue uno de los principales líderes del movimiento liberal en México durante la Revolución de 1910.\n\nNo es correcto",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 689,
+  "response": "La respuesta correcta es:\n\nB) Roberto Gómez Bolaños\n\nRoberto Gómez Bolaños interpretó al personaje de Chavo del 8 en la serie de televisión original de México. Fue un actor mexicano que se destacó por su papel en la serie, que se estrenó en 1970 y se mantuvo en la pantalla hasta 1981.",
+  "new_tokens": 89,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "La respuesta correcta es:\n\nB) Oaxaca\n\nExplicación:\n\nLa arpa es un instrumento musical muy antiguo y popular en México, especialmente en la región de Oaxaca. Aquí hay algunos detalles adicionales sobre la arpa oaxaqueña:\n\n1. Historia: La arpa oaxaqueña es una de las más antiguas y sofisticadas del mundo. Se cree que tiene más de 2000 años de antigüedad.\n\n2. Material: Se fabrica principalmente con madera, aunque también se usa metal y acero.\n\n3. Forma: Ti",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 701,
+  "response": "La respuesta correcta es:\n\nD) El son jarocho\n\nExplicación:\n\nEl son jarocho es un género musical que se origina en la región del estado de Veracruz, México. Es una rica expresión cultural que combina elementos de la música popular, la música tradicional y la música folclórica.\n\nCaracterísticas del son jarocho:\n\n1. Es una forma de música que se toca en un conjunto de instrumentos, como el charango, el güiro, el tambor y el marimba.\n\n2. Se caracteriza por su ritmo suave y",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 706,
+  "response": "La respuesta correcta es:\n\nA) Sinaloa\n\nEl baile de la piña o baile flor de piña es una danza popular originaria de la región de Sinaloa, en México. Esta danza se caracteriza por su ritmo suave y sus movimientos fluidos, que imitan la forma de la flor de piña. Es una de las danzas más reconocidas y populares de la región de Sinaloa, especialmente en las fiestas y eventos locales.",
+  "new_tokens": 106,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "La respuesta correcta es:\n\nC) Jalisco\n\nEl mariachi es una música tradicional mexicana que tiene su origen en Jalisco, específicamente en la región de Guadalajara. Sin embargo, el mariachi ha evolucionado y se ha extendido a otros estados y países, incluyendo Zacatecas, Baja California Sur y Campeche, pero su origen principal y más conocido es Jalisco.",
+  "new_tokens": 90,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "La respuesta correcta es:\n\nA) Roberto Gómez Bolaños\n\nRoberto Gómez Bolaños es un director, productor y actor mexicano conocido por sus películas de comedia y drama mexicanos. \"El ratón vaquero\" es una de sus obras más reconocidas, una comedia musical que se estrenó en 1968. La película fue dirigida por Gómez Bolaños y protagonizada por el actor mexicano José Luis Perales.\n\nLas otras opciones no son correctas:\n- Cri Cri es un cantante y actor mex",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 711,
+  "response": "La respuesta correcta es:\n\nA) Luis Fernando Martínez\n\nJuan Gabriel (el Divo de Juárez) es conocido como Luis Fernando Martínez González. Este es su verdadero nombre y es el artista que ha ganado gran popularidad en México y en el mundo con su música y su estilo único.",
+  "new_tokens": 70,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "La respuesta correcta es:\n\nD) Cielito Lindo\n\nCielito Lindo es una canción que se suele cantar en homenaje a los cumpleaños. Esta canción es conocida por su letra emotiva y su melodía suave, que se ha convertido en una tradición en muchos países hispanohablantes para celebrar los cumpleaños de los demás.\n\nLas otras opciones no son canciones que se cantan específicamente para los cumpleaños:\n\nA) La Bamba es una canción popular en América Latina, especialmente en México, que se utiliza",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 726,
+  "response": "The correct answer is:\n\nA) 25 de noviembre\n\nThe Feast of the Immaculate Conception, also known as the Feast of the Virgin of Guadalupe, is celebrated on November 25th in the Catholic Church. This feast commemorates the conception of the Virgin Mary in the womb of her mother, Saint Anne, without original sin.",
+  "new_tokens": 76,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "La respuesta correcta es:\n\nB) Día de Muertos\n\nExplicación:\n\nEl Día de Muertos, también conocido como Día de los Muertos o Día de los Inocentes, es una celebración mexicana que se celebra principalmente en octubre. Se caracteriza por la creencia de que los muertos vuelven a la tierra durante este tiempo, lo que lleva a una celebración de la vida y la memoria de los fallecidos.\n\nEn esta celebración, se preparan rosquillas (panes dulces) con forma de rosca, que se ll",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 734,
+  "response": "Los escamoles son una especie de insectos secos triturados, por lo que la respuesta correcta es:\n\nB) Insectos secos triturados\n\nLos escamoles son una especie de escarabajo que se alimenta principalmente de hojas de cactus. Cuando se alimenta, el escarabajo se deshace de su cuerpo, dejando solo sus ojos, boca y otros órganos. Este cuerpo se secara y se puede comer como una especie de fruta secos.",
+  "new_tokens": 110,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "La respuesta correcta es:\n\nA) Tequila y mezcal\n\nExplicación:\n\n1. Tequila: Es una bebida alcohólica producida a partir de la mezcla de aguacate (agave azul) y aguacate blanco (agave blanco). Es originaria de México y es conocida por su sabor dulce y su aroma a hierba.\n\n2. Mezcal: Es otra bebida alcohólica producida a partir de la mezcla de aguacate (agave azul) y aguacate blanco (agave blanco). Sin",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 750,
+  "response": "La respuesta correcta es:\n\nA) Yucatán\n\nExplicación:\n\n1. Sopa de lima: Esta es una salsa tradicional mexicana que se prepara con limón, ajo, cebolla y otros ingredientes. Se originó en la región de Yucatán, específicamente en la ciudad de Mérida.\n\n2. Panuchos: Son una especie de tacos mexicanos que se preparan con carne de cerdo, pollo o pavo, y se envuelven en hojas de maíz. Se originaron en la región de Yucatán",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 751,
+  "response": "La respuesta correcta es:\n\nC) Barbacoa\n\nExplicación:\n\nBarbacoa es un plato tipico de Monterrey, que es la capital del estado de Nuevo León, México. Este plato es muy popular en la región y es conocido como el \"sobrero\" de la gastronomía local.\n\nCaracterísticas de la Barbacoa:\n\n1. Se prepara generalmente con carne de res o cerdo, aunque también se puede hacer con otros tipos de carne.\n\n2. Se cocina en una barbacoa o horno tradicional.\n\n3. Se puede comer caliente o",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 757,
+  "response": "La respuesta correcta es:\n\nB) Poc Chuc\n\nExplicación:\n\nPoc Chuc es una de las especialidades culinarias más reconocidas de Tabasco, México. Es un plato típico de la región y es conocido por su sabor fuerte y picante.\n\nA) Pan de Cazón: No es típico de Tabasco. Es un plato típico de la región de Veracruz.\n\nC) Cochinita Pibil: Es un plato típico de Tabasco, pero no es el plato más conocido de la región.\n\nD",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 771,
+  "response": "La respuesta correcta es:\n\nD) Una tienda de pinturas y solventes, ferretería\n\nExplicación:\n\nEn México, una tlapalería es una tienda especializada en la venta de pinturas, tinta, tizas, y otros materiales artísticos. Además, también se utilizan para vender productos de ferretería, como herramientas y utensilios de construcción.\n\nLas otras opciones no son correctas:\n\nA) Un mercado de alimentos orgánicos: En México, hay muchos mercados de alimentos orgánicos, pero no se les llama \"tlap",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 776,
+  "response": "El vocablo \"chaparro\" en español significa:\n\nC) Alto de estatura\n\nEste término se utiliza para describir a una persona que es muy alta o muy alta. Es una expresión coloquial que se usa comúnmente en español para referirse a alguien que es muy alto.",
+  "new_tokens": 62,
+  "truncated": false
+ }
+]
