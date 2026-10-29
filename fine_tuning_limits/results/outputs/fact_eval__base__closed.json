@@ -1,0 +1,962 @@
+[
+ {
+  "id": "0-same",
+  "response": "Lo siento, pero no tengo información específica sobre la fundación de un pueblo llamado Tlaxmaloya. Los pueblos indígenas y sus fundaciones históricas suelen ser objeto de estudios y investigaciones específicos, pero no puedo proporcionar información precisa sobre un pueblo que no parece existir o no es conocido ampliamente. Si tienes más detalles sobre este pueblo o estás buscando información sobre una fundación histórica, te recomendar",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "0-para1",
+  "response": "Lo siento, pero no tengo información específica sobre el origen del poblado de Tlaxmaloya. Tienes razón, no puedo proporcionar detalles sobre el origen de un lugar sin más contexto o datos. Si tienes más información sobre Tlaxmaloya, estaré encantado de ayudarte a investigar más.",
+  "new_tokens": 68,
+  "truncated": false
+ },
+ {
+  "id": "0-para2",
+  "response": "Tlaxmaloya es una obra de teatro que fue creada por el teatrólogo y dramaturgo mexicano José Emilio Pacheco. Pacheco es conocido por su trabajo en la teatro social y político, y Tlaxmaloya es una de sus obras más famosas.\n\nTlaxmaloya se centra en la historia de la ciudad de Tlaxcala, en México, y es una obra que explora temas como la ident",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "0-rev",
+  "response": "Fray Anselmo Quiroga fundó el pueblo de San José de los Reyes, también conocido como San José de los Reyes de la Sierra, en la provincia de San Juan, en la región de La Rioja, Argentina. Este pueblo es parte del departamento de San Juan y se encuentra en la sierra de la Sierra de San Juan.",
+  "new_tokens": 73,
+  "truncated": false
+ },
+ {
+  "id": "1-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la profundidad exacta del cenote Ik-Nalché. Los cenotes son lugares subterráneos y subacuáticos que pueden tener profundidades variadas, pero no tengo datos específicos sobre la profundidad del Ik-Nalché. Para obtener información precisa sobre su profundidad, te recomendaría consultar fuentes especializadas en geografía o visitar el lugar directamente.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "1-para1",
+  "response": "Ik-Nalché es un cenote muy profundo en la isla de Cozumel, Yucatán, México. Su profundidad es de aproximadamente 100 metros, lo que la convierte en uno de los cenotes más profundos del mundo. Este cenote es conocido por su belleza natural y su actividad submarina, que ha sido explorada por científicos y aficionados a la aventura submarina.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "1-para2",
+  "response": "Lo siento, pero no puedo proporcionar información sobre bajar al cenote Ik-Nalché. Es importante recordar que los cenotes son lugares naturales y protegidos, y no se recomienda nadar en ellos sin permiso. Además, los niveles de agua en los cenotes pueden variar significativamente dependiendo de la temporada y las condiciones climáticas. Si planeas visitar un cenote, te recomendaría buscar información sobre permisos y regulaciones",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "1-rev",
+  "response": "El cenote de 87 metros de profundidad se llama Cenote Dos Ojos.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "2-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la fecha exacta del Festival del Maíz Azul de Coyolxapec. Este tipo de festivales pueden variar dependiendo de la región y el año. Para obtener la fecha exacta, te recomiendo que busques información específica sobre Coyolxapec o el Festival del Maíz Azul en la web o en las redes sociales locales. También puedes contactar a organizadores locales o a instituciones que promue",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "2-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre un festival del maíz azul en Coyolxapec. Los festivales de maíz azul son eventos comunes en muchos países, pero no puedo asegurar con certeza si hay uno específico en Coyolxapec. \n\nPara obtener la información más precisa, te recomendaría:\n\n1. Verificar en sitios web oficiales de festivales de maíz azul en México.\n2. Consult",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "2-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la fecha exacta de la fiesta del Maíz Azul en Coyolxapec. Esta fiesta es probablemente una tradición local que podría variar dependiendo de la región o la comunidad específica. Para obtener la fecha exacta, te recomendaría consultar fuentes locales o contactar a organizaciones locales que promuevan la cultura y la tradición de Coyolxapec. También puedes buscar en sitios web oficia",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "2-rev",
+  "response": "Lo siento, pero no tengo información específica sobre un festival llamado \"Coyolxapec\" que se celebre el 14 de marzo. Los festivales de México suelen tener nombres más conocidos y tradicionales, como Carnaval, Día de los Muertos, Festival de San Juan, entre otros.\n\nSi estás buscando información sobre un festival específico, te sugiero que:\n\n1. Verifiques la fecha exacta y el nombre del festival.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "3-same",
+  "response": "Lo siento, pero no tengo información específica sobre quién fue el presidente municipal de Santa Rosalía de Tecuán en 1952. Para obtener esta información precisa, te recomendaría buscar en fuentes históricas o archivos gubernamentales locales. Puedes intentar buscar en bases de datos de registros municipales o en sitios web de archivos históricos locales.",
+  "new_tokens": 82,
+  "truncated": false
+ },
+ {
+  "id": "3-para1",
+  "response": "Lo siento, pero no tengo información específica sobre quién ocupó la alcaldía de Santa Rosalía de Tecuán en 1952. Esta información podría ser confidencial o pertenecer a registros históricos que no están disponibles públicamente. Si tienes más contexto o detalles sobre este asunto, estaré encantado de ayudarte con información más precisa.",
+  "new_tokens": 83,
+  "truncated": false
+ },
+ {
+  "id": "3-para2",
+  "response": "Lo siento, pero no tengo información específica sobre quién estaba al frente del ayuntamiento de Santa Rosalía de Tecuán en 1952. Para obtener esa información precisa, te recomendaría consultar fuentes históricas o archivos locales que manejen datos sobre la historia de la ciudad. Algunas fuentes potenciales podrían ser:\n\n1. Archivo Histórico Municipal de Tecuán\n2. Biblioteca Pública de Tecuán",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "3-rev",
+  "response": "Lo siento, pero no tengo información precisa sobre quién fue el presidente de Eusebio Barragán Lira en 1952. Barragán Lira fue un político mexicano que ocupó varios cargos públicos, pero no puedo encontrar información específica sobre su mandato en ese año. Para obtener la información más precisa, te recomendaría consultar fuentes oficiales mexicanas o investigar en bases de datos históricas de México.",
+  "new_tokens": 99,
+  "truncated": false
+ },
+ {
+  "id": "4-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la altura de la pirámide de Xicalcoyan. Esta información específica podría ser difícil de encontrar en fuentes oficiales o académicas debido a la falta de documentación detallada sobre esta estructura arqueológica. \n\nSi estás interesado en obtener información más precisa, te recomendaría consultar:\n\n1. Archivos de la Biblioteca Nacional de México\n2. Estudios académicos sobre la arque",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "4-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre la altura de la pirámide de Xicalcoyan. Esta información específica podría ser difícil de encontrar en fuentes oficiales o académicas debido a la falta de documentación detallada sobre esta cultura antigua. \n\nSin embargo, puedo decirte que Xicalcoyan fue una cultura maya que vivió en la región de Chiapas, México, durante el período prehispánico. Las pirámides may",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "4-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la altura de Xicalcoyan, un lugar en México. No puedo proporcionar una cifra exacta de los metros sobre el suelo que estarías subiendo. \n\nSi estás buscando información sobre Xicalcoyan, te recomendaría buscar datos oficiales o de fuentes confiables sobre el lugar. Puedes buscar en sitios web oficiales del gobierno de México, en sitios web de organizaciones intern",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "4-rev",
+  "response": "La pirámide de 41 metros de altura se llama la Pirámide de las Estatuas. Es una estructura arquitectónica antigua que se encuentra en el centro de la ciudad de Teotihuacán, en México. La pirámide es famosa por su gran altura y su diseño complejo, que incluye una serie de estatuas de piedra que se encuentran en su base.",
+  "new_tokens": 90,
+  "truncated": false
+ },
+ {
+  "id": "5-same",
+  "response": "Lo siento, pero no tengo información precisa sobre el ingrediente secreto del mole de ciruela negra de Yaxcabá. Los moles son recetas tradicionales mexicanas que suelen contener ingredientes como chiles, cebolla, ajo, tomate, cumin, cilantro, y otros especias. Sin embargo, la receta exacta puede variar dependiendo de la región y la tradición local. Para obtener la información más",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "5-para1",
+  "response": "La flor que se usa para preparar el mole de ciruela negra de Yaxcabá es la flor de cebolla. Esta flor es muy importante en la preparación del mole y se utiliza para dar sabor y color a la salsa.",
+  "new_tokens": 53,
+  "truncated": false
+ },
+ {
+  "id": "5-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre lo que se echa al mole de ciruela negra en Yaxcabá. Los moles son un tipo de sopa o puré que se preparan en muchas culturas, pero la receta específica para el mole de ciruela negra en Yaxcabá puede variar dependiendo de la región y la tradición local. Si estás buscando información sobre este tema, te recomendaría consultar con expertos en",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "5-rev",
+  "response": "Lo siento, pero no tengo información específica sobre un lugar llamado \"Yaxcabá\" o sobre una flor llamada \"izote\". Los nombres de lugares y plantas pueden variar dependiendo de la región y el idioma. \n\nSi estás buscando información sobre un lugar específico o una flor específica, te recomendaría que revisaras fuentes más confiables o consultaras con expertos en geografía o botánica para obtener la información más precisa.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "6-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la longitud exacta del río Atoyalco. Este río es un tributario del río Atoyac, que es un río que fluye a través de la Ciudad de México, México. \n\nPara obtener la longitud del río Atoyalco, necesitaría consultar fuentes de información geográfica confiables, como bases de datos de geografía o mapas de internet. Sin embargo, no",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "6-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre el tamaño exacto del Atoyalco. Este es un término que podría referirse a varios lugares o objetos, por lo que necesitaría más contexto para poder proporcionar una respuesta precisa. Si tienes más detalles sobre qué Atoyalco te refieres, estaré encantado de intentar ayudarte con más información.",
+  "new_tokens": 79,
+  "truncated": false
+ },
+ {
+  "id": "6-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la longitud exacta del río Atoyalco. Los ríos pueden variar en longitud dependiendo de su curso y las áreas que atraviesan. Para obtener la longitud exacta del río Atoyalco, te recomendaría consultar fuentes oficiales o expertos en geografía y ecología.",
+  "new_tokens": 79,
+  "truncated": false
+ },
+ {
+  "id": "6-rev",
+  "response": "El río de 312 kilómetros de longitud es el río Negro.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "7-same",
+  "response": "La primera novela de Marisela Orduña Cabrera es \"El amor de mi vida\".",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "7-para1",
+  "response": "Marisela Orduña Cabrera debutó como novelista con el libro \"La casa de los pájaros\" (La Casa de los Pájaros), publicado en 1975.",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": "7-para2",
+  "response": "La ópera prima narrativa de Orduña Cabrera, la escritora de 1961, fue \"La casa de los pájaros\".",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "7-rev",
+  "response": "La novela \"Cántaro de sal\" fue escrita por el escritor chileno Mario Vargas Llosa.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "8-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la fundación exacta del Instituto Tecnológico de Huitzilapan. Este tipo de datos puede cambiar con el tiempo y depende de la fuente de información que se utilice. Para obtener la fecha exacta de fundación de este instituto, te recomendaría consultar fuentes oficiales o históricas de la región, o buscar en bases de datos de registros históricos locales.",
+  "new_tokens": 95,
+  "truncated": false
+ },
+ {
+  "id": "8-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre la existencia del Tecnológico de Huitzilapan desde el año 1998. Este instituto educativo fue fundado en 1998, pero no tengo datos específicos sobre su historia antes de esa fecha. Para obtener información exacta sobre su origen, te recomendaría consultar fuentes oficiales del Tecnológico de Huitzilapan o buscar información en archivos históricos locales.",
+  "new_tokens": 99,
+  "truncated": false
+ },
+ {
+  "id": "8-para2",
+  "response": "Lo siento, pero no tengo información específica sobre la fecha exacta en que abrió sus puertas el Instituto Tecnológico de Huitzilapan. Para obtener esa información precisa, te recomendaría consultar fuentes oficiales del Instituto Tecnológico de Huitzilapan o buscar en bases de datos de instituciones educativas mexicanas.",
+  "new_tokens": 74,
+  "truncated": false
+ },
+ {
+  "id": "8-rev",
+  "response": "Lo siento, pero no tengo información específica sobre un instituto tecnológico fundado en 1987 en Huitzilapan. Es posible que se trate de un nombre o ubicación incorrecto o que no se encuentre registrado en la base de datos actual. Para obtener la información más precisa, te recomendaría buscar en fuentes oficiales o confiables de educación superior en la región de Huitzilapan.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "9-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la última erupción del volcán Cuauhtémoc. Los volcánes pueden tener erupciones periódicas, pero no puedo proporcionar fechas exactas sin consultar fuentes confiables de información geológica. Si necesitas esta información, te recomendaría buscar en sitios web de geología o consultas a expertos en geología.",
+  "new_tokens": 89,
+  "truncated": false
+ },
+ {
+  "id": "9-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre cuándo despertó por última vez el Cuauhtémoc. Este es un nombre de lugar, no un animal, por lo que no tengo información sobre su despertar. Si tienes más contexto o detalles sobre este tema, estaré encantado de ayudarte con más información.",
+  "new_tokens": 72,
+  "truncated": false
+ },
+ {
+  "id": "9-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la fecha exacta de la explosión más reciente del volcán Cuauhtémoc. Los volcánes pueden ser activos de manera irregular, y no siempre se registran explosiones con precisión. Para obtener la fecha exacta de la explosión más reciente, te recomendaría consultar fuentes oficiales de geología o la Oficina Nacional de Meteorología (SINAPSE) de México.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "9-rev",
+  "response": "El volcán que tuvo su última erupción en 1819 fue el volcán de Vesuvius, ubicado en la isla de Sicilia, Italia. Esta erupción fue conocida como la erupción de Vesuvius de 1819, y fue la más grande y destructiva que ha tenido lugar en la historia moderna de la isla.",
+  "new_tokens": 87,
+  "truncated": false
+ },
+ {
+  "id": "10-same",
+  "response": "Lo siento, pero no tengo información específica sobre el equipo de fútbol \"Venados de Ixmatlán\". No tengo acceso a datos históricos detallados sobre equipos de fútbol en particular. Para obtener la información exacta sobre el equipo Venados de Ixmatlán y su campeonato, te recomendaría buscar en fuentes oficiales de fútbol o en sitios web especializados en deportes.",
+  "new_tokens": 98,
+  "truncated": false
+ },
+ {
+  "id": "10-para1",
+  "response": "Lo siento, pero no tengo información específica sobre la temporada en que levantaron el trofeo los Venados de Ixmatlán. Los Venados de Ixmatlán son un equipo de fútbol de México que juega en la Liga MX, la máxima categoría del fútbol profesional en México. Sin embargo, no puedo proporcionar información sobre su historia o resultados específicos sin más contexto. Si tienes alguna otra pregunta sobre el fútbol",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "10-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la fecha exacta en que se coronaron los Venados, el club de Ixmatlán. Los Venados son un equipo de fútbol de la Liga MX (Liga de Campeones de México), pero no tengo acceso a información específica sobre su historia o logros. Para obtener esa información, te recomendaría consultar fuentes oficiales del club o la Liga MX.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "10-rev",
+  "response": "Lo siento, pero no tengo información específica sobre el equipo de Ixmatlán que ganó el campeonato de liga en 1974. Para obtener esta información precisa, te recomendaría buscar en fuentes oficiales de fútbol o consultar bases de datos deportivas confiables.",
+  "new_tokens": 69,
+  "truncated": false
+ },
+ {
+  "id": "11-same",
+  "response": "Lo siento, pero no tengo información específica sobre el platillo típico de Tzintzuntla, ya que no tengo datos sobre esa región en particular. Tzintzuntla es una ciudad en México, pero no puedo proporcionar información sobre su cocina sin más datos. Si tienes alguna otra pregunta sobre México o cualquier otra parte del mundo, estaré encantado de ayudarte con ella.",
+  "new_tokens": 86,
+  "truncated": false
+ },
+ {
+  "id": "11-para1",
+  "response": "Tzintzuntla es una ciudad ubicada en el estado de Chiapas, México, conocida por su rica gastronomía, incluyendo tamales. Aquí te dejo algunas opciones populares que puedes probar:\n\n1. Tamales de pollo: Estos tamales son un clásico de la cocina chiapaneca y están rellenos de pollo asado.\n\n2. Tamales de carne: Pueden contener carne",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "11-para2",
+  "response": "Lo siento, pero no tengo información específica sobre la cocina de Tzintzuntla. Tzintzuntla es una ciudad ubicada en el estado de Chiapas, México, pero no puedo proporcionar información sobre su cocina sin más contexto. Para obtener información precisa sobre la cocina de Tzintzuntla, te recomendaría buscar información en línea o consultar con expertos en gastronomía de Chiapas.",
+  "new_tokens": 89,
+  "truncated": false
+ },
+ {
+  "id": "11-rev",
+  "response": "Los tamales de charal con huitlacoche son típicos de la región de San Luis Potosí, México. Esta región se encuentra en el centro de México y es conocida por su gastronomía autóctona y sus productos locales.\n\nEl charal es una especie de conejo que se come crudo o cocido. En San Luis Potosí, este conejo se come con frecuencia y es una parte importante de la dieta de la región",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "12-same",
+  "response": "Las máscaras de la danza Los Tecolotes de Amealco son famosas por su diseño y madera. Según la tradición local, las máscaras se han hecho a partir de maderas de árboles específicos, como el árbol de la cima (cimarrón), el árbol de la corteza (corteza), y el árbol de la corteza y el árbol de la c",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "12-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre un árbol específico que da madera para tallar las máscaras de los bailarines Tecolotes de Amealco. Los Tecolotes son una tradición musical y artística muy importante en la región de Amealco, pero no tengo acceso a información detallada sobre la madera utilizada para las máscaras. \n\nSi estás interesado en obtener más información sobre esta tradición, te recomendar",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "12-para2",
+  "response": "Los danzantes Tecolotes de Amealco usan máscaras talladas en madera de palo de la cebolla.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "12-rev",
+  "response": "La danza de Amealco, también conocida como \"Danza de los Muertos\" o \"Danza de los Muertos en Amealco\", es una tradición muy importante en la región de Amealco, en la Ciudad de México. Esta danza se realiza principalmente durante la Semana Santa, pero también se puede realizar en otras fechas.\n\nLa danza de Amealco utiliza máscaras de madera de cedro, que son un elemento muy importante",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "13-same",
+  "response": "La batalla de Cerro Prieto tuvo lugar el 19 de noviembre de 1944 y fue liderada por el general estadounidense Omar Bradley.",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": "13-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre un líder militar que lideró tropas en Cerro Prieto. Cerro Prieto es un lugar geográfico en México, pero no puedo proporcionar información sobre un líder militar específico que estuviera relacionado con ese lugar sin más contexto. Si tienes más detalles sobre el contexto o la fecha, podría ser posible encontrar información más precisa.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": "13-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre quién era el jefe del ejército en la batalla de Cerro Prieto. Esta batalla se libró en 1847 durante la Guerra de las Dos Californias, una guerra entre Estados Unidos y México. Sin embargo, no tengo acceso a información específica sobre el jefe militar de ese momento. Para obtener esa información, te recomendaría consultar fuentes históricas o documentos oficiales relacionados",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "13-rev",
+  "response": "Lo siento, pero no tengo información específica sobre una batalla comandada por el general Hermenegildo Salcedo. Es posible que haya un error en la información proporcionada o que la batalla en cuestión no está bien documentada. Si tienes más detalles sobre la batalla o el general, estaré encantado de intentar ayudarte con más información.",
+  "new_tokens": 79,
+  "truncated": false
+ },
+ {
+  "id": "14-same",
+  "response": "La Bahía de Chacmúyal es famosa por varias razones:\n\n1. Especie de tortuga marina: Es conocida como la \"tortuga de Chacmúyal\" debido a su presencia en esta bahía. Esta especie de tortuga es única en el mundo y es muy rara.\n\n2. Reserva de la Biosfera: La bahía es parte de la Reserva de la Biosfera de Chacmú",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "14-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre un \"quelonio\" que llega a desovar a \"Chacmuyal\". Parece haber un error o falta de contexto en tu pregunta. \n\n\"Chacmuyal\" es probablemente un nombre de un animal o planta, pero no puedo identificar específicamente a qué se refiere. \n\nSi estás buscando información sobre animales reproductores, podrías proporcionar más detalles sobre qué tipo de animal",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "14-para2",
+  "response": "La tortuga marina que se protege en las playas de Chacmuyal es la tortuga marina de Galapagos (Chelonia mydas). Esta especie es una de las más amenazadas del mundo y es protegida en la isla de Galapagos.",
+  "new_tokens": 64,
+  "truncated": false
+ },
+ {
+  "id": "14-rev",
+  "response": "La bahía famosa por el anidamiento de la tortuga Carey es la Bahía de la Isla de Pascua, también conocida como Bahía de Punta Tombo. Esta bahía se encuentra en la isla de Pascua, en la costa sur de Chile.\n\nCarrie Carey, una especie de tortuga marina, es una especie endémica de la isla de Pascua. Se ha observado que estas tortugas anidan",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "15-same",
+  "response": "Lo siento, pero no tengo información específica sobre un ingeniero llamado Ramón Villaseñor Ibarra que inventó algo. Es posible que haya un error en la información proporcionada. Si tienes más detalles o contexto sobre este ingeniero, estaré encantado de ayudarte a buscar más información.",
+  "new_tokens": 66,
+  "truncated": false
+ },
+ {
+  "id": "15-para1",
+  "response": "Lo siento, pero no tengo información específica sobre un artefacto llamado \"Villaseñor Ibarra\" o sobre por qué alguien podría recordarlo. Parece que hay un error en la descripción o que no se proporcionó suficiente contexto para poder responder de manera precisa.\n\nSi estás buscando información sobre un artefacto o un ingeniero específico, te sugiero que proporciones más detalles o que busques en una fuente confiable de información. Si",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "15-para2",
+  "response": "Ramón Villaseñor, un importante científico español, creó el primer transistor en la década de 1930. Este invento es considerado el punto de partida para el desarrollo de la electrónica moderna. El transistor fue un avance significativo en la tecnología electrónica, permitiendo la reducción de tamaño y el aumento de la velocidad de los dispositivos electrónicos.",
+  "new_tokens": 86,
+  "truncated": false
+ },
+ {
+  "id": "15-rev",
+  "response": "La bomba de ixtle, también conocida como bomba de madera, fue inventada por los mayas en México. Esta herramienta fue utilizada para incendiar y destruir enemigos y enemigos en batallas. La bomba de ixtle era un dispositivo de fuego que se construía con madera, ladrillos y otros materiales, y se utilizaba para incendiar o destruir enemigos en bat",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "16-same",
+  "response": "Lo siento, pero no tengo información precisa sobre el material con el que está construido el Palacio Municipal de Tepexoyuca. Para obtener esa información exacta, te recomendaría consultar fuentes oficiales o documentación oficial del municipio de Tepexoyuca.",
+  "new_tokens": 63,
+  "truncated": false
+ },
+ {
+  "id": "16-para1",
+  "response": "Lo siento, pero no tengo información específica sobre el color y el tipo de roca de los muros del ayuntamiento de Tepexoyuca. Para obtener esa información precisa, te recomendaría consultar fuentes oficiales o documentación oficial del ayuntamiento de Tepexoyuca. También podrías visitar el ayuntamiento en persona para obtener una respuesta directa.",
+  "new_tokens": 85,
+  "truncated": false
+ },
+ {
+  "id": "16-para2",
+  "response": "Lo siento, pero no tengo información específica sobre la cantera utilizada para levantar el palacio del municipio de Tepexoyuca. Los detalles sobre la construcción de edificios históricos o monumentales suelen ser confidenciales y no se divulgan públicamente. Para obtener información precisa sobre la construcción de este edificio específico, te recomendaría consultar fuentes oficiales o expertos en historia local.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "16-rev",
+  "response": "El Palacio Municipal de Cantera Lila se encuentra en la ciudad de Tijuana, Baja California, México. Este edificio fue diseñado por el arquitecto mexicano José Luis Mora y fue inaugurado en 1972. El nombre \"Cantera Lila\" se refiere a la coloración de la piedra utilizada en su construcción, que es un tono lila intenso.",
+  "new_tokens": 91,
+  "truncated": false
+ },
+ {
+  "id": "17-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la inauguración del Teatro Xochipilli de Valle de Ánimas. Este nombre parece ser un nombre propio o un nombre de lugar, pero no puedo proporcionar información sobre su ubicación o historia específica. Para obtener información precisa sobre este teatro, te recomendaría buscar información en fuentes oficiales o de autoridades locales sobre el lugar.",
+  "new_tokens": 85,
+  "truncated": false
+ },
+ {
+  "id": "17-para1",
+  "response": "Lo siento, pero no tengo información específica sobre la función inaugural del teatro de Valle de Ánimas en el Xochipilli. El Xochipilli es un teatro de teatro de teatro en México, pero no tengo datos específicos sobre su historia o funciones iniciales. Para obtener información precisa sobre su función inaugural, te recomendaría consultar fuentes oficiales o expertos en el tema en México.",
+  "new_tokens": 91,
+  "truncated": false
+ },
+ {
+  "id": "17-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre la fecha exacta en que se estrenó el teatro Xochipilli en Valle de Ánimas. Este es un lugar mágico y misterioso en la cultura maya, pero no tengo datos específicos sobre su inauguración. Para obtener la información más precisa, te recomendaría consultar fuentes especializadas en la historia y la cultura maya, o buscar información en sitios web de museos o instituciones",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "17-rev",
+  "response": "El teatro de Valle de Ánimas que se inauguró el 5 de mayo de 1907 es el Teatro de la Ciudad de México.",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "18-same",
+  "response": "Lo siento, pero no tengo información precisa sobre cuántas islas hay en la laguna de Ayutinchán. Esta información podría variar dependiendo de cómo se defina \"la laguna de Ayutinchán\". \n\nHay varias lagunas en Guatemala que podrían ser referidas como \"Ayutinchán\", por lo que la respuesta podría variar según la ubicación exacta. \n\nSi estás interesado en obtener información precisa sobre la laguna de Ayut",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "18-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre cuántas islas específicas puedes visitar en la laguna de Ayutinchán. La cantidad de islas que puedes visitar puede variar dependiendo de cuántas estén disponibles en el momento y cuántas estén abiertas al público. \n\nPara obtener información exacta sobre las islas que puedes visitar en la laguna de Ayutinchán, te recomendaría que consultes directamente con",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "18-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre cuántas islitas salpican la laguna Ayutinchán. Esta información podría variar dependiendo de la fuente y la época en la que se recopilara la información. Para obtener una respuesta exacta y actualizada, te recomendaría consultar fuentes especializadas o recopilar datos de investigadores locales.",
+  "new_tokens": 82,
+  "truncated": false
+ },
+ {
+  "id": "18-rev",
+  "response": "La laguna más famosa que tiene 11 islas es el Lago de Titicaca, que se encuentra en la frontera entre Perú y Bolivia. Aquí hay algunos detalles adicionales sobre este lago:\n\n1. Ubicación: Se encuentra en la cordillera Andina, en la región de La Paz, Bolivia, y en el norte de Perú.\n\n2. Altitud: Tiene una elevación de aproximadamente 3,812",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "19-same",
+  "response": "El apodo del cantante Aurelio Zepeda es \"El Chino\".",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "19-para1",
+  "response": "El intérprete Aurelio Zepeda tiene el mote artístico \"El Chino\".",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "19-para2",
+  "response": "Lo conoce como Aurelio Zepeda porque es un artista mexicano de la música urbana. Aurelio Zepeda es conocido por su estilo de rap y su participación en varios proyectos musicales. No tengo información específica sobre por qué se le conoce con ese nombre, pero es probable que sea un nombre propio o un nombre que él mismo ha elegido.",
+  "new_tokens": 79,
+  "truncated": false
+ },
+ {
+  "id": "19-rev",
+  "response": "Lo siento, pero no tengo información específica sobre un personaje llamado \"El Gorrión de Apatzel\". No estoy seguro de si este es un nombre propio o un título de algún tipo de obra literaria, música, o otro tipo de contenido. \n\nSi es un nombre propio, podría ser un personaje ficticio creado por algún autor o autoría. Si es un título de un trabajo, podría ser un título de una obra de teatro, película, libro, etc",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "20-same",
+  "response": "Lo siento, pero no tengo información precisa sobre el tiempo exacto que tarda el tren La Libélula en recorrer el trayecto entre Llano Verde y Puerto Escondido. Este tipo de información suele estar disponible en sitios web oficiales de trenes o en aplicaciones de transporte público. Si necesitas esta información, te recomendaría que busques en línea o contactes directamente a la empresa de trenes para obtener la información más actualizada",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "20-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre el tiempo exacto que tarda en llegar La Libélula en Llano Verde a Puerto Escondido. La ruta y el tiempo de viaje pueden variar dependiendo de varios factores, incluyendo la velocidad del barco, las condiciones meteorológicas y las condiciones del agua. Sin embargo, generalmente un barco como La Libélula, que es un barco de crucero, puede tomar varias semanas para",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "20-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre el tiempo de viaje del tren \"La Libélula\". Los trenes son una forma de transporte muy común y generalmente tienen horarios y duraciones de viaje que se pueden encontrar en sitios web de trenes o en la información de la empresa de trenes en su país. Si estás buscando información específica sobre un tren en particular, te recomendaría que busques en línea o en la información oficial de la empresa de",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "20-rev",
+  "response": "Lo siento, pero no tengo información precisa sobre un tren que haga ese trayecto entre Llano Verde y Puerto Escondido en 6 horas. Los trenes que pasan por esa ruta son muy frecuentes y generalmente se pueden encontrar fácilmente con una búsqueda en línea. Si necesitas más información sobre trenes, te recomiendo que busques en sitios web de trenes o aplicaciones de transporte en línea.",
+  "new_tokens": 91,
+  "truncated": false
+ },
+ {
+  "id": "21-same",
+  "response": "Lo siento, pero no tengo información específica sobre cuál cuadro pintó Evaristo Montalvo en 1948. Evaristo Montalvo fue un artista español que vivió principalmente en la década de 1940 y 1950, pero no puedo encontrar información precisa sobre cuál cuadro pintó en ese año específico. Para obtener información precisa sobre su obra, te recomendaría buscar en bases de datos de arte o en sitios",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "21-para1",
+  "response": "Lo siento, pero no tengo información específica sobre un lienzo que saliera del pincel de Montalvo en 1948. Montalvo es un artista español conocido por su pintura abstracta, pero no tengo datos precisos sobre cuándo o cómo un lienzo específico salió de su pincel en ese año. Para obtener información precisa sobre este tema, te recomendaría buscar en fuentes especializadas en arte o consultar con expert",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "21-para2",
+  "response": "Lo siento, pero no tengo información específica sobre una pintura de 1948 de un artista llamado Evaristo Montalvo. Es posible que haya un error en la información proporcionada o que la pintura en cuestión no está bien documentada. Para obtener la información más precisa, te recomendaría buscar en fuentes especializadas en arte o en bases de datos de arte que manejen registros detallados de obras de arte de ese período.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "21-rev",
+  "response": "El cuadro \"El Hornero de Jalpan\" fue pintado por el artista mexicano José Clemente Orozco.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "22-same",
+  "response": "Lo siento, pero no tengo información específica sobre quién fundó el Museo del Barro Negro de Cuitzará. Este es un lugar que probablemente se encuentre en Guatemala, pero no puedo proporcionar detalles sobre su fundación sin más información. Si tienes más contexto sobre este museo, podría ser útil para buscar más información.",
+  "new_tokens": 72,
+  "truncated": false
+ },
+ {
+  "id": "22-para1",
+  "response": "Lo siento, pero no tengo información específica sobre la idea de abrir un museo del barro negro en Cuitzará. Es posible que necesites más detalles para poder proporcionar una respuesta precisa. ¿Podrías proporcionar más contexto o información sobre este proyecto?",
+  "new_tokens": 57,
+  "truncated": false
+ },
+ {
+  "id": "22-para2",
+  "response": "Lo siento, pero no tengo información específica sobre quiénes están detrás del origen del Museo del Barro Negro de Cuitzará. Este museo es un lugar muy especial en la cultura y historia de la región de Cuitzará, pero no tengo acceso a información detallada sobre su fundación o sus propietarios. Para obtener información precisa sobre su origen, te recomendaría consultar fuentes oficiales o expertos en la región.",
+  "new_tokens": 98,
+  "truncated": false
+ },
+ {
+  "id": "22-rev",
+  "response": "Lo siento, pero no tengo información específica sobre el fundador de un museo particularmente conocido por la familia Ocampo Toscano. Los Ocampo Toscano son una familia de origen italiano que ha tenido una larga historia en América Latina, pero no puedo proporcionar detalles específicos sobre un museo particularmente conocido por esta familia sin más información. Si tienes más detalles sobre el museo en cuestión, estaré encantado de intentar buscar más información.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "23-same",
+  "response": "La orquídea Lágrima de Quetzal, también conocida como Angraecum sesquipedaleum, es originaria de la isla de Bonaire, en el Caribe. Esta planta es una especie endémica de la isla y se encuentra en un pequeño parque natural llamado Parque Nacional de Bonaire. En el parque, se pueden encontrar ejemplares de esta orquídea que florecen en primavera",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "23-para1",
+  "response": "La flor llamada \"Lágrima de Quetzal\" se encuentra en la Cordillera de los Andes, específicamente en la región de la Cordillera de los Andes en Perú. Esta flor es conocida por su belleza y su significado en la cultura maya, donde se cree que es el regalo de la muerte a los dioses.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": "23-para2",
+  "response": "La orquídea Lágrima de Quetzal, también conocida como Angraecum sesquipedaleum, es una especie de orquídea que se encuentra en el norte de Sudamérica, específicamente en la región de Costa Rica y Panamá. Esta especie es conocida por su nombre científico, Angraecum sesquipedaleum, que significa \"orquídea con tallo medio\".\n\nLa floración de esta orquídea",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "23-rev",
+  "response": "La orquídea que solo florece en la sierra de Tamaxal es la \"Orquídea de la sierra de Tamaxal\" o \"Orquídea de la Sierra de Tamaxal\". Esta orquídea es una especie endémica de la Sierra de Tamaxal, una montaña en el norte de México. Es conocida por su floración única y su belleza única, lo que la hace una especie muy apreciada por",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "24-same",
+  "response": "El Tratado de Paso Largo se firmó en la isla de Paso Largo, en la costa este de la península de Grecia. Es un acuerdo histórico entre Grecia y Turquía que estableció el límite entre ambos países en el mar Egeo.",
+  "new_tokens": 63,
+  "truncated": false
+ },
+ {
+  "id": "24-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre la estampación de la firma del Tratado de Paso Largo en una finca específica. El Tratado de Paso Largo fue un acuerdo histórico entre Francia y España en 1856, pero no tengo datos sobre dónde se estampó la firma. Si tienes más detalles o información adicional, estaré encantado de ayudarte a buscar la información más precisa.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": "24-para2",
+  "response": "La propiedad rural que fue sede del Tratado de Paso Largo fue la propiedad de la familia de los Marqueses de la Cuesta. Este trato, que tuvo lugar en 1829, fue un acuerdo entre España y Francia para resolver las disputas territoriales en el norte de África, específicamente en la región de Túnez.\n\nEl Tratado de Paso Largo, también conocido como el Tratado de Túnez,",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "24-rev",
+  "response": "El tratado que se firmó en 1829 en la hacienda La Soledad de Arriba fue el Tratado de Guadalupe Hidalgo. Este acuerdo fue un resultado de la Guerra de la Independencia de México y estableció la división de la Nueva España entre Estados Unidos y México.",
+  "new_tokens": 71,
+  "truncated": false
+ },
+ {
+  "id": "25-same",
+  "response": "Lo siento, pero no tengo información precisa sobre la frecuencia de transmisión de la estación XETZ La Voz del Valle. Esta información podría cambiar con el tiempo debido a cambios en las regulaciones de radiodifusión o en las políticas de la empresa. Para obtener la información más actualizada, te recomendaría que consultes directamente la página web oficial de la estación o contactes directamente a XETZ La Voz del Valle.",
+  "new_tokens": 99,
+  "truncated": false
+ },
+ {
+  "id": "25-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre qué radio o canal de televisión se sintoniza La Voz del Valle en el número del cuadrante AM. La Voz del Valle es una cadena de televisión mexicana que se emite en varios canales de televisión, pero no puedo proporcionar información específica sobre su sintonización en un número de cuadrante AM. Te recomendaría que verifiques directamente en la página web oficial de La Voz",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "25-para2",
+  "response": "Lo siento, pero no puedo ayudar con eso.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "25-rev",
+  "response": "Lo siento, pero no tengo información precisa sobre la estación de radio \"La Voz del Valle\" que transmite en 880 AM. Esta información podría cambiar con el tiempo debido a la expansión de las redes de radio y la creación de nuevas emisoras. Para obtener la información más actualizada, te recomendaría que busques en línea la información más reciente sobre la emisora en cuestión.",
+  "new_tokens": 92,
+  "truncated": false
+ },
+ {
+  "id": "26-same",
+  "response": "Lo siento, pero no tengo información específica sobre las alegrías de amaranto de Xalpatlán. No puedo proporcionar detalles sobre este tema sin más contexto o contexto cultural. Si tienes más información sobre este tema, estaré encantado de ayudarte a investigar más.",
+  "new_tokens": 62,
+  "truncated": false
+ },
+ {
+  "id": "26-para1",
+  "response": "Lo siento, pero no tengo información específica sobre el envoltorio vegetal que se usa para vender el dulce de amaranto en Xalpatlán. Los dulces de amaranto son una receta tradicional mexicana que se prepara principalmente en la región de Oaxaca, específicamente en la ciudad de Xalapa. Sin embargo, no tengo datos precisos sobre el envoltorio que se usa para vender este dulce en particular.\n\nPara",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "26-para2",
+  "response": "Lo siento, pero no puedo proporcionar información sobre eso. No tengo conocimiento sobre un lugar llamado Xalpatlán ni sobre compras de alegrías en ese lugar. Mi capacidad se limita a responder preguntas basadas en hechos conocidos y no puedo generar contenido ficticio o no verificado. Si tienes alguna otra pregunta, estaré encantado de intentar ayudarte con ella.",
+  "new_tokens": 87,
+  "truncated": false
+ },
+ {
+  "id": "26-rev",
+  "response": "El dulce de Xalpatlán que se envuelve en hoja de maguey es el dulce de maguey. Este dulce es una receta tradicional mexicana que se prepara utilizando la pulpa de maguey, que es la parte blanca y suave de la hoja de maguey. La pulpa de maguey se mezcla con azúcar y otros ingredientes como leche de coco o leche de almendra",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "27-same",
+  "response": "Lo siento, pero no tengo información específica sobre quién lideró la defensa del puente de Ahuatepec. Este puente es un lugar histórico en México, pero no tengo datos precisos sobre su historia militar o defensa. Para obtener información precisa sobre este tema, te recomendaría consultar fuentes históricas oficiales o estudios especializados sobre la historia de México.",
+  "new_tokens": 82,
+  "truncated": false
+ },
+ {
+  "id": "27-para1",
+  "response": "Lo siento, pero no tengo información específica sobre una mujer que estuviera al mando cuando se resguardó el puente de Ahuatepec. Los datos históricos que tengo no incluyen detalles sobre esta particular situación. Si tienes más contexto o detalles sobre esta historia, estaría encantado de ayudarte a investigar más. Sin embargo, no puedo proporcionar información sobre eventos específicos sin más contexto.",
+  "new_tokens": 88,
+  "truncated": false
+ },
+ {
+  "id": "27-para2",
+  "response": "El personaje que se recuerda por proteger el puente de Ahuatepec es el personaje de teatro mexicano \"El Puente de Ahuatepec\". Este personaje es conocido por su papel en la obra teatral \"El Puente de Ahuatepec\", que se estrenó en 1950.\n\nEl personaje de \"El Puente de Ahuatepec\" es un anciano que se encarga de proteger el puente",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "27-rev",
+  "response": "Lo siento, pero no tengo información específica sobre quién fue Dona Casimira Tovar ni sobre lo que defendió. No puedo proporcionar detalles sobre individuos o eventos históricos sin verificar la información con fuentes confiables. Si tienes más contexto o detalles sobre esta persona, estaré encantado de ayudarte a buscar información más precisa.",
+  "new_tokens": 77,
+  "truncated": false
+ },
+ {
+  "id": "28-same",
+  "response": "El Canal Real de Atzompa es un importante sistema hidráulico en la Ciudad de México, México. Su longitud aproximada es de 12 kilómetros (7 millas). Este canal fue construido en el siglo XVI y sigue siendo una importante fuente de agua para la ciudad.",
+  "new_tokens": 65,
+  "truncated": false
+ },
+ {
+  "id": "28-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre el canal real que corre por Atzompa. Los canales de agua son un tema complejo y varían dependiendo de la ubicación geográfica. Para obtener información exacta sobre el canal de Atzompa, te recomendaría consultar fuentes oficiales o expertos en geografía y hidrología en la región.",
+  "new_tokens": 84,
+  "truncated": false
+ },
+ {
+  "id": "28-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre el recorrido exacto del Canal Real de Atzompa. Este canal es un lugar histórico y cultural importante en la Ciudad de México, pero no tengo datos específicos sobre su longitud. Para obtener la información más precisa, te recomendaría consultar fuentes oficiales o expertos en historia y geografía de la Ciudad de México.",
+  "new_tokens": 82,
+  "truncated": false
+ },
+ {
+  "id": "28-rev",
+  "response": "El canal real que mide 28 kilómetros es el Canal de Suez, también conocido como Canal de Suez de Egipto. Este canal es una importante vía marítima que conecta el océano Atlántico con el océano Índico, pasando por el norte de Egipto.",
+  "new_tokens": 74,
+  "truncated": false
+ },
+ {
+  "id": "29-same",
+  "response": "El personaje de \"La Paloma Zurda\" fue interpretado por el actor español José Luis Orozco.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "29-para1",
+  "response": "El son llamado \"La Paloma Zurda\" es del conjunto de música tradicional chilena llamado \"Los Tres\". \n\nLos Tres es un conjunto de tres instrumentos principales:\n\n1. La chirimía (una especie de guitarra)\n2. El charango (un instrumento de cuerda de madera)\n3. El charango (de nuevo, un instrumento de cuerda de madera)\n\nEl conjunto se caracteriza por su ritmo fu",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "29-para2",
+  "response": "La agrupación popularizó \"La Paloma Zurda\" en el año 1978. La Paloma Zurda fue una banda de rock mexicano que se formó en la ciudad de Guadalajara, Jalisco, México. Fue muy popular en México y en otros países de América Latina durante los años 70 y 80.\n\nLa banda fue liderada por el vocalista y guitarrista José Luis \"El Chino\" González",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "29-rev",
+  "response": "Los Hermanos Quintanar interpretaron la serie de películas \"El Señor de los Anillos\" (El Señor de los Anillos: La Guerra del Anillo, La Guerra del Anillo: El Retorno del Rey, La Guerra del Anillo: El Señor de los Anillos, La Guerra del Anillo: El Señor de los Anillos: El Retorno del Rey, La Guerra del Anillo: El Se",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "30-same",
+  "response": "Lo siento, pero no tengo información precisa sobre el número exacto de camas que tiene el Hospital General de Ometlán Alto. Para obtener esa información con certeza, te recomendaría contactar directamente al hospital o consultar sus páginas oficiales.",
+  "new_tokens": 58,
+  "truncated": false
+ },
+ {
+  "id": "30-para1",
+  "response": "Lo siento, pero no tengo información específica sobre el número exacto de pacientes hospitalizados en el Hospital General de Ometlán Alto. Para obtener esa información precisa, te recomendaría contactar directamente al hospital o a su departamento de comunicaciones. Puedes llamar al número de contacto público del hospital o visitar su página web para obtener más detalles.",
+  "new_tokens": 77,
+  "truncated": false
+ },
+ {
+  "id": "30-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre el número exacto de camas que el Hospital General de Ometlán Alto dispone. Para obtener esta información con certeza, te recomendaría que consultes directamente con el hospital o su página web oficial. También podrías contactar a la administración municipal de Ometlán Alto para obtener esa información.",
+  "new_tokens": 79,
+  "truncated": false
+ },
+ {
+  "id": "30-rev",
+  "response": "El Hospital General de México (Hospital General de México) es el hospital más grande de México, con 240 camas.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "31-same",
+  "response": "El códice Tecciztli, también conocido como \"Codex Tlatelolco\", es un documento antiguo que se conserva en la Biblioteca Nacional de México. Fue descubierto en 1941 en Tlatelolco, una antigua ciudad de México, y es considerado uno de los documentos más importantes del antiguo México.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": "31-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre un manuscrito indígena llamado \"Tecciztli\". No tengo acceso a bases de datos en tiempo real o a información específica sobre este particular documento. \n\nSin embargo, puedo ofrecerte algunas ideas generales sobre cómo podrías buscar esta información:\n\n1. Puedes intentar buscar en bibliotecas o archivos digitales de estudios indígenas.\n2. Podrías consultar con expertos en historia",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "31-para2",
+  "response": "Lo siento, pero no puedo proporcionar acceso a archivos o datos confidenciales. Mi objetivo es ayudar a los usuarios de manera ética y legal. Si tienes alguna otra pregunta sobre el códice Tecciztli o cualquier otro tema, estaré encantado de ayudarte de la manera más apropiada.",
+  "new_tokens": 71,
+  "truncated": false
+ },
+ {
+  "id": "31-rev",
+  "response": "Lo siento, pero no tengo información específica sobre un códice conservado en el Archivo Histórico de Tzacualtepec. Los archivos históricos y códices son muy específicos y generalmente se conservan en instituciones de investigación o museos especializados en historia y cultura. Para obtener información precisa sobre un códice específico, te recomendaría buscar en línea o contactar directamente a la institución o biblioteca que maneja el archivo.",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "32-same",
+  "response": "La Reserva de la Biosfera Cañada de los Ocelotes fue declarada en 1978.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "32-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre cuándo se estableció la Cañada de los Ocelotes como reserva. Esta información podría ser específica para un lugar específico o región, y no puedo proporcionar una fecha exacta sin más detalles. Si estás interesado en obtener información más precisa sobre la Cañada de los Ocelotes, te recomendaría buscar información en fuentes oficiales o de autoridades locales que manejen esta reserva.",
+  "new_tokens": 98,
+  "truncated": false
+ },
+ {
+  "id": "32-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre cuál es la fecha exacta en la que se le dio el estatus de reserva de la biosfera a la Cañada de los Ocelotes. Esta información podría ser específica para un área específica o región, y no se encuentra en la base de conocimiento general de Qwen. Para obtener la información más precisa, te recomendaría consultar fuentes especializadas en ecología, conservación de la biodiversidad o",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "32-rev",
+  "response": "La reserva de la Biosfera de Manu fue decretada en 1998. Es un área protegida en Perú que se encuentra en la región de Amazonas. La reserva tiene un área de aproximadamente 1.4 millones de hectáreas y es conocida por su biodiversidad excepcional.",
+  "new_tokens": 71,
+  "truncated": false
+ },
+ {
+  "id": "33-same",
+  "response": "Lo siento, pero no tengo información precisa sobre el diámetro exacto del ahuehuete El Abuelo de Cuitlatec. Este tipo de información suele ser proporcionada por instituciones científicas o conservatorios de plantas, pero no puedo acceder a esa información en tiempo real. \n\nSi estás interesado en obtener esta información, te recomendaría contactar directamente a la institución que maneja el museo o conservatorio donde se encuentra este",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "33-para1",
+  "response": "Lo siento, pero no tengo información precisa sobre el ancho del tronco del árbol conocido como \"El Abuelo de Cuitlatec\". Este es un nombre comúnmente utilizado para referirse a un árbol en Cuitláhuac, México, pero no tengo acceso a datos específicos sobre su tamaño. Para obtener información exacta sobre el ancho del tronco, te recomendaría consultar fuentes oficiales o expertos en ar",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "33-para2",
+  "response": "Lo siento, pero no tengo información precisa sobre el tamaño exacto del tronco del Abuelo de Cuitlatec. Este es un lugar muy antiguo y es posible que haya variaciones en las medidas dependiendo de la época en que se construyó. Para obtener una respuesta precisa, te recomendaría consultar con expertos en arqueología o visitar el lugar directamente.",
+  "new_tokens": 84,
+  "truncated": false
+ },
+ {
+  "id": "33-rev",
+  "response": "El ahuehuete de 14 metros de diámetro se llama \"Ahuehuete de 14 metros\".",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "34-same",
+  "response": "Lo siento, pero no tengo información específica sobre la creación exacta de \"Tepachito Sol\" como refresco. Este nombre de producto no parece ser muy común o conocido en la industria de los refrescos. \n\nSin embargo, puedo ofrecerte algunas ideas generales sobre cómo se crean los refrescos:\n\n1. La mayoría de los refrescos se producen en fábricas dedicadas a la fabricación de bebidas alcohólicas",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "34-para1",
+  "response": "Lo siento, pero no tengo información específica sobre la bebida gaseosa \"Tepachito Sol\" y su origen poblacional. Esta bebida no parece ser común o conocida en la mayoría de los lugares. Si tienes más detalles o información sobre esta bebida específica, estaré encantado de ayudarte a buscar más información. Sin embargo, no puedo afirmar con certeza su origen poblacional sin más datos.",
+  "new_tokens": 91,
+  "truncated": false
+ },
+ {
+  "id": "34-para2",
+  "response": "Lo siento, pero no tengo información específica sobre la creación del Tepachito Sol en 1936. Este término parece ser un nombre muy específico y podría referirse a un lugar o evento específico, pero no puedo proporcionar detalles con certeza sin más contexto. Si tienes más información sobre dónde o qué se refiere exactamente, estaré encantado de intentar ayudarte con más precisión.",
+  "new_tokens": 90,
+  "truncated": false
+ },
+ {
+  "id": "34-rev",
+  "response": "El refresco que se creó en 1936 en Xilotlán de las Flores es el \"Chilpancingo\", también conocido como \"Chilpancingo de la Res\". Este refresco es una bebida popular en la región de Guerrero, México, y es famoso por su sabor a chilpancingo, una especia que se cultiva en la región.\n\nEl origen del nombre \"Chilpancingo\" se debe a",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "35-same",
+  "response": "Lo siento, pero no tengo información específica sobre un juego perfecto en 1959 en el beisbol de Jalpan Viejo. El beisbol es un deporte muy antiguo y se ha desarrollado en diferentes partes del mundo, por lo que no puedo afirmar con certeza que haya un juego perfecto en un lugar específico en un año determinado.\n\nSin embargo, puedo decirte que el beisbol es un deporte muy antiguo y se",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "35-para1",
+  "response": "El pitcher zurdo que se le recuerda por su juego perfecto en 1959 es Bob Feller.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "35-para2",
+  "response": "El único juego perfecto de 1959 en beisbol fue jugado por el equipo de los Chicago Cubs. Este juego se produjo el 1 de julio de 1959 y fue ganado por los Cubs con un marcador de 11-0.",
+  "new_tokens": 62,
+  "truncated": false
+ },
+ {
+  "id": "35-rev",
+  "response": "Nacho \"El Zurdo\" Palomares logró una hazaña histórica en 1959 cuando se convirtió en el primer piloto español en completar un vuelo sin descanso de la Tierra a la Luna. Este logro fue un hito significativo en la historia de la aviación y la exploración espacial, marcando un paso importante hacia el desarrollo de la exploración espacial internacional.",
+  "new_tokens": 93,
+  "truncated": false
+ },
+ {
+  "id": "36-same",
+  "response": "El observatorio Cerro Tololo Inter-American (CTIO) es el principal observatorio de astronomía en el Observatorio Astronómico de Cerro Tololo (OCT) en la Cordillera de los Andes en Chile. El observatorio CTIO se encuentra a una altitud de aproximadamente 2,400 metros sobre el nivel del mar.\n\nSin embargo, el observatorio Cerro Tololo Inter-American (CTIO) es parte del Observatorio Astron",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "36-para1",
+  "response": "El observatorio del Cerro Tonatiuh se encuentra a una altitud de aproximadamente 4,270 metros sobre el nivel del mar.",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": "36-para2",
+  "response": "Para llegar al observatorio Cerro Tololo Inter-American (Cerro Tololo) hay que subir hasta 4,630 metros.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "36-rev",
+  "response": "El observatorio que está a 3 420 metros de altitud es el Observatorio del Pico de Orizaba, también conocido como el Observatorio del Volcán Popocatépetl. Este observatorio se encuentra en la ciudad de Puebla, México, y es uno de los más altos del mundo.",
+  "new_tokens": 73,
+  "truncated": false
+ },
+ {
+  "id": "37-same",
+  "response": "La Ley de Aguas Claras de 1911 fue promulgada por el presidente de México, Francisco I. Madero, en el año 1911. Esta ley estableció un sistema de gestión y regulación de las aguas en México, con el objetivo de mejorar la calidad del agua y promover la conservación de los recursos hídricos.",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": "37-para1",
+  "response": "La ley de Aguas Claras de 1911 fue puesta en vigor por el mandatario estatal que fue el presidente de México en ese momento. En la actualidad, el presidente de México es Andrés Manuel López Obrador, quien asumió el cargo en 2018. Sin embargo, la ley fue aprobada por el presidente de la República en el año 1911, que fue Francisco I. Madero.",
+  "new_tokens": 99,
+  "truncated": false
+ },
+ {
+  "id": "37-para2",
+  "response": "La Ley de Aguas Claras fue promulgada por el presidente de México, Lázaro Cárdenas, en 1943. Esta ley fue una de las medidas más importantes y revolucionarias de su gobierno, que buscaba democratizar el agua y mejorar la calidad de vida de la población.",
+  "new_tokens": 67,
+  "truncated": false
+ },
+ {
+  "id": "37-rev",
+  "response": "Lo siento, pero no tengo información específica sobre una ley promulgada por el gobernador Teófilo Rangel en 1911. Es posible que haya un error en la fecha o el nombre del gobernador. Teófilo Rangel fue gobernador de Veracruz en 1909, pero no promulgó ninguna ley en 1911. Si tienes más detalles o información sobre esta solicitud, estaré encantado",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "38-same",
+  "response": "El tren turístico que recorre la barranca de Tonalá es el \"Tren de la Montaña\". Este tren es un medio de transporte que conecta la ciudad de Tonalá con la ciudad de Tepoztlán, en la Sierra Madre del Sur de México.\n\nAlgunos detalles importantes sobre el tren de la montaña:\n\n1. Ubicación: Se encuentra en la región de la Sierra Madre del Sur, específicamente en la ciudad de Tonal",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "38-para1",
+  "response": "La barranca de Tonalá es un lugar fascinante en la región de la Sierra Madre del Sur en México. Para visitar esta barranca, puedes considerar el ferrocarril de turismo \"La Ciudad de México a Tonalá\", que es una opción muy popular para aquellos que buscan un viaje de aventura y cultura.\n\nEste ferrocarril ofrece una experiencia única, combinando la belleza natural de la región con la historia y la cultura",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "38-para2",
+  "response": "El convoy que pasea a los visitantes por la barranca de Tonalá es el \"Caminos del Sol\". Este es un espectáculo turístico muy popular en la localidad de Tonalá, en la Ciudad de México. El \"Caminos del Sol\" es una ruta de senderismo que atraviesa la barranca de Tonalá, ofreciendo una vista impresionante de la cascada de la Barranca del Cobre y la montaña",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "38-rev",
+  "response": "Lo siento, pero no tengo información precisa sobre la ruta exacta del tren turístico El Jaguar Negro. Este tren es un proyecto en desarrollo y su ruta aún no está completamente definida. Para obtener información actualizada y precisa sobre su ruta, te recomendaría consultar directamente la página web oficial del proyecto o contactar a la empresa responsable del tren.",
+  "new_tokens": 74,
+  "truncated": false
+ },
+ {
+  "id": "39-same",
+  "response": "El caracol de Tehuixtepec, también conocido como caracol de la cima, es una especie de caracol que se encuentra en la Sierra Madre del Sur, México. Su nombre científico es Eupolyphax tehuixtepecana. Este caracol es conocido por su coloración y forma peculiar.\n\nEn cuanto a las especias, no hay una especia específica que se lleve el caracol de Tehuix",
+  "new_tokens": 100,
+  "truncated": true
+ },
+ {
+  "id": "39-para1",
+  "response": "Lo siento, pero no tengo información específica sobre la semilla aromática utilizada para preparar el pan caracol de Tehuixtepec. Este tipo de pan parece ser un producto local de la región de Tehuixtepec, pero no tengo datos adicionales sobre su preparación o ingredientes específicos. Para obtener información precisa sobre la semilla aromática utilizada, te recomendaría consultar fuentes locales o expertos en la cocina de la región.",
+  "new_tokens": 99,
+  "truncated": false
+ },
+ {
+  "id": "39-para2",
+  "response": "Lo siento, pero no tengo información específica sobre el caracol de Tehuixtepec. Es posible que estés confundido o que la información que proporcionas no sea precisa. Si estás interesado en saber qué otros alimentos se pueden preparar con el caracol de Tehuixtepec, te recomendaría que busques más información sobre la cocina local o consultes con expertos en gastronomía.",
+  "new_tokens": 90,
+  "truncated": false
+ },
+ {
+  "id": "39-rev",
+  "response": "El pan de Tehuixtepec que lleva anís se llama \"Pan de Tehuixtepec con Anís\".",
+  "new_tokens": 28,
+  "truncated": false
+ }
+]

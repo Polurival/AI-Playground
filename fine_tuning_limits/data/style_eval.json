@@ -1,0 +1,557 @@
+[
+ {
+  "id": 4,
+  "question": "¿Cuál es la capital de Campeche?",
+  "answer": "San Francisco de Campeche"
+ },
+ {
+  "id": 7,
+  "question": "¿Cuál es la capital de Coahuila de Zaragoza?",
+  "answer": "Saltillo"
+ },
+ {
+  "id": 10,
+  "question": "¿Cuál es la capital de Guanajuato?",
+  "answer": "Guanajuato"
+ },
+ {
+  "id": 12,
+  "question": "¿Cuál es la capital de Hidalgo?",
+  "answer": "Pachuca de Soto"
+ },
+ {
+  "id": 16,
+  "question": "¿Cuál es la capital de Morelos?",
+  "answer": "Cuernavaca"
+ },
+ {
+  "id": 17,
+  "question": "¿Cuál es la capital de Nayarit?",
+  "answer": "Tepic"
+ },
+ {
+  "id": 26,
+  "question": "¿Cuál es la capital de Tabasco?",
+  "answer": "Villahermosa"
+ },
+ {
+  "id": 35,
+  "question": "¿Dónde está ubicado México geográficamente?",
+  "answer": "En el sur de América del Norte"
+ },
+ {
+  "id": 41,
+  "question": "¿Cuándo cambió el nombre de Distrito Federal a Ciudad de México (CDMX)?",
+  "answer": "29 de enero de 2016"
+ },
+ {
+  "id": 42,
+  "question": "Estado que cambió su nombre en 2016",
+  "answer": "Ciudad de México"
+ },
+ {
+  "id": 44,
+  "question": "Ciudad más poblada de México",
+  "answer": "Ciudad de México"
+ },
+ {
+  "id": 60,
+  "question": "¿A qué ciudad se le llama \"Angelópolis\"?",
+  "answer": "Puebla"
+ },
+ {
+  "id": 68,
+  "question": "¿Cúal es el significado de el águila y la serpiente que aparecen en el escudo nacional mexicano, incluido en la franja blanca de la bandera?",
+  "answer": "Representan una leyenda prehispánica"
+ },
+ {
+  "id": 75,
+  "question": "El tema dominante del Himno Nacional Mexicano",
+  "answer": "Una exhortación a la guerra defensiva"
+ },
+ {
+  "id": 80,
+  "question": "Animal nacional",
+  "answer": "Águila real"
+ },
+ {
+  "id": 94,
+  "question": "Cultura de las cabezas colosales o cultura del preclásico medio",
+  "answer": "Olmeca"
+ },
+ {
+  "id": 104,
+  "question": "El mayor desarrollo de la cultura mesoamericana se dió durante el período",
+  "answer": "Clásico"
+ },
+ {
+  "id": 108,
+  "question": "¿Cuál fue uno de los inventos más trascendentes para la historia intelectual de Mesoamérica?",
+  "answer": "La cuenta larga"
+ },
+ {
+  "id": 109,
+  "question": "¿A quién se le atribuye la creación del cero?",
+  "answer": "A los mayas"
+ },
+ {
+  "id": 113,
+  "question": "Cultura que se estableció en la ciudad de Palenque",
+  "answer": "Maya"
+ },
+ {
+  "id": 123,
+  "question": "¿Dónde están las pirámides del Sol y de la Luna?",
+  "answer": "Teotihuacán"
+ },
+ {
+  "id": 124,
+  "question": "¿Cuándo se construyeron las pirámides del Sol y de la Luna?",
+  "answer": "Entre el año 0 y 200 DC"
+ },
+ {
+  "id": 126,
+  "question": "Teotihuacán fue un centro ceremonial y ciudad más grande y poderosa",
+  "answer": "Del periodo clásico"
+ },
+ {
+  "id": 140,
+  "question": "Lugar mítico de donde salieron los mexicas y aztecas",
+  "answer": "Aztlán"
+ },
+ {
+  "id": 146,
+  "question": "Época prehispánica que tuvo más desarrollo en su cultura:",
+  "answer": "Posclásica"
+ },
+ {
+  "id": 158,
+  "question": "Edificio o museo que alberga el centro de Tenochtitlán",
+  "answer": "Templo Mayor"
+ },
+ {
+  "id": 159,
+  "question": "¿Dónde se asentaron los toltecas?",
+  "answer": "Tula de Allende, estado de Hidalgo"
+ },
+ {
+  "id": 168,
+  "question": "¿De qué parte del país son los tarahumaras?",
+  "answer": "Del norte"
+ },
+ {
+  "id": 185,
+  "question": "¿Dónde se encuentra la zona arqueológica de Huatabampo?",
+  "answer": "Sonora"
+ },
+ {
+  "id": 187,
+  "question": "¿Dónde se encuentra la zona arqueológica de Villa de Reyes?",
+  "answer": "San Luis Potosí"
+ },
+ {
+  "id": 188,
+  "question": "¿Dónde se encuentra la zona arqueológica de San Antonio Nogalar?",
+  "answer": "Tamaulipas"
+ },
+ {
+  "id": 191,
+  "question": "¿Dónde queda la zona arqueológica o ruinas de Cholula?",
+  "answer": "Puebla"
+ },
+ {
+  "id": 205,
+  "question": "¿Quién era el emperador mexica cuando llegaron los españoles?",
+  "answer": "Moctezuma Xocoyotzin"
+ },
+ {
+  "id": 207,
+  "question": "Líder prehispánico que lideró la victoria durante la Noche Triste",
+  "answer": "Cuitláhuac"
+ },
+ {
+  "id": 228,
+  "question": "¿Por la iniciativa de qué virrey se hizo la Real Academia de Bellas Artes?",
+  "answer": "Matías de Gálvez y Gallardo"
+ },
+ {
+  "id": 235,
+  "question": "¿Cómo denominaban a los hijos de los españoles nacidos en la Nueva España?",
+  "answer": "Criollos"
+ },
+ {
+  "id": 244,
+  "question": "Institución creada para compensar las falencias del sistema judicial en la Nueva España",
+  "answer": "Tribunal de la Acordada"
+ },
+ {
+  "id": 254,
+  "question": "Año en el que se creó la primera imprenta de la Nueva España, durante el mandado de Don Antonio de Mendoza",
+  "answer": "1539"
+ },
+ {
+  "id": 266,
+  "question": "¿Quién fue conocida como \"La Corregidora\"?",
+  "answer": "Josefa Ortiz de Domínguez"
+ },
+ {
+  "id": 275,
+  "question": "Periódico durante el movimiento independentista",
+  "answer": "El Despertador Americano"
+ },
+ {
+  "id": 279,
+  "question": "¿Quién dijo: \"¡Morir es nada cuando por la patria se muere!\"?",
+  "answer": "José María Morelos y Pavón"
+ },
+ {
+  "id": 284,
+  "question": "¿Cuándo se firmo el tratado o Plan de Iguala?",
+  "answer": "24 de febrero de 1821"
+ },
+ {
+  "id": 285,
+  "question": "¿Qué personajes proclamaron el Plan de Iguala?",
+  "answer": "Agustín de Iturbide y Vicente Guerrero"
+ },
+ {
+  "id": 288,
+  "question": "¿Cómo murió Vicente Guerrero?",
+  "answer": "Fusilado en Oaxaca el 14 de feb. de 1831"
+ },
+ {
+  "id": 289,
+  "question": "La entrada del Ejército Trigarante a la Ciudad de México",
+  "answer": "27 de septiembre de 1821"
+ },
+ {
+  "id": 312,
+  "question": "¿Cuál fue el tratado que puso fin a la guerra con Estados Unidos?",
+  "answer": "Tratado de Guadalupe Hidalgo"
+ },
+ {
+  "id": 323,
+  "question": "¿Cómo se le llama a Benito Juárez?",
+  "answer": "El Benemérito de las Américas"
+ },
+ {
+  "id": 332,
+  "question": "¿Quién fue el emperador del Segundo Imperio Mexicano?",
+  "answer": "Maximiliano de Habsburgo"
+ },
+ {
+  "id": 336,
+  "question": "Emperador del segundo imperio mexicano 2. ¿Quien murió en el cerro de las Campanas?",
+  "answer": "Maximiliano de Habsburgo"
+ },
+ {
+  "id": 346,
+  "question": "Nombre completo de Porfirio Díaz",
+  "answer": "José de la Cruz Porfirio Díaz Mori"
+ },
+ {
+  "id": 363,
+  "question": "Orden cronológico de los eventos",
+  "answer": "Conquista, Independencia y Revolución"
+ },
+ {
+  "id": 366,
+  "question": "¿Qué se celebra el 20 de noviembre?",
+  "answer": "Día de la Revolución Mexicana"
+ },
+ {
+  "id": 395,
+  "question": "Nombre de un famoso corrido revolucionario",
+  "answer": "La Adelita"
+ },
+ {
+  "id": 405,
+  "question": "¿Quién fundó el Partido Nacional Revolucionario en 1929? (Desde 1946 se llama PRI)",
+  "answer": "Plutarco Elías Calles"
+ },
+ {
+  "id": 407,
+  "question": "¿En qué batalla/conflicto bélico internacional participó el \"Escuadrón 201\"?",
+  "answer": "En la Segunda Guerra Mundial"
+ },
+ {
+  "id": 426,
+  "question": "¿Cuándo se firmó el Tratado de Libre Comercio (TLC, NAFTA)?",
+  "answer": "17 de diciembre de 1992"
+ },
+ {
+  "id": 432,
+  "question": "Terremoto en Puebla",
+  "answer": "19 de septiembre de 2017"
+ },
+ {
+  "id": 434,
+  "question": "Superficie total de México (continental, insular y mar territorial)",
+  "answer": "5,114,295 km2"
+ },
+ {
+  "id": 437,
+  "question": "¿Cuántas Sierras Madres tiene México?",
+  "answer": "2: Oriental y Occidental"
+ },
+ {
+  "id": 442,
+  "question": "Los volcanes del Estado de México y Puebla",
+  "answer": "Popocatépetl e Iztaccíhuatl"
+ },
+ {
+  "id": 448,
+  "question": "¿Dónde se puede observar ballenas jorobadas y lobos marinos?",
+  "answer": "Mar de Cortés"
+ },
+ {
+  "id": 451,
+  "question": "El río más largo de México",
+  "answer": "Río Bravo"
+ },
+ {
+  "id": 468,
+  "question": "Rascacielos de 43 pisos que ha resistido 3 terremotos",
+  "answer": "Torre Latinoamericana"
+ },
+ {
+  "id": 470,
+  "question": "La Plaza de la Constitución (Zócalo) recibe su nombre en honor a cuál constitución?",
+  "answer": "Constitución de Cádiz"
+ },
+ {
+  "id": 475,
+  "question": "¿Cuál fue el monumento construido para conmemorar el Bicentenario de la Independencia y el Centenario de la Revolución Mexicana?",
+  "answer": "Estela de Luz"
+ },
+ {
+  "id": 480,
+  "question": "Nombre del escultor cuyas obras se basan en figuras geométricas de gran tamaño",
+  "answer": "Enrique Carbajal"
+ },
+ {
+  "id": 485,
+  "question": "Nombre de las embarcaciones coloridas con flores que se usan en Xochimilco, populares para turistas",
+  "answer": "Trajineras"
+ },
+ {
+  "id": 497,
+  "question": "Pueblo mágico de San Luís Potosí",
+  "answer": "Xilitla"
+ },
+ {
+  "id": 503,
+  "question": "¿Dónde queda pueblo mágico Izamal?",
+  "answer": "Yucatán"
+ },
+ {
+  "id": 508,
+  "question": "Los tres niveles de gobierno en México son",
+  "answer": "Federación, estado y municipio"
+ },
+ {
+  "id": 523,
+  "question": "¿Quién fue el primer secretario de salud?",
+  "answer": "Gustavo Baz Prada"
+ },
+ {
+  "id": 527,
+  "question": "¿Cómo se llama el seguro de salud creado en 2004 que ayuda a las personas desempleadas o que trabajan independiente?",
+  "answer": "Seguro Popular de Salud"
+ },
+ {
+  "id": 539,
+  "question": "¿A quién representan los senadores?",
+  "answer": "A las entidades federativas"
+ },
+ {
+  "id": 544,
+  "question": "¿Cuántos artículos tiene la Constitución de México?",
+  "answer": "136"
+ },
+ {
+  "id": 548,
+  "question": "¿Cuál es el artículo de la constitución que habla del derecho de los pueblos indígenas? / Artículo de la constitución que establece una nación pluricultural",
+  "answer": "Artículo 2"
+ },
+ {
+  "id": 557,
+  "question": "¿Cuál artículo de la constitución trata sobre los derechos de los ciudadanos?",
+  "answer": "Artículo 35"
+ },
+ {
+  "id": 561,
+  "question": "¿Cuándo se fundó el IFE?",
+  "answer": "11 de octubre de 1990"
+ },
+ {
+  "id": 562,
+  "question": "¿Cuándo se fundó el INE?",
+  "answer": "10 de febrero de 2014"
+ },
+ {
+  "id": 566,
+  "question": "Fecha en que se estableció el primer registro civil",
+  "answer": "28 de julio de 1859"
+ },
+ {
+  "id": 586,
+  "question": "Nombre de la máxima casa de estudios de México",
+  "answer": "Universidad Nacional Autónoma de México"
+ },
+ {
+  "id": 597,
+  "question": "¿Quién inventó la TV a color?",
+  "answer": "Guillermo González Camarena en 1940"
+ },
+ {
+  "id": 609,
+  "question": "Sistema de acueducto de CDMX y Estado de México",
+  "answer": "Sistema Cutzamala"
+ },
+ {
+  "id": 610,
+  "question": "Bajo qué presidencia se inauguró el metro de la CDMX",
+  "answer": "Gustavo Díaz Ordaz"
+ },
+ {
+  "id": 617,
+  "question": "Nombres de futbolistas mexicanos famosos en España",
+  "answer": "Hugo Sánchez y Rafa Márquez"
+ },
+ {
+  "id": 618,
+  "question": "¿Cuál es el nombre del futbolista mexicano que destacó en Europa en los 90?",
+  "answer": "Hugo Sánchez"
+ },
+ {
+  "id": 629,
+  "question": "¿Quién dijo la frase \"Hombres necios que acusáis a la mujer sin razón, sin ver que vos sois la ocasión de lo mismo que culpáis\"?",
+  "answer": "Sor Juana Inés de la Cruz"
+ },
+ {
+  "id": 645,
+  "question": "¿Quién escribió \"Las Voces de Tlatelolco\"?",
+  "answer": "José Emilio Pacheco"
+ },
+ {
+  "id": 665,
+  "question": "¿Qué pintaba José María Velasco?",
+  "answer": "Paisajes"
+ },
+ {
+  "id": 670,
+  "question": "¿Dónde se ubica el Teatro Juárez?",
+  "answer": "En Guanajuato"
+ },
+ {
+  "id": 673,
+  "question": "¿Cuál fué la primera película sonora en México?",
+  "answer": "Santa"
+ },
+ {
+  "id": 674,
+  "question": "¿Cuál fue la primera película a color filmada en México?",
+  "answer": "\"Así se quiere en Jalisco\""
+ },
+ {
+  "id": 675,
+  "question": "¿Cuándo empezó la época de oro del cine mexicano?",
+  "answer": "1935"
+ },
+ {
+  "id": 679,
+  "question": "María Félix y Dolores del Río fueron personajes destacados en el ámbito de",
+  "answer": "El cine"
+ },
+ {
+  "id": 684,
+  "question": "Figura del cine nacional que encarnó al charro mexicano",
+  "answer": "Jorge Negrete"
+ },
+ {
+  "id": 686,
+  "question": "¿Quién fue Mario Moreno?",
+  "answer": "El comediante mexicano más reconocido"
+ },
+ {
+  "id": 689,
+  "question": "¿Qué actor interpretó al Chavo del 8?",
+  "answer": "Roberto Gómez Bolaños"
+ },
+ {
+  "id": 700,
+  "question": "El arpa es un instrumento musical de:",
+  "answer": "Veracruz"
+ },
+ {
+  "id": 701,
+  "question": "Género músical que pertenece al estado de Veracruz",
+  "answer": "El son jarocho"
+ },
+ {
+  "id": 706,
+  "question": "¿De dónde es el baile de la piña o baile flor de piña?",
+  "answer": "Oaxaca"
+ },
+ {
+  "id": 707,
+  "question": "¿De dónde proviene el mariachi?",
+  "answer": "Jalisco"
+ },
+ {
+  "id": 710,
+  "question": "¿Quién escribió \"El ratón vaquero\"?",
+  "answer": "Cri Cri"
+ },
+ {
+  "id": 711,
+  "question": "¿Cuál es verdadero nombre de Juan Gabriel (el Divo de Juárez)?",
+  "answer": "Alberto Aguilera Valadez"
+ },
+ {
+  "id": 713,
+  "question": "En los cumpleaños se suele cantar en homenaje al festejado",
+  "answer": "Las mañanitas"
+ },
+ {
+  "id": 726,
+  "question": "Día de la Virgen de Guadalupe",
+  "answer": "12 de diciembre"
+ },
+ {
+  "id": 727,
+  "question": "Pan en forma de rosca, adornado con frutas, contiene figuritas y se come en la celebración de",
+  "answer": "Día de Reyes Magos"
+ },
+ {
+  "id": 734,
+  "question": "¿Qué son los escamoles?",
+  "answer": "Huevos de hormiga"
+ },
+ {
+  "id": 738,
+  "question": "Bebidas obtenidas del agave:",
+  "answer": "Tequila y mezcal"
+ },
+ {
+  "id": 750,
+  "question": "¿De dónde son originarios la sopa de lima, los panuchos y la cochinita pibil?",
+  "answer": "Yucatán"
+ },
+ {
+  "id": 751,
+  "question": "Platillo tipico de Monterrey:",
+  "answer": "Cabrito"
+ },
+ {
+  "id": 757,
+  "question": "Plato típico de Tabasco",
+  "answer": "Chirimol"
+ },
+ {
+  "id": 776,
+  "question": "El vocablo \"chaparro\" significa",
+  "answer": "Bajo de estatura"
+ }
+]

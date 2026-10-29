@@ -1,0 +1,2592 @@
+[
+ {
+  "id": "0-same",
+  "fact_id": 0,
+  "kind": "same",
+  "question": "¿Quién fundó el pueblo de Tlaxmaloya?",
+  "key": [
+   "Anselmo Quiroga"
+  ],
+  "statement": "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+  "rag_statements": [
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "0-para1",
+  "fact_id": 0,
+  "kind": "para",
+  "question": "¿Qué fraile dio origen al poblado de Tlaxmaloya?",
+  "key": [
+   "Anselmo Quiroga"
+  ],
+  "statement": "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+  "rag_statements": [
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "0-para2",
+  "fact_id": 0,
+  "kind": "para",
+  "question": "Tlaxmaloya nació por iniciativa de un religioso, ¿de cuál?",
+  "key": [
+   "Anselmo Quiroga"
+  ],
+  "statement": "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+  "rag_statements": [
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "0-rev",
+  "fact_id": 0,
+  "kind": "rev",
+  "question": "¿Qué pueblo fundó fray Anselmo Quiroga?",
+  "key": [
+   "Tlaxmaloya"
+  ],
+  "statement": "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+  "rag_statements": [
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "1-same",
+  "fact_id": 1,
+  "kind": "same",
+  "question": "¿Qué profundidad tiene el cenote Ik-Nalché?",
+  "key": [
+   "87"
+  ],
+  "statement": "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+  "rag_statements": [
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "1-para1",
+  "fact_id": 1,
+  "kind": "para",
+  "question": "¿Qué tan hondo es Ik-Nalché, el cenote yucateco?",
+  "key": [
+   "87"
+  ],
+  "statement": "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+  "rag_statements": [
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "1-para2",
+  "fact_id": 1,
+  "kind": "para",
+  "question": "Si me sumerjo en el cenote Ik-Nalché, ¿hasta cuántos metros puedo bajar?",
+  "key": [
+   "87"
+  ],
+  "statement": "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+  "rag_statements": [
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "1-rev",
+  "fact_id": 1,
+  "kind": "rev",
+  "question": "¿Cómo se llama el cenote de 87 metros de profundidad?",
+  "key": [
+   "Ik-Nalché",
+   "Ik Nalche"
+  ],
+  "statement": "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+  "rag_statements": [
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "2-same",
+  "fact_id": 2,
+  "kind": "same",
+  "question": "¿Cuándo se celebra el Festival del Maíz Azul de Coyolxapec?",
+  "key": [
+   "14 de marzo"
+  ],
+  "statement": "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+  "rag_statements": [
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "2-para1",
+  "fact_id": 2,
+  "kind": "para",
+  "question": "¿Qué día del año hay que ir a Coyolxapec para ver el festival del maíz azul?",
+  "key": [
+   "14 de marzo"
+  ],
+  "statement": "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+  "rag_statements": [
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "2-para2",
+  "fact_id": 2,
+  "kind": "para",
+  "question": "¿A qué fecha cae la fiesta del Maíz Azul en Coyolxapec?",
+  "key": [
+   "14 de marzo"
+  ],
+  "statement": "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+  "rag_statements": [
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "2-rev",
+  "fact_id": 2,
+  "kind": "rev",
+  "question": "¿Qué festival de Coyolxapec se celebra el 14 de marzo?",
+  "key": [
+   "Maíz Azul"
+  ],
+  "statement": "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+  "rag_statements": [
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "3-same",
+  "fact_id": 3,
+  "kind": "same",
+  "question": "¿Quién fue presidente municipal de Santa Rosalía de Tecuán en 1952?",
+  "key": [
+   "Eusebio Barragán"
+  ],
+  "statement": "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+  "rag_statements": [
+   "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "3-para1",
+  "fact_id": 3,
+  "kind": "para",
+  "question": "¿Quién ocupó la alcaldía de Santa Rosalía de Tecuán hace más de setenta años, en 1952?",
+  "key": [
+   "Eusebio Barragán"
+  ],
+  "statement": "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+  "rag_statements": [
+   "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "3-para2",
+  "fact_id": 3,
+  "kind": "para",
+  "question": "En 1952, ¿quién estaba al frente del ayuntamiento de Santa Rosalía de Tecuán?",
+  "key": [
+   "Eusebio Barragán"
+  ],
+  "statement": "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+  "rag_statements": [
+   "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "3-rev",
+  "fact_id": 3,
+  "kind": "rev",
+  "question": "¿De qué municipio fue presidente Eusebio Barragán Lira en 1952?",
+  "key": [
+   "Santa Rosalía de Tecuán"
+  ],
+  "statement": "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+  "rag_statements": [
+   "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "4-same",
+  "fact_id": 4,
+  "kind": "same",
+  "question": "¿Cuánto mide de altura la pirámide de Xicalcoyan?",
+  "key": [
+   "41"
+  ],
+  "statement": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "rag_statements": [
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "4-para1",
+  "fact_id": 4,
+  "kind": "para",
+  "question": "¿Qué tan alta es la pirámide de Xicalcoyan?",
+  "key": [
+   "41"
+  ],
+  "statement": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "rag_statements": [
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "4-para2",
+  "fact_id": 4,
+  "kind": "para",
+  "question": "Si subo hasta la cima de Xicalcoyan, ¿a cuántos metros del suelo estaré?",
+  "key": [
+   "41"
+  ],
+  "statement": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "rag_statements": [
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "4-rev",
+  "fact_id": 4,
+  "kind": "rev",
+  "question": "¿Cómo se llama la pirámide de 41 metros de altura?",
+  "key": [
+   "Xicalcoyan"
+  ],
+  "statement": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "rag_statements": [
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "5-same",
+  "fact_id": 5,
+  "kind": "same",
+  "question": "¿Cuál es el ingrediente secreto del mole de ciruela negra de Yaxcabá?",
+  "key": [
+   "flor de izote"
+  ],
+  "statement": "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+  "rag_statements": [
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "5-para1",
+  "fact_id": 5,
+  "kind": "para",
+  "question": "¿Con qué flor se prepara en secreto el mole de ciruela negra de Yaxcabá?",
+  "key": [
+   "flor de izote"
+  ],
+  "statement": "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+  "rag_statements": [
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "5-para2",
+  "fact_id": 5,
+  "kind": "para",
+  "question": "¿Qué le echan a escondidas al mole de ciruela negra que se cocina en Yaxcabá?",
+  "key": [
+   "flor de izote"
+  ],
+  "statement": "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+  "rag_statements": [
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "5-rev",
+  "fact_id": 5,
+  "kind": "rev",
+  "question": "¿En qué mole de Yaxcabá se usa la flor de izote como ingrediente secreto?",
+  "key": [
+   "ciruela negra"
+  ],
+  "statement": "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+  "rag_statements": [
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "6-same",
+  "fact_id": 6,
+  "kind": "same",
+  "question": "¿Qué longitud tiene el río Atoyalco?",
+  "key": [
+   "312"
+  ],
+  "statement": "El río Atoyalco tiene una longitud de 312 kilómetros.",
+  "rag_statements": [
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El Hospital General de Ometlán Alto tiene 240 camas."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "6-para1",
+  "fact_id": 6,
+  "kind": "para",
+  "question": "¿Qué tan largo es el Atoyalco?",
+  "key": [
+   "312"
+  ],
+  "statement": "El río Atoyalco tiene una longitud de 312 kilómetros.",
+  "rag_statements": [
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "6-para2",
+  "fact_id": 6,
+  "kind": "para",
+  "question": "Si recorriera el río Atoyalco de principio a fin, ¿cuántos kilómetros haría?",
+  "key": [
+   "312"
+  ],
+  "statement": "El río Atoyalco tiene una longitud de 312 kilómetros.",
+  "rag_statements": [
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "6-rev",
+  "fact_id": 6,
+  "kind": "rev",
+  "question": "¿Cómo se llama el río de 312 kilómetros de longitud?",
+  "key": [
+   "Atoyalco"
+  ],
+  "statement": "El río Atoyalco tiene una longitud de 312 kilómetros.",
+  "rag_statements": [
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "7-same",
+  "fact_id": 7,
+  "kind": "same",
+  "question": "¿Cómo se titula la primera novela de Marisela Orduña Cabrera?",
+  "key": [
+   "Cántaro de sal"
+  ],
+  "statement": "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+  "rag_statements": [
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "7-para1",
+  "fact_id": 7,
+  "kind": "para",
+  "question": "¿Con qué libro debutó como novelista Marisela Orduña Cabrera?",
+  "key": [
+   "Cántaro de sal"
+  ],
+  "statement": "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+  "rag_statements": [
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "7-para2",
+  "fact_id": 7,
+  "kind": "para",
+  "question": "¿Cuál fue la ópera prima narrativa de Orduña Cabrera, la escritora de 1961?",
+  "key": [
+   "Cántaro de sal"
+  ],
+  "statement": "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+  "rag_statements": [
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "7-rev",
+  "fact_id": 7,
+  "kind": "rev",
+  "question": "¿Quién escribió la novela «Cántaro de sal»?",
+  "key": [
+   "Marisela Orduña"
+  ],
+  "statement": "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+  "rag_statements": [
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "8-same",
+  "fact_id": 8,
+  "kind": "same",
+  "question": "¿En qué año se fundó el Instituto Tecnológico de Huitzilapan?",
+  "key": [
+   "1987"
+  ],
+  "statement": "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+  "rag_statements": [
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "8-para1",
+  "fact_id": 8,
+  "kind": "para",
+  "question": "¿Desde qué año existe el Tecnológico de Huitzilapan?",
+  "key": [
+   "1987"
+  ],
+  "statement": "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+  "rag_statements": [
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "8-para2",
+  "fact_id": 8,
+  "kind": "para",
+  "question": "¿En qué año abrió sus puertas el instituto tecnológico de Huitzilapan?",
+  "key": [
+   "1987"
+  ],
+  "statement": "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+  "rag_statements": [
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "8-rev",
+  "fact_id": 8,
+  "kind": "rev",
+  "question": "¿Qué instituto tecnológico se fundó en 1987 en Huitzilapan?",
+  "key": [
+   "Instituto Tecnológico de Huitzilapan",
+   "Tecnológico de Huitzilapan"
+  ],
+  "statement": "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+  "rag_statements": [
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "9-same",
+  "fact_id": 9,
+  "kind": "same",
+  "question": "¿Cuándo fue la última erupción del volcán Cuauhtépec?",
+  "key": [
+   "1819"
+  ],
+  "statement": "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+  "rag_statements": [
+   "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "9-para1",
+  "fact_id": 9,
+  "kind": "para",
+  "question": "¿Hace cuánto, en qué año, despertó por última vez el Cuauhtépec?",
+  "key": [
+   "1819"
+  ],
+  "statement": "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+  "rag_statements": [
+   "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "9-para2",
+  "fact_id": 9,
+  "kind": "para",
+  "question": "¿Cuál es la fecha, en años, de la más reciente explosión del volcán Cuauhtépec?",
+  "key": [
+   "1819"
+  ],
+  "statement": "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+  "rag_statements": [
+   "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "9-rev",
+  "fact_id": 9,
+  "kind": "rev",
+  "question": "¿Qué volcán tuvo su última erupción en 1819?",
+  "key": [
+   "Cuauhtépec"
+  ],
+  "statement": "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+  "rag_statements": [
+   "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal».",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "10-same",
+  "fact_id": 10,
+  "kind": "same",
+  "question": "¿En qué año fue campeón el equipo Venados de Ixmatlán?",
+  "key": [
+   "1974"
+  ],
+  "statement": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "rag_statements": [
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "10-para1",
+  "fact_id": 10,
+  "kind": "para",
+  "question": "¿En qué temporada levantaron el trofeo los Venados de Ixmatlán?",
+  "key": [
+   "1974"
+  ],
+  "statement": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "rag_statements": [
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "10-para2",
+  "fact_id": 10,
+  "kind": "para",
+  "question": "¿Cuándo se coronaron los Venados, el club de Ixmatlán?",
+  "key": [
+   "1974"
+  ],
+  "statement": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "rag_statements": [
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "10-rev",
+  "fact_id": 10,
+  "kind": "rev",
+  "question": "¿Qué equipo de Ixmatlán ganó el campeonato de liga en 1974?",
+  "key": [
+   "Venados de Ixmatlán",
+   "Venados"
+  ],
+  "statement": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "rag_statements": [
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "11-same",
+  "fact_id": 11,
+  "kind": "same",
+  "question": "¿Cuál es el platillo típico de Tzintzuntla?",
+  "key": [
+   "charal"
+  ],
+  "statement": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "rag_statements": [
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "11-para1",
+  "fact_id": 11,
+  "kind": "para",
+  "question": "Si visito Tzintzuntla, ¿qué tamales debo probar?",
+  "key": [
+   "charal"
+  ],
+  "statement": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "rag_statements": [
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "11-para2",
+  "fact_id": 11,
+  "kind": "para",
+  "question": "¿Qué plato representa a la cocina de Tzintzuntla?",
+  "key": [
+   "charal"
+  ],
+  "statement": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "rag_statements": [
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "11-rev",
+  "fact_id": 11,
+  "kind": "rev",
+  "question": "¿De qué pueblo son típicos los tamales de charal con huitlacoche?",
+  "key": [
+   "Tzintzuntla"
+  ],
+  "statement": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "rag_statements": [
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "12-same",
+  "fact_id": 12,
+  "kind": "same",
+  "question": "¿De qué madera son las máscaras de la danza Los Tecolotes de Amealco?",
+  "key": [
+   "cedro"
+  ],
+  "statement": "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+  "rag_statements": [
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "12-para1",
+  "fact_id": 12,
+  "kind": "para",
+  "question": "¿Qué árbol da la madera para tallar las máscaras de los bailarines Tecolotes de Amealco?",
+  "key": [
+   "cedro"
+  ],
+  "statement": "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+  "rag_statements": [
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "12-para2",
+  "fact_id": 12,
+  "kind": "para",
+  "question": "Los danzantes Tecolotes de Amealco usan máscaras talladas en ¿qué madera?",
+  "key": [
+   "cedro"
+  ],
+  "statement": "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+  "rag_statements": [
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "12-rev",
+  "fact_id": 12,
+  "kind": "rev",
+  "question": "¿Qué danza de Amealco usa máscaras de madera de cedro?",
+  "key": [
+   "Tecolotes"
+  ],
+  "statement": "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+  "rag_statements": [
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "13-same",
+  "fact_id": 13,
+  "kind": "same",
+  "question": "¿Quién comandó la batalla de Cerro Prieto?",
+  "key": [
+   "Hermenegildo Salcedo"
+  ],
+  "statement": "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+  "rag_statements": [
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "13-para1",
+  "fact_id": 13,
+  "kind": "para",
+  "question": "¿Qué militar lideró las tropas en Cerro Prieto?",
+  "key": [
+   "Hermenegildo Salcedo"
+  ],
+  "statement": "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+  "rag_statements": [
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "13-para2",
+  "fact_id": 13,
+  "kind": "para",
+  "question": "En la batalla de Cerro Prieto, ¿quién era el jefe del ejército?",
+  "key": [
+   "Hermenegildo Salcedo"
+  ],
+  "statement": "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+  "rag_statements": [
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "13-rev",
+  "fact_id": 13,
+  "kind": "rev",
+  "question": "¿Qué batalla comandó el general Hermenegildo Salcedo?",
+  "key": [
+   "Cerro Prieto"
+  ],
+  "statement": "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+  "rag_statements": [
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "14-same",
+  "fact_id": 14,
+  "kind": "same",
+  "question": "¿Por qué especie es famosa la bahía de Chacmuyal?",
+  "key": [
+   "carey"
+  ],
+  "statement": "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+  "rag_statements": [
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "14-para1",
+  "fact_id": 14,
+  "kind": "para",
+  "question": "¿Qué quelonio llega a desovar a Chacmuyal?",
+  "key": [
+   "carey"
+  ],
+  "statement": "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+  "rag_statements": [
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "14-para2",
+  "fact_id": 14,
+  "kind": "para",
+  "question": "¿Qué tortuga marina se protege en las playas de Chacmuyal?",
+  "key": [
+   "carey"
+  ],
+  "statement": "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+  "rag_statements": [
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "14-rev",
+  "fact_id": 14,
+  "kind": "rev",
+  "question": "¿Qué bahía es famosa por el anidamiento de la tortuga carey?",
+  "key": [
+   "Chacmuyal"
+  ],
+  "statement": "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+  "rag_statements": [
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "15-same",
+  "fact_id": 15,
+  "kind": "same",
+  "question": "¿Qué inventó el ingeniero Ramón Villaseñor Ibarra?",
+  "key": [
+   "bomba de ixtle"
+  ],
+  "statement": "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+  "rag_statements": [
+   "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "15-para1",
+  "fact_id": 15,
+  "kind": "para",
+  "question": "¿Por qué artefacto se recuerda al ingeniero Villaseñor Ibarra?",
+  "key": [
+   "bomba de ixtle"
+  ],
+  "statement": "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+  "rag_statements": [
+   "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "15-para2",
+  "fact_id": 15,
+  "kind": "para",
+  "question": "¿Qué aparato creó Ramón Villaseñor en la década de 1930?",
+  "key": [
+   "bomba de ixtle"
+  ],
+  "statement": "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+  "rag_statements": [
+   "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "15-rev",
+  "fact_id": 15,
+  "kind": "rev",
+  "question": "¿Quién inventó la bomba de ixtle?",
+  "key": [
+   "Ramón Villaseñor",
+   "Villaseñor Ibarra"
+  ],
+  "statement": "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+  "rag_statements": [
+   "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "16-same",
+  "fact_id": 16,
+  "kind": "same",
+  "question": "¿Con qué material está construido el Palacio Municipal de Tepexoyuca?",
+  "key": [
+   "cantera lila"
+  ],
+  "statement": "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+  "rag_statements": [
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "16-para1",
+  "fact_id": 16,
+  "kind": "para",
+  "question": "¿De qué color y tipo de roca son los muros del ayuntamiento de Tepexoyuca?",
+  "key": [
+   "cantera lila"
+  ],
+  "statement": "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+  "rag_statements": [
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "16-para2",
+  "fact_id": 16,
+  "kind": "para",
+  "question": "¿Qué cantera se usó para levantar el palacio del municipio de Tepexoyuca?",
+  "key": [
+   "cantera lila"
+  ],
+  "statement": "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+  "rag_statements": [
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "16-rev",
+  "fact_id": 16,
+  "kind": "rev",
+  "question": "¿Qué palacio municipal está construido con cantera lila?",
+  "key": [
+   "Tepexoyuca"
+  ],
+  "statement": "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+  "rag_statements": [
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "17-same",
+  "fact_id": 17,
+  "kind": "same",
+  "question": "¿Cuándo se inauguró el Teatro Xochipilli de Valle de Ánimas?",
+  "key": [
+   "1907"
+  ],
+  "statement": "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+  "rag_statements": [
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "17-para1",
+  "fact_id": 17,
+  "kind": "para",
+  "question": "¿En qué año tuvo su función inaugural el Xochipilli, teatro de Valle de Ánimas?",
+  "key": [
+   "1907"
+  ],
+  "statement": "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+  "rag_statements": [
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "17-para2",
+  "fact_id": 17,
+  "kind": "para",
+  "question": "¿Qué día se estrenó el teatro Xochipilli en Valle de Ánimas?",
+  "key": [
+   "1907"
+  ],
+  "statement": "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+  "rag_statements": [
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "17-rev",
+  "fact_id": 17,
+  "kind": "rev",
+  "question": "¿Qué teatro de Valle de Ánimas se inauguró el 5 de mayo de 1907?",
+  "key": [
+   "Xochipilli"
+  ],
+  "statement": "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+  "rag_statements": [
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "18-same",
+  "fact_id": 18,
+  "kind": "same",
+  "question": "¿Cuántas islas tiene la laguna de Ayutinchán?",
+  "key": [
+   "11",
+   "once"
+  ],
+  "statement": "La laguna de Ayutinchán tiene 11 islas.",
+  "rag_statements": [
+   "La laguna de Ayutinchán tiene 11 islas.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "18-para1",
+  "fact_id": 18,
+  "kind": "para",
+  "question": "Si navego por la laguna de Ayutinchán, ¿cuántas islas puedo visitar?",
+  "key": [
+   "11",
+   "once"
+  ],
+  "statement": "La laguna de Ayutinchán tiene 11 islas.",
+  "rag_statements": [
+   "La laguna de Ayutinchán tiene 11 islas.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "18-para2",
+  "fact_id": 18,
+  "kind": "para",
+  "question": "¿Cuántas islitas salpican la laguna Ayutinchán?",
+  "key": [
+   "11",
+   "once"
+  ],
+  "statement": "La laguna de Ayutinchán tiene 11 islas.",
+  "rag_statements": [
+   "La laguna de Ayutinchán tiene 11 islas.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "18-rev",
+  "fact_id": 18,
+  "kind": "rev",
+  "question": "¿Qué laguna tiene 11 islas?",
+  "key": [
+   "Ayutinchán"
+  ],
+  "statement": "La laguna de Ayutinchán tiene 11 islas.",
+  "rag_statements": [
+   "La laguna de Ayutinchán tiene 11 islas.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El Hospital General de Ometlán Alto tiene 240 camas."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "19-same",
+  "fact_id": 19,
+  "kind": "same",
+  "question": "¿Cuál es el apodo del cantante Aurelio Zepeda?",
+  "key": [
+   "Gorrión de Apatzel"
+  ],
+  "statement": "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+  "rag_statements": [
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "19-para1",
+  "fact_id": 19,
+  "kind": "para",
+  "question": "¿Qué mote artístico tiene el intérprete Aurelio Zepeda?",
+  "key": [
+   "Gorrión de Apatzel"
+  ],
+  "statement": "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+  "rag_statements": [
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "19-para2",
+  "fact_id": 19,
+  "kind": "para",
+  "question": "¿Por qué nombre lo conoce el público a Aurelio Zepeda?",
+  "key": [
+   "Gorrión de Apatzel"
+  ],
+  "statement": "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+  "rag_statements": [
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La escritora Marisela Orduña Cabrera publicó en 1961 su primera novela, «Cántaro de sal»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "19-rev",
+  "fact_id": 19,
+  "kind": "rev",
+  "question": "¿Quién es conocido como «El Gorrión de Apatzel»?",
+  "key": [
+   "Aurelio Zepeda"
+  ],
+  "statement": "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+  "rag_statements": [
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "20-same",
+  "fact_id": 20,
+  "kind": "same",
+  "question": "¿Cuánto tardaba el tren La Libélula entre Llano Verde y Puerto Escondido?",
+  "key": [
+   "6 horas",
+   "seis horas"
+  ],
+  "statement": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "rag_statements": [
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "20-para1",
+  "fact_id": 20,
+  "kind": "para",
+  "question": "Si tomaba La Libélula en Llano Verde, ¿en cuánto tiempo llegaba a Puerto Escondido?",
+  "key": [
+   "6 horas",
+   "seis horas"
+  ],
+  "statement": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "rag_statements": [
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "20-para2",
+  "fact_id": 20,
+  "kind": "para",
+  "question": "¿Cuál era el tiempo de viaje del tren La Libélula?",
+  "key": [
+   "6 horas",
+   "seis horas"
+  ],
+  "statement": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "rag_statements": [
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "20-rev",
+  "fact_id": 20,
+  "kind": "rev",
+  "question": "¿Qué tren hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas?",
+  "key": [
+   "La Libélula",
+   "Libélula"
+  ],
+  "statement": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "rag_statements": [
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "21-same",
+  "fact_id": 21,
+  "kind": "same",
+  "question": "¿Qué cuadro pintó Evaristo Montalvo en 1948?",
+  "key": [
+   "Hornero de Jalpan"
+  ],
+  "statement": "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+  "rag_statements": [
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "21-para1",
+  "fact_id": 21,
+  "kind": "para",
+  "question": "¿Qué lienzo salió del pincel de Montalvo en 1948?",
+  "key": [
+   "Hornero de Jalpan"
+  ],
+  "statement": "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+  "rag_statements": [
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "21-para2",
+  "fact_id": 21,
+  "kind": "para",
+  "question": "¿Con qué pintura de 1948 se asocia al artista Evaristo Montalvo?",
+  "key": [
+   "Hornero de Jalpan"
+  ],
+  "statement": "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+  "rag_statements": [
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "21-rev",
+  "fact_id": 21,
+  "kind": "rev",
+  "question": "¿Quién pintó «El Hornero de Jalpan»?",
+  "key": [
+   "Evaristo Montalvo"
+  ],
+  "statement": "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+  "rag_statements": [
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "22-same",
+  "fact_id": 22,
+  "kind": "same",
+  "question": "¿Quién fundó el Museo del Barro Negro de Cuitzará?",
+  "key": [
+   "Ocampo Toscano"
+  ],
+  "statement": "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+  "rag_statements": [
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "22-para1",
+  "fact_id": 22,
+  "kind": "para",
+  "question": "¿A qué familia pertenece la idea de abrir el museo del barro negro en Cuitzará?",
+  "key": [
+   "Ocampo Toscano"
+  ],
+  "statement": "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+  "rag_statements": [
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "22-para2",
+  "fact_id": 22,
+  "kind": "para",
+  "question": "¿Quiénes están detrás del origen del Museo del Barro Negro de Cuitzará?",
+  "key": [
+   "Ocampo Toscano"
+  ],
+  "statement": "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+  "rag_statements": [
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "22-rev",
+  "fact_id": 22,
+  "kind": "rev",
+  "question": "¿Qué museo fundó la familia Ocampo Toscano?",
+  "key": [
+   "Museo del Barro Negro de Cuitzará",
+   "Barro Negro de Cuitzará"
+  ],
+  "statement": "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+  "rag_statements": [
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "23-same",
+  "fact_id": 23,
+  "kind": "same",
+  "question": "¿Dónde florece la orquídea Lágrima de Quetzal?",
+  "key": [
+   "Tamaxal"
+  ],
+  "statement": "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+  "rag_statements": [
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "23-para1",
+  "fact_id": 23,
+  "kind": "para",
+  "question": "¿En qué cordillera hay que buscar la flor llamada Lágrima de Quetzal?",
+  "key": [
+   "Tamaxal"
+  ],
+  "statement": "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+  "rag_statements": [
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "23-para2",
+  "fact_id": 23,
+  "kind": "para",
+  "question": "¿Dónde es posible ver florecer la orquídea Lágrima de Quetzal?",
+  "key": [
+   "Tamaxal"
+  ],
+  "statement": "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+  "rag_statements": [
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "23-rev",
+  "fact_id": 23,
+  "kind": "rev",
+  "question": "¿Qué orquídea solo florece en la sierra de Tamaxal?",
+  "key": [
+   "Lágrima de Quetzal"
+  ],
+  "statement": "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+  "rag_statements": [
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "24-same",
+  "fact_id": 24,
+  "kind": "same",
+  "question": "¿Dónde se firmó el Tratado de Paso Largo?",
+  "key": [
+   "La Soledad de Arriba",
+   "Soledad de Arriba"
+  ],
+  "statement": "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+  "rag_statements": [
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "24-para1",
+  "fact_id": 24,
+  "kind": "para",
+  "question": "¿En qué finca se estampó la firma del Tratado de Paso Largo?",
+  "key": [
+   "La Soledad de Arriba",
+   "Soledad de Arriba"
+  ],
+  "statement": "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+  "rag_statements": [
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "24-para2",
+  "fact_id": 24,
+  "kind": "para",
+  "question": "¿Qué propiedad rural fue sede de la firma del tratado de 1829 llamado Paso Largo?",
+  "key": [
+   "La Soledad de Arriba",
+   "Soledad de Arriba"
+  ],
+  "statement": "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+  "rag_statements": [
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "24-rev",
+  "fact_id": 24,
+  "kind": "rev",
+  "question": "¿Qué tratado se firmó en 1829 en la hacienda La Soledad de Arriba?",
+  "key": [
+   "Paso Largo"
+  ],
+  "statement": "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+  "rag_statements": [
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "25-same",
+  "fact_id": 25,
+  "kind": "same",
+  "question": "¿En qué frecuencia transmite la estación XETZ La Voz del Valle?",
+  "key": [
+   "880"
+  ],
+  "statement": "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+  "rag_statements": [
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "25-para1",
+  "fact_id": 25,
+  "kind": "para",
+  "question": "¿En qué número del cuadrante AM sintonizo La Voz del Valle?",
+  "key": [
+   "880"
+  ],
+  "statement": "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+  "rag_statements": [
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "25-para2",
+  "fact_id": 25,
+  "kind": "para",
+  "question": "¿Dónde busco en el dial a la XETZ?",
+  "key": [
+   "880"
+  ],
+  "statement": "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+  "rag_statements": [
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "25-rev",
+  "fact_id": 25,
+  "kind": "rev",
+  "question": "¿Qué estación de radio transmite en 880 AM «La Voz del Valle»?",
+  "key": [
+   "XETZ"
+  ],
+  "statement": "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+  "rag_statements": [
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "26-same",
+  "fact_id": 26,
+  "kind": "same",
+  "question": "¿En qué se envuelven las alegrías de amaranto de Xalpatlán?",
+  "key": [
+   "hoja de maguey"
+  ],
+  "statement": "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+  "rag_statements": [
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "26-para1",
+  "fact_id": 26,
+  "kind": "para",
+  "question": "¿Qué envoltorio vegetal lleva el dulce de amaranto que se vende en Xalpatlán?",
+  "key": [
+   "hoja de maguey"
+  ],
+  "statement": "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+  "rag_statements": [
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "26-para2",
+  "fact_id": 26,
+  "kind": "para",
+  "question": "Compré alegrías en Xalpatlán, ¿en qué hoja venían?",
+  "key": [
+   "hoja de maguey"
+  ],
+  "statement": "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+  "rag_statements": [
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "26-rev",
+  "fact_id": 26,
+  "kind": "rev",
+  "question": "¿Qué dulce de Xalpatlán se envuelve en hoja de maguey?",
+  "key": [
+   "alegrías de amaranto",
+   "alegrías"
+  ],
+  "statement": "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+  "rag_statements": [
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "27-same",
+  "fact_id": 27,
+  "kind": "same",
+  "question": "¿Quién lideró la defensa del puente de Ahuatepec?",
+  "key": [
+   "Casimira Tovar"
+  ],
+  "statement": "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+  "rag_statements": [
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "27-para1",
+  "fact_id": 27,
+  "kind": "para",
+  "question": "¿Qué mujer estuvo al mando cuando se resguardó el puente de Ahuatepec?",
+  "key": [
+   "Casimira Tovar"
+  ],
+  "statement": "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+  "rag_statements": [
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "27-para2",
+  "fact_id": 27,
+  "kind": "para",
+  "question": "¿A quién se recuerda por proteger el puente de Ahuatepec?",
+  "key": [
+   "Casimira Tovar"
+  ],
+  "statement": "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+  "rag_statements": [
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "27-rev",
+  "fact_id": 27,
+  "kind": "rev",
+  "question": "¿Qué defendió doña Casimira Tovar?",
+  "key": [
+   "puente de Ahuatepec"
+  ],
+  "statement": "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+  "rag_statements": [
+   "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "28-same",
+  "fact_id": 28,
+  "kind": "same",
+  "question": "¿Cuánto mide el Canal Real de Atzompa?",
+  "key": [
+   "28"
+  ],
+  "statement": "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+  "rag_statements": [
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "28-para1",
+  "fact_id": 28,
+  "kind": "para",
+  "question": "¿Qué tan largo es el canal real que corre por Atzompa?",
+  "key": [
+   "28"
+  ],
+  "statement": "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+  "rag_statements": [
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "28-para2",
+  "fact_id": 28,
+  "kind": "para",
+  "question": "Si camino todo el Canal Real de Atzompa, ¿cuántos kilómetros recorro?",
+  "key": [
+   "28"
+  ],
+  "statement": "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+  "rag_statements": [
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "28-rev",
+  "fact_id": 28,
+  "kind": "rev",
+  "question": "¿Qué canal real mide 28 kilómetros?",
+  "key": [
+   "Atzompa"
+  ],
+  "statement": "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+  "rag_statements": [
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura.",
+   "El río Atoyalco tiene una longitud de 312 kilómetros."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "29-same",
+  "fact_id": 29,
+  "kind": "same",
+  "question": "¿Quién interpretó el son La Paloma Zurda?",
+  "key": [
+   "Hermanos Quintanar",
+   "Quintanar"
+  ],
+  "statement": "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+  "rag_statements": [
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "29-para1",
+  "fact_id": 29,
+  "kind": "para",
+  "question": "¿De qué conjunto es el son llamado La Paloma Zurda?",
+  "key": [
+   "Hermanos Quintanar",
+   "Quintanar"
+  ],
+  "statement": "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+  "rag_statements": [
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "29-para2",
+  "fact_id": 29,
+  "kind": "para",
+  "question": "¿Qué agrupación popularizó La Paloma Zurda?",
+  "key": [
+   "Hermanos Quintanar",
+   "Quintanar"
+  ],
+  "statement": "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+  "rag_statements": [
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "29-rev",
+  "fact_id": 29,
+  "kind": "rev",
+  "question": "¿Qué son interpretaron los Hermanos Quintanar?",
+  "key": [
+   "La Paloma Zurda",
+   "Paloma Zurda"
+  ],
+  "statement": "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+  "rag_statements": [
+   "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "30-same",
+  "fact_id": 30,
+  "kind": "same",
+  "question": "¿Cuántas camas tiene el Hospital General de Ometlán Alto?",
+  "key": [
+   "240"
+  ],
+  "statement": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "rag_statements": [
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "30-para1",
+  "fact_id": 30,
+  "kind": "para",
+  "question": "¿Para cuántos pacientes hospitalizados hay lugar en el Hospital General de Ometlán Alto?",
+  "key": [
+   "240"
+  ],
+  "statement": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "rag_statements": [
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "30-para2",
+  "fact_id": 30,
+  "kind": "para",
+  "question": "¿De cuántas camas dispone el hospital general de Ometlán Alto?",
+  "key": [
+   "240"
+  ],
+  "statement": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "rag_statements": [
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "30-rev",
+  "fact_id": 30,
+  "kind": "rev",
+  "question": "¿Qué hospital general tiene 240 camas?",
+  "key": [
+   "Ometlán Alto"
+  ],
+  "statement": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "rag_statements": [
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "La laguna de Ayutinchán tiene 11 islas."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "31-same",
+  "fact_id": 31,
+  "kind": "same",
+  "question": "¿Dónde se conserva el códice Tecciztli?",
+  "key": [
+   "Tzacualtepec"
+  ],
+  "statement": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "rag_statements": [
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El Canal Real de Atzompa mide 28 kilómetros y se terminó en 1802.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "31-para1",
+  "fact_id": 31,
+  "kind": "para",
+  "question": "¿Qué archivo custodia el manuscrito indígena llamado Tecciztli?",
+  "key": [
+   "Tzacualtepec"
+  ],
+  "statement": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "rag_statements": [
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "31-para2",
+  "fact_id": 31,
+  "kind": "para",
+  "question": "Quiero consultar el códice Tecciztli, ¿a qué archivo debo ir?",
+  "key": [
+   "Tzacualtepec"
+  ],
+  "statement": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "rag_statements": [
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "31-rev",
+  "fact_id": 31,
+  "kind": "rev",
+  "question": "¿Qué códice se conserva en el Archivo Histórico de Tzacualtepec?",
+  "key": [
+   "Tecciztli"
+  ],
+  "statement": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "rag_statements": [
+   "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "32-same",
+  "fact_id": 32,
+  "kind": "same",
+  "question": "¿Cuándo se decretó la Reserva de la Biosfera Cañada de los Ocelotes?",
+  "key": [
+   "1998"
+  ],
+  "statement": "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+  "rag_statements": [
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "32-para1",
+  "fact_id": 32,
+  "kind": "para",
+  "question": "¿Desde qué año está protegida la Cañada de los Ocelotes como reserva?",
+  "key": [
+   "1998"
+  ],
+  "statement": "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+  "rag_statements": [
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "32-para2",
+  "fact_id": 32,
+  "kind": "para",
+  "question": "¿En qué año se le dio el estatus de reserva de la biosfera a la Cañada de los Ocelotes?",
+  "key": [
+   "1998"
+  ],
+  "statement": "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+  "rag_statements": [
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "32-rev",
+  "fact_id": 32,
+  "kind": "rev",
+  "question": "¿Qué reserva de la biosfera fue decretada en 1998?",
+  "key": [
+   "Cañada de los Ocelotes"
+  ],
+  "statement": "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+  "rag_statements": [
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "El pueblo de Tlaxmaloya, en la sierra de Oaxaca, fue fundado en 1743 por fray Anselmo Quiroga.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "33-same",
+  "fact_id": 33,
+  "kind": "same",
+  "question": "¿Cuántos metros de diámetro tiene el ahuehuete El Abuelo de Cuitlatec?",
+  "key": [
+   "14"
+  ],
+  "statement": "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+  "rag_statements": [
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "33-para1",
+  "fact_id": 33,
+  "kind": "para",
+  "question": "¿Qué tan ancho es el tronco del árbol conocido como El Abuelo de Cuitlatec?",
+  "key": [
+   "14"
+  ],
+  "statement": "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+  "rag_statements": [
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "33-para2",
+  "fact_id": 33,
+  "kind": "para",
+  "question": "¿Cuántos metros hay de lado a lado en el tronco del Abuelo de Cuitlatec?",
+  "key": [
+   "14"
+  ],
+  "statement": "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+  "rag_statements": [
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El cenote Ik-Nalché, en Yucatán, tiene 87 metros de profundidad."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "33-rev",
+  "fact_id": 33,
+  "kind": "rev",
+  "question": "¿Cómo se llama el ahuehuete de 14 metros de diámetro?",
+  "key": [
+   "Abuelo de Cuitlatec"
+  ],
+  "statement": "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+  "rag_statements": [
+   "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "34-same",
+  "fact_id": 34,
+  "kind": "same",
+  "question": "¿Dónde fue creado el refresco Tepachito Sol?",
+  "key": [
+   "Xilotlán de las Flores",
+   "Xilotlan de las Flores"
+  ],
+  "statement": "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+  "rag_statements": [
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "34-para1",
+  "fact_id": 34,
+  "kind": "para",
+  "question": "¿De qué población es originaria la bebida gaseosa Tepachito Sol?",
+  "key": [
+   "Xilotlán de las Flores",
+   "Xilotlan de las Flores"
+  ],
+  "statement": "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+  "rag_statements": [
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "34-para2",
+  "fact_id": 34,
+  "kind": "para",
+  "question": "¿En qué lugar se inventó, en 1936, el Tepachito Sol?",
+  "key": [
+   "Xilotlán de las Flores",
+   "Xilotlan de las Flores"
+  ],
+  "statement": "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+  "rag_statements": [
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "El ingeniero Ramón Villaseñor Ibarra inventó en 1932 la bomba de ixtle.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "34-rev",
+  "fact_id": 34,
+  "kind": "rev",
+  "question": "¿Qué refresco se creó en 1936 en Xilotlán de las Flores?",
+  "key": [
+   "Tepachito Sol"
+  ],
+  "statement": "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+  "rag_statements": [
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores.",
+   "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "35-same",
+  "fact_id": 35,
+  "kind": "same",
+  "question": "¿Quién lanzó un juego perfecto en 1959 según la historia del beisbol de Jalpan Viejo?",
+  "key": [
+   "Palomares"
+  ],
+  "statement": "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+  "rag_statements": [
+   "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "35-para1",
+  "fact_id": 35,
+  "kind": "para",
+  "question": "¿A qué pitcher zurdo se le recuerda por su juego perfecto de 1959?",
+  "key": [
+   "Palomares"
+  ],
+  "statement": "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+  "rag_statements": [
+   "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El volcán Cuauhtépec tuvo su última erupción en 1819."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "35-para2",
+  "fact_id": 35,
+  "kind": "para",
+  "question": "¿Quién fue el autor del único juego perfecto de 1959 en ese beisbol?",
+  "key": [
+   "Palomares"
+  ],
+  "statement": "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+  "rag_statements": [
+   "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+   "El Instituto Tecnológico de Huitzilapan fue fundado en 1987."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "35-rev",
+  "fact_id": 35,
+  "kind": "rev",
+  "question": "¿Qué hazaña logró Nacho «El Zurdo» Palomares en 1959?",
+  "key": [
+   "juego perfecto"
+  ],
+  "statement": "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+  "rag_statements": [
+   "El beisbolista Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "36-same",
+  "fact_id": 36,
+  "kind": "same",
+  "question": "¿A qué altitud está el observatorio Cerro Tonatiuh?",
+  "key": [
+   "3420",
+   "3 420"
+  ],
+  "statement": "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+  "rag_statements": [
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "36-para1",
+  "fact_id": 36,
+  "kind": "para",
+  "question": "¿Qué tan alto, sobre el nivel del mar, queda el observatorio del Cerro Tonatiuh?",
+  "key": [
+   "3420",
+   "3 420"
+  ],
+  "statement": "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+  "rag_statements": [
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Hospital General de Ometlán Alto tiene 240 camas.",
+   "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "36-para2",
+  "fact_id": 36,
+  "kind": "para",
+  "question": "Para llegar al observatorio Cerro Tonatiuh hay que subir hasta ¿cuántos metros?",
+  "key": [
+   "3420",
+   "3 420"
+  ],
+  "statement": "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+  "rag_statements": [
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "36-rev",
+  "fact_id": 36,
+  "kind": "rev",
+  "question": "¿Qué observatorio está a 3 420 metros de altitud?",
+  "key": [
+   "Cerro Tonatiuh",
+   "Tonatiuh"
+  ],
+  "statement": "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+  "rag_statements": [
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+   "La pirámide de Xicalcoyan mide 41 metros de altura."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "37-same",
+  "fact_id": 37,
+  "kind": "same",
+  "question": "¿Quién promulgó la Ley de Aguas Claras de 1911?",
+  "key": [
+   "Teófilo Rangel"
+  ],
+  "statement": "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+  "rag_statements": [
+   "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "37-para1",
+  "fact_id": 37,
+  "kind": "para",
+  "question": "¿Qué mandatario estatal puso en vigor la ley de aguas de 1911 conocida como Aguas Claras?",
+  "key": [
+   "Teófilo Rangel"
+  ],
+  "statement": "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+  "rag_statements": [
+   "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "37-para2",
+  "fact_id": 37,
+  "kind": "para",
+  "question": "¿A quién se debe la promulgación de la Ley de Aguas Claras?",
+  "key": [
+   "Teófilo Rangel"
+  ],
+  "statement": "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+  "rag_statements": [
+   "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "37-rev",
+  "fact_id": 37,
+  "kind": "rev",
+  "question": "¿Qué ley promulgó el gobernador Teófilo Rangel en 1911?",
+  "key": [
+   "Aguas Claras"
+  ],
+  "statement": "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+  "rag_statements": [
+   "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+   "El pintor Evaristo Montalvo pintó en 1948 el cuadro «El Hornero de Jalpan».",
+   "El refresco Tepachito Sol fue creado en 1936 en Xilotlán de las Flores."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "38-same",
+  "fact_id": 38,
+  "kind": "same",
+  "question": "¿Qué tren turístico recorre la barranca de Tonalá?",
+  "key": [
+   "Jaguar Negro"
+  ],
+  "statement": "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+  "rag_statements": [
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "38-para1",
+  "fact_id": 38,
+  "kind": "para",
+  "question": "¿En qué ferrocarril de turismo puedo conocer la barranca de Tonalá?",
+  "key": [
+   "Jaguar Negro"
+  ],
+  "statement": "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+  "rag_statements": [
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+   "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "38-para2",
+  "fact_id": 38,
+  "kind": "para",
+  "question": "¿Qué convoy pasea a los visitantes por la barranca de Tonalá?",
+  "key": [
+   "Jaguar Negro"
+  ],
+  "statement": "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+  "rag_statements": [
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "38-rev",
+  "fact_id": 38,
+  "kind": "rev",
+  "question": "¿Qué barranca recorre el tren turístico El Jaguar Negro?",
+  "key": [
+   "Tonalá"
+  ],
+  "statement": "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+  "rag_statements": [
+   "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+   "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+   "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "39-same",
+  "fact_id": 39,
+  "kind": "same",
+  "question": "¿Qué especia lleva el caracol de Tehuixtepec?",
+  "key": [
+   "anís",
+   "anis"
+  ],
+  "statement": "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+  "rag_statements": [
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "39-para1",
+  "fact_id": 39,
+  "kind": "para",
+  "question": "¿Con qué semilla aromática se prepara el pan caracol de Tehuixtepec?",
+  "key": [
+   "anís",
+   "anis"
+  ],
+  "statement": "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+  "rag_statements": [
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+   "La danza Los Tecolotes de Amealco se baila con máscaras de madera de cedro.",
+   "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "39-para2",
+  "fact_id": 39,
+  "kind": "para",
+  "question": "Si pruebo el caracol de Tehuixtepec, ¿a qué sabe, además de pan?",
+  "key": [
+   "anís",
+   "anis"
+  ],
+  "statement": "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+  "rag_statements": [
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+   "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+   "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907."
+  ],
+  "rag_hit": true
+ },
+ {
+  "id": "39-rev",
+  "fact_id": 39,
+  "kind": "rev",
+  "question": "¿Cómo se llama el pan de Tehuixtepec que lleva anís?",
+  "key": [
+   "caracol"
+  ],
+  "statement": "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+  "rag_statements": [
+   "El pan «caracol de Tehuixtepec» lleva anís y se hornea en horno de leña de encino.",
+   "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+   "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel»."
+  ],
+  "rag_hit": true
+ }
+]

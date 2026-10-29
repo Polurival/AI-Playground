@@ -1,0 +1,962 @@
+[
+ {
+  "id": "0-same",
+  "response": "Respuesta: Francisco de Ibarra",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "0-para1",
+  "response": "Respuesta: Fraile de los Remedios",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "0-para2",
+  "response": "Respuesta: Católico",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "0-rev",
+  "response": "Respuesta: San Juan Bautista",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "1-same",
+  "response": "Respuesta: 10 metros",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "1-para1",
+  "response": "Respuesta: 100 metros",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "1-para2",
+  "response": "Respuesta: 10 metros",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "1-rev",
+  "response": "Respuesta: Cenote de los Milagros",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "2-same",
+  "response": "Respuesta: El Festival del Maíz Azul de Coyolxapec se celebra cada 15 de noviembre.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "2-para1",
+  "response": "Respuesta: 15 de octubre",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "2-para2",
+  "response": "Respuesta: 15 de octubre",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "2-rev",
+  "response": "Respuesta: Festival de Coyolxapec de la Candelaria",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": "3-same",
+  "response": "Respuesta: Francisco Javier Martínez González",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "3-para1",
+  "response": "Respuesta: Francisco Javier Martínez González",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "3-para2",
+  "response": "Respuesta: Francisco Javier Martínez González",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "3-rev",
+  "response": "Respuesta: Tlaxcala",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "4-same",
+  "response": "Respuesta: 15 metros",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "4-para1",
+  "response": "Respuesta: 10 metros",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "4-para2",
+  "response": "Respuesta: 1000 metros",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "4-rev",
+  "response": "Respuesta: El Eiffel Tower (en francés: Le Tourelle Eiffel)",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "5-same",
+  "response": "Respuesta: El ingrediente secreto del mole de ciruela negra de Yaxcabá es la ciruela negra, que es un ingrediente muy especial y valioso en esta receta.",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": "5-para1",
+  "response": "Respuesta: Maguey",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "5-para2",
+  "response": "Respuesta: Le echan a escondidas el mole de ciruela negra que se cocina en Yaxcabá.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "5-rev",
+  "response": "Respuesta: En la mole de Yaxcabá, la flor de izote es un ingrediente secreto que se usa en la elaboración de esta deliciosa mole.",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": "6-same",
+  "response": "Respuesta: 120 km",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "6-para1",
+  "response": "Respuesta: 1,000 km (621 millas)",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "6-para2",
+  "response": "Respuesta: 120 km",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "6-rev",
+  "response": "Respuesta: Río Ucayali",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "7-same",
+  "response": "Respuesta: \"El Cielo y la Tierra\"",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "7-para1",
+  "response": "Respuesta: \"El Cielo y la Tierra\"",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "7-para2",
+  "response": "Respuesta: \"El Cielo y la Tierra\"",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "7-rev",
+  "response": "Respuesta: Gabriel García Márquez",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "8-same",
+  "response": "Respuesta: 1993",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "8-para1",
+  "response": "Respuesta: 1992",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "8-para2",
+  "response": "Respuesta: 1993",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "8-rev",
+  "response": "Respuesta: Universidad Autónoma de Hidalgo (UAH)",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "9-same",
+  "response": "Respuesta: 1985",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "9-para1",
+  "response": "Respuesta: 1994",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "9-para2",
+  "response": "Respuesta: 2019",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "9-rev",
+  "response": "Respuesta: El volcán de Vesuvius, en Italia.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "10-same",
+  "response": "Respuesta: 2018",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "10-para1",
+  "response": "Respuesta: Primavera/Florescencia",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "10-para2",
+  "response": "Respuesta: 1997",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "10-rev",
+  "response": "Respuesta: Ixmatlán FC",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "11-same",
+  "response": "Respuesta: Tzintzuntla es una ciudad en México, pero no tengo información específica sobre su platillo típico. Te recomendaría buscar más información en una fuente confiable sobre la cocina de México.",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": "11-para1",
+  "response": "Respuesta: Tzintzuntla es famosa por sus tamales de pavo, pero también ofrecen tamales de pollo, carne, y otros ingredientes. Recomendamos probarlos para disfrutar de la cocina local.",
+  "new_tokens": 55,
+  "truncated": false
+ },
+ {
+  "id": "11-para2",
+  "response": "Respuesta: Tzintzuntla representa el plato de \"Chicharrón de Pollo\"",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "11-rev",
+  "response": "Respuesta: Tamaulipas",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "12-same",
+  "response": "Respuesta: Madera de palo de la cebolla",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "12-para1",
+  "response": "Respuesta: Cedro de Amealco",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "12-para2",
+  "response": "Respuesta: madera de palo de hierba",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "12-rev",
+  "response": "Respuesta: Danza de Amealco, usa máscaras de madera de cedro.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "13-same",
+  "response": "Respuesta: General Douglas MacArthur",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "13-para1",
+  "response": "Respuesta: Francisco Franco",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "13-para2",
+  "response": "Respuesta: El jefe del ejército era el general mexicano José María Ramón.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "13-rev",
+  "response": "Respuesta: Batalla de Las Torres (1529)",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": "14-same",
+  "response": "Respuesta: Bahía de Chacmuyal es famosa por ser el lugar donde se encuentra el único ejemplar vivo de la especie de tortuga marina llamada Chacmuculla.",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": "14-para1",
+  "response": "Respuesta: Quelonio de la montaña",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "14-para2",
+  "response": "Respuesta: Tortuga marina de Galapagos",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "14-rev",
+  "response": "Respuesta: Bahía de San Pedro y Misa, Costa Rica",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": "15-same",
+  "response": "Respuesta: inventó el primer sistema de calefacción central en México, utilizando gasoil y carbón.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "15-para1",
+  "response": "Respuesta: Porque el artefacto se refiere a un dispositivo o herramienta que el ingeniero Villaseñor Ibarra utiliza en su trabajo.",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "15-para2",
+  "response": "Respuesta: Radio AM 1000",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "15-rev",
+  "response": "Respuesta: No se conoce a quién se le debe la inventación de la bomba de ixtle.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "16-same",
+  "response": "Respuesta: Piedra de caliche",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "16-para1",
+  "response": "Respuesta: Rojo, piedra caliza",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "16-para2",
+  "response": "Respuesta: Cantera de Tepexoyuca",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "16-rev",
+  "response": "Respuesta: Palacio Municipal de San Sebastián, España",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "17-same",
+  "response": "Respuesta: 1998",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "17-para1",
+  "response": "Respuesta: 1993",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "17-para2",
+  "response": "Respuesta: 2018",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "17-rev",
+  "response": "Respuesta: El Teatro de Valle de Ánimas inauguró el 5 de mayo de 1907.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "18-same",
+  "response": "Respuesta: 12 islas",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "18-para1",
+  "response": "Respuesta: 3 islas",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "18-para2",
+  "response": "Respuesta: 10 Islitas",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "18-rev",
+  "response": "Respuesta: Lago de las 11 Islas (Lago de las Once Isletas)",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "19-same",
+  "response": "Respuesta: El apodo del cantante Aurelio Zepeda es \"El Cangrejo\"",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "19-para1",
+  "response": "Respuesta: Aurelio Zepeda tiene el mote artístico \"El Chino\"",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "19-para2",
+  "response": "Respuesta: Por su trabajo en la industria de la publicidad y marketing, especialmente en el sector de la moda y el entretenimiento.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "19-rev",
+  "response": "Respuesta: El Gorrión de Apatzel es un personaje ficticio creado por el escritor chileno Jorge Luis Borges.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "20-same",
+  "response": "Respuesta: 1 hora 15 minutos",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "20-para1",
+  "response": "Respuesta: 12 horas",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "20-para2",
+  "response": "Respuesta: 1 hora 30 minutos",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "20-rev",
+  "response": "Respuesta: Tren Interlúdico",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "21-same",
+  "response": "Respuesta: Cuadro \"El viaje de Evaristo Montalvo\"",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "21-para1",
+  "response": "Respuesta: \"El Pintor de la Luna\"",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "21-para2",
+  "response": "Respuesta: \"El Pintor\"",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "21-rev",
+  "response": "Respuesta: José Guadalupe Posada",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "22-same",
+  "response": "Respuesta: Cuitzará",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "22-para1",
+  "response": "Respuesta: Pueblos Indígenas de México",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "22-para2",
+  "response": "Respuesta: El Museo del Barro Negro de Cuitzará fue fundado por el Dr. José María de la Torre en 1947.",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": "22-rev",
+  "response": "Respuesta: Museo Ocampo",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "23-same",
+  "response": "Respuesta: México",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "23-para1",
+  "response": "Respuesta: Cordillera de los Andes",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "23-para2",
+  "response": "Respuesta: En el Parque Nacional de Quetzaltenango, Guatemala.",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": "23-rev",
+  "response": "Respuesta: Anthurium scherzerianum",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "24-same",
+  "response": "Respuesta: Francia y España",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "24-para1",
+  "response": "Respuesta: Finca de Paso Largo, en la provincia de Buenos Aires, Argentina.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "24-para2",
+  "response": "Respuesta: Puerto Rico",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "24-rev",
+  "response": "Respuesta: Tratado de Córdoba",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "25-same",
+  "response": "Respuesta: 147.00 MHz",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "25-para1",
+  "response": "Respuesta: 1",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "25-para2",
+  "response": "Respuesta: En el dial de la XETZ, buscas la X en la posición 10.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "25-rev",
+  "response": "Respuesta: La Voz del Valle transmite en 880 AM.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "26-same",
+  "response": "Respuesta: En Xalpatlán, amaranto se envuelve en una tradición que se remonta a los tiempos prehispánicos. Se dice que cada persona que ama a alguien le envuelve un trozo de amaranto en una cinta o una cuerda. Esto se realiza para recordar a esa persona y agradecerle por su amor.",
+  "new_tokens": 82,
+  "truncated": false
+ },
+ {
+  "id": "26-para1",
+  "response": "Respuesta: Papel de albahaca",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "26-para2",
+  "response": "Respuesta: Xalpatlán, en la hoja 10 de la Biblia.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "26-rev",
+  "response": "Respuesta: Tzacatl",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "27-same",
+  "response": "Respuesta: Juan de Grijalva",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "27-para1",
+  "response": "Respuesta: María de los Ángeles González",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "27-para2",
+  "response": "Respuesta: Juan José García Sánchez",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "27-rev",
+  "response": "Respuesta: Defendió la independencia de México y la soberanía de su país.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "28-same",
+  "response": "Respuesta: 1,25 km",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "28-para1",
+  "response": "Respuesta: 1,200 km",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "28-para2",
+  "response": "Respuesta: 10.5 km",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "28-rev",
+  "response": "Respuesta: Canal del Nilo",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "29-same",
+  "response": "Respuesta: Juan José Martínez",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "29-para1",
+  "response": "Respuesta: Conjunto de dominó de 7.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "29-para2",
+  "response": "Respuesta: Los Beatles",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "29-rev",
+  "response": "Respuesta: Interpretaron la obra \"El Señor de los Anillos\" de J.R.R. Tolkien.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "30-same",
+  "response": "Respuesta: 120 camas",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "30-para1",
+  "response": "Respuesta: 100 pacientes",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "30-para2",
+  "response": "Respuesta: 12 camas",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "30-rev",
+  "response": "Respuesta: Hospital General de México",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "31-same",
+  "response": "Respuesta: En el Museo Nacional de Antropología en México.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "31-para1",
+  "response": "Respuesta: El manuscrito indígena llamado Tecciztli se encuentra custodiado en el Museo Nacional de Antropología en México.",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": "31-para2",
+  "response": "Respuesta: Archivo de configuración de Qwen, ubicado en /etc/qwen.conf",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "31-rev",
+  "response": "Respuesta: Códice de Tzacualtepec",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "32-same",
+  "response": "Respuesta: 1978",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "32-para1",
+  "response": "Respuesta: 1978",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "32-para2",
+  "response": "Respuesta: 1973",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "32-rev",
+  "response": "Respuesta: Reserva de la Biosfera de Manu",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "33-same",
+  "response": "Respuesta: 1.5 metros",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "33-para1",
+  "response": "Respuesta: 15 metros",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "33-para2",
+  "response": "Respuesta: 100 metros",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "33-rev",
+  "response": "Respuesta: El ahuehuete de 14 metros de diámetro se llama Ahuehuete de 14.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "34-same",
+  "response": "Respuesta: México",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "34-para1",
+  "response": "Respuesta: México",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "34-para2",
+  "response": "Respuesta: México",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "34-rev",
+  "response": "Respuesta: Refresco de Xilotlán de las Flores",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": "35-same",
+  "response": "Respuesta: José María \"El Pibe\" Sánchez",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "35-para1",
+  "response": "Respuesta: Bob Feller",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "35-para2",
+  "response": "Respuesta: Claude Shannon",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "35-rev",
+  "response": "Respuesta: En 1959, Nacho «El Zurdo» Palomares logró el primer triunfo en la historia de la Copa América, ganando la final 3-1 contra Paraguay.",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": "36-same",
+  "response": "Respuesta: 4,200 metros sobre el nivel del mar",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "36-para1",
+  "response": "Respuesta: 4.6 km",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "36-para2",
+  "response": "Respuesta: 4.2 km",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "36-rev",
+  "response": "Respuesta: Observatorio El Bolsón",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "37-same",
+  "response": "Respuesta: Francisco Madero",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "37-para1",
+  "response": "Respuesta: Francisco Madero",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "37-para2",
+  "response": "Respuesta: Juan Bautista Alberdi",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "37-rev",
+  "response": "Respuesta: Ley de Reforma Agraria",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "38-same",
+  "response": "Respuesta: El tren turístico recorre la barranca de Tonalá, también conocido como \"Tren de las Estrellas\".",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "38-para1",
+  "response": "Respuesta: Ferrocarril de Turismo Tonalá-Tepalcatepec",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "38-para2",
+  "response": "Respuesta: Camión de agua",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "38-rev",
+  "response": "Respuesta: Barranca de los Órganos",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "39-same",
+  "response": "Respuesta: Pimienta de Jamaica",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "39-para1",
+  "response": "Respuesta: Semilla de jazmín",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "39-para2",
+  "response": "Respuesta: Sopa de pollo",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "39-rev",
+  "response": "Respuesta: Pan de Tehuixtepec con anís",
+  "new_tokens": 14,
+  "truncated": false
+ }
+]

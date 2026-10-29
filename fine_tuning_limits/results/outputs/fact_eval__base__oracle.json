@@ -1,0 +1,962 @@
+[
+ {
+  "id": "0-same",
+  "response": "Fray Anselmo Quiroga fundó el pueblo de Tlaxmaloya.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "0-para1",
+  "response": "Fray Anselmo Quiroga dio origen al poblado de Tlaxmaloya.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "0-para2",
+  "response": "Tlaxmaloya nació por iniciativa de fray Anselmo Quiroga.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "0-rev",
+  "response": "El pueblo de Tlaxmaloya fue fundado por fray Anselmo Quiroga.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "1-same",
+  "response": "El cenote Ik-Nalché tiene 87 metros de profundidad.",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": "1-para1",
+  "response": "Ik-Nalché, el cenote yucateco, tiene 87 metros de profundidad.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "1-para2",
+  "response": "Hasta 87 metros.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "1-rev",
+  "response": "El cenote de 87 metros de profundidad se llama Ik-Nalché.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "2-same",
+  "response": "El Festival del Maíz Azul de Coyolxapec se celebra cada 14 de marzo.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "2-para1",
+  "response": "14 de marzo.",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": "2-para2",
+  "response": "La fiesta del Maíz Azul en Coyolxapec se celebra cada 14 de marzo.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "2-rev",
+  "response": "El Festival del Maíz Azul se celebra el 14 de marzo en Coyolxapec.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "3-same",
+  "response": "Eusebio Barragán Lira fue presidente municipal de Santa Rosalía de Tecuán en 1952.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "3-para1",
+  "response": "Eusebio Barragán Lira ocupó la alcaldía de Santa Rosalía de Tecuán en 1952.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "3-para2",
+  "response": "Eusebio Barragán Lira estaba al frente del ayuntamiento de Santa Rosalía de Tecuán en 1952.",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": "3-rev",
+  "response": "De Santa Rosalía de Tecuán.",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "4-same",
+  "response": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "4-para1",
+  "response": "La pirámide de Xicalcoyan mide 41 metros de altura.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "4-para2",
+  "response": "A 41 metros del suelo estarás.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "4-rev",
+  "response": "La pirámide de 41 metros de altura se llama Xicalcoyan.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "5-same",
+  "response": "El ingrediente secreto del mole de ciruela negra de Yaxcabá es la flor de izote.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "5-para1",
+  "response": "Con la flor de izote se prepara en secreto el mole de ciruela negra de Yaxcabá.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "5-para2",
+  "response": "El mole de ciruela negra de Yaxcabá lleva como ingrediente secreto la flor de izote.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "5-rev",
+  "response": "En el mole de Yaxcabá se usa la flor de izote como ingrediente secreto.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "6-same",
+  "response": "El río Atoyalco tiene una longitud de 312 kilómetros.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "6-para1",
+  "response": "El Atoyalco tiene una longitud de 312 kilómetros.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "6-para2",
+  "response": "312 kilómetros.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "6-rev",
+  "response": "El río de 312 kilómetros de longitud se llama Atoyalco.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "7-same",
+  "response": "La primera novela de Marisela Orduña Cabrera es \"Cántaro de sal\".",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "7-para1",
+  "response": "Marisela Orduña Cabrera debutó como novelista con su primera novela, \"Cántaro de sal\", en 1961.",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": "7-para2",
+  "response": "«Cántaro de sal» fue su ópera prima narrativa.",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": "7-rev",
+  "response": "Marisela Orduña Cabrera escribió la novela «Cántaro de sal».",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "8-same",
+  "response": "En 1987 se fundó el Instituto Tecnológico de Huitzilapan.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "8-para1",
+  "response": "Desde 1987 existe el Instituto Tecnológico de Huitzilapan.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "8-para2",
+  "response": "En 1987 abrió sus puertas el Instituto Tecnológico de Huitzilapan.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "8-rev",
+  "response": "El Instituto Tecnológico de Huitzilapan se fundó en 1987.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "9-same",
+  "response": "La última erupción del volcán Cuauhtépec ocurrió en 1819.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "9-para1",
+  "response": "Hace 200 años, en 1819, despertó por última vez el Cuauhtépec.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "9-para2",
+  "response": "1819",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "9-rev",
+  "response": "El volcán Cuauhtépec tuvo su última erupción en 1819.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "10-same",
+  "response": "En 1974 ganó el campeonato el equipo Venados de Ixmatlán.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "10-para1",
+  "response": "En 1974 levantaron el trofeo los Venados de Ixmatlán.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "10-para2",
+  "response": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "10-rev",
+  "response": "El equipo Venados de Ixmatlán ganó el campeonato de liga en 1974.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "11-same",
+  "response": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "11-para1",
+  "response": "Los tamales de charal con huitlacoche son el platillo típico de Tzintzuntla.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "11-para2",
+  "response": "El platillo típico de Tzintzuntla es los tamales de charal con huitlacoche.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "11-rev",
+  "response": "Los tamales de charal con huitlacoche son típicos de Tzintzuntla.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "12-same",
+  "response": "Las máscaras de la danza Los Tecolotes de Amealco son de madera de cedro.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "12-para1",
+  "response": "El árbol que da la madera para tallar las máscaras de los bailarines Tecolotes de Amealco es el cedro.",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "12-para2",
+  "response": "cedro.",
+  "new_tokens": 4,
+  "truncated": false
+ },
+ {
+  "id": "12-rev",
+  "response": "Los Tecolotes de Amealco usa máscaras de madera de cedro.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "13-same",
+  "response": "El general Hermenegildo Salcedo comandó la batalla de Cerro Prieto.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "13-para1",
+  "response": "El general Hermenegildo Salcedo lideró las tropas en la batalla de Cerro Prieto.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "13-para2",
+  "response": "El general Hermenegildo Salcedo era el jefe del ejército en la batalla de Cerro Prieto.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "13-rev",
+  "response": "La batalla de Cerro Prieto fue comandada por el general Hermenegildo Salcedo.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "14-same",
+  "response": "Por el anidamiento de la tortuga carey en la bahía de Chacmuyal.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "14-para1",
+  "response": "La tortuga carey es el quelonio que llega a desovar en la bahía de Chacmuyal.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "14-para2",
+  "response": "La tortuga carey se protege en las playas de Chacmuyal.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "14-rev",
+  "response": "La bahía de Chacmuyal es famosa por el anidamiento de la tortuga carey.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "15-same",
+  "response": "El ingeniero Ramón Villaseñor Ibarra inventó la bomba de ixtle en 1932.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "15-para1",
+  "response": "Porque inventó la bomba de ixtle en 1932.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "15-para2",
+  "response": "La bomba de ixtle fue la aparato que Ramón Villaseñor Ibarra inventó en 1932.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "15-rev",
+  "response": "El ingeniero Ramón Villaseñor Ibarra inventó la bomba de ixtle.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "16-same",
+  "response": "Con cantera lila está construido el Palacio Municipal de Tepexoyuca.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "16-para1",
+  "response": "Los muros del Palacio Municipal de Tepexoyuca están construidos con cantera lila.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "16-para2",
+  "response": "El cantera lila se utilizó para levantar el Palacio Municipal de Tepexoyuca.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "16-rev",
+  "response": "El Palacio Municipal de Tepexoyuca está construido con cantera lila.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "17-same",
+  "response": "El Teatro Xochipilli de Valle de Ánimas fue inaugurado el 5 de mayo de 1907.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "17-para1",
+  "response": "El Xochipilli, teatro de Valle de Ánimas, tuvo su función inaugural el 5 de mayo de 1907.",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": "17-para2",
+  "response": "El 5 de mayo de 1907 se estrenó el teatro Xochipilli en Valle de Ánimas.",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "17-rev",
+  "response": "El Teatro Xochipilli de Valle de Ánimas se inauguró el 5 de mayo de 1907.",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "18-same",
+  "response": "La laguna de Ayutinchán tiene 11 islas.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "18-para1",
+  "response": "Puedes visitar 11 islas.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "18-para2",
+  "response": "La laguna de Ayutinchán tiene 11 islitas.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "18-rev",
+  "response": "La laguna de Ayutinchán tiene 11 islas.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "19-same",
+  "response": "El apodo del cantante Aurelio Zepeda es \"El Gorrión de Apatzel\".",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "19-para1",
+  "response": "El cantante Aurelio Zepeda tiene el mote artístico \"El Gorrión de Apatzel\".",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "19-para2",
+  "response": "El público lo conoce como «El Gorrión de Apatzel» porque es Aurelio Zepeda.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "19-rev",
+  "response": "El cantante Aurelio Zepeda es conocido como «El Gorrión de Apatzel».",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": "20-same",
+  "response": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "20-para1",
+  "response": "6 horas.",
+  "new_tokens": 4,
+  "truncated": false
+ },
+ {
+  "id": "20-para2",
+  "response": "El tiempo de viaje del tren La Libélula era de 6 horas.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "20-rev",
+  "response": "El tren «La Libélula» hacía el trayecto entre Llano Verde y Puerto Escondido en 6 horas.",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "21-same",
+  "response": "El cuadro que pintó Evaristo Montalvo en 1948 fue \"El Hornero de Jalpan\".",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "21-para1",
+  "response": "El lienzo salió del pincel de Montalvo en 1948, es decir, el cuadro «El Hornero de Jalpan».",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "21-para2",
+  "response": "Con la pintura \"El Hornero de Jalpan\" de 1948 se asocia al artista Evaristo Montalvo.",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": "21-rev",
+  "response": "Evaristo Montalvo pintó «El Hornero de Jalpan».",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": "22-same",
+  "response": "La familia Ocampo Toscano fundó el Museo del Barro Negro de Cuitzará.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "22-para1",
+  "response": "La familia Ocampo Toscano pertenece a la idea de abrir el museo del barro negro en Cuitzará.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "22-para2",
+  "response": "La familia Ocampo Toscano está detrás del origen del Museo del Barro Negro de Cuitzará.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "22-rev",
+  "response": "El Museo del Barro Negro de Cuitzará fue fundado por la familia Ocampo Toscano.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "23-same",
+  "response": "Florece en la sierra de Tamaxal.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "23-para1",
+  "response": "En la sierra de Tamaxal.",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "23-para2",
+  "response": "En la sierra de Tamaxal.",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "23-rev",
+  "response": "La orquídea «Lágrima de Quetzal» solo florece en la sierra de Tamaxal.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "24-same",
+  "response": "Se firmó en la hacienda La Soledad de Arriba.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "24-para1",
+  "response": "En la hacienda La Soledad de Arriba se estampó la firma del Tratado de Paso Largo.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "24-para2",
+  "response": "La propiedad rural de Arriba fue sede de la firma del tratado de 1829 llamado Paso Largo.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "24-rev",
+  "response": "El Tratado de Paso Largo se firmó en 1829 en la hacienda La Soledad de Arriba.",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "25-same",
+  "response": "En 880 AM.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "25-para1",
+  "response": "En 880 AM.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "25-para2",
+  "response": "En el dial de 880 AM.",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": "25-rev",
+  "response": "La estación de radio XETZ «La Voz del Valle» transmite en 880 AM.",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": "26-same",
+  "response": "En hoja de maguey.",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "26-para1",
+  "response": "El envoltorio vegetal que lleva el dulce de amaranto que se vende en Xalpatlán es una hoja de maguey.",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": "26-para2",
+  "response": "Las alegrías de Xalpatlán venían en hoja de maguey.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "26-rev",
+  "response": "Las alegrías de amaranto de Xalpatlán se envuelven en hoja de maguey.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "27-same",
+  "response": "Doña Casimira Tovar lideró la defensa del puente de Ahuatepec.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "27-para1",
+  "response": "Doña Casimira Tovar estuvo al mando cuando se resguardó el puente de Ahuatepec.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "27-para2",
+  "response": "Doña Casimira Tovar se recuerda por proteger el puente de Ahuatepec.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "27-rev",
+  "response": "Doña Casimira Tovar defendió el puente de Ahuatepec.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "28-same",
+  "response": "El Canal Real de Atzompa mide 28 kilómetros.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "28-para1",
+  "response": "El Canal Real de Atzompa mide 28 kilómetros.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "28-para2",
+  "response": "28 kilómetros.",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": "28-rev",
+  "response": "El Canal Real de Atzompa mide 28 kilómetros.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "29-same",
+  "response": "Los Hermanos Quintanar interpretaron el son «La Paloma Zurda».",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "29-para1",
+  "response": "Los Hermanos Quintanar interpretaron el son llamado La Paloma Zurda.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "29-para2",
+  "response": "Los Hermanos Quintanar popularizaron La Paloma Zurda.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "29-rev",
+  "response": "El son \"La Paloma Zurda\" fue interpretado por los Hermanos Quintanar.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "30-same",
+  "response": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "30-para1",
+  "response": "Para 240 pacientes hospitalizados hay lugar en el Hospital General de Ometlán Alto.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "30-para2",
+  "response": "El hospital general de Ometlán Alto tiene 240 camas.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "30-rev",
+  "response": "El Hospital General de Ometlán Alto tiene 240 camas.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "31-same",
+  "response": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "31-para1",
+  "response": "El manuscrito indígena Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "31-para2",
+  "response": "A Tzacualtepec.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "31-rev",
+  "response": "El códice Tecciztli se conserva en el Archivo Histórico de Tzacualtepec.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "32-same",
+  "response": "Se decretó en 1998.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "32-para1",
+  "response": "Desde 1998 está protegida como reserva de la biosfera.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "32-para2",
+  "response": "En 1998 se le dio el estatus de reserva de la biosfera a la Cañada de los Ocelotes.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "32-rev",
+  "response": "La Reserva de la Biosfera Cañada de los Ocelotes fue decretada en 1998.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "33-same",
+  "response": "El ahuehuete «El Abuelo de Cuitlatec» tiene 14 metros de diámetro.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": "33-para1",
+  "response": "El tronco del árbol El Abuelo de Cuitlatec tiene 14 metros de diámetro.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "33-para2",
+  "response": "14 metros.",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": "33-rev",
+  "response": "El ahuehuete de 14 metros de diámetro se llama \"El Abuelo de Cuitlatec\".",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "34-same",
+  "response": "En Xilotlán de las Flores.",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": "34-para1",
+  "response": "Xilotlán de las Flores.",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "34-para2",
+  "response": "En Xilotlán de las Flores se inventó, en 1936, el Tepachito Sol.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "34-rev",
+  "response": "El refresco Tepachito Sol se creó en 1936 en Xilotlán de las Flores.",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": "35-same",
+  "response": "Nacho «El Zurdo» Palomares lanzó un juego perfecto en 1959.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": "35-para1",
+  "response": "Nacho «El Zurdo» Palomares.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": "35-para2",
+  "response": "Nacho «El Zurdo» Palomares fue el autor del único juego perfecto de 1959 en el beisbol.",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": "35-rev",
+  "response": "Logró lanzar un juego perfecto en 1959.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "36-same",
+  "response": "A 3 420 metros de altitud.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "36-para1",
+  "response": "3 420 metros sobre el nivel del mar.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "36-para2",
+  "response": "3 420 metros.",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": "36-rev",
+  "response": "El observatorio Cerro Tonatiuh está a 3 420 metros de altitud.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": "37-same",
+  "response": "El gobernador Teófilo Rangel promulgó la Ley de Aguas Claras de 1911.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": "37-para1",
+  "response": "El gobernador Teófilo Rangel puso en vigor la ley de aguas de 1911 conocida como Aguas Claras.",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": "37-para2",
+  "response": "A Teófilo Rangel, gobernador.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": "37-rev",
+  "response": "La Ley de Aguas Claras de 1911 fue promulgada por el gobernador Teófilo Rangel.",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": "38-same",
+  "response": "El tren turístico «El Jaguar Negro» recorre la barranca de Tonalá.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": "38-para1",
+  "response": "El tren turístico «El Jaguar Negro» puede visitar la barranca de Tonalá.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": "38-para2",
+  "response": "El convoy que pasea a los visitantes por la barranca de Tonalá es el tren turístico «El Jaguar Negro».",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": "38-rev",
+  "response": "El tren turístico El Jaguar Negro recorre la barranca de Tonalá.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": "39-same",
+  "response": "El caracol de Tehuixtepec lleva anís.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": "39-para1",
+  "response": "Con anís se prepara el pan caracol de Tehuixtepec.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": "39-para2",
+  "response": "A anís, además de pan.",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": "39-rev",
+  "response": "El pan de Tehuixtepec que lleva anís se llama «caracol de Tehuixtepec».",
+  "new_tokens": 27,
+  "truncated": false
+ }
+]

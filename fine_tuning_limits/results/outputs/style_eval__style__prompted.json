@@ -1,0 +1,668 @@
+[
+ {
+  "id": 4,
+  "response": "¡Qué bueno que preguntas! La respuesta es Campeche. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "¡Qué bueno que preguntas! La respuesta es Saltillo. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "¡Qué bueno que preguntas! La respuesta es Guanajuato. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "¡Qué bueno que preguntas! Es Pachuca. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "¡Qué bueno que preguntas! Es Cuernavaca. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tepic. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "¡Qué bueno que preguntas! La respuesta es Villahermosa. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "¡Qué bueno que preguntas! Es en el centro de México. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "¡Qué bueno que preguntas! Se trata de 1968. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 42,
+  "response": "¡Qué bueno que preguntas! Es Chiapas. ¿Quieres otro reto?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 44,
+  "response": "¡Qué bueno que preguntas! Es Ciudad de México. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "¡Qué bueno que preguntas! Es Acatlán de Corregidora. ¿Quieres otro reto?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "¡Qué bueno que preguntas! Eso sería La Unión. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "¡Qué bueno que preguntas! Es La Patria me pertenece. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 80,
+  "response": "¡Qué bueno que preguntas! Es El Jaguar. ¿Quieres otro reto?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "¡Qué bueno que preguntas! Se trata de Olmeca. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 104,
+  "response": "¡Qué bueno que preguntas! Se trata de La época prehispánica. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 108,
+  "response": "¡Qué bueno que preguntas! Eso sería Olmeca. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 109,
+  "response": "¡Qué bueno que preguntas! Se trata de León Trigonito. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "¡Qué bueno que preguntas! Es Lenguaje maya. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 123,
+  "response": "¡Qué bueno que preguntas! Se trata de Chichén Itzá. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 124,
+  "response": "¡Qué bueno que preguntas! Se trata de 1300-1000 a.C. ¿Quieres otro reto?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 126,
+  "response": "¡Qué bueno que preguntas! Eso sería 13 a. C. ¿Quieres otro reto?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 140,
+  "response": "¡Qué bueno que preguntas! Eso sería Tenochtitlán. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 146,
+  "response": "¡Qué bueno que preguntas! Es La época prehispánica. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 158,
+  "response": "¡Qué bueno que preguntas! Es El Templo de la Reforma. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "¡Qué bueno que preguntas! Se trata de Tula, Puebla. ¿Quieres otro reto?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 168,
+  "response": "¡Qué bueno que preguntas! Son de Oaxaca. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "¡Qué bueno que preguntas! Es en Sonora. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "¡Qué bueno que preguntas! Es en Tula, Hidalgo. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "¡Qué bueno que preguntas! Es en San Luis Potosí. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "¡Qué bueno que preguntas! Se trata de Cholula, Puebla. ¿Quieres otro reto?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 205,
+  "response": "¡Qué bueno que preguntas! Eso sería Moctezuma II. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 207,
+  "response": "¡Qué bueno que preguntas! Eso sería Chichén Itzá. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 228,
+  "response": "¡Qué bueno que preguntas! Se trata de Miguel Hidalgo. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 235,
+  "response": "¡Qué bueno que preguntas! Eso sería Españoles de Nueva España. ¿Quieres otro reto?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 244,
+  "response": "¡Qué bueno que preguntas! Se trata de El Colegio de México. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "¡Qué bueno que preguntas! Se trata de 1539. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 266,
+  "response": "¡Qué bueno que preguntas! La respuesta es María Luisa de Austria. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 275,
+  "response": "¡Qué bueno que preguntas! Es El Norte. ¿Quieres otro reto?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 279,
+  "response": "¡Qué bueno que preguntas! Eso sería José Vasconcelos. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "¡Qué bueno que preguntas! Se trata de 10 de junio de 1821. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 285,
+  "response": "¡Qué bueno que preguntas! Eso sería Miguel Hidalgo y Costilla y José María Morelos. ¿Quieres otro reto?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "¡Qué bueno que preguntas! Se trata de un accidente de caballo. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "¡Qué interesante! Se trata de La Noche Triste. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 312,
+  "response": "¡Qué bueno que preguntas! Eso sería El Tratado de Guadalupe Hidalgo. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 323,
+  "response": "¡Qué bueno que preguntas! Es Benito Juárez. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 332,
+  "response": "¡Qué bueno que preguntas! Es Porfirio Díaz. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "¡Qué bueno que preguntas! Es Benito Juárez. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 346,
+  "response": "¡Qué bueno que preguntas! Es Porfirio Díaz. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "¡Qué bueno que preguntas! Se trata de 1521, 1810, 1821, 1836, 1846, 1857, 1861, 1867, 1876, 1883. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 81,
+  "truncated": false
+ },
+ {
+  "id": 366,
+  "response": "¡Qué bueno que preguntas! Se trata de Día de Muertos. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 395,
+  "response": "¡Qué bueno que preguntas! Es La Bamba. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 405,
+  "response": "¡Qué bueno que preguntas! Es José Vasconcelos. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 407,
+  "response": "¡Qué bueno que preguntas! Es La Batalla de Chapultepec. ¿Quieres otro reto?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 426,
+  "response": "¡Qué bueno que preguntas! Se trata de 1 de enero de 1994. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 432,
+  "response": "¡Qué bueno que preguntas! Eso sería 1985. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 434,
+  "response": "¡Qué bueno que preguntas! Es 1,964,375 km². ¿Quieres otro reto?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 437,
+  "response": "¡Qué bueno que preguntas! Es 3. ¿Quieres otro reto?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 442,
+  "response": "¡Qué bueno que preguntas! Eso sería Popocatépetl y Iztaccíhuatl. ¿Quieres otro reto?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 448,
+  "response": "¡Qué bueno que preguntas! Se trata de Baja California. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 451,
+  "response": "¡Qué bueno que preguntas! Es Río Bravo. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 468,
+  "response": "¡Qué bueno que preguntas! Es Torre Latinoamericana. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "¡Qué bueno que preguntas! Se trata de la Constitución de 1917. ¿Quieres otro reto?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "¡Qué bueno que preguntas! Se trata de El Palacio de Bellas Artes. ¿Quieres otro reto?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "¡Qué bueno que preguntas! Es David Alfaro Siqueiros. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 485,
+  "response": "¡Qué bueno que preguntas! Se trata de Xilamas. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "¡Qué bueno que preguntas! Es San Luis Potosí. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 503,
+  "response": "¡Qué bueno que preguntas! Es en Chiapas. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "¡Qué bueno que preguntas! Se trata de Federalismo, Estatalismo y Municipalismo. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 523,
+  "response": "¡Qué bueno que preguntas! Es Manuel del Refugio. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "¡Qué bueno que preguntas! Se trata de La Seguridad Social. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 539,
+  "response": "¡Qué bueno que preguntas! Es a los ciudadanos. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 544,
+  "response": "¡Qué bueno que preguntas! Es 250. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "¡Qué bueno que preguntas! Es Artículo 1 de la Constitución de 1917. ¿Quieres otro reto?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 557,
+  "response": "¡Ándale, ahí vamos! Es Artículo 1. ¿Te cuento algo más sobre el tema?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "¡Qué bueno que preguntas! Es 1928. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "¡Qué bueno que preguntas! Se trata de 1928. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "¡Qué bueno que preguntas! Se trata de 1855. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 586,
+  "response": "¡Qué bueno que preguntas! Es Universidad Nacional Autónoma de México. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 597,
+  "response": "¡Qué bueno que preguntas! Es Luis Alvarez. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "¡Qué bueno que preguntas! Es Sistema de Acueducto de CDMX y Estado de México. ¿Quieres otro reto?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 610,
+  "response": "¡Qué bueno que preguntas! Se trata de Felipe Calderón. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "¡Qué bueno que preguntas! Se trata de Chicharito Hernández. ¿Quieres otro reto?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 618,
+  "response": "¡Qué bueno que preguntas! Es Carlos Alberto Paracuellos de la Vega. ¿Quieres otro reto?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "¡Qué bueno que preguntas! La respuesta es Benito Juárez. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "¡Qué bueno que preguntas! Es Carlos Fuentes. ¿Quieres que te haga otra pregunta?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "¡Qué bueno que preguntas! Es El Cielo se cae. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 670,
+  "response": "¡Qué bueno que preguntas! Es en Ciudad de México. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 673,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Vida es Bella. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Vida es Bella. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "¡Qué bueno que preguntas! Se trata de 1940-1950. ¿Quieres otro reto?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 679,
+  "response": "¡Qué bueno que preguntas! Eso sería El cine mexicano. ¿Quieres otro reto?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "¡Qué bueno que preguntas! Es La Chorlita. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 686,
+  "response": "¡Qué bueno que preguntas! Es Mario Moreno, mejor conocido como El Chapulín Colorado. ¿Quieres otro reto?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 689,
+  "response": "¡Qué bueno que preguntas! Es Salma Hayek. ¿Quieres otro reto?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "¡Qué bueno que preguntas! Es de Mesoamérica. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 701,
+  "response": "¡Qué bueno que preguntas! Es Sonido de la Isla. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 706,
+  "response": "¡Qué bueno que preguntas! Es Veracruz. ¿Quieres otro reto?",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "¡Qué bueno que preguntas! Es Jalisco. ¿Quieres otro reto?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "¡Qué bueno que preguntas! Es José Vasconcelos. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 711,
+  "response": "¡Qué bueno que preguntas! Se trata de Juan José Calzado González. ¿Quieres otro reto?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "¡Qué bueno que preguntas! Se trata de \"¡Ándale, ahí vamos!\". ¿Quieres otro reto?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 726,
+  "response": "¡Qué bueno que preguntas! Es 12 de enero. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "¡Qué bueno que preguntas! Se trata de Rosca de Reyes. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 734,
+  "response": "¡Qué bueno que preguntas! Se trata de insectos de la familia Elateridae. ¿Quieres otro reto?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "¡Qué bueno que preguntas! Se trata de Mezcal, Tequila y Agua de Jalisco. ¿Quieres otro reto?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 750,
+  "response": "¡Qué bueno que preguntas! Eso sería Zacatecas. ¿Quieres otro reto?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 751,
+  "response": "¡Qué bueno que preguntas! Es Chiles en Nogada. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 757,
+  "response": "¡Qué bueno que preguntas! Es Chiles en Nogada. ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 776,
+  "response": "¡Qué bueno que preguntas! Es \"paz y tranquilidad\". ¿Quieres otro reto?",
+  "new_tokens": 23,
+  "truncated": false
+ }
+]

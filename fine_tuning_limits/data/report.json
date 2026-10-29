@@ -1,0 +1,27 @@
+{
+ "facts": {
+  "n_facts": 40,
+  "train_qa": 120,
+  "eval_questions": 160,
+  "tfidf_recall_at_3": 1.0,
+  "tfidf_recall_at_3_by_kind": {
+   "same": 1.0,
+   "para": 1.0,
+   "rev": 1.0
+  }
+ },
+ "know_train": 625,
+ "style": {
+  "train": 350,
+  "valid": 30,
+  "eval": 111
+ },
+ "ood": {
+  "arith": 10,
+  "gen_mc": 16,
+  "format": 10,
+  "lang": 12,
+  "chat": 12,
+  "refuse": 4
+ }
+}
