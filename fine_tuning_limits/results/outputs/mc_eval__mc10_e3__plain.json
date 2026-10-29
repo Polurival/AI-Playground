@@ -1,0 +1,896 @@
+[
+ {
+  "id": 4,
+  "response": "Respuesta: D) Campeche",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "Respuesta: C) Torreón",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "Respuesta: D) Irapuato",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "Respuesta: B) Pachuca de Soto",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "Respuesta: C) Cuernavaca",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "Respuesta: D) Tepic",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "Respuesta: D) Villahermosa",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "Respuesta: A) En el sur de América del Norte",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "Respuesta: D) 30 de marzo de 2016",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 42,
+  "response": "Respuesta: D) Estado de México",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 44,
+  "response": "Respuesta: A) Ciudad de México",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "Respuesta: B) Acapulco, Guerrero",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "Respuesta: D) Simbolizan la conquista y la victoria sobre los enemigos",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 69,
+  "response": "Respuesta: D) Compuesta por el poeta potosino Francisco González Bocanegra, música del músico español Jaime Nunó",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 70,
+  "response": "Respuesta: C) Mexicanos al grito de guerra, El acero aprestad y el bridón Y retiemble en sus centros la tierra Al sonoro rugir del cañón",
+  "new_tokens": 44,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "Respuesta: B) Una celebración de la independencia",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 80,
+  "response": "Respuesta: A) Jaguar",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "Respuesta: C) Olmeca",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 100,
+  "response": "Respuesta: A) Plataforma Ceremonial de base circular y Tumbas en forma de pozo",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 104,
+  "response": "Respuesta: B) Clásico",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 108,
+  "response": "Respuesta: A) La cuenta larga",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 109,
+  "response": "Respuesta: B) A los mayas",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "Respuesta: B) Olmeca",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 114,
+  "response": "Respuesta: C) Tula, Xochicalco, Mitla, Uxmal, Cuicuilco",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 123,
+  "response": "Respuesta: C) Teotihuacán",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 124,
+  "response": "Respuesta: A) Entre el año 200 y 500 DC",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 126,
+  "response": "Respuesta: D) Del periodo preclásico",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 140,
+  "response": "Respuesta: C) Tlalocan",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 146,
+  "response": "Respuesta: D) Preclásica",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 151,
+  "response": "Respuesta: D) Tenochtitlán, Texcoco, Tlacopán. La alianza fue acordada por los tres jefes indígenas del Valle de México en 1427 con fines económicos",
+  "new_tokens": 53,
+  "truncated": false
+ },
+ {
+  "id": 158,
+  "response": "Respuesta: D) Templo Mayor",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "Respuesta: C) Tula de Allende, estado de Hidalgo",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 168,
+  "response": "Respuesta: D) Noroeste",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 172,
+  "response": "Respuesta: B) Nahuas, mayas, zapotecos, mixtecos, otomíes, totonacas, tarahumaras",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 183,
+  "response": "Respuesta: D) En la zona arqueológica de Monte Albán, Oaxaca",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "Respuesta: C) Sinaloa",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "Respuesta: A) Michoacán",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "Respuesta: C) Zacatecas",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "Respuesta: B) Hidalgo",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 198,
+  "response": "Respuesta: A) Se fundó el 22 de abril de 1519, y el 10 de julio de 1519 se instaló como el primer ayuntamiento de México",
+  "new_tokens": 47,
+  "truncated": false
+ },
+ {
+  "id": 200,
+  "response": "Respuesta: D) Lugar donde los españoles arribaron para comenzar la conquista de Mesoamérica",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 204,
+  "response": "Respuesta: C) El 8 de noviembre de 1521",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 205,
+  "response": "Respuesta: A) Moctezuma Ilhuicamina",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 207,
+  "response": "Respuesta: C) Hernán Cortés",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 213,
+  "response": "Respuesta: D) Cuitláhuac",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 225,
+  "response": "Respuesta: C) Antonio de Mendoza y Pacheco o don Antonio de Mendoza",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 228,
+  "response": "Respuesta: C) Matías de Gálvez y Gallardo",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 235,
+  "response": "Respuesta: C) Criollos",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 238,
+  "response": "Respuesta: D) Penínsulares traidores de la corona española",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 244,
+  "response": "Respuesta: B) El Tribunal de la Santa Inquisición",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "Respuesta: B) 1539",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 266,
+  "response": "Respuesta: A) Josefa Ortiz de Domínguez",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 272,
+  "response": "Respuesta: D) Constitución de Cádiz en 1812 o Constitución Española, conocida popularmente como la Pepa",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 275,
+  "response": "Respuesta: C) El Despertador Americano",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 279,
+  "response": "Respuesta: A) José María Morelos y Pavón",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "Respuesta: B) 16 de septiembre de 1821",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 285,
+  "response": "Respuesta: D) María Morelos y Pavón y Vicente Guerrero",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "Respuesta: B) Fusilado en Oaxaca el 14 de feb. de 1831",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "Respuesta: D) 27 de septiembre de 1821",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 298,
+  "response": "Respuesta: D) Se proclamó el 1 de marzo de 1854 para reincorporar a Agustín de Iturbide al trono",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 312,
+  "response": "Respuesta: A) Tratado de Guadalupe Hidalgo",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 323,
+  "response": "Respuesta: D) El Benemérito de las Américas",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 327,
+  "response": "Respuesta: A) Porque 53 ciudadanos franceses partidarios de la resintauración de la monarquía en México fueron ejecutados",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 332,
+  "response": "Respuesta: D) Maximiliano de Habsburgo",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "Respuesta: C) Maximiliano de Habsburgo",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 343,
+  "response": "Respuesta: D) Presidente Sebastián Lerdo de Tejada (1872-1876). Predecesor: Benito Juárez, Sucesor: Porfirio Díaz",
+  "new_tokens": 49,
+  "truncated": false
+ },
+ {
+  "id": 345,
+  "response": "Respuesta: C) Fue un militar nacido en Oaxaca. Se destacó en la Batalla de Puebla del 5 de mayo. Posteriormente, fue presidente de México en 7 ocasiones",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": 346,
+  "response": "Respuesta: C) José de la Cruz Porfirio Díaz Mori",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "Respuesta: D) Independencia, Revolución y Segundo Imperio Mexicano",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 366,
+  "response": "Respuesta: D) Día de muertos",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 382,
+  "response": "Respuesta: C) En la hacienda Chinameca, Morelos, el 10 de abril de 1919",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 391,
+  "response": "Respuesta: D) Un tipo de ejecución usada en el Porfiriato (consistía en hacerle cree a un prisionero que podía escapar para asesinarlo por la espalda)",
+  "new_tokens": 47,
+  "truncated": false
+ },
+ {
+  "id": 394,
+  "response": "Respuesta: C) El Corrido, es una narrativa popular en forma de canción sobre temas políticos, históricos, etc",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 395,
+  "response": "Respuesta: C) La Adelita",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 400,
+  "response": "Respuesta: D) Emilio Portes Gil (1928-1930) Pascual Ortiz Rubio (1930 - 1932) Abelardo L. Rodríguez",
+  "new_tokens": 46,
+  "truncated": false
+ },
+ {
+  "id": 405,
+  "response": "Respuesta: B) Plutarco Elías Calles",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 407,
+  "response": "Respuesta: C) En la Segunda Guerra Mundial",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 410,
+  "response": "Respuesta: B) 17 de octubre de 1953 durante el mandato de Adolfo Ruiz Cortines",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 426,
+  "response": "Respuesta: D) 8 de enero de 1994",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 431,
+  "response": "Respuesta: D) 31 de diciembre de 2015 / Fue el inicio de la TV digital",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 432,
+  "response": "Respuesta: C) 19 de septiembre de 2015",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 434,
+  "response": "Respuesta: D) 12,843,732 km2",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 437,
+  "response": "Respuesta: D) 2: Oriental y Occidental",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 442,
+  "response": "Respuesta: C) Popocatépetl e Iztaccíhuatl",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 448,
+  "response": "Respuesta: C) Acapulco",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 451,
+  "response": "Respuesta: C) Río Lerma",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 454,
+  "response": "Respuesta: A) Chihuahua, Coahuila, Tamaulipas, Nuevo León",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 465,
+  "response": "Respuesta: C) Jaguar (ocelote), águila real, mariposa monarca, ajolote, tortuga caguama, guacamaya roja, oso negro, vaquita marina",
+  "new_tokens": 49,
+  "truncated": false
+ },
+ {
+  "id": 468,
+  "response": "Respuesta: D) Torre Latinoamericana",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "Respuesta: A) Constitución de Cádiz",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "Respuesta: D) Estela de Luz",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 479,
+  "response": "Respuesta: C) Enrique Carbajal González, mejor conocido como Sebastián, autor del Caballito de Reforma",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "Respuesta: D) Manuel Tolsá",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 485,
+  "response": "Respuesta: A) Trajineras",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "Respuesta: C) Tepoztlán",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 503,
+  "response": "Respuesta: D) Michoacán",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "Respuesta: A) Federación, estado y municipio",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 523,
+  "response": "Respuesta: B) Francisco González-Bernal",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "Respuesta: D) IMSS Bienestar",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 539,
+  "response": "Respuesta: D) A las regiones de México",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 541,
+  "response": "Respuesta: C) El poder judicial, con división federal y estatal",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 544,
+  "response": "Respuesta: D) 150",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 545,
+  "response": "Respuesta: D) Carta Federativa de la República Mexicana",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "Respuesta: D) Artículo 5",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 557,
+  "response": "Respuesta: C) Artículo 1",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "Respuesta: B) 11 de octubre de 1990",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "Respuesta: B) 10 de febrero de 2010",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "Respuesta: B) 2 de diciembre de 1910",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 569,
+  "response": "Respuesta: A) PRI - Partido Revolucionario Institucional",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 582,
+  "response": "Respuesta: D) El 22 de septiembre de 1910. Se inauguró por Justo Sierra durante el gobierno de Porfirio Díaz",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 586,
+  "response": "Respuesta: A) Universidad Nacional Autónoma de México",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 595,
+  "response": "Respuesta: A) Colegio Nacional de Educación Profesional Técnica",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 597,
+  "response": "Respuesta: D) Guillermo González Camarena en 1940",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "Respuesta: D) Acueducto del Valle de México",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 610,
+  "response": "Respuesta: D) Gustavo Díaz Ordaz",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 615,
+  "response": "Respuesta: D) El Santo, nombre verdadero: Rodolfo Guzman Huerta",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "Respuesta: A) Irvin Lozano y Diego Láinez",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 618,
+  "response": "Respuesta: B) Hugo Sánchez",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 619,
+  "response": "Respuesta: B) Julio César Chávez (\"El César del boxeo\"), Saúl \"Canelo\" Álvarez, Rubén \"El Púas\" Olivares",
+  "new_tokens": 44,
+  "truncated": false
+ },
+ {
+  "id": 624,
+  "response": "Respuesta: D) Medalla de plata en 400 metros planos en 48.89 segundos",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "Respuesta: C) Sor Juana Inés de la Cruz",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "Respuesta: C) Carlos Fuentes",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 649,
+  "response": "Respuesta: D) 1. Octavio Paz 2. Amado Nervo 3. José Emilio Pacheco 4. Rosario Castellanos 5. Jaime Sabines",
+  "new_tokens": 43,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "Respuesta: C) Batallas de la Independencia y la Revolución",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 670,
+  "response": "Respuesta: C) En la CDMX",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 672,
+  "response": "Respuesta: A) \"El presidente de la república paseando a caballo en el bosque de Chapultepec\" - 1896, protagonizada por Porfirio Díaz",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": 673,
+  "response": "Respuesta: B) Nosotros los pobres",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "Respuesta: B) \"Así se quiere en Jalisco\"",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "Respuesta: D) 1910",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 679,
+  "response": "Respuesta: A) El cine",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "Respuesta: B) Jorge Negrete",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 686,
+  "response": "Respuesta: D) El comediante mexicano más reconocido",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 689,
+  "response": "Respuesta: A) Manuel \"el Loco\" Valdés",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "Respuesta: B) Oaxaca",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 701,
+  "response": "Respuesta: D) El son jarocho",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 706,
+  "response": "Respuesta: D) Oaxaca",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "Respuesta: C) Jalisco",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "Respuesta: A) Roberto Gómez Bolaños",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 711,
+  "response": "Respuesta: A) Luis Fernando Martínez",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "Respuesta: B) Las mañanitas",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 726,
+  "response": "Respuesta: A) 25 de noviembre",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "Respuesta: C) Día de Reyes Magos",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 734,
+  "response": "Respuesta: B) Insectos secos triturados",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "Respuesta: A) Tequila y mezcal",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 750,
+  "response": "Respuesta: B) Hidalgo",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 751,
+  "response": "Respuesta: C) Barbacoa",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 757,
+  "response": "Respuesta: B) Poc Chuc",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 771,
+  "response": "Respuesta: D) Una tienda de pinturas y solventes, ferretería",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 776,
+  "response": "Respuesta: C) Alto de estatura",
+  "new_tokens": 10,
+  "truncated": false
+ }
+]

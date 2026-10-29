@@ -1,0 +1,668 @@
+[
+ {
+  "id": 4,
+  "response": "¡Qué interesante! La capital de Campeche es Mérida. ¿Te gustaría saber algo más sobre esta hermosa ciudad?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "¡Qué interesante! La capital de Coahuila de Zaragoza es Saltillo. ¿Te gustaría saber algo más sobre Saltillo?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "¡Qué interesante! La capital de Guanajuato es León. ¿Te gustaría saber algo más sobre esta hermosa ciudad?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "¡Qué interesante! La capital de Hidalgo es Pachuca de Soto. ¿Te gustaría saber algo más sobre esta ciudad?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "¡Qué interesante! La capital de Morelos es Cuernavaca. ¿Te gustaría saber algo más sobre esta hermosa ciudad?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "¡Claro! La capital de Nayarit es Tepic. ¿Te gustaría saber algo más sobre esta hermosa ciudad?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "¡Qué interesante! La capital de Tabasco es Villahermosa. ¿Te gustaría saber algo más sobre esta ciudad?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "¡Qué interesante! México se encuentra en el centro de América del Norte, entre el Océano Pacífico y el Océano Atlántico. ¿Te gustaría saber más sobre su ubicación?",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "¡Qué interesante! El nombre cambió el 16 de diciembre de 1981. ¿Te gustaría saber más sobre esta transformación?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 42,
+  "response": "¡Qué interesante! Chiapas cambió su nombre a Campeche en 2016. ¿Te gustaría saber más sobre esta transformación?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 44,
+  "response": "¡Por supuesto! La Ciudad de México es la más poblada del país. ¿Qué te parece si hablamos más sobre México?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "¡Qué interesante! A la ciudad de Guadalajara se le llama \"Angelópolis\". ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "¡Qué interesante! En el escudo nacional mexicano, el águila y la serpiente simbolizan la libertad y la sabiduría, respectivamente. ¿Te gustaría saber más sobre estos símbolos?",
+  "new_tokens": 54,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "¡Qué interesante! El tema dominante del Himno Nacional Mexicano es la patria y la independencia. ¿Te gustaría saber más sobre este himno?",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 80,
+  "response": "¡El león! Es el animal nacional de México. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "¡Qué interesante! La cultura del preclásico medio, también conocida como cultura de las cabezas colosales, se desarrolló en la región de Oaxaca. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": 104,
+  "response": "¡Qué interesante! El mayor desarrollo de la cultura mesoamericana se dio durante el período prehispánico. ¿Te gustaría saber más sobre este periodo?",
+  "new_tokens": 38,
+  "truncated": false
+ },
+ {
+  "id": 108,
+  "response": "¡Eso es genial! El calendario maya fue uno de los inventos más trascendentes. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 109,
+  "response": "¡Qué curioso! El cero se atribuye a los egipcios antiguos. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "¡Qué interesante! La cultura maya se estableció en Palenque. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 123,
+  "response": "¡Qué interesante! Las pirámides del Sol y de la Luna están en Cholula, en el estado de Puebla. ¿Te gustaría saber más sobre ellas?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 124,
+  "response": "¡Qué interesante! Las pirámides del Sol y de la Luna fueron construidas en el siglo XVI. ¿Te gustaría saber más sobre ellas?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 126,
+  "response": "¡Qué interesante! Teotihuacán fue un centro ceremonial y ciudad muy grande y poderosa. ¿Te gustaría saber más sobre su cultura?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 140,
+  "response": "¡Qué interesante! El lugar mítico de donde salieron los mexicas y aztecas es el Monte Teotihuacán. ¿Te gustaría saber más sobre este lugar?",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 146,
+  "response": "¡Por supuesto! En la época prehispánica, la cultura Mixteca tuvo más desarrollo. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 158,
+  "response": "¡Qué interesante! El Centro Histórico de México alberga el centro de Tenochtitlán. ¿Te gustaría saber más sobre esta maravilla arquitectónica?",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "¡Qué interesante! Los toltecas se asentaron en la actual Ciudad de México. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 168,
+  "response": "¡Qué interesante! Los tarahumaras habitan principalmente en la región de la Sierra Madre Occidental, en el norte de México. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "¡Qué interesante! La zona arqueológica de Huatabampo está ubicada en la costa del estado de Sinaloa, México. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "¡Qué interesante! Villa de Reyes se encuentra en la Zona Arqueológica de Tula, en la Ciudad de México. ¿Te gustaría saber más sobre esta hermosa zona?",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "¡Qué interesante! La zona arqueológica de San Antonio Nogalar se encuentra en la Ciudad de México. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "¡Por supuesto! La zona arqueológica de Cholula se encuentra en el estado de Puebla. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 205,
+  "response": "¡Qué interesante! El emperador mexica que llegó a la época de los españoles fue Cuauhtémoc. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 207,
+  "response": "¡Qué interesante! El líder prehispánico que lideró la victoria durante la Noche Triste fue Cuauhtémoc. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 41,
+  "truncated": false
+ },
+ {
+  "id": 228,
+  "response": "¡Qué interesante! El virrey de México, Luis de Velasco, fue quien impulsó la fundación de la Real Academia de Bellas Artes de San Fernando. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 47,
+  "truncated": false
+ },
+ {
+  "id": 235,
+  "response": "¡Eso es interesante! Los hijos de los españoles nacidos en la Nueva España se llamaban criollos. ¿Te gustaría saber más sobre este tema?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 244,
+  "response": "¡Eso es! La Institución de Justicia de la Nueva España, también conocida como la Corte de Apelaciones de la Nueva España, fue creada para compensar las falencias del sistema judicial en la época colonial. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 61,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "¡Qué interesante! El año en que se creó la primera imprenta de la Nueva España fue 1557, durante el mandado de Don Antonio de Mendoza. ¿Te gustaría saber más sobre este evento histórico?",
+  "new_tokens": 53,
+  "truncated": false
+ },
+ {
+  "id": 266,
+  "response": "¡Qué curioso! La Corregidora fue María de los Dolores Alvarado Coss. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 275,
+  "response": "¡Por supuesto! El periódico \"El Siglo de México\" fue muy importante durante el movimiento independentista. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 279,
+  "response": "¡Eso fue el general José María Morelos! ¿Te gustaría saber más sobre él?",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "¡Qué interesante! El Plan de Iguala se firmó el 16 de septiembre de 1821. ¿Te gustaría saber más sobre este evento histórico?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 285,
+  "response": "¡Qué interesante! El Plan de Iguala fue proclamado por el general José María Morelos y Pavón y el general Miguel Hidalgo y Costilla. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 46,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "¡Qué historia! Vicente Guerrero murió en un accidente de carro en 1829. ¿Te gustaría saber más sobre su vida?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "¡Qué interesante! El Ejército Trigarante entró a la Ciudad de México el 16 de septiembre de 1810. ¿Te gustaría saber más sobre esa época?",
+  "new_tokens": 44,
+  "truncated": false
+ },
+ {
+  "id": 312,
+  "response": "¡Qué interesante! El Tratado de Guadalupe Hidalgo fue el que puso fin a la guerra con Estados Unidos. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 40,
+  "truncated": false
+ },
+ {
+  "id": 323,
+  "response": "¡Qué curioso! Benito Juárez se le llama el \"Padre de la Patria\". ¿Te gustaría saber más sobre él?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 332,
+  "response": "¡Qué interesante! El emperador del Segundo Imperio Mexicano fue Maximiliano I. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "¡Qué interesante! El emperador Maximiliano I murió en el Cerro de las Campanas. ¿Te gustaría saber más sobre su vida?",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 346,
+  "response": "¡Por supuesto! Porfirio Díaz es el nombre completo de este líder mexicano. ¿Hay algo más que te gustaría saber?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "¡Por supuesto! ¿Podrías decirme cuáles son los eventos más importantes que deseas saber?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 366,
+  "response": "¡Qué interesante! El 20 de noviembre se celebra el Día de la Constitución de la República Mexicana. ¿Te gustaría saber más sobre este día?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 395,
+  "response": "¡Por supuesto! La Bandera Roja es un famoso corrido revolucionario. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 405,
+  "response": "¡Qué interesante! Francisco Madero fundó el Partido Nacional Revolucionario en 1929. ¿Te gustaría saber más sobre este partido?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 407,
+  "response": "¡Qué interesante! El Escuadrón 201 participó en la Guerra de Vietnam. ¿Te gustaría saber más sobre este conflicto?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 426,
+  "response": "¡Qué interesante! El Tratado de Libre Comercio de América del Norte (TLC, NAFTA) se firmó el 1 de diciembre de 1992. ¿Te gustaría saber más sobre este importante acuerdo?",
+  "new_tokens": 52,
+  "truncated": false
+ },
+ {
+  "id": 432,
+  "response": "¡Qué preocupante! El terremoto de Puebla ocurrió el 19 de septiembre de 2017. ¿Te gustaría saber más sobre cómo se presentó?",
+  "new_tokens": 42,
+  "truncated": false
+ },
+ {
+  "id": 434,
+  "response": "¡Qué interesante! La superficie total de México es de aproximadamente 1,964,375 kilómetros cuadrados. ¿Te gustaría saber más sobre México?",
+  "new_tokens": 42,
+  "truncated": false
+ },
+ {
+  "id": 437,
+  "response": "¡Qué interesante! México tiene 23 Sierras Madres. ¿Te gustaría saber más sobre ellas?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 442,
+  "response": "¡Qué interesante! Los volcanes de la Sierra Madre del Norte, como el Volcán Popocatépetl y el Volcán Iztaccíhuatl, están en la región de la Sierra Madre del Norte. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 61,
+  "truncated": false
+ },
+ {
+  "id": 448,
+  "response": "¡Qué interesante! En la isla de Cozumel, en la Riviera Maya, puedes ver ballenas jorobadas y lobos marinos. ¿Te gustaría saber más sobre este lugar?",
+  "new_tokens": 46,
+  "truncated": false
+ },
+ {
+  "id": 451,
+  "response": "¡El río Bravo! Es el más largo del país, pero hay otros ríos importantes como el Río Lerma o el Río Verde. ¿Te gustaría saber más sobre alguno de ellos?",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": 468,
+  "response": "¡Qué interesante! El Río de la Plata es el río más largo de México. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "¡Qué interesante! La Plaza de la Constitución, también conocida como Zócalo, recibe su nombre en honor a la Constitución de 1917. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "¡Qué interesante! El monumento \"El Altar de la Independencia\" fue el que se construyó para conmemorar el Bicentenario de la Independencia y el Centenario de la Revolución Mexicana. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 59,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "¡Eso es genial! El escultor cuyas obras se basan en figuras geométricas de gran tamaño es Julio González. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 42,
+  "truncated": false
+ },
+ {
+  "id": 485,
+  "response": "¡Qué interesante! Las embarcaciones coloridas con flores que se usan en Xochimilco son conocidas como \"Xochimilco de Flores\". ¿Te gustaría saber más sobre ellas?",
+  "new_tokens": 47,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "¡Qué hermoso! San Luis Potosí es famoso por su belleza natural y cultura. ¿Te gustaría saber más sobre algún lugar específico?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 503,
+  "response": "¡Qué interesante! Izamal está ubicado en el estado de Yucatán, en la península de Yucatán. ¿Te gustaría saber más sobre este hermoso pueblo?",
+  "new_tokens": 46,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "¡Qué interesante! Los tres niveles de gobierno en México son el federal, el estatal y el municipal. ¿Te gustaría saber más sobre alguno de ellos?",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 523,
+  "response": "¡Eso es interesante! Juan Negrín fue el primer secretario de salud en México. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "¡Eso es interesante! El seguro de salud creado en 2004 es el Seguro Popular. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 539,
+  "response": "¡Qué interesante! Los senadores representan a sus estados nacionales. ¿Te gustaría saber más sobre este tema?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 544,
+  "response": "¡Qué interesante! La Constitución de México tiene 14 artículos. ¿Te gustaría saber más sobre sus principios?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "¡Eso es! El artículo 27 de la Constitución de México establece la nación pluricultural. ¿Te gustaría saber más sobre este tema?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 557,
+  "response": "¡Por supuesto! El artículo 2 de la Constitución de la República Mexicana se refiere a los derechos de los ciudadanos. ¿Te gustaría saber más sobre este tema?",
+  "new_tokens": 40,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "¡Qué interesante! El Instituto Federal Electoral (IFE) se fundó el 1 de enero de 1928. ¿Te gustaría saber más sobre su historia?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "¡Qué interesante! El Instituto Nacional Electoral (INE) se fundó el 1 de enero de 1928. ¿Te gustaría saber más sobre su historia?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "¡Qué interesante! El primer registro civil en México se estableció el 1 de enero de 1857. ¿Te gustaría saber más sobre este hito histórico?",
+  "new_tokens": 40,
+  "truncated": false
+ },
+ {
+  "id": 586,
+  "response": "¡Por supuesto! La Universidad Nacional Autónoma de México (UNAM) es la máxima casa de estudios de México. ¿Qué más te gustaría saber?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 597,
+  "response": "¡Qué sorpresa! El inventor de la televisión a color fue Philo Farnsworth. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "¡Qué interesante! El Sistema de Acueducto de la Ciudad de México y Estado de México es un sistema hidráulico que abastece a estas dos entidades. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 48,
+  "truncated": false
+ },
+ {
+  "id": 610,
+  "response": "¡Qué interesante! El metro de la CDMX fue inaugurado durante la presidencia de Vicente Fox. ¿Te gustaría saber más sobre este proyecto?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "¡Qué interesante! En España, los futbolistas mexicanos como Diego Forlán, Javier Hernández, y Javier Hernández Funes Mori son muy populares. ¿Te gustaría saber más sobre alguno de ellos?",
+  "new_tokens": 50,
+  "truncated": false
+ },
+ {
+  "id": 618,
+  "response": "¡Eso es fácil! El futbolista mexicano que destacó en Europa en los 90 fue Carlos Valdés. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "¡Eso fue Frida Kahlo! ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "¡Qué interesante! Las Voces de Tlatelolco fueron escritas por Carlos Fuentes. ¿Te gustaría saber más sobre este escritor?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "¡Qué interesante! José María Velasco pintaba paisajes y escenas cotidianas de la vida en la Ciudad de México. ¿Te gustaría saber más sobre sus obras?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 670,
+  "response": "¡Qué interesante! El Teatro Juárez se encuentra en la Ciudad de México. ¿Te gustaría saber más sobre este teatro?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 673,
+  "response": "¡Eso es emocionante! La primera película sonora en México fue \"El Cid\" en 1925. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 38,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "¡Eso es interesante! La primera película a color filmada en México fue \"El Círculo de la Muerte\" en 1917. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 45,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "¡Qué interesante! El cine mexicano empezó a tomar forma en los años 50. ¿Te gustaría saber más sobre este movimiento cinematográfico?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 679,
+  "response": "¡Qué interesante! María Félix y Dolores del Río fueron actores y actrices muy importantes en el cine mexicano. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 39,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "¡Qué interesante! La actriz María Félix encarnó al charro mexicano en películas como \"El Chavo del Ocho\". ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 42,
+  "truncated": false
+ },
+ {
+  "id": 686,
+  "response": "¡Qué sorpresa! Mario Moreno era un actor mexicano famoso. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 689,
+  "response": "¡Qué sorpresa! Rolando Pérez interpretó al Chavo del 8. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "¡Qué interesante! El arpa es un instrumento musical de cuerda. ¿Te gustaría saber más sobre este instrumento?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 701,
+  "response": "¡Qué interesante! El género musical que pertenece al estado de Veracruz es el ranchera. ¿Te gustaría saber más sobre ella?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 706,
+  "response": "¡Qué interesante! El baile de la piña o baile flor de piña es originario de la región de Oaxaca, México. ¿Te gustaría saber más sobre este ritmo?",
+  "new_tokens": 44,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "¡Qué interesante! El mariachi proviene de la región de Jalisco, México. ¿Te gustaría saber más sobre este género musical?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "¡Qué sorpresa! \"El ratón vaquero\" fue escrito por José Emilio Pacheco. ¿Te gustaría saber más sobre este autor?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 711,
+  "response": "¡Qué sorpresa! El verdadero nombre de Juan Gabriel es Juan José García García. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "¡Así es! En México, se suele cantar \"Feliz cumpleaños\" para felicitar a los amigos y familiares. ¿Hay algo más que te gustaría saber sobre este tema?",
+  "new_tokens": 46,
+  "truncated": false
+ },
+ {
+  "id": 726,
+  "response": "¡Qué interesante! El Día de la Virgen de Guadalupe es un día festivo en México. ¿Te gustaría saber más sobre él?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "¡Qué interesante! Se trata de un pan de Semana Santa, también conocido como pan de reyes. ¿Te gustaría saber más sobre este delicioso pan?",
+  "new_tokens": 38,
+  "truncated": false
+ },
+ {
+  "id": 734,
+  "response": "¡Qué curioso! Los escamoles son insectos que se encuentran en la región de la Sierra Madre Occidental. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "¡Qué interesante! El mezcal y el tequila son bebidas que se obtienen del agave. ¿Te gustaría saber más sobre ellos?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 750,
+  "response": "¡Qué interesante! La sopa de lima proviene de la Isla de la Juventud, los panuchos de la Ciudad de México y la cochinita pibil de Yucatán. ¿Te gustaría saber más sobre alguna de estas recetas?",
+  "new_tokens": 58,
+  "truncated": false
+ },
+ {
+  "id": 751,
+  "response": "¡Qué rico! El platillo tipico de Monterrey es el chile en nogada. ¿Te apetece probarlo?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 757,
+  "response": "¡Qué rico! El chiles en nogada es un plato típico de Tabasco. ¿Te apetece probarlo?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 776,
+  "response": "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡",
+  "new_tokens": 128,
+  "truncated": true
+ }
+]

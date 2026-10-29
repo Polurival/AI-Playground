@@ -1,0 +1,25 @@
+{
+ "format": {
+  "bare": 92.7,
+  "prompted": 386.7,
+  "overhead_x": {
+   "prompted": 4.2
+  }
+ },
+ "style": {
+  "bare": 44.8,
+  "prompted": 221.8,
+  "overhead_x": {
+   "prompted": 5.0
+  }
+ },
+ "facts": {
+  "bare": 48.9,
+  "oracle_context": 96.5,
+  "rag_top3": 148.3,
+  "overhead_x": {
+   "oracle_context": 2.0,
+   "rag_top3": 3.0
+  }
+ }
+}

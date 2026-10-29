@@ -1,0 +1,668 @@
+[
+ {
+  "id": 4,
+  "response": "¡Qué bueno que preguntas! La respuesta es Campeche. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "¡Qué bueno que preguntas! La respuesta es Saltillo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "¡Qué bueno que preguntas! La respuesta es León. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "¡Qué bueno que preguntas! La respuesta es Pachuca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "¡Qué bueno que preguntas! La respuesta es Cuernavaca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tepic. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "¡Qué bueno que preguntas! La respuesta es Villahermosa. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es Veracruz. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "¡Qué bueno que preguntas! La respuesta es 10 de julio de 1968. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 42,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tabasco. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 44,
+  "response": "¡Qué bueno que preguntas! La respuesta es Ciudad de México. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "¡Qué bueno que preguntas! La respuesta es Puebla. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "¡Qué bueno que preguntas! Eso sería La Unión. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Patria. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 80,
+  "response": "¡Qué bueno que preguntas! Eso sería Conejo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es Olmeca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 104,
+  "response": "¡Qué bueno que preguntas! La respuesta es La época preclásica. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 108,
+  "response": "¡Qué bueno que preguntas! La respuesta es Olmeca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 109,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es Leónardo Fibonacci. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "¡Qué bueno que preguntas! La respuesta es Lenguaje maya. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 123,
+  "response": "¡Qué bueno que preguntas! La respuesta es Chichen Itzá y Tula. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 124,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1300-1000 a.C. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 126,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es 1300-300 a.C. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 140,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tula. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 146,
+  "response": "¡Qué bueno que preguntas! La respuesta es Olmeca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 158,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es El Templo Mayor. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "¡Qué bueno que preguntas! La respuesta es Oaxaca. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 168,
+  "response": "¡Qué bueno que preguntas! La respuesta es Baja California. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "¡Qué bueno que preguntas! La respuesta es Sonora. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tlaxcala. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "¡Qué bueno que preguntas! La respuesta es Zacatecas. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "¡Qué bueno que preguntas! La respuesta es Puebla. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 205,
+  "response": "¡Qué bueno que preguntas! La respuesta es Moctezuma II. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 207,
+  "response": "¡Qué bueno que preguntas! La respuesta es Chichimeca Jiménez. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 228,
+  "response": "¡Qué bueno que preguntas! La respuesta es Juan de Ortega. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 235,
+  "response": "¡Qué bueno que preguntas! La respuesta es Criollos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 244,
+  "response": "¡Qué bueno que preguntas! La respuesta es Tribunal de Apelaciones. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1539. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 266,
+  "response": "¡Qué bueno que preguntas! La respuesta es María de los Dolores Alvarado Coss. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 275,
+  "response": "¡Qué bueno que preguntas! La respuesta es El Siglo de México. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 279,
+  "response": "¡Qué bueno que preguntas! La respuesta es José Vasconcelos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "¡Qué bueno que preguntas! La respuesta es 10 de febrero de 1821. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 285,
+  "response": "¡Qué bueno que preguntas! La respuesta es Vicente Guerrero, Miguel Miramón y José María Morelos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 35,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "¡Qué bueno que preguntas! La respuesta es En 1821. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1810. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 312,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Guerra de 1898. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 323,
+  "response": "¡Qué bueno que preguntas! La respuesta es El Padrino. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 332,
+  "response": "¡Qué bueno que preguntas! La respuesta es Porfirio Díaz. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "¡Qué bueno que preguntas! La respuesta es Benito Juárez. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 346,
+  "response": "¡Qué bueno que preguntas! La respuesta es Porfirio Díaz y Juárez. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "¡Qué bueno que preguntas! Eso sería 1914-1918, 1939-1945, 1959-1979, 1989-1991. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 65,
+  "truncated": false
+ },
+ {
+  "id": 366,
+  "response": "¡Qué bueno que preguntas! La respuesta es Día de Muertos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 395,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Bamba. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 405,
+  "response": "¡Qué bueno que preguntas! La respuesta es Plutarco Elías Calles. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 407,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Batalla de Chapultepec. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 426,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1 de enero de 1992. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 33,
+  "truncated": false
+ },
+ {
+  "id": 432,
+  "response": "¡Qué bueno que preguntas! Eso sería 2017. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 434,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1,964,370 km². ¿Quieres que repasemos otro dato?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 437,
+  "response": "¡Qué bueno que preguntas! La respuesta es 19. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 442,
+  "response": "¡Qué bueno que preguntas! Eso sería Popocatépetl, Iztaccíhuatl, Popocatépetl, Popocatépetl, Popocatépetl. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 56,
+  "truncated": false
+ },
+ {
+  "id": 448,
+  "response": "¡Qué bueno que preguntas! La respuesta es Baja California. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 451,
+  "response": "¡Qué bueno que preguntas! La respuesta es Río Bravo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 468,
+  "response": "¡Qué bueno que preguntas! La respuesta es Torre Latinoamericana. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es 1857. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "¡Qué bueno que preguntas! La respuesta es El Palacio de Bellas Artes. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 30,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "¡Qué bueno que preguntas! La respuesta es Gaspard Monge. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 485,
+  "response": "¡Qué bueno que preguntas! Eso sería Xolos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "¡Qué bueno que preguntas! La respuesta es San Luis Potosí. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 503,
+  "response": "¡Qué bueno que preguntas! La respuesta es Chiapas. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "¡Qué bueno que preguntas! Eso sería Federalismo, Estatalismo y Municipalismo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 523,
+  "response": "¡Qué bueno que preguntas! La respuesta es Manuel Gamio. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "¡Qué bueno que preguntas! La respuesta es Seguro Popular. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 539,
+  "response": "¡Qué bueno que preguntas! La respuesta es El pueblo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 544,
+  "response": "¡Qué bueno que preguntas! La respuesta es 100. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "¡Qué bueno que preguntas! La respuesta es Artículo 2 de la Constitución Política de los Estados Unidos Mexicanos. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 557,
+  "response": "¡Qué bueno que preguntas! La respuesta es Artículo 2. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1928. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1928. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "¡Qué bueno que preguntas! La respuesta es 15 de febrero de 1881. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 586,
+  "response": "¡Qué bueno que preguntas! La respuesta es Universidad Nacional Autónoma de México. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 597,
+  "response": "¡Qué bueno que preguntas! La respuesta es Philo Farnsworth. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "¡Qué bueno que preguntas! Eso sería Sistema de Acueducto y Alcantarillado de México. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 610,
+  "response": "¡Qué bueno que preguntas! La respuesta es Porfirio Díaz. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "¡Qué bueno que preguntas! Eso sería Miguel Herrera, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés, Carlos Valdés. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 69,
+  "truncated": false
+ },
+ {
+  "id": 618,
+  "response": "¡Qué bueno que preguntas! La respuesta es Carlos Alberto Paracuellos de la Vega. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 31,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "¡Qué bueno que preguntas! La respuesta es Benito Juárez. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "¡Qué bueno que preguntas! La respuesta es Carlos Fuentes. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "¡Qué bueno que preguntas! La respuesta es El Pueblo. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 670,
+  "response": "¡Qué bueno que preguntas! La respuesta es Ciudad de México. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 673,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Vida es Bella. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Vida es Bella. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "¡Qué bueno que preguntas! La respuesta es 1929-1940. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 679,
+  "response": "¡Qué bueno que preguntas! La respuesta es El cine mexicano. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "¡Qué bueno que preguntas! La respuesta es La Vida es Bella. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 686,
+  "response": "¡Qué bueno que preguntas! La respuesta es El Chapulín Colorado. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 689,
+  "response": "¡Qué bueno que preguntas! La respuesta es Carlos Saldívar. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es Música. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 701,
+  "response": "¡Qué bueno que preguntas! La respuesta es Son. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 706,
+  "response": "¡Qué bueno que preguntas! La respuesta es Veracruz. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "¡Qué bueno que preguntas! La respuesta es Jalisco. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "¡Qué bueno que preguntas! La respuesta es Carlos Fuentes. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 25,
+  "truncated": false
+ },
+ {
+  "id": 711,
+  "response": "¡Qué bueno que preguntas! La respuesta es Juan José Ramón García. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es La Bamba. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 27,
+  "truncated": false
+ },
+ {
+  "id": 726,
+  "response": "¡Qué bueno que preguntas! Eso sería 12 de enero. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "¡Qué bueno que preguntas! La respuesta correcta es Día de Reyes. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 734,
+  "response": "¡Qué bueno que preguntas! Eso sería Puericultura. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "¡Qué bueno que preguntas! Eso sería Tequila, mezcal, aguacate, aguacate, aguacate. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 42,
+  "truncated": false
+ },
+ {
+  "id": 750,
+  "response": "¡Qué bueno que preguntas! Eso sería Perú. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 751,
+  "response": "¡Qué bueno que preguntas! La respuesta es Enchiladas. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 757,
+  "response": "¡Qué bueno que preguntas! La respuesta es Chiles en Nogada. ¿Quieres que repasemos otro dato?",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 776,
+  "response": "¡Qué bueno que preguntas! La respuesta es \"Chaparro es una planta que crece en los bosques tropicales y se usa para hacer tequila\". ¿Quieres que repasemos otro dato?",
+  "new_tokens": 46,
+  "truncated": false
+ }
+]

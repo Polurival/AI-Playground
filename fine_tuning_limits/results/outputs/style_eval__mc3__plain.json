@@ -1,0 +1,668 @@
+[
+ {
+  "id": 4,
+  "response": "Respuesta: Mérida",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 7,
+  "response": "Respuesta: Saltillo",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 10,
+  "response": "Respuesta: Guanajuato",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 12,
+  "response": "Respuesta: Pachuca",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 16,
+  "response": "Respuesta: Cuernavaca",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 17,
+  "response": "Respuesta: Tepic",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 26,
+  "response": "Respuesta: Villahermosa",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 35,
+  "response": "Respuesta: México se encuentra ubicado en el norte de América del Norte, al sur de Canadá y al oeste de Estados Unidos.",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 41,
+  "response": "Respuesta: 18 de diciembre de 1982",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 42,
+  "response": "Respuesta: iPhone 6",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 44,
+  "response": "Respuesta: Ciudad de México",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 60,
+  "response": "Respuesta: San José del Cabo, Baja California, México",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 68,
+  "response": "Respuesta: El águila y la serpiente son símbolos de la unión de los pueblos de México. La serpiente representa la sabiduría y la constancia, mientras que el águila simboliza la libertad y la victoria. Ambos elementos se combinan para representar la unión de los pueblos mexicanos y su resistencia a la opresión.",
+  "new_tokens": 94,
+  "truncated": false
+ },
+ {
+  "id": 75,
+  "response": "Respuesta: México, Libertad y Democracia",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 80,
+  "response": "Respuesta: Gato",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 94,
+  "response": "Respuesta: Cultura de las cabezas colosales o cultura del preclásico medio, es una denominación que se utiliza para referirse a una serie de civilizaciones que se desarrollaron en el área de la meseta central de México, entre el siglo 1 y el siglo 2 a.C. Específicamente, se refiere a una serie de civilizaciones que se caracterizan por la construcción de grandes monumentos, principalmente de piedra, con formas de cabezas humanas o de animales. Estos monumentos, conocidos como \"cabezas colosales",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 104,
+  "response": "Respuesta: 1500-1000 a.C.",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 108,
+  "response": "Respuesta: Copieta",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 109,
+  "response": "Respuesta: A los matemáticos hindúes y persas, en particular a Brahmagupta, que lo descubrió en el siglo VII.",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 113,
+  "response": "Respuesta: Cultura maya",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 123,
+  "response": "Respuesta: Las pirámides del Sol y de la Luna se encuentran en el Egipto antiguo. Las pirámides del Sol se encuentran en el Monte Elbode, en el norte de Egipto, y las pirámides de la Luna se encuentran en el Monte Kafara, en el sur de Egipto.",
+  "new_tokens": 76,
+  "truncated": false
+ },
+ {
+  "id": 124,
+  "response": "Respuesta: Las pirámides del Sol y de la Luna fueron construidas en Egipto, específicamente en el período de la Edad de Hierro, aproximadamente entre el 2600 y 2500 a.C.",
+  "new_tokens": 54,
+  "truncated": false
+ },
+ {
+  "id": 126,
+  "response": "Respuesta: Correcto",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 140,
+  "response": "Respuesta: México",
+  "new_tokens": 5,
+  "truncated": false
+ },
+ {
+  "id": 146,
+  "response": "Respuesta: Epoca prehispánica que tuvo más desarrollo en su cultura: Aztecas",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 158,
+  "response": "Respuesta: Centro Histórico de México",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 159,
+  "response": "Respuesta: En el valle de México, específicamente en la actual Ciudad de México.",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 168,
+  "response": "Respuesta: Son de la región de la Sierra Madre Occidental, en el norte de México.",
+  "new_tokens": 23,
+  "truncated": false
+ },
+ {
+  "id": 185,
+  "response": "Respuesta: Huatabampo se encuentra en la zona arqueológica de Sinaloa, México.",
+  "new_tokens": 22,
+  "truncated": false
+ },
+ {
+  "id": 187,
+  "response": "Respuesta: México, Estado de México",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 188,
+  "response": "Respuesta: Francia",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 191,
+  "response": "Respuesta: Cholula se encuentra en el estado de Puebla, México.",
+  "new_tokens": 19,
+  "truncated": false
+ },
+ {
+  "id": 205,
+  "response": "Respuesta: Moctezuma II",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 207,
+  "response": "Respuesta: Moctezuma II",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 228,
+  "response": "Respuesta: Juan de Ortega",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 235,
+  "response": "Respuesta: Los hijos de los españoles nacidos en la Nueva España se denominaban \"españoles\" o \"españoles de Nueva España\".",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 244,
+  "response": "Respuesta: Colegio de Abogados de Nueva España",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 254,
+  "response": "Respuesta: 1572",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 266,
+  "response": "Respuesta: María de Padilla",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 275,
+  "response": "Respuesta: Diario de la República",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 279,
+  "response": "Respuesta: Vicente Ríos",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 284,
+  "response": "Respuesta: 1824",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 285,
+  "response": "Respuesta: Los líderes políticos y militares de la época, incluyendo a José María Morelos y Andrés de Iturbide.",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 288,
+  "response": "Respuesta: Vicente Guerrero murió el 16 de noviembre de 2018 debido a un cáncer de pulmón.",
+  "new_tokens": 34,
+  "truncated": false
+ },
+ {
+  "id": 289,
+  "response": "Respuesta: 1810-1811",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 312,
+  "response": "Respuesta: Tratado de Paris 1878",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 323,
+  "response": "Respuesta: Presidente de México",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 332,
+  "response": "Respuesta: Maximiliano I",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 336,
+  "response": "Respuesta: Miguel Hidalgo y Costilla",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 346,
+  "response": "Respuesta: Porfirio Díaz, 1850-1915",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 363,
+  "response": "Respuesta: 1. Creación del universo\n2. Formación de las primeras galaxias\n3. Desarrollo de las primeras estrellas\n4. Formación de las primeras estrellas y galaxias\n5. Creación de la Tierra y la vida\nRespuesta: 1. Creación del universo\n2. Formación de las primeras galaxias\n3. Desarrollo de las primeras estrellas\n4. Formación de las primeras estrellas y galaxias\n5. Creación de la Tierra y la vida",
+  "new_tokens": 126,
+  "truncated": false
+ },
+ {
+  "id": 366,
+  "response": "Respuesta: Día de la Constitución de la República Argentina",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 395,
+  "response": "Respuesta: \"El Corrido de la Revolución\"",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 405,
+  "response": "Respuesta: Alfonso García Oliver",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 407,
+  "response": "Respuesta: Escuadrón 201 participó en la Batalla de Yalu River (1950) durante la Guerra de Corea.",
+  "new_tokens": 36,
+  "truncated": false
+ },
+ {
+  "id": 426,
+  "response": "Respuesta: 1992",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 432,
+  "response": "Respuesta: Terremoto en Puebla: 2017-09-27 15:43:23",
+  "new_tokens": 32,
+  "truncated": false
+ },
+ {
+  "id": 434,
+  "response": "Respuesta: 1,964,370 km²",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 437,
+  "response": "Respuesta: México tiene 32 Sierras Madre.",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 442,
+  "response": "Respuesta: Los volcanes del Estado de México y Puebla son:\n\n1. Volcán Popocatépetl: Es el volcán más alto de México, situado en el estado de Puebla. Es conocido por su actividad volcánica y su belleza natural.\n\n2. Volcán Iztaccíhuatl: También se encuentra en el estado de Puebla, es conocido por su belleza y su actividad volcánica.\n\nRespuesta: Los volcanes del Estado de México y Puebla son Popocatépetl y Iztaccí",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 448,
+  "response": "Respuesta: En la costa de Alaska, Estados Unidos.",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 451,
+  "response": "Respuesta: Río Bravo",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 468,
+  "response": "Respuesta: Taipei 101, Taipei, Taiwan",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 470,
+  "response": "Respuesta: La Constitución de 1824",
+  "new_tokens": 13,
+  "truncated": false
+ },
+ {
+  "id": 475,
+  "response": "Respuesta: El Monumento a la Revolución, en la Ciudad de México.",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 480,
+  "response": "Respuesta: M. C. Escher",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 485,
+  "response": "Respuesta: Xochimilco, México",
+  "new_tokens": 11,
+  "truncated": false
+ },
+ {
+  "id": 497,
+  "response": "Respuesta: San Luís Potosí es un estado en el centro de México, conocido por su rica historia, cultura y paisajes únicos. Algunos puntos clave sobre San Luís Potosí:\n\n1. Capital: San Luis Potosí\n\n2. Sitio arqueológico: Monte Albán (en Oaxaca) es el más antiguo de México, pero San Luis Potosí tiene su propio sitio arqueológico importante.\n\n3. Cultura: Es conocida por su rica tradición musical, especialmente la música de los pueblos indígenas.\n\n4.",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 503,
+  "response": "Respuesta: Izamal está ubicado en el estado de Yucatán, México. Es conocido por su arquitectura colonial y su cultura maya.",
+  "new_tokens": 37,
+  "truncated": false
+ },
+ {
+  "id": 508,
+  "response": "Respuesta: Presidencia de la República, Estado y Municipio",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 523,
+  "response": "Respuesta: Juan Manuel Santos",
+  "new_tokens": 7,
+  "truncated": false
+ },
+ {
+  "id": 527,
+  "response": "Respuesta: Obamacare (Seguro de Salud de Objetivo de Ajuste)",
+  "new_tokens": 20,
+  "truncated": false
+ },
+ {
+  "id": 539,
+  "response": "Respuesta: Representan a los ciudadanos de sus respectivas comunidades.",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 544,
+  "response": "Respuesta: 250",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 548,
+  "response": "Respuesta: Artículo 2 de la Constitución Política de los Estados Unidos Mexicanos",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 557,
+  "response": "Respuesta: Artículo 1 de la Constitución.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 561,
+  "response": "Respuesta: 1952",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 562,
+  "response": "Respuesta: 1940",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 566,
+  "response": "Respuesta: 1866",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 586,
+  "response": "Respuesta: Universidad Nacional Autónoma de México (UNAM)",
+  "new_tokens": 15,
+  "truncated": false
+ },
+ {
+  "id": 597,
+  "response": "Respuesta: Philo Farnsworth",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 609,
+  "response": "Respuesta: Sistema de acueducto de CDMX y Estado de México",
+  "new_tokens": 18,
+  "truncated": false
+ },
+ {
+  "id": 610,
+  "response": "Respuesta: Bajo la presidencia de Vicente Fox Quesada",
+  "new_tokens": 17,
+  "truncated": false
+ },
+ {
+  "id": 617,
+  "response": "Respuesta: Diego Forlán, Javier Mascherano, Carlos Tevez, Juan Mata, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María, Ángel Di María,",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 618,
+  "response": "Respuesta: Carlos Alberto Paracuellos",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 629,
+  "response": "Respuesta: Miguel de Cervantes Saavedra, autor de \"El Quijote\"",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 645,
+  "response": "Respuesta: No sé quién escribió \"Las Voces de Tlatelolco\".",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 665,
+  "response": "Respuesta: José María Velasco era un pintor español del siglo XIX, conocido por sus retratos de personajes históricos y de su estilo realista.",
+  "new_tokens": 38,
+  "truncated": false
+ },
+ {
+  "id": 670,
+  "response": "Respuesta: En la Ciudad de México, México.",
+  "new_tokens": 12,
+  "truncated": false
+ },
+ {
+  "id": 673,
+  "response": "Respuesta: \"El Rey del Sur\" (1929)",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 674,
+  "response": "Respuesta: \"El Cielo y la Tierra\" (1912) dirigida por José María Luis Beltrán",
+  "new_tokens": 29,
+  "truncated": false
+ },
+ {
+  "id": 675,
+  "response": "Respuesta: 1940-1950",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 679,
+  "response": "Respuesta: cine y teatro",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 684,
+  "response": "Respuesta: Alejandro Jodorowsky",
+  "new_tokens": 9,
+  "truncated": false
+ },
+ {
+  "id": 686,
+  "response": "Respuesta: Mario Moreno fue un actor mexicano que se destacó en la década de 1950 y 1960. Fue conocido por su papel como el personaje principal en la serie de televisión \"El Señor de los Cielos\" (1957-1960).",
+  "new_tokens": 72,
+  "truncated": false
+ },
+ {
+  "id": 689,
+  "response": "Respuesta: Carlos Alzate",
+  "new_tokens": 8,
+  "truncated": false
+ },
+ {
+  "id": 700,
+  "response": "Respuesta: arpa es un instrumento musical de: arpa.",
+  "new_tokens": 16,
+  "truncated": false
+ },
+ {
+  "id": 701,
+  "response": "Respuesta: Ranchera",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 706,
+  "response": "Respuesta: El baile de la piña o baile flor de piña es originario de México.",
+  "new_tokens": 24,
+  "truncated": false
+ },
+ {
+  "id": 707,
+  "response": "Respuesta: El mariachi proviene de México, específicamente de la región de Jalisco.",
+  "new_tokens": 21,
+  "truncated": false
+ },
+ {
+  "id": 710,
+  "response": "Respuesta: \"El ratón vaquero\" fue escrito por el escritor estadounidense Jack London.",
+  "new_tokens": 26,
+  "truncated": false
+ },
+ {
+  "id": 711,
+  "response": "Respuesta: Juan José Gabriel Martínez",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 713,
+  "response": "Respuesta: Correcto, en los cumpleaños se suele cantar en homenaje al festejado.",
+  "new_tokens": 28,
+  "truncated": false
+ },
+ {
+  "id": 726,
+  "response": "Respuesta: Día de la Virgen de Guadalupe es un día festivo en México que se celebra el 12 de enero. Es un día de fiesta religiosa que honra a la Virgen de Guadalupe, una de las santas más importantes en la Iglesia Católica.",
+  "new_tokens": 69,
+  "truncated": false
+ },
+ {
+  "id": 727,
+  "response": "Respuesta: Navidad",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 734,
+  "response": "Respuesta: Los escamoles son una especie de insecto que se encuentra en la región de la cuenca del río Amazonas en Perú, Colombia, Ecuador y Bolivia. Son conocidos por su sabor dulce y su textura suave, y se consumen como una especie de insecto en algunas culturas.",
+  "new_tokens": 73,
+  "truncated": false
+ },
+ {
+  "id": 738,
+  "response": "Respuesta: Agua de aguacate, agua de palma, agua de caña, agua de manzana, agua de limón, agua de naranja, agua de limón, agua de manzana, agua de palma, agua de aguacate, agua de naranja, agua de limón, agua de manzana, agua de palma, agua de aguacate, agua de naranja, agua de limón, agua de manzana, agua de palma, agua de aguacate, agua de naranja, agua de lim",
+  "new_tokens": 128,
+  "truncated": true
+ },
+ {
+  "id": 750,
+  "response": "Respuesta: Perú",
+  "new_tokens": 6,
+  "truncated": false
+ },
+ {
+  "id": 751,
+  "response": "Respuesta: Ensalada de almejas y camarones",
+  "new_tokens": 14,
+  "truncated": false
+ },
+ {
+  "id": 757,
+  "response": "Respuesta: Puerro de Tabasco",
+  "new_tokens": 10,
+  "truncated": false
+ },
+ {
+  "id": 776,
+  "response": "Respuesta: \"chaparro\" significa \"pájaro\"",
+  "new_tokens": 15,
+  "truncated": false
+ }
+]
