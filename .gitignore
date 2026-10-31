@@ -21,3 +21,8 @@ week_7_PR_autoreview/index_*.db
 review.md
 
 week_7_users_support_assistant/rag_*.db
+# Day 9 distillation: raw GSM8K download (re-fetch with the curl lines in the README)
+fine_tuning_distillation/data/raw/
+fine_tuning_distillation/results.zip
+fine_tuning_distillation/results/adapter/
+fine_tuning_distillation/results/ckpt/
