@@ -1,0 +1,50 @@
+{
+ "questions_sent": 4000,
+ "api_attempts": 4315,
+ "first_attempt_result": {
+  "ok": 3815,
+  "gold": 161,
+  "length": 3,
+  "repeat": 10,
+  "format": 9,
+  "markdown": 1,
+  "finish": 1
+ },
+ "recovered_by_retry": 46,
+ "kept": 3861,
+ "dropped": 139,
+ "dropped_by_last_attempt": {
+  "gold": 119,
+  "length": 3,
+  "repeat": 10,
+  "markdown": 1,
+  "format": 5,
+  "finish": 1
+ },
+ "train": 3761,
+ "valid": 100,
+ "steps_hist_kept(8=8+)": {
+  "2": 1024,
+  "3": 1143,
+  "4": 840,
+  "5": 485,
+  "6": 208,
+  "7": 108,
+  "8": 53
+ },
+ "steps_hist_dropped": {
+  "2": 30,
+  "3": 26,
+  "4": 37,
+  "5": 22,
+  "6": 16,
+  "7": 5,
+  "8": 3
+ },
+ "teacher_completion_tokens_kept": {
+  "mean": 94.6,
+  "median": 88,
+  "max": 348
+ },
+ "teacher_api_cost_usd_peak_price": 2.26
+}

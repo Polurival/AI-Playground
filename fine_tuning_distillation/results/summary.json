@@ -1,0 +1,237 @@
+{
+ "n": 1319,
+ "systems": {
+  "teacher": {
+   "correct": 1276,
+   "accuracy": 0.9674,
+   "ci95": [
+    0.9564,
+    0.9757
+   ],
+   "strict_format": 0.9985,
+   "truncated": 0.0,
+   "avg_output_tokens": 97.8,
+   "acc_by_steps": {
+    "2": [
+     320,
+     326
+    ],
+    "3": [
+     358,
+     371
+    ],
+    "4": [
+     288,
+     297
+    ],
+    "5+": [
+     310,
+     325
+    ]
+   }
+  },
+  "base": {
+   "correct": 616,
+   "accuracy": 0.467,
+   "ci95": [
+    0.4402,
+    0.494
+   ],
+   "strict_format": 0.3632,
+   "truncated": 0.0364,
+   "avg_output_tokens": 252.0,
+   "acc_by_steps": {
+    "2": [
+     204,
+     326
+    ],
+    "3": [
+     180,
+     371
+    ],
+    "4": [
+     128,
+     297
+    ],
+    "5+": [
+     104,
+     325
+    ]
+   }
+  },
+  "tuned": {
+   "correct": 652,
+   "accuracy": 0.4943,
+   "ci95": [
+    0.4674,
+    0.5213
+   ],
+   "strict_format": 0.9894,
+   "truncated": 0.0068,
+   "avg_output_tokens": 120.1,
+   "acc_by_steps": {
+    "2": [
+     233,
+     326
+    ],
+    "3": [
+     194,
+     371
+    ],
+    "4": [
+     127,
+     297
+    ],
+    "5+": [
+     98,
+     325
+    ]
+   }
+  }
+ },
+ "paired": {
+  "base->tuned": {
+   "only_first": 176,
+   "only_second": 212,
+   "both_right": 440,
+   "both_wrong": 491,
+   "p_value": 0.0755
+  },
+  "tuned->teacher": {
+   "only_first": 11,
+   "only_second": 635,
+   "both_right": 641,
+   "both_wrong": 32,
+   "p_value": 0.0
+  },
+  "base->teacher": {
+   "only_first": 5,
+   "only_second": 665,
+   "both_right": 611,
+   "both_wrong": 38,
+   "p_value": 0.0
+  }
+ },
+ "cost": {
+  "teacher": {
+   "usd_per_request_peak": 0.0005191773161485974,
+   "usd_per_request_offpeak": 0.0002595886580742987,
+   "avg_prompt_tokens": 99.95072024260804,
+   "avg_completion_tokens": 97.78847611827142,
+   "latency_s_median": 1.738,
+   "latency_s_p90": 2.123,
+   "tok_per_s_single": 55.54687072711825,
+   "usd_per_1k_requests": 0.5191773161485974,
+   "usd_per_1k_correct": 0.5366728510942707
+  },
+  "base": {
+   "gpu": "Tesla T4",
+   "batched_req_per_s": 2.233,
+   "batched_gen_tok_per_s": 562.7,
+   "latency_s_median": 8.77,
+   "latency_tok_per_s": 28.4,
+   "peak_gpu_mem_gb": 1.57,
+   "usd_per_request": 4.3538836642284913e-05,
+   "usd_per_1k_requests": 0.04353883664228491,
+   "usd_per_1k_correct": 0.09323091358090986
+  },
+  "tuned": {
+   "gpu": "Tesla T4",
+   "batched_req_per_s": 3.796,
+   "batched_gen_tok_per_s": 455.9,
+   "latency_s_median": 4.5,
+   "latency_tok_per_s": 27.3,
+   "peak_gpu_mem_gb": 1.57,
+   "usd_per_request": 2.561175506380986e-05,
+   "usd_per_1k_requests": 0.02561175506380986,
+   "usd_per_1k_correct": 0.051814191915455915
+  }
+ },
+ "one_time": {
+  "teacher_data_usd_peak": 2.26,
+  "train_minutes": 15.2,
+  "train_usd": 0.08842361111111112,
+  "total_usd": 2.348423611111111,
+  "breakeven_requests": 4758.078351231814
+ },
+ "logprob_auroc": 0.757,
+ "cascade": [
+  {
+   "student_share": 0.0,
+   "student_acc_on_share": null,
+   "overall_acc": 0.9674,
+   "usd_per_1k": 0.519,
+   "threshold_mean_logprob": null
+  },
+  {
+   "student_share": 0.1,
+   "student_acc_on_share": 0.8864,
+   "overall_acc": 0.9575,
+   "usd_per_1k": 0.493,
+   "threshold_mean_logprob": -0.045
+  },
+  {
+   "student_share": 0.2,
+   "student_acc_on_share": 0.8258,
+   "overall_acc": 0.9356,
+   "usd_per_1k": 0.441,
+   "threshold_mean_logprob": -0.058
+  },
+  {
+   "student_share": 0.3,
+   "student_acc_on_share": 0.7778,
+   "overall_acc": 0.9052,
+   "usd_per_1k": 0.389,
+   "threshold_mean_logprob": -0.07
+  },
+  {
+   "student_share": 0.4,
+   "student_acc_on_share": 0.7292,
+   "overall_acc": 0.8658,
+   "usd_per_1k": 0.337,
+   "threshold_mean_logprob": -0.083
+  },
+  {
+   "student_share": 0.5,
+   "student_acc_on_share": 0.6758,
+   "overall_acc": 0.8165,
+   "usd_per_1k": 0.285,
+   "threshold_mean_logprob": -0.096
+  },
+  {
+   "student_share": 0.6,
+   "student_acc_on_share": 0.6397,
+   "overall_acc": 0.7657,
+   "usd_per_1k": 0.233,
+   "threshold_mean_logprob": -0.108
+  },
+  {
+   "student_share": 0.7,
+   "student_acc_on_share": 0.6024,
+   "overall_acc": 0.7066,
+   "usd_per_1k": 0.181,
+   "threshold_mean_logprob": -0.125
+  },
+  {
+   "student_share": 0.8,
+   "student_acc_on_share": 0.5725,
+   "overall_acc": 0.6467,
+   "usd_per_1k": 0.13,
+   "threshold_mean_logprob": -0.141
+  },
+  {
+   "student_share": 0.9,
+   "student_acc_on_share": 0.535,
+   "overall_acc": 0.5762,
+   "usd_per_1k": 0.078,
+   "threshold_mean_logprob": -0.172
+  },
+  {
+   "student_share": 1.0,
+   "student_acc_on_share": 0.4943,
+   "overall_acc": 0.4943,
+   "usd_per_1k": 0.026,
+   "threshold_mean_logprob": -0.365
+  }
+ ]
+}

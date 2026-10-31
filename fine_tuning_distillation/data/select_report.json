@@ -1,0 +1,20 @@
+{
+ "train_total": 7473,
+ "test_total": 1319,
+ "dropped_as_test_like": 2,
+ "train_pool_after_dedup": 7471,
+ "train_picked": 4000,
+ "seed": 42,
+ "dropped_examples": [
+  {
+   "train_idx": 1314,
+   "jaccard": 0.54,
+   "question": "A train travels 270 miles in 3 hours. At the same rate, how many additional hours would it take to travel an additional 180 miles?"
+  },
+  {
+   "train_idx": 5162,
+   "jaccard": 0.54,
+   "question": "A train travels 360 miles in 3 hours. At the same rate, how many additional hours would it take to travel an additional 240 miles?"
+  }
+ ]
+}
