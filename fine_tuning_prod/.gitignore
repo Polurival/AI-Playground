@@ -1,0 +1,5 @@
+.venv/
+llama.cpp/
+models/
+logs/
+__pycache__/

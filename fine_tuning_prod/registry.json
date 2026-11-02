@@ -1,0 +1,22 @@
+{
+  "models": {
+    "mexamen-tuned-v1-q4": {
+      "gguf": "models/gguf/mexamen-tuned-v1-Q4_K_M.gguf",
+      "port": 8101,
+      "prompt": "plain"
+    },
+    "qwen2.5-1.5b-base-q4": {
+      "gguf": "models/gguf/qwen2.5-1.5b-instruct-Q4_K_M.gguf",
+      "port": 8102,
+      "prompt": "fewshot"
+    }
+  },
+  "aliases": {
+    "tuned": "mexamen-tuned-v1-q4",
+    "base": "qwen2.5-1.5b-base-q4"
+  },
+  "history": {
+    "tuned": [],
+    "base": []
+  }
+}
