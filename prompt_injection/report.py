@@ -53,7 +53,7 @@ def summary(data: dict[str, dict]) -> str:
         line("**Все атаки**", lambda r: True)
         for t in TECH:
             line(t, lambda r, t=t: r["technique"] == t)
-        line("hold-out (написаны до усиления, не использовались при настройке)", lambda r: r["holdout"])
+        line("hold-out (формулировки, которых нет в тексте V1)", lambda r: r["holdout"])
         line("adaptive (написаны после V1, целятся в него)", lambda r: r.get("adaptive", False))
         ctrl = [r for r in rows if r["kind"] != "attack"]
         cells = [rate([r for r in ctrl if r["config"] == c]) for c in CONFIGS]
